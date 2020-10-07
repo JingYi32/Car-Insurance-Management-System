@@ -1,6 +1,6 @@
 ﻿namespace IOOP_Assignment___Car_Insurance_Management_System
 {
-    partial class Form1
+    partial class Login_Page
     {
         /// <summary>
         /// Required designer variable.
@@ -131,7 +131,7 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.button3_Click);
             // 
-            // Form1
+            // Login_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 74F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,8 +148,8 @@
             this.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(5, 14, 5, 14);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Login_Page";
+            this.Text = "Login_Page";
             this.ResumeLayout(false);
             this.PerformLayout();
 

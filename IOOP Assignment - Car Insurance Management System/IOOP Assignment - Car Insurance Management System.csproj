@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cancellation of Insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancellation of Insurance.Designer.cs">
+      <DependentUpon>Cancellation of Insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Profile.Designer.cs">
+      <DependentUpon>Customer Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Customer Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Customer Profile.Designer.cs">
+      <DependentUpon>Edit Customer Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Insurance Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Insurance Details.Designer.cs">
+      <DependentUpon>Insurance Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +82,55 @@
     <Compile Include="Main Page.Designer.cs">
       <DependentUpon>Main Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Profile of Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile of Staff.Designer.cs">
+      <DependentUpon>Profile of Staff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purrchase New Policy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purrchase New Policy.Designer.cs">
+      <DependentUpon>Purrchase New Policy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registration Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Registration Form.Designer.cs">
       <DependentUpon>Registration Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Renewal of Insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renewal of Insurance.Designer.cs">
+      <DependentUpon>Renewal of Insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Searching Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searching Page.Designer.cs">
+      <DependentUpon>Searching Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select Type of Insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select Type of Insurance.Designer.cs">
+      <DependentUpon>Select Type of Insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Total Payable Amount of Insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Total Payable Amount of Insurance.Designer.cs">
+      <DependentUpon>Total Payable Amount of Insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updating Insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updating Insurance.Designer.cs">
+      <DependentUpon>Updating Insurance.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Login Page.resx">
       <DependentUpon>Login Page.cs</DependentUpon>

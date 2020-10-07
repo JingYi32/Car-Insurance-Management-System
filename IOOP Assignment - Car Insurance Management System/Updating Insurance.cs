@@ -10,26 +10,11 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
 {
-    public partial class Login_Page : Form
+    public partial class Updating_Insurance : Form
     {
-        public Login_Page()
+        public Updating_Insurance()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
