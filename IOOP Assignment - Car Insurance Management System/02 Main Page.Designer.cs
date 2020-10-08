@@ -36,9 +36,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
 <<<<<<< Updated upstream:IOOP Assignment - Car Insurance Management System/02 Main Page.Designer.cs
+<<<<<<< Updated upstream:IOOP Assignment - Car Insurance Management System/02 Main Page.Designer.cs
             this.ControlBox = false;
             this.Name = "Main_Page";
             this.Text = "Main_Page";
+=======
+            this.Name = "Main_Page";
+            this.Text = "Main_Page";
+            this.Load += new System.EventHandler(this.Main_Page_Load);
+>>>>>>> Stashed changes:IOOP Assignment - Car Insurance Management System/Main Page.Designer.cs
 =======
             this.Name = "Main_Page";
             this.Text = "Main_Page";

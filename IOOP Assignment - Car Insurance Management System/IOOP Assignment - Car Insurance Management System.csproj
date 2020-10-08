@@ -151,6 +151,12 @@
     <EmbeddedResource Include="Profile of Staff.resx">
       <DependentUpon>Profile of Staff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Main Page.resx">
+      <DependentUpon>Main Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile of Staff.resx">
+      <DependentUpon>Profile of Staff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
