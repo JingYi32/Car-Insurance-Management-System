@@ -16,5 +16,22 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Main_Page mp = new Main_Page();
+            mp.Show();
+            this.Close();
+        }
     }
 }

@@ -16,5 +16,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
+
+        private void Main_Page_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
