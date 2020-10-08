@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
 {
@@ -17,9 +18,14 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             InitializeComponent();
         }
 
+
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-
+            lblBil.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
+            lblInsuranceID.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
+            lblPurchasedCustomer.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
+            lblStatus.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
+            lblPurchasedDate.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
         }
     }
 }
