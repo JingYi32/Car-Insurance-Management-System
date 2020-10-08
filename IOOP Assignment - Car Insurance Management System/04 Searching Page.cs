@@ -27,5 +27,31 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             lblStatus.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
             lblPurchasedDate.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
         }
+
+        private void btnSignin_Click(object sender, EventArgs e)
+        {
+            Main_Page mainMenu = new Main_Page();
+            this.Hide();
+            mainMenu.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Customer_Profile customer_Profile = new Customer_Profile();
+            this.Hide();
+            customer_Profile.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Insurance_Details insurance_Details = new Insurance_Details();
+            this.Hide();
+            insurance_Details.Show();
+        }
+
+        private void lblLoginWelcome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

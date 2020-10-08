@@ -35,6 +35,9 @@
             this.lblPurchasedCustomer = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblPurchasedDate = new System.Windows.Forms.Label();
+            this.btnSignin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.tlpSearchResult.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,12 +45,13 @@
             // 
             this.lblLoginWelcome.BackColor = System.Drawing.Color.CadetBlue;
             this.lblLoginWelcome.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoginWelcome.Location = new System.Drawing.Point(158, 118);
-            this.lblLoginWelcome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.lblLoginWelcome.ForeColor = System.Drawing.SystemColors.Window;
+            this.lblLoginWelcome.Location = new System.Drawing.Point(152, 53);
             this.lblLoginWelcome.Name = "lblLoginWelcome";
-            this.lblLoginWelcome.Size = new System.Drawing.Size(896, 58);
+            this.lblLoginWelcome.Size = new System.Drawing.Size(835, 54);
             this.lblLoginWelcome.TabIndex = 1;
             this.lblLoginWelcome.Text = "Enter Customer ID or Insurance ID to Search:";
+            this.lblLoginWelcome.Click += new System.EventHandler(this.lblLoginWelcome_Click);
             // 
             // tlpSearchResult
             // 
@@ -62,7 +66,8 @@
             this.tlpSearchResult.Controls.Add(this.lblPurchasedCustomer, 2, 0);
             this.tlpSearchResult.Controls.Add(this.lblStatus, 3, 0);
             this.tlpSearchResult.Controls.Add(this.lblPurchasedDate, 4, 0);
-            this.tlpSearchResult.Location = new System.Drawing.Point(159, 196);
+            this.tlpSearchResult.Location = new System.Drawing.Point(152, 144);
+            this.tlpSearchResult.Margin = new System.Windows.Forms.Padding(2, 5, 2, 5);
             this.tlpSearchResult.Name = "tlpSearchResult";
             this.tlpSearchResult.RowCount = 10;
             this.tlpSearchResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -75,59 +80,103 @@
             this.tlpSearchResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tlpSearchResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tlpSearchResult.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tlpSearchResult.Size = new System.Drawing.Size(883, 387);
+            this.tlpSearchResult.Size = new System.Drawing.Size(835, 463);
             this.tlpSearchResult.TabIndex = 2;
             this.tlpSearchResult.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // lblBil
             // 
-            this.lblBil.Location = new System.Drawing.Point(3, 0);
+            this.lblBil.Location = new System.Drawing.Point(2, 0);
+            this.lblBil.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBil.Name = "lblBil";
-            this.lblBil.Size = new System.Drawing.Size(46, 37);
+            this.lblBil.Size = new System.Drawing.Size(44, 46);
             this.lblBil.TabIndex = 0;
             this.lblBil.Text = "Bil";
             // 
             // lblInsuranceID
             // 
-            this.lblInsuranceID.Location = new System.Drawing.Point(55, 0);
+            this.lblInsuranceID.Location = new System.Drawing.Point(50, 0);
+            this.lblInsuranceID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInsuranceID.Name = "lblInsuranceID";
-            this.lblInsuranceID.Size = new System.Drawing.Size(165, 38);
+            this.lblInsuranceID.Size = new System.Drawing.Size(153, 46);
             this.lblInsuranceID.TabIndex = 1;
             this.lblInsuranceID.Text = "Insurance ID";
             // 
             // lblPurchasedCustomer
             // 
-            this.lblPurchasedCustomer.Location = new System.Drawing.Point(226, 0);
+            this.lblPurchasedCustomer.Location = new System.Drawing.Point(207, 0);
+            this.lblPurchasedCustomer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPurchasedCustomer.Name = "lblPurchasedCustomer";
-            this.lblPurchasedCustomer.Size = new System.Drawing.Size(239, 38);
+            this.lblPurchasedCustomer.Size = new System.Drawing.Size(212, 46);
             this.lblPurchasedCustomer.TabIndex = 2;
             this.lblPurchasedCustomer.Text = "Purchased Customer";
             // 
             // lblStatus
             // 
-            this.lblStatus.Location = new System.Drawing.Point(471, 0);
+            this.lblStatus.Location = new System.Drawing.Point(423, 0);
+            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(111, 37);
+            this.lblStatus.Size = new System.Drawing.Size(155, 46);
             this.lblStatus.TabIndex = 3;
             this.lblStatus.Text = "Status";
             // 
             // lblPurchasedDate
             // 
-            this.lblPurchasedDate.Location = new System.Drawing.Point(588, 0);
+            this.lblPurchasedDate.Location = new System.Drawing.Point(582, 0);
+            this.lblPurchasedDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPurchasedDate.Name = "lblPurchasedDate";
-            this.lblPurchasedDate.Size = new System.Drawing.Size(283, 37);
+            this.lblPurchasedDate.Size = new System.Drawing.Size(182, 46);
             this.lblPurchasedDate.TabIndex = 4;
             this.lblPurchasedDate.Text = "Purchased Date";
             // 
+            // btnSignin
+            // 
+            this.btnSignin.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnSignin.ForeColor = System.Drawing.Color.White;
+            this.btnSignin.Location = new System.Drawing.Point(152, 631);
+            this.btnSignin.Name = "btnSignin";
+            this.btnSignin.Size = new System.Drawing.Size(203, 49);
+            this.btnSignin.TabIndex = 8;
+            this.btnSignin.Text = "Back to Main Page";
+            this.btnSignin.UseVisualStyleBackColor = false;
+            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.CadetBlue;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(468, 631);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(203, 49);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "View Customer Profile";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.CadetBlue;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(784, 631);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(203, 49);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "View Insurance Details";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Searching_Page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 759);
+            this.ClientSize = new System.Drawing.Size(1101, 755);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.tlpSearchResult);
             this.Controls.Add(this.lblLoginWelcome);
-            this.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.Name = "Searching_Page";
             this.Text = "Searching_Page";
             this.tlpSearchResult.ResumeLayout(false);
@@ -144,5 +193,8 @@
         private System.Windows.Forms.Label lblPurchasedCustomer;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblPurchasedDate;
+        private System.Windows.Forms.Button btnSignin;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
