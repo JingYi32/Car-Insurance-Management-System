@@ -16,5 +16,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
