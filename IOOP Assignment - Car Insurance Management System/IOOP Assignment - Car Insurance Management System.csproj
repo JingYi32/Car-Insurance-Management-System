@@ -46,94 +46,94 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cancellation of Insurance.cs">
+    <Compile Include="10 Cancellation of Insurance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cancellation of Insurance.Designer.cs">
-      <DependentUpon>Cancellation of Insurance.cs</DependentUpon>
+    <Compile Include="10 Cancellation of Insurance.Designer.cs">
+      <DependentUpon>10 Cancellation of Insurance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customer Profile.cs">
+    <Compile Include="05 Customer Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Customer Profile.Designer.cs">
-      <DependentUpon>Customer Profile.cs</DependentUpon>
+    <Compile Include="05 Customer Profile.Designer.cs">
+      <DependentUpon>05 Customer Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Edit Customer Profile.cs">
+    <Compile Include="06 Edit Customer Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Edit Customer Profile.Designer.cs">
-      <DependentUpon>Edit Customer Profile.cs</DependentUpon>
+    <Compile Include="06 Edit Customer Profile.Designer.cs">
+      <DependentUpon>06 Edit Customer Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Insurance Details.cs">
+    <Compile Include="07 Insurance Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Insurance Details.Designer.cs">
-      <DependentUpon>Insurance Details.cs</DependentUpon>
+    <Compile Include="07 Insurance Details.Designer.cs">
+      <DependentUpon>07 Insurance Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login Page.cs">
+    <Compile Include="01 Login Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login Page.Designer.cs">
-      <DependentUpon>Login Page.cs</DependentUpon>
+    <Compile Include="01 Login Page.Designer.cs">
+      <DependentUpon>01 Login Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main Page.cs">
+    <Compile Include="02 Main Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main Page.Designer.cs">
-      <DependentUpon>Main Page.cs</DependentUpon>
+    <Compile Include="02 Main Page.Designer.cs">
+      <DependentUpon>02 Main Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profile of Staff.cs">
+    <Compile Include="11 Profile of Staff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profile of Staff.Designer.cs">
-      <DependentUpon>Profile of Staff.cs</DependentUpon>
+    <Compile Include="11 Profile of Staff.Designer.cs">
+      <DependentUpon>11 Profile of Staff.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Purrchase New Policy.cs">
+    <Compile Include="12 Purrchase New Policy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Purrchase New Policy.Designer.cs">
-      <DependentUpon>Purrchase New Policy.cs</DependentUpon>
+    <Compile Include="12 Purrchase New Policy.Designer.cs">
+      <DependentUpon>12 Purrchase New Policy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registration Form.cs">
+    <Compile Include="03 Registration Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registration Form.Designer.cs">
-      <DependentUpon>Registration Form.cs</DependentUpon>
+    <Compile Include="03 Registration Form.Designer.cs">
+      <DependentUpon>03 Registration Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Renewal of Insurance.cs">
+    <Compile Include="08 Renewal of Insurance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Renewal of Insurance.Designer.cs">
-      <DependentUpon>Renewal of Insurance.cs</DependentUpon>
+    <Compile Include="08 Renewal of Insurance.Designer.cs">
+      <DependentUpon>08 Renewal of Insurance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Searching Page.cs">
+    <Compile Include="04 Searching Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Searching Page.Designer.cs">
-      <DependentUpon>Searching Page.cs</DependentUpon>
+    <Compile Include="04 Searching Page.Designer.cs">
+      <DependentUpon>04 Searching Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Select Type of Insurance.cs">
+    <Compile Include="13 Select Type of Insurance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Select Type of Insurance.Designer.cs">
-      <DependentUpon>Select Type of Insurance.cs</DependentUpon>
+    <Compile Include="13 Select Type of Insurance.Designer.cs">
+      <DependentUpon>13 Select Type of Insurance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Total Payable Amount of Insurance.cs">
+    <Compile Include="14 Total Payable Amount of Insurance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Total Payable Amount of Insurance.Designer.cs">
-      <DependentUpon>Total Payable Amount of Insurance.cs</DependentUpon>
+    <Compile Include="14 Total Payable Amount of Insurance.Designer.cs">
+      <DependentUpon>14 Total Payable Amount of Insurance.cs</DependentUpon>
     </Compile>
-    <Compile Include="Updating Insurance.cs">
+    <Compile Include="09 Updating Insurance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Updating Insurance.Designer.cs">
-      <DependentUpon>Updating Insurance.cs</DependentUpon>
+    <Compile Include="09 Updating Insurance.Designer.cs">
+      <DependentUpon>09 Updating Insurance.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Login Page.resx">
-      <DependentUpon>Login Page.cs</DependentUpon>
+    <EmbeddedResource Include="01 Login Page.resx">
+      <DependentUpon>01 Login Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
