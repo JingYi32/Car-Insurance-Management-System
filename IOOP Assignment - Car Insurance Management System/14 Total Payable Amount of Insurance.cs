@@ -16,10 +16,5 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
-
-        private void ButtonSave_TA_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
