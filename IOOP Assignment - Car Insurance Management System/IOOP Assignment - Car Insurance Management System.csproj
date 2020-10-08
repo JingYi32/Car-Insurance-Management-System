@@ -135,6 +135,9 @@
     <EmbeddedResource Include="01 Login Page.resx">
       <DependentUpon>01 Login Page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="02 Main Page.resx">
+      <DependentUpon>02 Main Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
