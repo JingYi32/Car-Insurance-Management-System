@@ -37,13 +37,16 @@
             this.lblCustomerAddress = new System.Windows.Forms.Label();
             this.lblCustomerPhone = new System.Windows.Forms.Label();
             this.lblHistory = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tlpHistory = new System.Windows.Forms.TableLayoutPanel();
+            this.lblBil = new System.Windows.Forms.Label();
+            this.lblInsuranceID = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.lblStartdate = new System.Windows.Forms.Label();
+            this.lblEnddate = new System.Windows.Forms.Label();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnPurchase = new System.Windows.Forms.Button();
+            this.tlpHistory.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblProfile
@@ -130,90 +133,127 @@
             this.lblHistory.TabIndex = 9;
             this.lblHistory.Text = "Purchase History:";
             // 
-            // tableLayoutPanel1
+            // tlpHistory
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
-            this.tableLayoutPanel1.Controls.Add(this.label5, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(48, 570);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1379, 379);
-            this.tableLayoutPanel1.TabIndex = 10;
+            this.tlpHistory.BackColor = System.Drawing.Color.CadetBlue;
+            this.tlpHistory.ColumnCount = 5;
+            this.tlpHistory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tlpHistory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
+            this.tlpHistory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
+            this.tlpHistory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
+            this.tlpHistory.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.75F));
+            this.tlpHistory.Controls.Add(this.lblEnddate, 4, 0);
+            this.tlpHistory.Controls.Add(this.lblStartdate, 3, 0);
+            this.tlpHistory.Controls.Add(this.lblStatus, 2, 0);
+            this.tlpHistory.Controls.Add(this.lblInsuranceID, 1, 0);
+            this.tlpHistory.Controls.Add(this.lblBil, 0, 0);
+            this.tlpHistory.Location = new System.Drawing.Point(48, 570);
+            this.tlpHistory.Name = "tlpHistory";
+            this.tlpHistory.RowCount = 8;
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tlpHistory.Size = new System.Drawing.Size(1379, 379);
+            this.tlpHistory.TabIndex = 10;
+            this.tlpHistory.Paint += new System.Windows.Forms.PaintEventHandler(this.tlpHistory_Paint);
             // 
-            // label1
+            // lblBil
             // 
-            this.label1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.ForeColor = System.Drawing.Color.Azure;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 47);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Bil";
+            this.lblBil.BackColor = System.Drawing.Color.Transparent;
+            this.lblBil.ForeColor = System.Drawing.Color.Azure;
+            this.lblBil.Location = new System.Drawing.Point(3, 0);
+            this.lblBil.Name = "lblBil";
+            this.lblBil.Size = new System.Drawing.Size(62, 47);
+            this.lblBil.TabIndex = 0;
+            this.lblBil.Text = "Bil";
             // 
-            // label2
+            // lblInsuranceID
             // 
-            this.label2.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.ForeColor = System.Drawing.Color.Azure;
-            this.label2.Location = new System.Drawing.Point(71, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(321, 47);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Insurance ID";
+            this.lblInsuranceID.BackColor = System.Drawing.Color.Transparent;
+            this.lblInsuranceID.ForeColor = System.Drawing.Color.Azure;
+            this.lblInsuranceID.Location = new System.Drawing.Point(71, 0);
+            this.lblInsuranceID.Name = "lblInsuranceID";
+            this.lblInsuranceID.Size = new System.Drawing.Size(321, 47);
+            this.lblInsuranceID.TabIndex = 1;
+            this.lblInsuranceID.Text = "Insurance ID";
             // 
-            // label3
+            // lblStatus
             // 
-            this.label3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.ForeColor = System.Drawing.Color.Azure;
-            this.label3.Location = new System.Drawing.Point(398, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(321, 47);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Status";
+            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatus.ForeColor = System.Drawing.Color.Azure;
+            this.lblStatus.Location = new System.Drawing.Point(398, 0);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(321, 47);
+            this.lblStatus.TabIndex = 2;
+            this.lblStatus.Text = "Status";
             // 
-            // label4
+            // lblStartdate
             // 
-            this.label4.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.ForeColor = System.Drawing.Color.Azure;
-            this.label4.Location = new System.Drawing.Point(725, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(321, 47);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Start-date";
+            this.lblStartdate.BackColor = System.Drawing.Color.Transparent;
+            this.lblStartdate.ForeColor = System.Drawing.Color.Azure;
+            this.lblStartdate.Location = new System.Drawing.Point(725, 0);
+            this.lblStartdate.Name = "lblStartdate";
+            this.lblStartdate.Size = new System.Drawing.Size(321, 47);
+            this.lblStartdate.TabIndex = 3;
+            this.lblStartdate.Text = "Start-date";
             // 
-            // label5
+            // lblEnddate
             // 
-            this.label5.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.ForeColor = System.Drawing.Color.Azure;
-            this.label5.Location = new System.Drawing.Point(1052, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(324, 47);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "End-date";
+            this.lblEnddate.BackColor = System.Drawing.Color.Transparent;
+            this.lblEnddate.ForeColor = System.Drawing.Color.Azure;
+            this.lblEnddate.Location = new System.Drawing.Point(1052, 0);
+            this.lblEnddate.Name = "lblEnddate";
+            this.lblEnddate.Size = new System.Drawing.Size(324, 47);
+            this.lblEnddate.TabIndex = 4;
+            this.lblEnddate.Text = "End-date";
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(48, 994);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(203, 49);
+            this.btnBack.TabIndex = 11;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(935, 994);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(203, 49);
+            this.btnEdit.TabIndex = 12;
+            this.btnEdit.Text = "Edit Profile";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            // 
+            // btnPurchase
+            // 
+            this.btnPurchase.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnPurchase.ForeColor = System.Drawing.Color.White;
+            this.btnPurchase.Location = new System.Drawing.Point(1224, 994);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Size = new System.Drawing.Size(203, 49);
+            this.btnPurchase.TabIndex = 13;
+            this.btnPurchase.Text = "Purchase New Insurance";
+            this.btnPurchase.UseVisualStyleBackColor = false;
             // 
             // Customer_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 55F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1482, 1055);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.btnPurchase);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.tlpHistory);
             this.Controls.Add(this.lblHistory);
             this.Controls.Add(this.lblCustomerPhone);
             this.Controls.Add(this.lblCustomerAddress);
@@ -224,11 +264,11 @@
             this.Controls.Add(this.lblCustomerID);
             this.Controls.Add(this.lblProfile);
             this.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.CadetBlue;
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(4, 10, 4, 10);
             this.Name = "Customer_Profile";
             this.Text = "Customer_Profile";
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tlpHistory.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,11 +285,14 @@
         private System.Windows.Forms.Label lblCustomerAddress;
         private System.Windows.Forms.Label lblCustomerPhone;
         private System.Windows.Forms.Label lblHistory;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tlpHistory;
+        private System.Windows.Forms.Label lblEnddate;
+        private System.Windows.Forms.Label lblStartdate;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblInsuranceID;
+        private System.Windows.Forms.Label lblBil;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnPurchase;
     }
 }

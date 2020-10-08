@@ -48,5 +48,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             this.Hide();
             insurance_Details.Show();
         }
+
+        private void lblLoginWelcome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

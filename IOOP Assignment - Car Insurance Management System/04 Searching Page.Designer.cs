@@ -51,6 +51,7 @@
             this.lblLoginWelcome.Size = new System.Drawing.Size(835, 54);
             this.lblLoginWelcome.TabIndex = 1;
             this.lblLoginWelcome.Text = "Enter Customer ID or Insurance ID to Search:";
+            this.lblLoginWelcome.Click += new System.EventHandler(this.lblLoginWelcome_Click);
             // 
             // tlpSearchResult
             // 
