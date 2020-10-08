@@ -31,18 +31,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string message = "Do you want to close this window?";
-            string title = "Close Window";
-            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
-            DialogResult result = MessageBox.Show(message, title, buttons);
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            else
-            {
-                // Do something  
-            }
+            Exit exit = new Exit();
+            exit.comfirm();
         }
     }
 }

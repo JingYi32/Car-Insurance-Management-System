@@ -88,6 +88,7 @@
     <Compile Include="11 Profile of Staff.Designer.cs">
       <DependentUpon>11 Profile of Staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Exit.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="12 Purrchase New Policy.cs">
