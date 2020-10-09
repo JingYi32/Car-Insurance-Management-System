@@ -97,13 +97,11 @@
     <Compile Include="12 Purrchase New Policy.Designer.cs">
       <DependentUpon>12 Purrchase New Policy.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\APU\IOOP Backup\03 Registration Form.cs">
+    <Compile Include="03 Registration Form.cs">
       <SubType>Form</SubType>
-      <Link>03 Registration Form.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\APU\IOOP Backup\03 Registration Form.Designer.cs">
+    <Compile Include="03 Registration Form.Designer.cs">
       <DependentUpon>03 Registration Form.cs</DependentUpon>
-      <Link>03 Registration Form.Designer.cs</Link>
     </Compile>
     <Compile Include="08 Renewal of Insurance.cs">
       <SubType>Form</SubType>
@@ -147,9 +145,8 @@
     <EmbeddedResource Include="02 Main Page.resx">
       <DependentUpon>02 Main Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\APU\IOOP Backup\03 Registration Form.resx">
+    <EmbeddedResource Include="03 Registration Form.resx">
       <DependentUpon>03 Registration Form.cs</DependentUpon>
-      <Link>03 Registration Form.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="04 Searching Page.resx">
       <DependentUpon>04 Searching Page.cs</DependentUpon>
