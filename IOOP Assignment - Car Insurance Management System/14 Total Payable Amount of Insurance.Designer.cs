@@ -28,12 +28,177 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblCustomerID_TA = new System.Windows.Forms.Label();
+            this.lblCustomerName_TA = new System.Windows.Forms.Label();
+            this.btnBack_TA = new System.Windows.Forms.Button();
+            this.btnSave_TA = new System.Windows.Forms.Button();
+            this.tlpTotalAmount = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tlpTotalAmount.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.label1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(295, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 51);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Total Amount";
+            // 
+            // lblCustomerID_TA
+            // 
+            this.lblCustomerID_TA.AutoSize = true;
+            this.lblCustomerID_TA.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblCustomerID_TA.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerID_TA.Location = new System.Drawing.Point(80, 88);
+            this.lblCustomerID_TA.Name = "lblCustomerID_TA";
+            this.lblCustomerID_TA.Size = new System.Drawing.Size(98, 37);
+            this.lblCustomerID_TA.TabIndex = 1;
+            this.lblCustomerID_TA.Text = "Customer ID:";
+            // 
+            // lblCustomerName_TA
+            // 
+            this.lblCustomerName_TA.AutoSize = true;
+            this.lblCustomerName_TA.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblCustomerName_TA.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerName_TA.Location = new System.Drawing.Point(442, 88);
+            this.lblCustomerName_TA.Name = "lblCustomerName_TA";
+            this.lblCustomerName_TA.Size = new System.Drawing.Size(119, 37);
+            this.lblCustomerName_TA.TabIndex = 2;
+            this.lblCustomerName_TA.Text = "Customer Name:";
+            // 
+            // btnBack_TA
+            // 
+            this.btnBack_TA.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnBack_TA.Location = new System.Drawing.Point(559, 401);
+            this.btnBack_TA.Name = "btnBack_TA";
+            this.btnBack_TA.Size = new System.Drawing.Size(81, 44);
+            this.btnBack_TA.TabIndex = 3;
+            this.btnBack_TA.Text = "Back";
+            this.btnBack_TA.UseVisualStyleBackColor = false;
+            // 
+            // btnSave_TA
+            // 
+            this.btnSave_TA.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnSave_TA.Location = new System.Drawing.Point(686, 401);
+            this.btnSave_TA.Name = "btnSave_TA";
+            this.btnSave_TA.Size = new System.Drawing.Size(81, 44);
+            this.btnSave_TA.TabIndex = 4;
+            this.btnSave_TA.Text = "Save";
+            this.btnSave_TA.UseVisualStyleBackColor = false;
+            // 
+            // tlpTotalAmount
+            // 
+            this.tlpTotalAmount.ColumnCount = 2;
+            this.tlpTotalAmount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpTotalAmount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpTotalAmount.Controls.Add(this.label6, 0, 4);
+            this.tlpTotalAmount.Controls.Add(this.label2, 0, 0);
+            this.tlpTotalAmount.Controls.Add(this.label5, 0, 3);
+            this.tlpTotalAmount.Controls.Add(this.label4, 0, 2);
+            this.tlpTotalAmount.Controls.Add(this.label3, 0, 1);
+            this.tlpTotalAmount.Location = new System.Drawing.Point(74, 147);
+            this.tlpTotalAmount.Name = "tlpTotalAmount";
+            this.tlpTotalAmount.RowCount = 5;
+            this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tlpTotalAmount.Size = new System.Drawing.Size(566, 229);
+            this.tlpTotalAmount.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(274, 24);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Insurance Premium Gross Total:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(94, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "SST (6%):";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(89, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 24);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Stamp Duty:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(29, 143);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(223, 24);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "No-Claim Discount (NCD):";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(44, 190);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(201, 24);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Total Annual Premium:";
+            // 
+            // Total_Payable_Amount_of_Insurance
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 475);
+            this.Controls.Add(this.tlpTotalAmount);
+            this.Controls.Add(this.btnSave_TA);
+            this.Controls.Add(this.btnBack_TA);
+            this.Controls.Add(this.lblCustomerName_TA);
+            this.Controls.Add(this.lblCustomerID_TA);
+            this.Controls.Add(this.label1);
+            this.Name = "Total_Payable_Amount_of_Insurance";
             this.Text = "Total_Payable_Amount_of_Insurance";
+            this.tlpTotalAmount.ResumeLayout(false);
+            this.tlpTotalAmount.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCustomerID_TA;
+        private System.Windows.Forms.Label lblCustomerName_TA;
+        private System.Windows.Forms.Button btnBack_TA;
+        private System.Windows.Forms.Button btnSave_TA;
+        private System.Windows.Forms.TableLayoutPanel tlpTotalAmount;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
