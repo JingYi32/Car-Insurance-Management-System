@@ -34,11 +34,11 @@
             this.btnBack_TA = new System.Windows.Forms.Button();
             this.btnSave_TA = new System.Windows.Forms.Button();
             this.tlpTotalAmount = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,7 +105,7 @@
             this.tlpTotalAmount.Controls.Add(this.label5, 0, 3);
             this.tlpTotalAmount.Controls.Add(this.label4, 0, 2);
             this.tlpTotalAmount.Controls.Add(this.label3, 0, 1);
-            this.tlpTotalAmount.Location = new System.Drawing.Point(74, 147);
+            this.tlpTotalAmount.Location = new System.Drawing.Point(74, 148);
             this.tlpTotalAmount.Name = "tlpTotalAmount";
             this.tlpTotalAmount.RowCount = 5;
             this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -116,56 +116,56 @@
             this.tlpTotalAmount.Size = new System.Drawing.Size(566, 229);
             this.tlpTotalAmount.TabIndex = 5;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(3, 180);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(201, 24);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Total Annual Premium:";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 10);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(274, 24);
             this.label2.TabIndex = 0;
             this.label2.Text = "Insurance Premium Gross Total:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(94, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "SST (6%):";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(89, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 24);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Stamp Duty:";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(29, 143);
+            this.label5.Location = new System.Drawing.Point(3, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(223, 24);
             this.label5.TabIndex = 8;
             this.label5.Text = "No-Claim Discount (NCD):";
             // 
-            // label6
+            // label4
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(44, 190);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(201, 24);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Total Annual Premium:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 24);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Stamp Duty:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "SST (6%):";
             // 
             // Total_Payable_Amount_of_Insurance
             // 
