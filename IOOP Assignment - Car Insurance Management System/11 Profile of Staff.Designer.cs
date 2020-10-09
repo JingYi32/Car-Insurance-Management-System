@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.lblMyProfile = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblStaffID_MP = new System.Windows.Forms.Label();
+            this.lblStaffName_MP = new System.Windows.Forms.Label();
+            this.lblGender_MP = new System.Windows.Forms.Label();
+            this.lblJobPosition_MP = new System.Windows.Forms.Label();
+            this.lblContact_MP = new System.Windows.Forms.Label();
+            this.lblAddress_MP = new System.Windows.Forms.Label();
+            this.picProfilePicture_MP = new System.Windows.Forms.PictureBox();
+            this.tlpCurrentCustomer_MP = new System.Windows.Forms.TableLayoutPanel();
+            this.btnBack_MP = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfilePicture_MP)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMyProfile
@@ -52,118 +52,120 @@
             this.lblMyProfile.TabIndex = 0;
             this.lblMyProfile.Text = "My Profile";
             // 
-            // label1
+            // lblStaffID_MP
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 37);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Staff ID:";
+            this.lblStaffID_MP.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.lblStaffID_MP.AutoSize = true;
+            this.lblStaffID_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffID_MP.Location = new System.Drawing.Point(28, 77);
+            this.lblStaffID_MP.Name = "lblStaffID_MP";
+            this.lblStaffID_MP.Size = new System.Drawing.Size(66, 37);
+            this.lblStaffID_MP.TabIndex = 1;
+            this.lblStaffID_MP.Text = "Staff ID:";
             // 
-            // label2
+            // lblStaffName_MP
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 37);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Staff Name:";
+            this.lblStaffName_MP.AutoSize = true;
+            this.lblStaffName_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffName_MP.Location = new System.Drawing.Point(28, 114);
+            this.lblStaffName_MP.Name = "lblStaffName_MP";
+            this.lblStaffName_MP.Size = new System.Drawing.Size(87, 37);
+            this.lblStaffName_MP.TabIndex = 2;
+            this.lblStaffName_MP.Text = "Staff Name:";
             // 
-            // label3
+            // lblGender_MP
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 151);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 37);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Gender:";
+            this.lblGender_MP.AutoSize = true;
+            this.lblGender_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender_MP.Location = new System.Drawing.Point(28, 151);
+            this.lblGender_MP.Name = "lblGender_MP";
+            this.lblGender_MP.Size = new System.Drawing.Size(65, 37);
+            this.lblGender_MP.TabIndex = 3;
+            this.lblGender_MP.Text = "Gender:";
             // 
-            // label4
+            // lblJobPosition_MP
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 188);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 37);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Job Position:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblJobPosition_MP.AutoSize = true;
+            this.lblJobPosition_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobPosition_MP.Location = new System.Drawing.Point(28, 188);
+            this.lblJobPosition_MP.Name = "lblJobPosition_MP";
+            this.lblJobPosition_MP.Size = new System.Drawing.Size(91, 37);
+            this.lblJobPosition_MP.TabIndex = 4;
+            this.lblJobPosition_MP.Text = "Job Position:";
+            this.lblJobPosition_MP.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lblContact_MP
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 225);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 37);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Contact Number:";
+            this.lblContact_MP.AutoSize = true;
+            this.lblContact_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContact_MP.Location = new System.Drawing.Point(28, 225);
+            this.lblContact_MP.Name = "lblContact_MP";
+            this.lblContact_MP.Size = new System.Drawing.Size(123, 37);
+            this.lblContact_MP.TabIndex = 5;
+            this.lblContact_MP.Text = "Contact Number:";
             // 
-            // label6
+            // lblAddress_MP
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 262);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 37);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Address:";
+            this.lblAddress_MP.AutoSize = true;
+            this.lblAddress_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress_MP.Location = new System.Drawing.Point(28, 262);
+            this.lblAddress_MP.Name = "lblAddress_MP";
+            this.lblAddress_MP.Size = new System.Drawing.Size(70, 37);
+            this.lblAddress_MP.TabIndex = 6;
+            this.lblAddress_MP.Text = "Address:";
             // 
-            // pictureBox1
+            // picProfilePicture_MP
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(568, 77);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(138, 129);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.picProfilePicture_MP.Location = new System.Drawing.Point(568, 77);
+            this.picProfilePicture_MP.Name = "picProfilePicture_MP";
+            this.picProfilePicture_MP.Size = new System.Drawing.Size(160, 132);
+            this.picProfilePicture_MP.TabIndex = 7;
+            this.picProfilePicture_MP.TabStop = false;
             // 
-            // tableLayoutPanel1
+            // tlpCurrentCustomer_MP
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.34043F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.65957F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(302, 225);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.07792F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.92208F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(472, 176);
-            this.tableLayoutPanel1.TabIndex = 8;
+            this.tlpCurrentCustomer_MP.ColumnCount = 5;
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.34043F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.65957F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tlpCurrentCustomer_MP.Location = new System.Drawing.Point(256, 245);
+            this.tlpCurrentCustomer_MP.Name = "tlpCurrentCustomer_MP";
+            this.tlpCurrentCustomer_MP.RowCount = 2;
+            this.tlpCurrentCustomer_MP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.07792F));
+            this.tlpCurrentCustomer_MP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.92208F));
+            this.tlpCurrentCustomer_MP.Size = new System.Drawing.Size(472, 176);
+            this.tlpCurrentCustomer_MP.TabIndex = 8;
             // 
-            // button1
+            // btnBack_MP
             // 
-            this.button1.Location = new System.Drawing.Point(53, 378);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBack_MP.Location = new System.Drawing.Point(55, 383);
+            this.btnBack_MP.Name = "btnBack_MP";
+            this.btnBack_MP.Size = new System.Drawing.Size(75, 28);
+            this.btnBack_MP.TabIndex = 9;
+            this.btnBack_MP.Text = "Back";
+            this.btnBack_MP.UseVisualStyleBackColor = true;
+            this.btnBack_MP.Click += new System.EventHandler(this.btnBack_MP_Click);
             // 
             // Profile_of_Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnBack_MP);
+            this.Controls.Add(this.tlpCurrentCustomer_MP);
+            this.Controls.Add(this.picProfilePicture_MP);
+            this.Controls.Add(this.lblAddress_MP);
+            this.Controls.Add(this.lblContact_MP);
+            this.Controls.Add(this.lblJobPosition_MP);
+            this.Controls.Add(this.lblGender_MP);
+            this.Controls.Add(this.lblStaffName_MP);
+            this.Controls.Add(this.lblStaffID_MP);
             this.Controls.Add(this.lblMyProfile);
             this.Name = "Profile_of_Staff";
             this.Text = "Profile_of_Staff";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfilePicture_MP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,14 +174,14 @@
         #endregion
 
         private System.Windows.Forms.Label lblMyProfile;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblStaffID_MP;
+        private System.Windows.Forms.Label lblStaffName_MP;
+        private System.Windows.Forms.Label lblGender_MP;
+        private System.Windows.Forms.Label lblJobPosition_MP;
+        private System.Windows.Forms.Label lblContact_MP;
+        private System.Windows.Forms.Label lblAddress_MP;
+        private System.Windows.Forms.PictureBox picProfilePicture_MP;
+        private System.Windows.Forms.TableLayoutPanel tlpCurrentCustomer_MP;
+        private System.Windows.Forms.Button btnBack_MP;
     }
 }
