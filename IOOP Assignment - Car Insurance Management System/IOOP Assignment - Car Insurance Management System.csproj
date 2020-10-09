@@ -154,6 +154,9 @@
     <EmbeddedResource Include="05 Customer Profile.resx">
       <DependentUpon>05 Customer Profile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="09 Updating Insurance.resx">
+      <DependentUpon>09 Updating Insurance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="11 Profile of Staff.resx">
       <DependentUpon>11 Profile of Staff.cs</DependentUpon>
     </EmbeddedResource>

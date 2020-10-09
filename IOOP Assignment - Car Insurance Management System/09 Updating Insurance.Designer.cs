@@ -28,12 +28,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblUpdateInsurance = new System.Windows.Forms.Label();
+            this.lblCustomerID_UI = new System.Windows.Forms.Label();
+            this.lblInsuranceID_UI = new System.Windows.Forms.Label();
+            this.lblDateApply_UI = new System.Windows.Forms.Label();
+            this.lblDateApprove_UI = new System.Windows.Forms.Label();
+            this.lblBankAccount_UI = new System.Windows.Forms.Label();
+            this.lblReasons_UI = new System.Windows.Forms.Label();
+            this.lblTotalAmount_UI = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // lblUpdateInsurance
+            // 
+            this.lblUpdateInsurance.AutoSize = true;
+            this.lblUpdateInsurance.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.lblUpdateInsurance.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateInsurance.Location = new System.Drawing.Point(301, 19);
+            this.lblUpdateInsurance.Name = "lblUpdateInsurance";
+            this.lblUpdateInsurance.Size = new System.Drawing.Size(179, 51);
+            this.lblUpdateInsurance.TabIndex = 0;
+            this.lblUpdateInsurance.Text = "Update Insurance";
+            // 
+            // lblCustomerID_UI
+            // 
+            this.lblCustomerID_UI.AutoSize = true;
+            this.lblCustomerID_UI.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerID_UI.Location = new System.Drawing.Point(44, 88);
+            this.lblCustomerID_UI.Name = "lblCustomerID_UI";
+            this.lblCustomerID_UI.Size = new System.Drawing.Size(98, 37);
+            this.lblCustomerID_UI.TabIndex = 1;
+            this.lblCustomerID_UI.Text = "Customer ID:";
+            // 
+            // lblInsuranceID_UI
+            // 
+            this.lblInsuranceID_UI.AutoSize = true;
+            this.lblInsuranceID_UI.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInsuranceID_UI.Location = new System.Drawing.Point(44, 125);
+            this.lblInsuranceID_UI.Name = "lblInsuranceID_UI";
+            this.lblInsuranceID_UI.Size = new System.Drawing.Size(99, 37);
+            this.lblInsuranceID_UI.TabIndex = 2;
+            this.lblInsuranceID_UI.Text = "Insurance ID:";
+            // 
+            // lblDateApply_UI
+            // 
+            this.lblDateApply_UI.AutoSize = true;
+            this.lblDateApply_UI.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateApply_UI.Location = new System.Drawing.Point(44, 162);
+            this.lblDateApply_UI.Name = "lblDateApply_UI";
+            this.lblDateApply_UI.Size = new System.Drawing.Size(104, 37);
+            this.lblDateApply_UI.TabIndex = 3;
+            this.lblDateApply_UI.Text = "Date to Apply:";
+            // 
+            // lblDateApprove_UI
+            // 
+            this.lblDateApprove_UI.AutoSize = true;
+            this.lblDateApprove_UI.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateApprove_UI.Location = new System.Drawing.Point(44, 199);
+            this.lblDateApprove_UI.Name = "lblDateApprove_UI";
+            this.lblDateApprove_UI.Size = new System.Drawing.Size(118, 37);
+            this.lblDateApprove_UI.TabIndex = 4;
+            this.lblDateApprove_UI.Text = "Date to Approve:";
+            // 
+            // lblBankAccount_UI
+            // 
+            this.lblBankAccount_UI.AutoSize = true;
+            this.lblBankAccount_UI.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBankAccount_UI.Location = new System.Drawing.Point(44, 236);
+            this.lblBankAccount_UI.Name = "lblBankAccount_UI";
+            this.lblBankAccount_UI.Size = new System.Drawing.Size(107, 37);
+            this.lblBankAccount_UI.TabIndex = 5;
+            this.lblBankAccount_UI.Text = "Bank Account:";
+            // 
+            // lblReasons_UI
+            // 
+            this.lblReasons_UI.AutoSize = true;
+            this.lblReasons_UI.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReasons_UI.Location = new System.Drawing.Point(44, 273);
+            this.lblReasons_UI.Name = "lblReasons_UI";
+            this.lblReasons_UI.Size = new System.Drawing.Size(70, 37);
+            this.lblReasons_UI.TabIndex = 6;
+            this.lblReasons_UI.Text = "Reasons:";
+            // 
+            // lblTotalAmount_UI
+            // 
+            this.lblTotalAmount_UI.AutoSize = true;
+            this.lblTotalAmount_UI.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAmount_UI.Location = new System.Drawing.Point(44, 371);
+            this.lblTotalAmount_UI.Name = "lblTotalAmount_UI";
+            this.lblTotalAmount_UI.Size = new System.Drawing.Size(151, 37);
+            this.lblTotalAmount_UI.TabIndex = 7;
+            this.lblTotalAmount_UI.Text = "Total Amount Gained:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(514, 379);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(646, 379);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Submit";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Updating_Insurance
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblTotalAmount_UI);
+            this.Controls.Add(this.lblReasons_UI);
+            this.Controls.Add(this.lblBankAccount_UI);
+            this.Controls.Add(this.lblDateApprove_UI);
+            this.Controls.Add(this.lblDateApply_UI);
+            this.Controls.Add(this.lblInsuranceID_UI);
+            this.Controls.Add(this.lblCustomerID_UI);
+            this.Controls.Add(this.lblUpdateInsurance);
+            this.Name = "Updating_Insurance";
             this.Text = "Updating_Insurance";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblUpdateInsurance;
+        private System.Windows.Forms.Label lblCustomerID_UI;
+        private System.Windows.Forms.Label lblInsuranceID_UI;
+        private System.Windows.Forms.Label lblDateApply_UI;
+        private System.Windows.Forms.Label lblDateApprove_UI;
+        private System.Windows.Forms.Label lblBankAccount_UI;
+        private System.Windows.Forms.Label lblReasons_UI;
+        private System.Windows.Forms.Label lblTotalAmount_UI;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
