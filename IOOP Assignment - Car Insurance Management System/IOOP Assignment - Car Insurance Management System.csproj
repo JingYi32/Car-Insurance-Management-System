@@ -76,11 +76,13 @@
     <Compile Include="01 Login Page.Designer.cs">
       <DependentUpon>01 Login Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="02 Main Page.cs">
+    <Compile Include="..\..\..\APU\IOOP Backup\02 Main Page.cs">
       <SubType>Form</SubType>
+      <Link>02 Main Page.cs</Link>
     </Compile>
-    <Compile Include="02 Main Page.Designer.cs">
+    <Compile Include="..\..\..\APU\IOOP Backup\02 Main Page.Designer.cs">
       <DependentUpon>02 Main Page.cs</DependentUpon>
+      <Link>02 Main Page.Designer.cs</Link>
     </Compile>
     <Compile Include="11 Profile of Staff.cs">
       <SubType>Form</SubType>
@@ -97,11 +99,13 @@
     <Compile Include="12 Purrchase New Policy.Designer.cs">
       <DependentUpon>12 Purrchase New Policy.cs</DependentUpon>
     </Compile>
-    <Compile Include="03 Registration Form.cs">
+    <Compile Include="..\..\..\APU\IOOP Backup\03 Registration Form.cs">
       <SubType>Form</SubType>
+      <Link>03 Registration Form.cs</Link>
     </Compile>
-    <Compile Include="03 Registration Form.Designer.cs">
+    <Compile Include="..\..\..\APU\IOOP Backup\03 Registration Form.Designer.cs">
       <DependentUpon>03 Registration Form.cs</DependentUpon>
+      <Link>03 Registration Form.Designer.cs</Link>
     </Compile>
     <Compile Include="08 Renewal of Insurance.cs">
       <SubType>Form</SubType>
@@ -136,8 +140,13 @@
     <EmbeddedResource Include="01 Login Page.resx">
       <DependentUpon>01 Login Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="02 Main Page.resx">
+    <EmbeddedResource Include="..\..\..\APU\IOOP Backup\02 Main Page.resx">
       <DependentUpon>02 Main Page.cs</DependentUpon>
+      <Link>02 Main Page.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\APU\IOOP Backup\03 Registration Form.resx">
+      <DependentUpon>03 Registration Form.cs</DependentUpon>
+      <Link>03 Registration Form.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="04 Searching Page.resx">
       <DependentUpon>04 Searching Page.cs</DependentUpon>
