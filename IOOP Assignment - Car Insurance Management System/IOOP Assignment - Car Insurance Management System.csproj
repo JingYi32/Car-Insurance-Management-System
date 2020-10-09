@@ -76,13 +76,11 @@
     <Compile Include="01 Login Page.Designer.cs">
       <DependentUpon>01 Login Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\APU\IOOP Backup\02 Main Page.cs">
+    <Compile Include="02 Main Page.cs">
       <SubType>Form</SubType>
-      <Link>02 Main Page.cs</Link>
     </Compile>
-    <Compile Include="..\..\..\APU\IOOP Backup\02 Main Page.Designer.cs">
+    <Compile Include="02 Main Page.Designer.cs">
       <DependentUpon>02 Main Page.cs</DependentUpon>
-      <Link>02 Main Page.Designer.cs</Link>
     </Compile>
     <Compile Include="11 Profile of Staff.cs">
       <SubType>Form</SubType>
@@ -137,12 +135,17 @@
     <Compile Include="09 Updating Insurance.Designer.cs">
       <DependentUpon>09 Updating Insurance.cs</DependentUpon>
     </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="01 Login Page.resx">
       <DependentUpon>01 Login Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\..\APU\IOOP Backup\02 Main Page.resx">
+    <EmbeddedResource Include="02 Main Page.resx">
       <DependentUpon>02 Main Page.cs</DependentUpon>
-      <Link>02 Main Page.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\..\..\APU\IOOP Backup\03 Registration Form.resx">
       <DependentUpon>03 Registration Form.cs</DependentUpon>
