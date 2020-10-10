@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Most basic of all. Only covers the third party involved in the car accident. Basically, if you're at fault, a third party insurance would cover the cause of damage, death and/or injury to the other party.</value>
+  </data>
 </root>
