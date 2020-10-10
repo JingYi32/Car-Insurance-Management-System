@@ -39,6 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@
             this.btnBack_TA.TabIndex = 3;
             this.btnBack_TA.Text = "Back";
             this.btnBack_TA.UseVisualStyleBackColor = false;
+            this.btnBack_TA.Click += new System.EventHandler(this.btnBack_TA_Click);
             // 
             // btnSave_TA
             // 
@@ -100,6 +102,7 @@
             this.tlpTotalAmount.ColumnCount = 2;
             this.tlpTotalAmount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpTotalAmount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlpTotalAmount.Controls.Add(this.label7, 1, 2);
             this.tlpTotalAmount.Controls.Add(this.label6, 0, 4);
             this.tlpTotalAmount.Controls.Add(this.label2, 0, 0);
             this.tlpTotalAmount.Controls.Add(this.label5, 0, 3);
@@ -167,6 +170,16 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "SST (6%):";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(286, 90);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 24);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "RM10";
+            // 
             // Total_Payable_Amount_of_Insurance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -200,5 +213,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7;
     }
 }

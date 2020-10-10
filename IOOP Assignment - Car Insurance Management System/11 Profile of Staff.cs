@@ -24,6 +24,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnBack_MP_Click(object sender, EventArgs e)
         {
+            Main_Page mp = new Main_Page();
+            mp.Show();
             this.Close();
         }
     }

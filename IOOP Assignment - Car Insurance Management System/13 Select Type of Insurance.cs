@@ -66,5 +66,19 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
 
         }
+
+        private void btnBack_IT_Click(object sender, EventArgs e)
+        {
+            Purrchase_New_Policy purchase = new Purrchase_New_Policy();
+            purchase.Show();
+            this.Close();
+        }
+
+        private void btnContinue_IT_Click(object sender, EventArgs e)
+        {
+            Total_Payable_Amount_of_Insurance totalAmount = new Total_Payable_Amount_of_Insurance();
+            totalAmount.Show();
+            this.Hide();
+        }
     }
 }

@@ -16,5 +16,12 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnBack_TA_Click(object sender, EventArgs e)
+        {
+            Select_Type_of_Insurance select = new Select_Type_of_Insurance();
+            select.Show();
+            this.Close();
+        }
     }
 }

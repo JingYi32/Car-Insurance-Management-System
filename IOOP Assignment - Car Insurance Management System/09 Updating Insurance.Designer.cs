@@ -228,6 +228,7 @@
             this.Controls.Add(this.lblUpdateInsurance);
             this.Name = "Updating_Insurance";
             this.Text = "Updating_Insurance";
+            this.Load += new System.EventHandler(this.Updating_Insurance_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
