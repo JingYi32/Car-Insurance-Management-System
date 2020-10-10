@@ -34,12 +34,16 @@
             this.btnBack_TA = new System.Windows.Forms.Button();
             this.btnSave_TA = new System.Windows.Forms.Button();
             this.tlpTotalAmount = new System.Windows.Forms.TableLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblSSTCount = new System.Windows.Forms.Label();
+            this.btnShow_TA = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,6 +112,9 @@
             this.tlpTotalAmount.Controls.Add(this.label5, 0, 3);
             this.tlpTotalAmount.Controls.Add(this.label4, 0, 2);
             this.tlpTotalAmount.Controls.Add(this.label3, 0, 1);
+            this.tlpTotalAmount.Controls.Add(this.textBox1, 1, 0);
+            this.tlpTotalAmount.Controls.Add(this.lblSSTCount, 1, 1);
+            this.tlpTotalAmount.Controls.Add(this.textBox2, 1, 3);
             this.tlpTotalAmount.Location = new System.Drawing.Point(74, 148);
             this.tlpTotalAmount.Name = "tlpTotalAmount";
             this.tlpTotalAmount.RowCount = 5;
@@ -118,6 +125,16 @@
             this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpTotalAmount.Size = new System.Drawing.Size(566, 229);
             this.tlpTotalAmount.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(286, 90);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 24);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "RM10";
             // 
             // label6
             // 
@@ -170,21 +187,51 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "SST (6%):";
             // 
-            // label7
+            // textBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(286, 90);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 24);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "RM10";
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(286, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 32);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lblSSTCount
+            // 
+            this.lblSSTCount.AutoSize = true;
+            this.lblSSTCount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSSTCount.Location = new System.Drawing.Point(286, 45);
+            this.lblSSTCount.Name = "lblSSTCount";
+            this.lblSSTCount.Size = new System.Drawing.Size(38, 24);
+            this.lblSSTCount.TabIndex = 10;
+            this.lblSSTCount.Text = "RM";
+            this.lblSSTCount.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // btnShow_TA
+            // 
+            this.btnShow_TA.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnShow_TA.Location = new System.Drawing.Point(430, 401);
+            this.btnShow_TA.Name = "btnShow_TA";
+            this.btnShow_TA.Size = new System.Drawing.Size(81, 44);
+            this.btnShow_TA.TabIndex = 6;
+            this.btnShow_TA.Text = "Show";
+            this.btnShow_TA.UseVisualStyleBackColor = false;
+            this.btnShow_TA.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(286, 138);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 32);
+            this.textBox2.TabIndex = 11;
             // 
             // Total_Payable_Amount_of_Insurance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 475);
+            this.Controls.Add(this.btnShow_TA);
             this.Controls.Add(this.tlpTotalAmount);
             this.Controls.Add(this.btnSave_TA);
             this.Controls.Add(this.btnBack_TA);
@@ -193,6 +240,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Total_Payable_Amount_of_Insurance";
             this.Text = "Total_Payable_Amount_of_Insurance";
+            this.Load += new System.EventHandler(this.Total_Payable_Amount_of_Insurance_Load);
             this.tlpTotalAmount.ResumeLayout(false);
             this.tlpTotalAmount.PerformLayout();
             this.ResumeLayout(false);
@@ -214,5 +262,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblSSTCount;
+        private System.Windows.Forms.Button btnShow_TA;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
