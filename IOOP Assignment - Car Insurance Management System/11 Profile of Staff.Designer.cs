@@ -129,7 +129,7 @@
             this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.65957F));
             this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 89F));
             this.tlpCurrentCustomer_MP.Location = new System.Drawing.Point(256, 245);
             this.tlpCurrentCustomer_MP.Name = "tlpCurrentCustomer_MP";
             this.tlpCurrentCustomer_MP.RowCount = 2;
@@ -140,12 +140,13 @@
             // 
             // btnBack_MP
             // 
+            this.btnBack_MP.BackColor = System.Drawing.Color.SkyBlue;
             this.btnBack_MP.Location = new System.Drawing.Point(55, 383);
             this.btnBack_MP.Name = "btnBack_MP";
             this.btnBack_MP.Size = new System.Drawing.Size(75, 28);
             this.btnBack_MP.TabIndex = 9;
             this.btnBack_MP.Text = "Back";
-            this.btnBack_MP.UseVisualStyleBackColor = true;
+            this.btnBack_MP.UseVisualStyleBackColor = false;
             this.btnBack_MP.Click += new System.EventHandler(this.btnBack_MP_Click);
             // 
             // Profile_of_Staff

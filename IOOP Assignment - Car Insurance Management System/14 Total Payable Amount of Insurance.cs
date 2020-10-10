@@ -36,12 +36,17 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int insuranceTotal = int.Parse(textBox1.Text);
-            int sst;
-            lblSSTCount.Text = "";
+            int insuranceTotal = int.Parse(textInsuranceTotal_TA.Text);
+            double sst= insuranceTotal*0.06;
+            lblSSTCount.Text= "RM" + sst;
         }
 
         private void Total_Payable_Amount_of_Insurance_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_TA_Click(object sender, EventArgs e)
         {
 
         }

@@ -40,10 +40,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textInsuranceTotal_TA = new System.Windows.Forms.TextBox();
             this.lblSSTCount = new System.Windows.Forms.Label();
+            this.textNCD = new System.Windows.Forms.TextBox();
             this.btnShow_TA = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@
             this.btnSave_TA.TabIndex = 4;
             this.btnSave_TA.Text = "Save";
             this.btnSave_TA.UseVisualStyleBackColor = false;
+            this.btnSave_TA.Click += new System.EventHandler(this.btnSave_TA_Click);
             // 
             // tlpTotalAmount
             // 
@@ -112,9 +114,10 @@
             this.tlpTotalAmount.Controls.Add(this.label5, 0, 3);
             this.tlpTotalAmount.Controls.Add(this.label4, 0, 2);
             this.tlpTotalAmount.Controls.Add(this.label3, 0, 1);
-            this.tlpTotalAmount.Controls.Add(this.textBox1, 1, 0);
+            this.tlpTotalAmount.Controls.Add(this.textInsuranceTotal_TA, 1, 0);
             this.tlpTotalAmount.Controls.Add(this.lblSSTCount, 1, 1);
-            this.tlpTotalAmount.Controls.Add(this.textBox2, 1, 3);
+            this.tlpTotalAmount.Controls.Add(this.textNCD, 1, 3);
+            this.tlpTotalAmount.Controls.Add(this.label8, 1, 4);
             this.tlpTotalAmount.Location = new System.Drawing.Point(74, 148);
             this.tlpTotalAmount.Name = "tlpTotalAmount";
             this.tlpTotalAmount.RowCount = 5;
@@ -187,14 +190,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "SST (6%):";
             // 
-            // textBox1
+            // textInsuranceTotal_TA
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(286, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 32);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textInsuranceTotal_TA.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textInsuranceTotal_TA.Location = new System.Drawing.Point(286, 3);
+            this.textInsuranceTotal_TA.Name = "textInsuranceTotal_TA";
+            this.textInsuranceTotal_TA.Size = new System.Drawing.Size(100, 32);
+            this.textInsuranceTotal_TA.TabIndex = 6;
+            this.textInsuranceTotal_TA.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblSSTCount
             // 
@@ -207,6 +210,14 @@
             this.lblSSTCount.Text = "RM";
             this.lblSSTCount.Click += new System.EventHandler(this.label8_Click);
             // 
+            // textNCD
+            // 
+            this.textNCD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textNCD.Location = new System.Drawing.Point(286, 138);
+            this.textNCD.Name = "textNCD";
+            this.textNCD.Size = new System.Drawing.Size(100, 32);
+            this.textNCD.TabIndex = 11;
+            // 
             // btnShow_TA
             // 
             this.btnShow_TA.BackColor = System.Drawing.Color.SkyBlue;
@@ -218,13 +229,15 @@
             this.btnShow_TA.UseVisualStyleBackColor = false;
             this.btnShow_TA.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // label8
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(286, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 32);
-            this.textBox2.TabIndex = 11;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(286, 180);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 24);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "RM";
             // 
             // Total_Payable_Amount_of_Insurance
             // 
@@ -262,9 +275,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textInsuranceTotal_TA;
         private System.Windows.Forms.Label lblSSTCount;
         private System.Windows.Forms.Button btnShow_TA;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textNCD;
+        private System.Windows.Forms.Label label8;
     }
 }
