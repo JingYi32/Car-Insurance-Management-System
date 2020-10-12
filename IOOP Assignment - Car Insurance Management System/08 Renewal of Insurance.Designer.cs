@@ -233,6 +233,7 @@
             this.btnPaid.TabIndex = 25;
             this.btnPaid.Text = "Proceed";
             this.btnPaid.UseVisualStyleBackColor = false;
+            this.btnPaid.Click += new System.EventHandler(this.btnPaid_Click);
             // 
             // btnIns_Details
             // 
@@ -246,6 +247,7 @@
             this.btnIns_Details.TabIndex = 24;
             this.btnIns_Details.Text = "Back";
             this.btnIns_Details.UseVisualStyleBackColor = false;
+            this.btnIns_Details.Click += new System.EventHandler(this.btnIns_Details_Click);
             // 
             // Renewal_of_Insurance
             // 

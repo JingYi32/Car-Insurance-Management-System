@@ -39,9 +39,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Insurance_Details ins_policy = new Insurance_Details();
+            Purrchase_New_Policy purchase_new_policy = new Purrchase_New_Policy();
             this.Hide();
-            ins_policy.Show();
+            purchase_new_policy.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

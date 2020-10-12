@@ -332,6 +332,7 @@
             this.btnUpdate_Ins.TabIndex = 16;
             this.btnUpdate_Ins.Text = "Update Policy";
             this.btnUpdate_Ins.UseVisualStyleBackColor = false;
+            this.btnUpdate_Ins.Click += new System.EventHandler(this.btnUpdate_Ins_Click);
             // 
             // btnCancel_Ins
             // 
@@ -345,6 +346,7 @@
             this.btnCancel_Ins.TabIndex = 15;
             this.btnCancel_Ins.Text = "Cancel Policy";
             this.btnCancel_Ins.UseVisualStyleBackColor = false;
+            this.btnCancel_Ins.Click += new System.EventHandler(this.btnCancel_Ins_Click);
             // 
             // btnBack_Cust_Profile
             // 
@@ -358,6 +360,7 @@
             this.btnBack_Cust_Profile.TabIndex = 14;
             this.btnBack_Cust_Profile.Text = "Back";
             this.btnBack_Cust_Profile.UseVisualStyleBackColor = false;
+            this.btnBack_Cust_Profile.Click += new System.EventHandler(this.btnBack_Cust_Profile_Click);
             // 
             // btnRenew_Ins
             // 
@@ -371,6 +374,7 @@
             this.btnRenew_Ins.TabIndex = 17;
             this.btnRenew_Ins.Text = "Renew Policy";
             this.btnRenew_Ins.UseVisualStyleBackColor = false;
+            this.btnRenew_Ins.Click += new System.EventHandler(this.btnRenew_Ins_Click);
             // 
             // lblIns_Last_Renewal
             // 

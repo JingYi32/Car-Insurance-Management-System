@@ -16,5 +16,30 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnIns_Details_Click(object sender, EventArgs e)
+        {
+            Insurance_Details insurance_details = new Insurance_Details();
+            this.Hide();
+            insurance_details.Show();
+        }
+
+        private void btnConfirmCancel_Click(object sender, EventArgs e)
+        {
+            string message = "Do you really want to cancel this insurance?";
+            string title = "Confirm Cancel";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                Insurance_Details insurance_details = new Insurance_Details();
+                this.Hide();
+                insurance_details.Show();
+            }
+            else
+            {
+                // Do something  
+            }
+        }
     }
 }

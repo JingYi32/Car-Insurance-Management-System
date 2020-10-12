@@ -53,7 +53,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.btnProceed = new System.Windows.Forms.Button();
-            this.btnCUST_Profile = new System.Windows.Forms.Button();
+            this.btnMainPage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPur_Ins
@@ -291,19 +291,21 @@
             this.btnProceed.TabIndex = 51;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = false;
+            this.btnProceed.Click += new System.EventHandler(this.btnProceed_Click);
             // 
-            // btnCUST_Profile
+            // btnMainPage
             // 
-            this.btnCUST_Profile.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnCUST_Profile.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCUST_Profile.ForeColor = System.Drawing.Color.White;
-            this.btnCUST_Profile.Location = new System.Drawing.Point(662, 692);
-            this.btnCUST_Profile.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCUST_Profile.Name = "btnCUST_Profile";
-            this.btnCUST_Profile.Size = new System.Drawing.Size(157, 54);
-            this.btnCUST_Profile.TabIndex = 50;
-            this.btnCUST_Profile.Text = "Back";
-            this.btnCUST_Profile.UseVisualStyleBackColor = false;
+            this.btnMainPage.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnMainPage.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMainPage.ForeColor = System.Drawing.Color.White;
+            this.btnMainPage.Location = new System.Drawing.Point(662, 692);
+            this.btnMainPage.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMainPage.Name = "btnMainPage";
+            this.btnMainPage.Size = new System.Drawing.Size(157, 54);
+            this.btnMainPage.TabIndex = 50;
+            this.btnMainPage.Text = "Back";
+            this.btnMainPage.UseVisualStyleBackColor = false;
+            this.btnMainPage.Click += new System.EventHandler(this.btnCUST_Profile_Click);
             // 
             // Purrchase_New_Policy
             // 
@@ -312,7 +314,7 @@
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
             this.Controls.Add(this.btnProceed);
-            this.Controls.Add(this.btnCUST_Profile);
+            this.Controls.Add(this.btnMainPage);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.dateTimePicker1);
@@ -374,6 +376,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button btnProceed;
-        private System.Windows.Forms.Button btnCUST_Profile;
+        private System.Windows.Forms.Button btnMainPage;
     }
 }

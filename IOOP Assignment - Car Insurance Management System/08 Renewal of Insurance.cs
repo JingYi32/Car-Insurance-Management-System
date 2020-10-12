@@ -16,5 +16,19 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnIns_Details_Click(object sender, EventArgs e)
+        {
+            Insurance_Details insurance_details = new Insurance_Details();
+            this.Hide();
+            insurance_details.Show();
+        }
+
+        private void btnPaid_Click(object sender, EventArgs e)
+        {
+            Total_Payable_Amount_of_Insurance total_payable_amount_Of_insurance = new Total_Payable_Amount_of_Insurance();
+            this.Hide();
+            total_payable_amount_Of_insurance.Show();
+        }
     }
 }

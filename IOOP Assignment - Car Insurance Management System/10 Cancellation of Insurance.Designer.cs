@@ -220,6 +220,7 @@
             this.btnConfirmCancel.TabIndex = 36;
             this.btnConfirmCancel.Text = "Confirm Cancel";
             this.btnConfirmCancel.UseVisualStyleBackColor = false;
+            this.btnConfirmCancel.Click += new System.EventHandler(this.btnConfirmCancel_Click);
             // 
             // btnIns_Details
             // 
@@ -233,6 +234,7 @@
             this.btnIns_Details.TabIndex = 35;
             this.btnIns_Details.Text = "Back";
             this.btnIns_Details.UseVisualStyleBackColor = false;
+            this.btnIns_Details.Click += new System.EventHandler(this.btnIns_Details_Click);
             // 
             // Cancellation_of_Insurance
             // 
