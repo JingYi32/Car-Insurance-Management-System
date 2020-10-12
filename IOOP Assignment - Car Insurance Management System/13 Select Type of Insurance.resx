@@ -120,4 +120,7 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Most basic of all. Only covers the third party involved in the car accident. Basically, if you're at fault, a third party insurance would cover the cause of damage, death and/or injury to the other party.</value>
   </data>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
