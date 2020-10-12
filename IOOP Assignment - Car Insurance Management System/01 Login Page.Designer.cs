@@ -41,15 +41,15 @@
             // 
             // lblLoginWelcome
             // 
-            this.lblLoginWelcome.AutoSize = true;
             this.lblLoginWelcome.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblLoginWelcome.Font = new System.Drawing.Font("Gabriola", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoginWelcome.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoginWelcome.Location = new System.Drawing.Point(112, 89);
             this.lblLoginWelcome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblLoginWelcome.Name = "lblLoginWelcome";
             this.lblLoginWelcome.Size = new System.Drawing.Size(896, 92);
             this.lblLoginWelcome.TabIndex = 0;
             this.lblLoginWelcome.Text = "Welcome to APU Car Insurance Management System";
+            this.lblLoginWelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -124,9 +124,9 @@
             this.btnExit.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnExit.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btnExit.Location = new System.Drawing.Point(899, 649);
+            this.btnExit.Location = new System.Drawing.Point(817, 649);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(169, 54);
+            this.btnExit.Size = new System.Drawing.Size(203, 59);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;

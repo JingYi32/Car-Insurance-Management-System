@@ -21,11 +21,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            lblBil.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblInsuranceID.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblPurchasedCustomer.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblStatus.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblPurchasedDate.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
+
         }
 
         private void btnSignin_Click(object sender, EventArgs e)

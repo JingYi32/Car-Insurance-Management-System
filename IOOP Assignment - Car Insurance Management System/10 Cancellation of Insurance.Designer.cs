@@ -50,96 +50,96 @@
             // lblIns_Pur
             // 
             this.lblIns_Pur.AutoSize = true;
-            this.lblIns_Pur.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Pur.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_Pur.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_Pur.Location = new System.Drawing.Point(174, 364);
+            this.lblIns_Pur.Location = new System.Drawing.Point(97, 339);
             this.lblIns_Pur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_Pur.Name = "lblIns_Pur";
-            this.lblIns_Pur.Size = new System.Drawing.Size(130, 37);
+            this.lblIns_Pur.Size = new System.Drawing.Size(155, 45);
             this.lblIns_Pur.TabIndex = 33;
             this.lblIns_Pur.Text = "Purchased Date:";
             // 
             // lblCUST_ID
             // 
             this.lblCUST_ID.AutoSize = true;
-            this.lblCUST_ID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCUST_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblCUST_ID.Location = new System.Drawing.Point(174, 216);
+            this.lblCUST_ID.Location = new System.Drawing.Point(98, 191);
             this.lblCUST_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCUST_ID.Name = "lblCUST_ID";
-            this.lblCUST_ID.Size = new System.Drawing.Size(110, 37);
+            this.lblCUST_ID.Size = new System.Drawing.Size(131, 45);
             this.lblCUST_ID.TabIndex = 32;
             this.lblCUST_ID.Text = "Customer ID:";
             // 
             // lblIns_Type
             // 
             this.lblIns_Type.AutoSize = true;
-            this.lblIns_Type.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Type.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_Type.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_Type.Location = new System.Drawing.Point(175, 327);
+            this.lblIns_Type.Location = new System.Drawing.Point(98, 302);
             this.lblIns_Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_Type.Name = "lblIns_Type";
-            this.lblIns_Type.Size = new System.Drawing.Size(127, 37);
+            this.lblIns_Type.Size = new System.Drawing.Size(148, 45);
             this.lblIns_Type.TabIndex = 31;
             this.lblIns_Type.Text = "Insurance Type:";
             // 
             // lblCUST_Name
             // 
             this.lblCUST_Name.AutoSize = true;
-            this.lblCUST_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCUST_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblCUST_Name.Location = new System.Drawing.Point(175, 253);
+            this.lblCUST_Name.Location = new System.Drawing.Point(98, 228);
             this.lblCUST_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCUST_Name.Name = "lblCUST_Name";
-            this.lblCUST_Name.Size = new System.Drawing.Size(143, 37);
+            this.lblCUST_Name.Size = new System.Drawing.Size(171, 45);
             this.lblCUST_Name.TabIndex = 29;
             this.lblCUST_Name.Text = "Customer\'s Name\t:";
             // 
             // lblIns_End
             // 
             this.lblIns_End.AutoSize = true;
-            this.lblIns_End.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_End.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_End.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_End.Location = new System.Drawing.Point(174, 401);
+            this.lblIns_End.Location = new System.Drawing.Point(97, 376);
             this.lblIns_End.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_End.Name = "lblIns_End";
-            this.lblIns_End.Size = new System.Drawing.Size(86, 37);
+            this.lblIns_End.Size = new System.Drawing.Size(102, 45);
             this.lblIns_End.TabIndex = 28;
             this.lblIns_End.Text = "End Date:";
             // 
             // lblOwner_Name
             // 
             this.lblOwner_Name.AutoSize = true;
-            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOwner_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblOwner_Name.Location = new System.Drawing.Point(175, 290);
+            this.lblOwner_Name.Location = new System.Drawing.Point(98, 265);
             this.lblOwner_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOwner_Name.Name = "lblOwner_Name";
-            this.lblOwner_Name.Size = new System.Drawing.Size(112, 37);
+            this.lblOwner_Name.Size = new System.Drawing.Size(132, 45);
             this.lblOwner_Name.TabIndex = 27;
             this.lblOwner_Name.Text = "Owner Name:";
             // 
             // lblVehicle_NO
             // 
             this.lblVehicle_NO.AutoSize = true;
-            this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVehicle_NO.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblVehicle_NO.Location = new System.Drawing.Point(174, 179);
+            this.lblVehicle_NO.Location = new System.Drawing.Point(98, 154);
             this.lblVehicle_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVehicle_NO.Name = "lblVehicle_NO";
-            this.lblVehicle_NO.Size = new System.Drawing.Size(223, 37);
+            this.lblVehicle_NO.Size = new System.Drawing.Size(264, 45);
             this.lblVehicle_NO.TabIndex = 26;
             this.lblVehicle_NO.Text = "Vehicle Registration Number:";
             // 
             // lblIns_ID
             // 
             this.lblIns_ID.AutoSize = true;
-            this.lblIns_ID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_ID.Location = new System.Drawing.Point(174, 142);
+            this.lblIns_ID.Location = new System.Drawing.Point(98, 117);
             this.lblIns_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_ID.Name = "lblIns_ID";
-            this.lblIns_ID.Size = new System.Drawing.Size(172, 37);
+            this.lblIns_ID.Size = new System.Drawing.Size(201, 45);
             this.lblIns_ID.TabIndex = 25;
             this.lblIns_ID.Text = "Selected Insurance ID:";
             // 
@@ -153,6 +153,8 @@
             this.lblCancel_Ins.Size = new System.Drawing.Size(398, 76);
             this.lblCancel_Ins.TabIndex = 24;
             this.lblCancel_Ins.Text = "Cancellation of Policy";
+            this.lblCancel_Ins.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCancel_Ins.Click += new System.EventHandler(this.lblCancel_Ins_Click);
             // 
             // gbCancellation_Details
             // 
@@ -161,9 +163,9 @@
             this.gbCancellation_Details.Controls.Add(this.lblCancel_RefundAmount);
             this.gbCancellation_Details.Controls.Add(this.lblIns_CancelDate);
             this.gbCancellation_Details.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gbCancellation_Details.Location = new System.Drawing.Point(165, 440);
+            this.gbCancellation_Details.Location = new System.Drawing.Point(98, 420);
             this.gbCancellation_Details.Name = "gbCancellation_Details";
-            this.gbCancellation_Details.Size = new System.Drawing.Size(790, 219);
+            this.gbCancellation_Details.Size = new System.Drawing.Size(922, 219);
             this.gbCancellation_Details.TabIndex = 34;
             this.gbCancellation_Details.TabStop = false;
             this.gbCancellation_Details.Text = "Cancellation Details";
@@ -213,10 +215,10 @@
             this.btnConfirmCancel.BackColor = System.Drawing.Color.CadetBlue;
             this.btnConfirmCancel.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmCancel.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmCancel.Location = new System.Drawing.Point(896, 692);
+            this.btnConfirmCancel.Location = new System.Drawing.Point(817, 649);
             this.btnConfirmCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirmCancel.Name = "btnConfirmCancel";
-            this.btnConfirmCancel.Size = new System.Drawing.Size(157, 54);
+            this.btnConfirmCancel.Size = new System.Drawing.Size(203, 49);
             this.btnConfirmCancel.TabIndex = 36;
             this.btnConfirmCancel.Text = "Confirm Cancel";
             this.btnConfirmCancel.UseVisualStyleBackColor = false;
@@ -227,10 +229,10 @@
             this.btnIns_Details.BackColor = System.Drawing.Color.CadetBlue;
             this.btnIns_Details.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIns_Details.ForeColor = System.Drawing.Color.White;
-            this.btnIns_Details.Location = new System.Drawing.Point(662, 692);
+            this.btnIns_Details.Location = new System.Drawing.Point(98, 649);
             this.btnIns_Details.Margin = new System.Windows.Forms.Padding(2);
             this.btnIns_Details.Name = "btnIns_Details";
-            this.btnIns_Details.Size = new System.Drawing.Size(157, 54);
+            this.btnIns_Details.Size = new System.Drawing.Size(203, 49);
             this.btnIns_Details.TabIndex = 35;
             this.btnIns_Details.Text = "Back";
             this.btnIns_Details.UseVisualStyleBackColor = false;

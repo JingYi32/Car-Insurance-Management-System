@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
 {
@@ -29,6 +30,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             Customer_Profile customer_Profile = new Customer_Profile();
             this.Hide();
             customer_Profile.Show();
+        }
+
+        private void lblEditProfile_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
 {
@@ -40,6 +41,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 // Do something  
             }
+        }
+
+        private void lblCancel_Ins_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

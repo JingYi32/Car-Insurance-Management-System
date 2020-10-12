@@ -66,13 +66,14 @@
             this.lblPur_Ins.Size = new System.Drawing.Size(398, 76);
             this.lblPur_Ins.TabIndex = 25;
             this.lblPur_Ins.Text = "Register New Insurance";
+            this.lblPur_Ins.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblPur_Ins.Click += new System.EventHandler(this.lblProfile_Click);
             // 
             // lblVehicle_YOM
             // 
             this.lblVehicle_YOM.AutoSize = true;
             this.lblVehicle_YOM.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_YOM.Location = new System.Drawing.Point(174, 285);
+            this.lblVehicle_YOM.Location = new System.Drawing.Point(98, 285);
             this.lblVehicle_YOM.Name = "lblVehicle_YOM";
             this.lblVehicle_YOM.Size = new System.Drawing.Size(172, 45);
             this.lblVehicle_YOM.TabIndex = 30;
@@ -82,7 +83,7 @@
             // 
             this.lblVehicle_Price.AutoSize = true;
             this.lblVehicle_Price.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_Price.Location = new System.Drawing.Point(174, 339);
+            this.lblVehicle_Price.Location = new System.Drawing.Point(98, 339);
             this.lblVehicle_Price.Name = "lblVehicle_Price";
             this.lblVehicle_Price.Size = new System.Drawing.Size(130, 45);
             this.lblVehicle_Price.TabIndex = 29;
@@ -92,7 +93,7 @@
             // 
             this.lblVehicle_Model.AutoSize = true;
             this.lblVehicle_Model.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_Model.Location = new System.Drawing.Point(174, 231);
+            this.lblVehicle_Model.Location = new System.Drawing.Point(98, 231);
             this.lblVehicle_Model.Name = "lblVehicle_Model";
             this.lblVehicle_Model.Size = new System.Drawing.Size(76, 45);
             this.lblVehicle_Model.TabIndex = 28;
@@ -102,7 +103,7 @@
             // 
             this.lblVehicle_Brand.AutoSize = true;
             this.lblVehicle_Brand.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_Brand.Location = new System.Drawing.Point(174, 177);
+            this.lblVehicle_Brand.Location = new System.Drawing.Point(98, 177);
             this.lblVehicle_Brand.Name = "lblVehicle_Brand";
             this.lblVehicle_Brand.Size = new System.Drawing.Size(77, 45);
             this.lblVehicle_Brand.TabIndex = 27;
@@ -112,7 +113,7 @@
             // 
             this.lblVehicle_NO.AutoSize = true;
             this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_NO.Location = new System.Drawing.Point(174, 123);
+            this.lblVehicle_NO.Location = new System.Drawing.Point(98, 123);
             this.lblVehicle_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVehicle_NO.Name = "lblVehicle_NO";
             this.lblVehicle_NO.Size = new System.Drawing.Size(264, 45);
@@ -123,7 +124,7 @@
             // 
             this.lblOwner_Details.AutoSize = true;
             this.lblOwner_Details.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_Details.Location = new System.Drawing.Point(174, 393);
+            this.lblOwner_Details.Location = new System.Drawing.Point(98, 393);
             this.lblOwner_Details.Name = "lblOwner_Details";
             this.lblOwner_Details.Size = new System.Drawing.Size(155, 45);
             this.lblOwner_Details.TabIndex = 31;
@@ -133,7 +134,7 @@
             // 
             this.lblOwner_Gender.AutoSize = true;
             this.lblOwner_Gender.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_Gender.Location = new System.Drawing.Point(199, 592);
+            this.lblOwner_Gender.Location = new System.Drawing.Point(135, 592);
             this.lblOwner_Gender.Name = "lblOwner_Gender";
             this.lblOwner_Gender.Size = new System.Drawing.Size(72, 37);
             this.lblOwner_Gender.TabIndex = 36;
@@ -143,7 +144,7 @@
             // 
             this.lblOwner_ID.AutoSize = true;
             this.lblOwner_ID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_ID.Location = new System.Drawing.Point(199, 451);
+            this.lblOwner_ID.Location = new System.Drawing.Point(135, 451);
             this.lblOwner_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOwner_ID.Name = "lblOwner_ID";
             this.lblOwner_ID.Size = new System.Drawing.Size(74, 37);
@@ -154,7 +155,7 @@
             // 
             this.lblOwner_Postcode.AutoSize = true;
             this.lblOwner_Postcode.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_Postcode.Location = new System.Drawing.Point(199, 639);
+            this.lblOwner_Postcode.Location = new System.Drawing.Point(135, 639);
             this.lblOwner_Postcode.Name = "lblOwner_Postcode";
             this.lblOwner_Postcode.Size = new System.Drawing.Size(81, 37);
             this.lblOwner_Postcode.TabIndex = 35;
@@ -164,7 +165,7 @@
             // 
             this.lblOwner_IDNumber.AutoSize = true;
             this.lblOwner_IDNumber.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_IDNumber.Location = new System.Drawing.Point(199, 498);
+            this.lblOwner_IDNumber.Location = new System.Drawing.Point(135, 498);
             this.lblOwner_IDNumber.Name = "lblOwner_IDNumber";
             this.lblOwner_IDNumber.Size = new System.Drawing.Size(99, 37);
             this.lblOwner_IDNumber.TabIndex = 33;
@@ -174,7 +175,7 @@
             // 
             this.lblOwner_DOB.AutoSize = true;
             this.lblOwner_DOB.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_DOB.Location = new System.Drawing.Point(199, 545);
+            this.lblOwner_DOB.Location = new System.Drawing.Point(135, 545);
             this.lblOwner_DOB.Name = "lblOwner_DOB";
             this.lblOwner_DOB.Size = new System.Drawing.Size(65, 37);
             this.lblOwner_DOB.TabIndex = 34;
@@ -182,43 +183,43 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(458, 120);
+            this.textBox1.Location = new System.Drawing.Point(405, 120);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(399, 47);
+            this.textBox1.Size = new System.Drawing.Size(615, 47);
             this.textBox1.TabIndex = 37;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(458, 336);
+            this.textBox3.Location = new System.Drawing.Point(405, 336);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(399, 47);
+            this.textBox3.Size = new System.Drawing.Size(615, 47);
             this.textBox3.TabIndex = 39;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(458, 282);
+            this.textBox4.Location = new System.Drawing.Point(405, 282);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(399, 47);
+            this.textBox4.Size = new System.Drawing.Size(615, 47);
             this.textBox4.TabIndex = 40;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(458, 228);
+            this.textBox5.Location = new System.Drawing.Point(405, 228);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(399, 47);
+            this.textBox5.Size = new System.Drawing.Size(615, 47);
             this.textBox5.TabIndex = 41;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(458, 174);
+            this.textBox6.Location = new System.Drawing.Point(405, 174);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(399, 47);
+            this.textBox6.Size = new System.Drawing.Size(615, 47);
             this.textBox6.TabIndex = 42;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(458, 495);
+            this.textBox2.Location = new System.Drawing.Point(338, 495);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(323, 41);
             this.textBox2.TabIndex = 43;
@@ -226,7 +227,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(458, 636);
+            this.textBox7.Location = new System.Drawing.Point(338, 636);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(323, 41);
             this.textBox7.TabIndex = 44;
@@ -235,7 +236,10 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(458, 589);
+            this.comboBox1.Items.AddRange(new object[] {
+            "FEMALE",
+            "MALE"});
+            this.comboBox1.Location = new System.Drawing.Point(338, 589);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(323, 45);
             this.comboBox1.TabIndex = 45;
@@ -244,7 +248,7 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(458, 448);
+            this.comboBox2.Location = new System.Drawing.Point(338, 448);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(323, 45);
             this.comboBox2.TabIndex = 46;
@@ -252,7 +256,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(458, 541);
+            this.dateTimePicker1.Location = new System.Drawing.Point(338, 541);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(323, 41);
             this.dateTimePicker1.TabIndex = 47;
@@ -260,7 +264,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(458, 389);
+            this.radioButton1.Location = new System.Drawing.Point(405, 389);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(233, 49);
             this.radioButton1.TabIndex = 48;
@@ -284,10 +288,10 @@
             this.btnProceed.BackColor = System.Drawing.Color.CadetBlue;
             this.btnProceed.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProceed.ForeColor = System.Drawing.Color.White;
-            this.btnProceed.Location = new System.Drawing.Point(896, 692);
+            this.btnProceed.Location = new System.Drawing.Point(817, 692);
             this.btnProceed.Margin = new System.Windows.Forms.Padding(2);
             this.btnProceed.Name = "btnProceed";
-            this.btnProceed.Size = new System.Drawing.Size(157, 54);
+            this.btnProceed.Size = new System.Drawing.Size(203, 49);
             this.btnProceed.TabIndex = 51;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = false;
@@ -298,10 +302,10 @@
             this.btnMainPage.BackColor = System.Drawing.Color.CadetBlue;
             this.btnMainPage.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMainPage.ForeColor = System.Drawing.Color.White;
-            this.btnMainPage.Location = new System.Drawing.Point(662, 692);
+            this.btnMainPage.Location = new System.Drawing.Point(583, 692);
             this.btnMainPage.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainPage.Name = "btnMainPage";
-            this.btnMainPage.Size = new System.Drawing.Size(157, 54);
+            this.btnMainPage.Size = new System.Drawing.Size(203, 49);
             this.btnMainPage.TabIndex = 50;
             this.btnMainPage.Text = "Back";
             this.btnMainPage.UseVisualStyleBackColor = false;

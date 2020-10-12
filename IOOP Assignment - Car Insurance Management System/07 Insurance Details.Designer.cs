@@ -36,6 +36,7 @@
             this.lblVehicle_Brand = new System.Windows.Forms.Label();
             this.lblVehicle_NO = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblIns_Last_Renewal = new System.Windows.Forms.Label();
             this.lblIns_Type = new System.Windows.Forms.Label();
             this.lblIns_Status = new System.Windows.Forms.Label();
             this.lblIns_EndDate = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.btnCancel_Ins = new System.Windows.Forms.Button();
             this.btnBack_Cust_Profile = new System.Windows.Forms.Button();
             this.btnRenew_Ins = new System.Windows.Forms.Button();
-            this.lblIns_Last_Renewal = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -72,6 +72,8 @@
             this.lblInsuranceDetails.Size = new System.Drawing.Size(398, 76);
             this.lblInsuranceDetails.TabIndex = 4;
             this.lblInsuranceDetails.Text = "(Insurance ID) \'s Details";
+            this.lblInsuranceDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblInsuranceDetails.Click += new System.EventHandler(this.lblInsuranceDetails_Click);
             // 
             // groupBox1
             // 
@@ -155,6 +157,16 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
+            // lblIns_Last_Renewal
+            // 
+            this.lblIns_Last_Renewal.AutoSize = true;
+            this.lblIns_Last_Renewal.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lblIns_Last_Renewal.Location = new System.Drawing.Point(21, 96);
+            this.lblIns_Last_Renewal.Name = "lblIns_Last_Renewal";
+            this.lblIns_Last_Renewal.Size = new System.Drawing.Size(145, 35);
+            this.lblIns_Last_Renewal.TabIndex = 9;
+            this.lblIns_Last_Renewal.Text = "Last Renewal Date:";
+            // 
             // lblIns_Type
             // 
             this.lblIns_Type.AutoSize = true;
@@ -207,7 +219,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(277, 229);
+            this.groupBox3.Size = new System.Drawing.Size(310, 229);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Owner Details";
@@ -325,10 +337,10 @@
             this.btnUpdate_Ins.BackColor = System.Drawing.Color.CadetBlue;
             this.btnUpdate_Ins.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate_Ins.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate_Ins.Location = new System.Drawing.Point(884, 650);
+            this.btnUpdate_Ins.Location = new System.Drawing.Point(815, 650);
             this.btnUpdate_Ins.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate_Ins.Name = "btnUpdate_Ins";
-            this.btnUpdate_Ins.Size = new System.Drawing.Size(169, 54);
+            this.btnUpdate_Ins.Size = new System.Drawing.Size(203, 49);
             this.btnUpdate_Ins.TabIndex = 16;
             this.btnUpdate_Ins.Text = "Update Policy";
             this.btnUpdate_Ins.UseVisualStyleBackColor = false;
@@ -339,10 +351,10 @@
             this.btnCancel_Ins.BackColor = System.Drawing.Color.CadetBlue;
             this.btnCancel_Ins.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel_Ins.ForeColor = System.Drawing.Color.White;
-            this.btnCancel_Ins.Location = new System.Drawing.Point(602, 650);
+            this.btnCancel_Ins.Location = new System.Drawing.Point(576, 650);
             this.btnCancel_Ins.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel_Ins.Name = "btnCancel_Ins";
-            this.btnCancel_Ins.Size = new System.Drawing.Size(169, 54);
+            this.btnCancel_Ins.Size = new System.Drawing.Size(203, 49);
             this.btnCancel_Ins.TabIndex = 15;
             this.btnCancel_Ins.Text = "Cancel Policy";
             this.btnCancel_Ins.UseVisualStyleBackColor = false;
@@ -353,10 +365,10 @@
             this.btnBack_Cust_Profile.BackColor = System.Drawing.Color.CadetBlue;
             this.btnBack_Cust_Profile.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack_Cust_Profile.ForeColor = System.Drawing.Color.White;
-            this.btnBack_Cust_Profile.Location = new System.Drawing.Point(38, 650);
+            this.btnBack_Cust_Profile.Location = new System.Drawing.Point(98, 650);
             this.btnBack_Cust_Profile.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack_Cust_Profile.Name = "btnBack_Cust_Profile";
-            this.btnBack_Cust_Profile.Size = new System.Drawing.Size(169, 54);
+            this.btnBack_Cust_Profile.Size = new System.Drawing.Size(203, 49);
             this.btnBack_Cust_Profile.TabIndex = 14;
             this.btnBack_Cust_Profile.Text = "Back";
             this.btnBack_Cust_Profile.UseVisualStyleBackColor = false;
@@ -367,24 +379,14 @@
             this.btnRenew_Ins.BackColor = System.Drawing.Color.CadetBlue;
             this.btnRenew_Ins.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRenew_Ins.ForeColor = System.Drawing.Color.White;
-            this.btnRenew_Ins.Location = new System.Drawing.Point(320, 650);
+            this.btnRenew_Ins.Location = new System.Drawing.Point(337, 650);
             this.btnRenew_Ins.Margin = new System.Windows.Forms.Padding(2);
             this.btnRenew_Ins.Name = "btnRenew_Ins";
-            this.btnRenew_Ins.Size = new System.Drawing.Size(169, 54);
+            this.btnRenew_Ins.Size = new System.Drawing.Size(203, 49);
             this.btnRenew_Ins.TabIndex = 17;
             this.btnRenew_Ins.Text = "Renew Policy";
             this.btnRenew_Ins.UseVisualStyleBackColor = false;
             this.btnRenew_Ins.Click += new System.EventHandler(this.btnRenew_Ins_Click);
-            // 
-            // lblIns_Last_Renewal
-            // 
-            this.lblIns_Last_Renewal.AutoSize = true;
-            this.lblIns_Last_Renewal.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblIns_Last_Renewal.Location = new System.Drawing.Point(21, 96);
-            this.lblIns_Last_Renewal.Name = "lblIns_Last_Renewal";
-            this.lblIns_Last_Renewal.Size = new System.Drawing.Size(145, 35);
-            this.lblIns_Last_Renewal.TabIndex = 9;
-            this.lblIns_Last_Renewal.Text = "Last Renewal Date:";
             // 
             // Insurance_Details
             // 

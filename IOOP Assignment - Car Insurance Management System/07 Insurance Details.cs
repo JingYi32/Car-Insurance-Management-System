@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
 {
@@ -43,6 +44,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             Updating_Insurance updating_Insurance = new Updating_Insurance();
             this.Hide();
             updating_Insurance.Show();
+        }
+
+        private void lblInsuranceDetails_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

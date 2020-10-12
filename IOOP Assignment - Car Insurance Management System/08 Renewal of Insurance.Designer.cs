@@ -58,6 +58,8 @@
             this.lblRenewal_Ins.Size = new System.Drawing.Size(398, 76);
             this.lblRenewal_Ins.TabIndex = 5;
             this.lblRenewal_Ins.Text = "Renewal of Policy";
+            this.lblRenewal_Ins.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRenewal_Ins.Click += new System.EventHandler(this.lblRenewal_Ins_Click);
             // 
             // lblOwner_Name
             // 
@@ -226,10 +228,10 @@
             this.btnPaid.BackColor = System.Drawing.Color.CadetBlue;
             this.btnPaid.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaid.ForeColor = System.Drawing.Color.White;
-            this.btnPaid.Location = new System.Drawing.Point(896, 692);
+            this.btnPaid.Location = new System.Drawing.Point(817, 692);
             this.btnPaid.Margin = new System.Windows.Forms.Padding(2);
             this.btnPaid.Name = "btnPaid";
-            this.btnPaid.Size = new System.Drawing.Size(157, 54);
+            this.btnPaid.Size = new System.Drawing.Size(203, 49);
             this.btnPaid.TabIndex = 25;
             this.btnPaid.Text = "Proceed";
             this.btnPaid.UseVisualStyleBackColor = false;
@@ -240,10 +242,10 @@
             this.btnIns_Details.BackColor = System.Drawing.Color.CadetBlue;
             this.btnIns_Details.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIns_Details.ForeColor = System.Drawing.Color.White;
-            this.btnIns_Details.Location = new System.Drawing.Point(662, 692);
+            this.btnIns_Details.Location = new System.Drawing.Point(583, 692);
             this.btnIns_Details.Margin = new System.Windows.Forms.Padding(2);
             this.btnIns_Details.Name = "btnIns_Details";
-            this.btnIns_Details.Size = new System.Drawing.Size(157, 54);
+            this.btnIns_Details.Size = new System.Drawing.Size(203, 49);
             this.btnIns_Details.TabIndex = 24;
             this.btnIns_Details.Text = "Back";
             this.btnIns_Details.UseVisualStyleBackColor = false;

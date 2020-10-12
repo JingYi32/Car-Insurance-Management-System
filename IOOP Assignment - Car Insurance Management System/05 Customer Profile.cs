@@ -20,11 +20,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void tlpHistory_Paint(object sender, PaintEventArgs e)
         {
-            lblBil.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblInsuranceID.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblStartdate.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblStatus.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
-            lblEnddate.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -49,6 +45,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         }
 
         private void lblStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProfile_Click(object sender, EventArgs e)
         {
 
         }

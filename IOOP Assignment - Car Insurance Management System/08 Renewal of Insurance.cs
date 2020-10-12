@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
 {
@@ -29,6 +30,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             Total_Payable_Amount_of_Insurance total_payable_amount_Of_insurance = new Total_Payable_Amount_of_Insurance();
             this.Hide();
             total_payable_amount_Of_insurance.Show();
+        }
+
+        private void lblRenewal_Ins_Click(object sender, EventArgs e)
+        {
+            lblRenewal_Ins.TextAlign = (System.Drawing.ContentAlignment)HorizontalAlign.Center;
         }
     }
 }

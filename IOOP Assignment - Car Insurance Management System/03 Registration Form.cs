@@ -28,5 +28,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             this.Hide();
             mainMenu.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
