@@ -239,6 +239,7 @@
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnBack.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Location = new System.Drawing.Point(40, 649);
             this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -251,6 +252,7 @@
             // btnEdit
             // 
             this.btnEdit.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnEdit.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(665, 649);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -263,6 +265,7 @@
             // btnPurchase
             // 
             this.btnPurchase.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnPurchase.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchase.ForeColor = System.Drawing.Color.White;
             this.btnPurchase.Location = new System.Drawing.Point(899, 649);
             this.btnPurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

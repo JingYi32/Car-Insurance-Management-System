@@ -161,7 +161,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(767, 646);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 49);
+            this.button2.Size = new System.Drawing.Size(203, 57);
             this.button2.TabIndex = 22;
             this.button2.Text = "View Insurance Details";
             this.button2.UseVisualStyleBackColor = false;
@@ -172,7 +172,7 @@
             this.btnSignin.ForeColor = System.Drawing.Color.White;
             this.btnSignin.Location = new System.Drawing.Point(149, 646);
             this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(203, 49);
+            this.btnSignin.Size = new System.Drawing.Size(203, 57);
             this.btnSignin.TabIndex = 21;
             this.btnSignin.Text = "Back to Main Page";
             this.btnSignin.UseVisualStyleBackColor = false;

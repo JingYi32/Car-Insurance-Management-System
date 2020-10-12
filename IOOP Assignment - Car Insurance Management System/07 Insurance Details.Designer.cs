@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Insurance_Details
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1102, 757);
+            this.Font = new System.Drawing.Font("Gabriola", 15F);
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Margin = new System.Windows.Forms.Padding(4, 9, 4, 9);
+            this.Name = "Insurance_Details";
             this.Text = "Insurance_Details";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
