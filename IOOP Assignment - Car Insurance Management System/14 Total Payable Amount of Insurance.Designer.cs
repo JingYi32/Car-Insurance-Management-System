@@ -43,8 +43,8 @@
             this.textInsuranceTotal_TA = new System.Windows.Forms.TextBox();
             this.lblSSTCount = new System.Windows.Forms.Label();
             this.textNCD = new System.Windows.Forms.TextBox();
-            this.btnShow_TA = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnShow_TA = new System.Windows.Forms.Button();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -218,6 +218,16 @@
             this.textNCD.Size = new System.Drawing.Size(100, 32);
             this.textNCD.TabIndex = 11;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(286, 180);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 24);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "RM";
+            // 
             // btnShow_TA
             // 
             this.btnShow_TA.BackColor = System.Drawing.Color.SkyBlue;
@@ -229,21 +239,11 @@
             this.btnShow_TA.UseVisualStyleBackColor = false;
             this.btnShow_TA.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(286, 180);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 24);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "RM";
-            // 
             // Total_Payable_Amount_of_Insurance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 475);
+            this.ClientSize = new System.Drawing.Size(1102, 757);
             this.Controls.Add(this.btnShow_TA);
             this.Controls.Add(this.tlpTotalAmount);
             this.Controls.Add(this.btnSave_TA);

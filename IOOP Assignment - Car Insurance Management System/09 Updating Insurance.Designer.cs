@@ -208,7 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1102, 757);
             this.Controls.Add(this.textTotalAmount_UI);
             this.Controls.Add(this.textReasons_UI);
             this.Controls.Add(this.textBankAccount_UI);
