@@ -133,7 +133,7 @@
             // 
             this.btnSignin.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSignin.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.Location = new System.Drawing.Point(152, 631);
+            this.btnSignin.Location = new System.Drawing.Point(152, 649);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(203, 49);
             this.btnSignin.TabIndex = 8;
@@ -145,7 +145,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.CadetBlue;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(468, 631);
+            this.button1.Location = new System.Drawing.Point(469, 649);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(203, 49);
             this.button1.TabIndex = 9;
@@ -157,7 +157,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.CadetBlue;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(784, 631);
+            this.button2.Location = new System.Drawing.Point(784, 649);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(203, 49);
             this.button2.TabIndex = 10;
@@ -170,6 +170,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
+            this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSignin);

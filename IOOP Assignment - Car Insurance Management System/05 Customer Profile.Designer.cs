@@ -211,6 +211,7 @@
             this.lblStatus.Size = new System.Drawing.Size(240, 39);
             this.lblStatus.TabIndex = 2;
             this.lblStatus.Text = "Status";
+            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
             // lblInsuranceID
             // 
@@ -244,10 +245,11 @@
             this.btnBack.Location = new System.Drawing.Point(40, 649);
             this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(169, 54);
+            this.btnBack.Size = new System.Drawing.Size(170, 54);
             this.btnBack.TabIndex = 11;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnEdit
             // 
@@ -257,10 +259,11 @@
             this.btnEdit.Location = new System.Drawing.Point(665, 649);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(169, 54);
+            this.btnEdit.Size = new System.Drawing.Size(170, 54);
             this.btnEdit.TabIndex = 12;
             this.btnEdit.Text = "Edit Profile";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnPurchase
             // 
@@ -270,16 +273,18 @@
             this.btnPurchase.Location = new System.Drawing.Point(899, 649);
             this.btnPurchase.Margin = new System.Windows.Forms.Padding(2);
             this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(169, 54);
+            this.btnPurchase.Size = new System.Drawing.Size(170, 54);
             this.btnPurchase.TabIndex = 13;
             this.btnPurchase.Text = "Purchase New Insurance";
             this.btnPurchase.UseVisualStyleBackColor = false;
+            this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
             // Customer_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 46F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
+            this.ControlBox = false;
             this.Controls.Add(this.btnPurchase);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnBack);

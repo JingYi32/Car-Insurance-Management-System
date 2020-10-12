@@ -28,249 +28,250 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblProfile = new System.Windows.Forms.Label();
-            this.lblCustomerIDN = new System.Windows.Forms.Label();
-            this.lblCustomerName = new System.Windows.Forms.Label();
-            this.lblCustomerID = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btnPurchase = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.lblRenewal_Ins = new System.Windows.Forms.Label();
+            this.lblOwner_Name = new System.Windows.Forms.Label();
+            this.lblVehicle_NO = new System.Windows.Forms.Label();
+            this.lblIns_ID = new System.Windows.Forms.Label();
+            this.lblIns_End = new System.Windows.Forms.Label();
+            this.lblCUST_Name = new System.Windows.Forms.Label();
+            this.lblIns_Late_Renewal = new System.Windows.Forms.Label();
+            this.lblIns_Type = new System.Windows.Forms.Label();
+            this.lblCUST_ID = new System.Windows.Forms.Label();
+            this.gbAfter_Renewed = new System.Windows.Forms.GroupBox();
+            this.lblIns_AR_End = new System.Windows.Forms.Label();
+            this.lblIns_Renewal_Amount = new System.Windows.Forms.Label();
+            this.lblIns_NCD = new System.Windows.Forms.Label();
+            this.lblIns_AR_Start = new System.Windows.Forms.Label();
+            this.lblIns_Pur = new System.Windows.Forms.Label();
+            this.btnPaid = new System.Windows.Forms.Button();
+            this.btnIns_Details = new System.Windows.Forms.Button();
+            this.gbAfter_Renewed.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblProfile
+            // lblRenewal_Ins
             // 
-            this.lblProfile.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblProfile.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfile.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblProfile.Location = new System.Drawing.Point(362, 28);
-            this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(398, 76);
-            this.lblProfile.TabIndex = 5;
-            this.lblProfile.Text = "Renewal of Policy";
+            this.lblRenewal_Ins.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblRenewal_Ins.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRenewal_Ins.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRenewal_Ins.Location = new System.Drawing.Point(362, 28);
+            this.lblRenewal_Ins.Name = "lblRenewal_Ins";
+            this.lblRenewal_Ins.Size = new System.Drawing.Size(398, 76);
+            this.lblRenewal_Ins.TabIndex = 5;
+            this.lblRenewal_Ins.Text = "Renewal of Policy";
             // 
-            // lblCustomerIDN
+            // lblOwner_Name
             // 
-            this.lblCustomerIDN.AutoSize = true;
-            this.lblCustomerIDN.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerIDN.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblCustomerIDN.Location = new System.Drawing.Point(175, 274);
-            this.lblCustomerIDN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerIDN.Name = "lblCustomerIDN";
-            this.lblCustomerIDN.Size = new System.Drawing.Size(112, 37);
-            this.lblCustomerIDN.TabIndex = 15;
-            this.lblCustomerIDN.Text = "Owner Name:";
+            this.lblOwner_Name.AutoSize = true;
+            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblOwner_Name.Location = new System.Drawing.Point(175, 274);
+            this.lblOwner_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOwner_Name.Name = "lblOwner_Name";
+            this.lblOwner_Name.Size = new System.Drawing.Size(112, 37);
+            this.lblOwner_Name.TabIndex = 15;
+            this.lblOwner_Name.Text = "Owner Name:";
             // 
-            // lblCustomerName
+            // lblVehicle_NO
             // 
-            this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblCustomerName.Location = new System.Drawing.Point(174, 163);
-            this.lblCustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(223, 37);
-            this.lblCustomerName.TabIndex = 14;
-            this.lblCustomerName.Text = "Vehicle Registration Number:";
+            this.lblVehicle_NO.AutoSize = true;
+            this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVehicle_NO.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblVehicle_NO.Location = new System.Drawing.Point(174, 163);
+            this.lblVehicle_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVehicle_NO.Name = "lblVehicle_NO";
+            this.lblVehicle_NO.Size = new System.Drawing.Size(223, 37);
+            this.lblVehicle_NO.TabIndex = 14;
+            this.lblVehicle_NO.Text = "Vehicle Registration Number:";
             // 
-            // lblCustomerID
+            // lblIns_ID
             // 
-            this.lblCustomerID.AutoSize = true;
-            this.lblCustomerID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerID.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblCustomerID.Location = new System.Drawing.Point(174, 126);
-            this.lblCustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerID.Name = "lblCustomerID";
-            this.lblCustomerID.Size = new System.Drawing.Size(172, 37);
-            this.lblCustomerID.TabIndex = 13;
-            this.lblCustomerID.Text = "Selected Insurance ID:";
+            this.lblIns_ID.AutoSize = true;
+            this.lblIns_ID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIns_ID.Location = new System.Drawing.Point(174, 126);
+            this.lblIns_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIns_ID.Name = "lblIns_ID";
+            this.lblIns_ID.Size = new System.Drawing.Size(172, 37);
+            this.lblIns_ID.TabIndex = 13;
+            this.lblIns_ID.Text = "Selected Insurance ID:";
             // 
-            // label1
+            // lblIns_End
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(174, 422);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 37);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "End Date:";
+            this.lblIns_End.AutoSize = true;
+            this.lblIns_End.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_End.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIns_End.Location = new System.Drawing.Point(174, 422);
+            this.lblIns_End.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIns_End.Name = "lblIns_End";
+            this.lblIns_End.Size = new System.Drawing.Size(86, 37);
+            this.lblIns_End.TabIndex = 16;
+            this.lblIns_End.Text = "End Date:";
             // 
-            // label2
+            // lblCUST_Name
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(175, 237);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 37);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Customer\'s Name\t:";
+            this.lblCUST_Name.AutoSize = true;
+            this.lblCUST_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblCUST_Name.Location = new System.Drawing.Point(175, 237);
+            this.lblCUST_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_Name.Name = "lblCUST_Name";
+            this.lblCUST_Name.Size = new System.Drawing.Size(143, 37);
+            this.lblCUST_Name.TabIndex = 17;
+            this.lblCUST_Name.Text = "Customer\'s Name\t:";
             // 
-            // label4
+            // lblIns_Late_Renewal
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(174, 385);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 37);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Late Renewal Date:";
+            this.lblIns_Late_Renewal.AutoSize = true;
+            this.lblIns_Late_Renewal.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Late_Renewal.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIns_Late_Renewal.Location = new System.Drawing.Point(174, 385);
+            this.lblIns_Late_Renewal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIns_Late_Renewal.Name = "lblIns_Late_Renewal";
+            this.lblIns_Late_Renewal.Size = new System.Drawing.Size(150, 37);
+            this.lblIns_Late_Renewal.TabIndex = 19;
+            this.lblIns_Late_Renewal.Text = "Late Renewal Date:";
             // 
-            // label5
+            // lblIns_Type
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(175, 311);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 37);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Insurance Type:";
+            this.lblIns_Type.AutoSize = true;
+            this.lblIns_Type.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Type.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIns_Type.Location = new System.Drawing.Point(175, 311);
+            this.lblIns_Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIns_Type.Name = "lblIns_Type";
+            this.lblIns_Type.Size = new System.Drawing.Size(127, 37);
+            this.lblIns_Type.TabIndex = 20;
+            this.lblIns_Type.Text = "Insurance Type:";
             // 
-            // label6
+            // lblCUST_ID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label6.Location = new System.Drawing.Point(174, 200);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 37);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Customer ID:";
+            this.lblCUST_ID.AutoSize = true;
+            this.lblCUST_ID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblCUST_ID.Location = new System.Drawing.Point(174, 200);
+            this.lblCUST_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_ID.Name = "lblCUST_ID";
+            this.lblCUST_ID.Size = new System.Drawing.Size(110, 37);
+            this.lblCUST_ID.TabIndex = 21;
+            this.lblCUST_ID.Text = "Customer ID:";
             // 
-            // groupBox1
+            // gbAfter_Renewed
             // 
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.groupBox1.Location = new System.Drawing.Point(165, 462);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(790, 219);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "After Renewed";
+            this.gbAfter_Renewed.Controls.Add(this.lblIns_AR_End);
+            this.gbAfter_Renewed.Controls.Add(this.lblIns_Renewal_Amount);
+            this.gbAfter_Renewed.Controls.Add(this.lblIns_NCD);
+            this.gbAfter_Renewed.Controls.Add(this.lblIns_AR_Start);
+            this.gbAfter_Renewed.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.gbAfter_Renewed.Location = new System.Drawing.Point(165, 462);
+            this.gbAfter_Renewed.Name = "gbAfter_Renewed";
+            this.gbAfter_Renewed.Size = new System.Drawing.Size(790, 219);
+            this.gbAfter_Renewed.TabIndex = 22;
+            this.gbAfter_Renewed.TabStop = false;
+            this.gbAfter_Renewed.Text = "After Renewed";
             // 
-            // label7
+            // lblIns_AR_End
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 32);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 45);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Start Date:";
+            this.lblIns_AR_End.AutoSize = true;
+            this.lblIns_AR_End.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_AR_End.Location = new System.Drawing.Point(28, 77);
+            this.lblIns_AR_End.Name = "lblIns_AR_End";
+            this.lblIns_AR_End.Size = new System.Drawing.Size(102, 45);
+            this.lblIns_AR_End.TabIndex = 3;
+            this.lblIns_AR_End.Text = "End Date:";
             // 
-            // label8
+            // lblIns_Renewal_Amount
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(28, 167);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(247, 45);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "No-Claim Discount(NCD): ";
+            this.lblIns_Renewal_Amount.AutoSize = true;
+            this.lblIns_Renewal_Amount.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Renewal_Amount.Location = new System.Drawing.Point(28, 122);
+            this.lblIns_Renewal_Amount.Name = "lblIns_Renewal_Amount";
+            this.lblIns_Renewal_Amount.Size = new System.Drawing.Size(166, 45);
+            this.lblIns_Renewal_Amount.TabIndex = 2;
+            this.lblIns_Renewal_Amount.Text = "Renewal Amount:";
             // 
-            // label9
+            // lblIns_NCD
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(28, 122);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(166, 45);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Renewal Amount:";
+            this.lblIns_NCD.AutoSize = true;
+            this.lblIns_NCD.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_NCD.Location = new System.Drawing.Point(28, 167);
+            this.lblIns_NCD.Name = "lblIns_NCD";
+            this.lblIns_NCD.Size = new System.Drawing.Size(247, 45);
+            this.lblIns_NCD.TabIndex = 1;
+            this.lblIns_NCD.Text = "No-Claim Discount(NCD): ";
             // 
-            // label10
+            // lblIns_AR_Start
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(28, 77);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 45);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "End Date:";
+            this.lblIns_AR_Start.AutoSize = true;
+            this.lblIns_AR_Start.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_AR_Start.Location = new System.Drawing.Point(28, 32);
+            this.lblIns_AR_Start.Name = "lblIns_AR_Start";
+            this.lblIns_AR_Start.Size = new System.Drawing.Size(110, 45);
+            this.lblIns_AR_Start.TabIndex = 0;
+            this.lblIns_AR_Start.Text = "Start Date:";
             // 
-            // label11
+            // lblIns_Pur
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label11.Location = new System.Drawing.Point(174, 348);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 37);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Purchased Date:";
+            this.lblIns_Pur.AutoSize = true;
+            this.lblIns_Pur.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Pur.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIns_Pur.Location = new System.Drawing.Point(174, 348);
+            this.lblIns_Pur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIns_Pur.Name = "lblIns_Pur";
+            this.lblIns_Pur.Size = new System.Drawing.Size(130, 37);
+            this.lblIns_Pur.TabIndex = 23;
+            this.lblIns_Pur.Text = "Purchased Date:";
             // 
-            // btnPurchase
+            // btnPaid
             // 
-            this.btnPurchase.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnPurchase.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchase.ForeColor = System.Drawing.Color.White;
-            this.btnPurchase.Location = new System.Drawing.Point(896, 692);
-            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2);
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.Size = new System.Drawing.Size(157, 54);
-            this.btnPurchase.TabIndex = 25;
-            this.btnPurchase.Text = "Purchase New Insurance";
-            this.btnPurchase.UseVisualStyleBackColor = false;
+            this.btnPaid.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnPaid.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaid.ForeColor = System.Drawing.Color.White;
+            this.btnPaid.Location = new System.Drawing.Point(896, 692);
+            this.btnPaid.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPaid.Name = "btnPaid";
+            this.btnPaid.Size = new System.Drawing.Size(157, 54);
+            this.btnPaid.TabIndex = 25;
+            this.btnPaid.Text = "Proceed";
+            this.btnPaid.UseVisualStyleBackColor = false;
             // 
-            // btnEdit
+            // btnIns_Details
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnEdit.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.White;
-            this.btnEdit.Location = new System.Drawing.Point(662, 692);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(157, 54);
-            this.btnEdit.TabIndex = 24;
-            this.btnEdit.Text = "Edit Profile";
-            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnIns_Details.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnIns_Details.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIns_Details.ForeColor = System.Drawing.Color.White;
+            this.btnIns_Details.Location = new System.Drawing.Point(662, 692);
+            this.btnIns_Details.Margin = new System.Windows.Forms.Padding(2);
+            this.btnIns_Details.Name = "btnIns_Details";
+            this.btnIns_Details.Size = new System.Drawing.Size(157, 54);
+            this.btnIns_Details.TabIndex = 24;
+            this.btnIns_Details.Text = "Back";
+            this.btnIns_Details.UseVisualStyleBackColor = false;
             // 
             // Renewal_of_Insurance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
-            this.Controls.Add(this.btnPurchase);
-            this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblCustomerIDN);
-            this.Controls.Add(this.lblCustomerName);
-            this.Controls.Add(this.lblCustomerID);
-            this.Controls.Add(this.lblProfile);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnPaid);
+            this.Controls.Add(this.btnIns_Details);
+            this.Controls.Add(this.lblIns_Pur);
+            this.Controls.Add(this.gbAfter_Renewed);
+            this.Controls.Add(this.lblCUST_ID);
+            this.Controls.Add(this.lblIns_Type);
+            this.Controls.Add(this.lblIns_Late_Renewal);
+            this.Controls.Add(this.lblCUST_Name);
+            this.Controls.Add(this.lblIns_End);
+            this.Controls.Add(this.lblOwner_Name);
+            this.Controls.Add(this.lblVehicle_NO);
+            this.Controls.Add(this.lblIns_ID);
+            this.Controls.Add(this.lblRenewal_Ins);
             this.Font = new System.Drawing.Font("Gabriola", 10.8F);
             this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.Name = "Renewal_of_Insurance";
             this.Text = "Renewal_of_Insurance";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbAfter_Renewed.ResumeLayout(false);
+            this.gbAfter_Renewed.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,22 +279,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblProfile;
-        private System.Windows.Forms.Label lblCustomerIDN;
-        private System.Windows.Forms.Label lblCustomerName;
-        private System.Windows.Forms.Label lblCustomerID;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button btnPurchase;
-        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label lblRenewal_Ins;
+        private System.Windows.Forms.Label lblOwner_Name;
+        private System.Windows.Forms.Label lblVehicle_NO;
+        private System.Windows.Forms.Label lblIns_ID;
+        private System.Windows.Forms.Label lblIns_End;
+        private System.Windows.Forms.Label lblCUST_Name;
+        private System.Windows.Forms.Label lblIns_Late_Renewal;
+        private System.Windows.Forms.Label lblIns_Type;
+        private System.Windows.Forms.Label lblCUST_ID;
+        private System.Windows.Forms.GroupBox gbAfter_Renewed;
+        private System.Windows.Forms.Label lblIns_AR_End;
+        private System.Windows.Forms.Label lblIns_Renewal_Amount;
+        private System.Windows.Forms.Label lblIns_NCD;
+        private System.Windows.Forms.Label lblIns_AR_Start;
+        private System.Windows.Forms.Label lblIns_Pur;
+        private System.Windows.Forms.Button btnPaid;
+        private System.Windows.Forms.Button btnIns_Details;
     }
 }

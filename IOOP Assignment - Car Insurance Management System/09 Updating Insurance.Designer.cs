@@ -147,6 +147,7 @@
             this.btnSubmit_UI.TabIndex = 9;
             this.btnSubmit_UI.Text = "Submit";
             this.btnSubmit_UI.UseVisualStyleBackColor = false;
+            this.btnSubmit_UI.Click += new System.EventHandler(this.btnSubmit_UI_Click);
             // 
             // textCustomerID_UI
             // 
@@ -209,6 +210,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
+            this.ControlBox = false;
             this.Controls.Add(this.textTotalAmount_UI);
             this.Controls.Add(this.textReasons_UI);
             this.Controls.Add(this.textBankAccount_UI);

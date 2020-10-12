@@ -16,5 +16,19 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             InitializeComponent();
         }
+
+        private void btnExitEdit_Click(object sender, EventArgs e)
+        {
+            Customer_Profile customer_Profile = new Customer_Profile();
+            this.Hide();
+            customer_Profile.Show();
+        }
+
+        private void btnDoneEdit_Click(object sender, EventArgs e)
+        {
+            Customer_Profile customer_Profile = new Customer_Profile();
+            this.Hide();
+            customer_Profile.Show();
+        }
     }
 }

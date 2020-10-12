@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblProfile = new System.Windows.Forms.Label();
+            this.lblEditProfile = new System.Windows.Forms.Label();
             this.lblCustomerPhone = new System.Windows.Forms.Label();
             this.lblCustomerAddress = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -40,21 +40,21 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnSignin = new System.Windows.Forms.Button();
+            this.btnDoneEdit = new System.Windows.Forms.Button();
+            this.btnExitEdit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblProfile
+            // lblEditProfile
             // 
-            this.lblProfile.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblProfile.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfile.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblProfile.Location = new System.Drawing.Point(362, 28);
-            this.lblProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(397, 76);
-            this.lblProfile.TabIndex = 2;
-            this.lblProfile.Text = "Edit Mr./Mrs.____\'s Profile";
+            this.lblEditProfile.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblEditProfile.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditProfile.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblEditProfile.Location = new System.Drawing.Point(362, 28);
+            this.lblEditProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEditProfile.Name = "lblEditProfile";
+            this.lblEditProfile.Size = new System.Drawing.Size(397, 76);
+            this.lblEditProfile.TabIndex = 2;
+            this.lblEditProfile.Text = "Edit Mr./Mrs.____\'s Profile";
             // 
             // lblCustomerPhone
             // 
@@ -155,35 +155,38 @@
             this.textBox3.Size = new System.Drawing.Size(596, 53);
             this.textBox3.TabIndex = 20;
             // 
-            // button2
+            // btnDoneEdit
             // 
-            this.button2.BackColor = System.Drawing.Color.CadetBlue;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(767, 646);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 57);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "View Insurance Details";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnDoneEdit.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnDoneEdit.ForeColor = System.Drawing.Color.White;
+            this.btnDoneEdit.Location = new System.Drawing.Point(899, 649);
+            this.btnDoneEdit.Name = "btnDoneEdit";
+            this.btnDoneEdit.Size = new System.Drawing.Size(170, 54);
+            this.btnDoneEdit.TabIndex = 22;
+            this.btnDoneEdit.Text = "Done";
+            this.btnDoneEdit.UseVisualStyleBackColor = false;
+            this.btnDoneEdit.Click += new System.EventHandler(this.btnDoneEdit_Click);
             // 
-            // btnSignin
+            // btnExitEdit
             // 
-            this.btnSignin.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnSignin.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.Location = new System.Drawing.Point(149, 646);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(203, 57);
-            this.btnSignin.TabIndex = 21;
-            this.btnSignin.Text = "Back to Main Page";
-            this.btnSignin.UseVisualStyleBackColor = false;
+            this.btnExitEdit.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnExitEdit.ForeColor = System.Drawing.Color.White;
+            this.btnExitEdit.Location = new System.Drawing.Point(40, 649);
+            this.btnExitEdit.Name = "btnExitEdit";
+            this.btnExitEdit.Size = new System.Drawing.Size(170, 54);
+            this.btnExitEdit.TabIndex = 21;
+            this.btnExitEdit.Text = "Cancel Edit";
+            this.btnExitEdit.UseVisualStyleBackColor = false;
+            this.btnExitEdit.Click += new System.EventHandler(this.btnExitEdit_Click);
             // 
             // Edit_Customer_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 50F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnSignin);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnDoneEdit);
+            this.Controls.Add(this.btnExitEdit);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -195,7 +198,7 @@
             this.Controls.Add(this.lblCustomerIDN);
             this.Controls.Add(this.lblCustomerName);
             this.Controls.Add(this.lblCustomerID);
-            this.Controls.Add(this.lblProfile);
+            this.Controls.Add(this.lblEditProfile);
             this.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(4, 9, 4, 9);
@@ -208,7 +211,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblProfile;
+        private System.Windows.Forms.Label lblEditProfile;
         private System.Windows.Forms.Label lblCustomerPhone;
         private System.Windows.Forms.Label lblCustomerAddress;
         private System.Windows.Forms.Label lblEmail;
@@ -220,7 +223,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnSignin;
+        private System.Windows.Forms.Button btnDoneEdit;
+        private System.Windows.Forms.Button btnExitEdit;
     }
 }

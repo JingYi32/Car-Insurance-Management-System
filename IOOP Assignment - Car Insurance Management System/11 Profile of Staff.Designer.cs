@@ -129,7 +129,7 @@
             this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.65957F));
             this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
             this.tlpCurrentCustomer_MP.Location = new System.Drawing.Point(256, 245);
             this.tlpCurrentCustomer_MP.Name = "tlpCurrentCustomer_MP";
             this.tlpCurrentCustomer_MP.RowCount = 2;
@@ -154,6 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
+            this.ControlBox = false;
             this.Controls.Add(this.btnBack_MP);
             this.Controls.Add(this.tlpCurrentCustomer_MP);
             this.Controls.Add(this.picProfilePicture_MP);

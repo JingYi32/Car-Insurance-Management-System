@@ -44,7 +44,7 @@
             this.lblLoginWelcome.AutoSize = true;
             this.lblLoginWelcome.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblLoginWelcome.Font = new System.Drawing.Font("Gabriola", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoginWelcome.Location = new System.Drawing.Point(59, 89);
+            this.lblLoginWelcome.Location = new System.Drawing.Point(112, 89);
             this.lblLoginWelcome.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblLoginWelcome.Name = "lblLoginWelcome";
             this.lblLoginWelcome.Size = new System.Drawing.Size(896, 92);
@@ -66,7 +66,7 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lblLogin.Location = new System.Drawing.Point(278, 183);
+            this.lblLogin.Location = new System.Drawing.Point(330, 183);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(459, 55);
             this.lblLogin.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lblUsername.Location = new System.Drawing.Point(107, 266);
+            this.lblUsername.Location = new System.Drawing.Point(158, 266);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(164, 74);
             this.lblUsername.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.ForeColor = System.Drawing.Color.CadetBlue;
-            this.lblPassword.Location = new System.Drawing.Point(107, 357);
+            this.lblPassword.Location = new System.Drawing.Point(158, 357);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(154, 74);
             this.lblPassword.TabIndex = 4;
@@ -95,14 +95,14 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(293, 266);
+            this.txtUsername.Location = new System.Drawing.Point(344, 266);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(601, 75);
             this.txtUsername.TabIndex = 5;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(293, 357);
+            this.txtPassword.Location = new System.Drawing.Point(344, 357);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(601, 75);
             this.txtPassword.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.btnSignin.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSignin.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.Location = new System.Drawing.Point(338, 464);
+            this.btnSignin.Location = new System.Drawing.Point(389, 464);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(339, 88);
             this.btnSignin.TabIndex = 7;
@@ -122,10 +122,11 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnExit.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.btnExit.Location = new System.Drawing.Point(978, 635);
+            this.btnExit.Location = new System.Drawing.Point(899, 649);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(109, 80);
+            this.btnExit.Size = new System.Drawing.Size(169, 54);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -136,6 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 74F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
+            this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.txtPassword);
