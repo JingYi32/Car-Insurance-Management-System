@@ -65,7 +65,7 @@
             // 
             this.lblCustomerID.AutoSize = true;
             this.lblCustomerID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerID.Location = new System.Drawing.Point(38, 94);
+            this.lblCustomerID.Location = new System.Drawing.Point(44, 94);
             this.lblCustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerID.Name = "lblCustomerID";
             this.lblCustomerID.Size = new System.Drawing.Size(119, 45);
@@ -76,7 +76,7 @@
             // 
             this.lblCustomerName.AutoSize = true;
             this.lblCustomerName.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName.Location = new System.Drawing.Point(38, 131);
+            this.lblCustomerName.Location = new System.Drawing.Point(44, 131);
             this.lblCustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerName.Name = "lblCustomerName";
             this.lblCustomerName.Size = new System.Drawing.Size(155, 45);
@@ -87,7 +87,7 @@
             // 
             this.lblCustomerIDN.AutoSize = true;
             this.lblCustomerIDN.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerIDN.Location = new System.Drawing.Point(38, 169);
+            this.lblCustomerIDN.Location = new System.Drawing.Point(44, 169);
             this.lblCustomerIDN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerIDN.Name = "lblCustomerIDN";
             this.lblCustomerIDN.Size = new System.Drawing.Size(108, 45);
@@ -98,7 +98,7 @@
             // 
             this.lblCustomerGender.AutoSize = true;
             this.lblCustomerGender.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerGender.Location = new System.Drawing.Point(38, 244);
+            this.lblCustomerGender.Location = new System.Drawing.Point(44, 244);
             this.lblCustomerGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerGender.Name = "lblCustomerGender";
             this.lblCustomerGender.Size = new System.Drawing.Size(77, 45);
@@ -109,7 +109,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(38, 357);
+            this.lblEmail.Location = new System.Drawing.Point(44, 320);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(132, 45);
@@ -120,7 +120,7 @@
             // 
             this.lblCustomerAddress.AutoSize = true;
             this.lblCustomerAddress.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerAddress.Location = new System.Drawing.Point(38, 207);
+            this.lblCustomerAddress.Location = new System.Drawing.Point(44, 207);
             this.lblCustomerAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerAddress.Name = "lblCustomerAddress";
             this.lblCustomerAddress.Size = new System.Drawing.Size(84, 45);
@@ -131,7 +131,7 @@
             // 
             this.lblCustomerPhone.AutoSize = true;
             this.lblCustomerPhone.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerPhone.Location = new System.Drawing.Point(38, 281);
+            this.lblCustomerPhone.Location = new System.Drawing.Point(44, 281);
             this.lblCustomerPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerPhone.Name = "lblCustomerPhone";
             this.lblCustomerPhone.Size = new System.Drawing.Size(149, 45);
@@ -142,7 +142,7 @@
             // 
             this.lblHistory.AutoSize = true;
             this.lblHistory.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHistory.Location = new System.Drawing.Point(38, 320);
+            this.lblHistory.Location = new System.Drawing.Point(44, 357);
             this.lblHistory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHistory.Name = "lblHistory";
             this.lblHistory.Size = new System.Drawing.Size(150, 45);
