@@ -54,10 +54,10 @@
             this.lblProfile.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblProfile.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProfile.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblProfile.Location = new System.Drawing.Point(669, 9);
+            this.lblProfile.Location = new System.Drawing.Point(669, 28);
             this.lblProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(397, 76);
+            this.lblProfile.Size = new System.Drawing.Size(398, 76);
             this.lblProfile.TabIndex = 1;
             this.lblProfile.Text = "Mr./Mrs.____\'s Profile";
             // 
@@ -164,7 +164,7 @@
             this.tlpHistory.Controls.Add(this.lblInsuranceID, 1, 0);
             this.tlpHistory.Controls.Add(this.lblBil, 0, 0);
             this.tlpHistory.Location = new System.Drawing.Point(40, 409);
-            this.tlpHistory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tlpHistory.Margin = new System.Windows.Forms.Padding(2);
             this.tlpHistory.Name = "tlpHistory";
             this.tlpHistory.RowCount = 5;
             this.tlpHistory.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -242,7 +242,7 @@
             this.btnBack.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Location = new System.Drawing.Point(40, 649);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(169, 54);
             this.btnBack.TabIndex = 11;
@@ -255,7 +255,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(665, 649);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(169, 54);
             this.btnEdit.TabIndex = 12;
@@ -268,7 +268,7 @@
             this.btnPurchase.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPurchase.ForeColor = System.Drawing.Color.White;
             this.btnPurchase.Location = new System.Drawing.Point(899, 649);
-            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPurchase.Margin = new System.Windows.Forms.Padding(2);
             this.btnPurchase.Name = "btnPurchase";
             this.btnPurchase.Size = new System.Drawing.Size(169, 54);
             this.btnPurchase.TabIndex = 13;

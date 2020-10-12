@@ -160,6 +160,9 @@
     <EmbeddedResource Include="07 Insurance Details.resx">
       <DependentUpon>07 Insurance Details.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="08 Renewal of Insurance.resx">
+      <DependentUpon>08 Renewal of Insurance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="09 Updating Insurance.resx">
       <DependentUpon>09 Updating Insurance.cs</DependentUpon>
     </EmbeddedResource>
