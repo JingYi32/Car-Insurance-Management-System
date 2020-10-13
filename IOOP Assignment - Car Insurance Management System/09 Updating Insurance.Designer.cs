@@ -48,7 +48,7 @@
             // lblUpdateInsurance
             // 
             this.lblUpdateInsurance.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblUpdateInsurance.Font = new System.Drawing.Font("Gabriola", 24F);
+            this.lblUpdateInsurance.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateInsurance.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblUpdateInsurance.Location = new System.Drawing.Point(362, 28);
             this.lblUpdateInsurance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -139,7 +139,7 @@
             // btnBack_UI
             // 
             this.btnBack_UI.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnBack_UI.Font = new System.Drawing.Font("Gabriola", 13.8F);
+            this.btnBack_UI.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack_UI.ForeColor = System.Drawing.SystemColors.Control;
             this.btnBack_UI.Location = new System.Drawing.Point(98, 649);
             this.btnBack_UI.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);

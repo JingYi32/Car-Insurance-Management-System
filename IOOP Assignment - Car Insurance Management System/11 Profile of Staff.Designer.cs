@@ -44,11 +44,11 @@
             // lblMyProfile
             // 
             this.lblMyProfile.AutoSize = true;
-            this.lblMyProfile.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.lblMyProfile.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMyProfile.Location = new System.Drawing.Point(366, 60);
+            this.lblMyProfile.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblMyProfile.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMyProfile.Location = new System.Drawing.Point(467, 18);
             this.lblMyProfile.Name = "lblMyProfile";
-            this.lblMyProfile.Size = new System.Drawing.Size(109, 51);
+            this.lblMyProfile.Size = new System.Drawing.Size(157, 74);
             this.lblMyProfile.TabIndex = 0;
             this.lblMyProfile.Text = "My Profile";
             // 
@@ -56,40 +56,40 @@
             // 
             this.lblStaffID_MP.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.lblStaffID_MP.AutoSize = true;
-            this.lblStaffID_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffID_MP.Location = new System.Drawing.Point(28, 202);
+            this.lblStaffID_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffID_MP.Location = new System.Drawing.Point(28, 100);
             this.lblStaffID_MP.Name = "lblStaffID_MP";
-            this.lblStaffID_MP.Size = new System.Drawing.Size(66, 37);
+            this.lblStaffID_MP.Size = new System.Drawing.Size(100, 51);
             this.lblStaffID_MP.TabIndex = 1;
             this.lblStaffID_MP.Text = "Staff ID:";
             // 
             // lblStaffName_MP
             // 
             this.lblStaffName_MP.AutoSize = true;
-            this.lblStaffName_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffName_MP.Location = new System.Drawing.Point(28, 263);
+            this.lblStaffName_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffName_MP.Location = new System.Drawing.Point(28, 137);
             this.lblStaffName_MP.Name = "lblStaffName_MP";
-            this.lblStaffName_MP.Size = new System.Drawing.Size(87, 37);
+            this.lblStaffName_MP.Size = new System.Drawing.Size(132, 51);
             this.lblStaffName_MP.TabIndex = 2;
             this.lblStaffName_MP.Text = "Staff Name:";
             // 
             // lblGender_MP
             // 
             this.lblGender_MP.AutoSize = true;
-            this.lblGender_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender_MP.Location = new System.Drawing.Point(28, 324);
+            this.lblGender_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender_MP.Location = new System.Drawing.Point(28, 174);
             this.lblGender_MP.Name = "lblGender_MP";
-            this.lblGender_MP.Size = new System.Drawing.Size(65, 37);
+            this.lblGender_MP.Size = new System.Drawing.Size(98, 51);
             this.lblGender_MP.TabIndex = 3;
             this.lblGender_MP.Text = "Gender:";
             // 
             // lblJobPosition_MP
             // 
             this.lblJobPosition_MP.AutoSize = true;
-            this.lblJobPosition_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJobPosition_MP.Location = new System.Drawing.Point(28, 385);
+            this.lblJobPosition_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobPosition_MP.Location = new System.Drawing.Point(28, 211);
             this.lblJobPosition_MP.Name = "lblJobPosition_MP";
-            this.lblJobPosition_MP.Size = new System.Drawing.Size(91, 37);
+            this.lblJobPosition_MP.Size = new System.Drawing.Size(139, 51);
             this.lblJobPosition_MP.TabIndex = 4;
             this.lblJobPosition_MP.Text = "Job Position:";
             this.lblJobPosition_MP.Click += new System.EventHandler(this.label4_Click);
@@ -97,26 +97,26 @@
             // lblContact_MP
             // 
             this.lblContact_MP.AutoSize = true;
-            this.lblContact_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact_MP.Location = new System.Drawing.Point(28, 446);
+            this.lblContact_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContact_MP.Location = new System.Drawing.Point(28, 248);
             this.lblContact_MP.Name = "lblContact_MP";
-            this.lblContact_MP.Size = new System.Drawing.Size(123, 37);
+            this.lblContact_MP.Size = new System.Drawing.Size(188, 51);
             this.lblContact_MP.TabIndex = 5;
             this.lblContact_MP.Text = "Contact Number:";
             // 
             // lblAddress_MP
             // 
             this.lblAddress_MP.AutoSize = true;
-            this.lblAddress_MP.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress_MP.Location = new System.Drawing.Point(28, 507);
+            this.lblAddress_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress_MP.Location = new System.Drawing.Point(28, 285);
             this.lblAddress_MP.Name = "lblAddress_MP";
-            this.lblAddress_MP.Size = new System.Drawing.Size(70, 37);
+            this.lblAddress_MP.Size = new System.Drawing.Size(106, 51);
             this.lblAddress_MP.TabIndex = 6;
             this.lblAddress_MP.Text = "Address:";
             // 
             // picProfilePicture_MP
             // 
-            this.picProfilePicture_MP.Location = new System.Drawing.Point(639, 202);
+            this.picProfilePicture_MP.Location = new System.Drawing.Point(804, 100);
             this.picProfilePicture_MP.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.picProfilePicture_MP.Name = "picProfilePicture_MP";
             this.picProfilePicture_MP.Size = new System.Drawing.Size(225, 261);
@@ -126,27 +126,27 @@
             // tlpCurrentCustomer_MP
             // 
             this.tlpCurrentCustomer_MP.ColumnCount = 5;
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.34043F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.65957F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 101F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tlpCurrentCustomer_MP.Location = new System.Drawing.Point(294, 507);
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.58044F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.41956F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
+            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 126F));
+            this.tlpCurrentCustomer_MP.Location = new System.Drawing.Point(64, 386);
             this.tlpCurrentCustomer_MP.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.tlpCurrentCustomer_MP.Name = "tlpCurrentCustomer_MP";
             this.tlpCurrentCustomer_MP.RowCount = 2;
             this.tlpCurrentCustomer_MP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.07792F));
             this.tlpCurrentCustomer_MP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.92208F));
-            this.tlpCurrentCustomer_MP.Size = new System.Drawing.Size(492, 206);
+            this.tlpCurrentCustomer_MP.Size = new System.Drawing.Size(767, 297);
             this.tlpCurrentCustomer_MP.TabIndex = 8;
             // 
             // btnBack_MP
             // 
-            this.btnBack_MP.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnBack_MP.Location = new System.Drawing.Point(35, 639);
+            this.btnBack_MP.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnBack_MP.Location = new System.Drawing.Point(910, 644);
             this.btnBack_MP.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.btnBack_MP.Name = "btnBack_MP";
-            this.btnBack_MP.Size = new System.Drawing.Size(84, 74);
+            this.btnBack_MP.Size = new System.Drawing.Size(119, 74);
             this.btnBack_MP.TabIndex = 9;
             this.btnBack_MP.Text = "Back";
             this.btnBack_MP.UseVisualStyleBackColor = false;
@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1240, 1055);
+            this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
             this.Controls.Add(this.btnBack_MP);
             this.Controls.Add(this.tlpCurrentCustomer_MP);
