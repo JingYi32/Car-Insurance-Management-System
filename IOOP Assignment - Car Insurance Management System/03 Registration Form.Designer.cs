@@ -167,7 +167,7 @@
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(656, 53);
-            this.textBox1.TabIndex = 9;
+            this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
@@ -176,7 +176,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(656, 53);
-            this.textBox2.TabIndex = 10;
+            this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
@@ -185,7 +185,7 @@
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(656, 53);
-            this.textBox3.TabIndex = 11;
+            this.textBox3.TabIndex = 3;
             // 
             // textBox4
             // 
@@ -194,7 +194,7 @@
             this.textBox4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(656, 53);
-            this.textBox4.TabIndex = 12;
+            this.textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
@@ -203,7 +203,7 @@
             this.textBox5.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(656, 53);
-            this.textBox5.TabIndex = 13;
+            this.textBox5.TabIndex = 6;
             // 
             // textBox6
             // 
@@ -212,7 +212,7 @@
             this.textBox6.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(656, 53);
-            this.textBox6.TabIndex = 14;
+            this.textBox6.TabIndex = 7;
             // 
             // button1
             // 
@@ -223,7 +223,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(203, 49);
-            this.button1.TabIndex = 15;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Back to Menu";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.UseVisualStyleBackColor = false;
@@ -238,7 +238,7 @@
             this.button2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(203, 49);
-            this.button2.TabIndex = 16;
+            this.button2.TabIndex = 9;
             this.button2.Text = "Submit";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -262,7 +262,7 @@
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(656, 58);
-            this.comboBox1.TabIndex = 11;
+            this.comboBox1.TabIndex = 2;
             // 
             // comboBox2
             // 
@@ -272,7 +272,7 @@
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(656, 58);
-            this.comboBox2.TabIndex = 12;
+            this.comboBox2.TabIndex = 4;
             // 
             // Registration_Form
             // 
