@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblLoginWelcome = new System.Windows.Forms.Label();
             this.tlpSearchResult = new System.Windows.Forms.TableLayoutPanel();
             this.lblBil = new System.Windows.Forms.Label();
             this.lblInsuranceID = new System.Windows.Forms.Label();
@@ -38,20 +37,9 @@
             this.btnSignin = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.SearchSearch = new System.Windows.Forms.TextBox();
             this.tlpSearchResult.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblLoginWelcome
-            // 
-            this.lblLoginWelcome.BackColor = System.Drawing.Color.CadetBlue;
-            this.lblLoginWelcome.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoginWelcome.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblLoginWelcome.Location = new System.Drawing.Point(98, 53);
-            this.lblLoginWelcome.Name = "lblLoginWelcome";
-            this.lblLoginWelcome.Size = new System.Drawing.Size(924, 54);
-            this.lblLoginWelcome.TabIndex = 1;
-            this.lblLoginWelcome.Text = "Enter Customer ID or Insurance ID to Search:";
-            this.lblLoginWelcome.Click += new System.EventHandler(this.lblLoginWelcome_Click);
             // 
             // tlpSearchResult
             // 
@@ -170,6 +158,17 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // SearchSearch
+            // 
+            this.SearchSearch.BackColor = System.Drawing.Color.CadetBlue;
+            this.SearchSearch.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchSearch.ForeColor = System.Drawing.SystemColors.Control;
+            this.SearchSearch.Location = new System.Drawing.Point(98, 53);
+            this.SearchSearch.Name = "SearchSearch";
+            this.SearchSearch.Size = new System.Drawing.Size(924, 58);
+            this.SearchSearch.TabIndex = 1;
+            this.SearchSearch.Text = "Enter Customer ID or Insurance ID to Search:";
+            // 
             // Searching_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
@@ -180,19 +179,18 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.tlpSearchResult);
-            this.Controls.Add(this.lblLoginWelcome);
+            this.Controls.Add(this.SearchSearch);
             this.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.Name = "Searching_Page";
             this.Text = "Searching_Page";
             this.tlpSearchResult.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblLoginWelcome;
         private System.Windows.Forms.TableLayoutPanel tlpSearchResult;
         private System.Windows.Forms.Label lblBil;
         private System.Windows.Forms.Label lblInsuranceID;
@@ -202,5 +200,6 @@
         private System.Windows.Forms.Button btnSignin;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox SearchSearch;
     }
 }

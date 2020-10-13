@@ -186,35 +186,35 @@
             this.textBox1.Location = new System.Drawing.Point(405, 120);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(615, 47);
-            this.textBox1.TabIndex = 37;
+            this.textBox1.TabIndex = 1;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(405, 336);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(615, 47);
-            this.textBox3.TabIndex = 39;
+            this.textBox3.TabIndex = 5;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(405, 282);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(615, 47);
-            this.textBox4.TabIndex = 40;
+            this.textBox4.TabIndex = 4;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(405, 228);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(615, 47);
-            this.textBox5.TabIndex = 41;
+            this.textBox5.TabIndex = 3;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(405, 174);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(615, 47);
-            this.textBox6.TabIndex = 42;
+            this.textBox6.TabIndex = 2;
             // 
             // textBox2
             // 
@@ -222,7 +222,7 @@
             this.textBox2.Location = new System.Drawing.Point(338, 495);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(323, 41);
-            this.textBox2.TabIndex = 43;
+            this.textBox2.TabIndex = 9;
             // 
             // textBox7
             // 
@@ -230,7 +230,7 @@
             this.textBox7.Location = new System.Drawing.Point(338, 636);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(323, 41);
-            this.textBox7.TabIndex = 44;
+            this.textBox7.TabIndex = 12;
             // 
             // comboBox1
             // 
@@ -242,7 +242,7 @@
             this.comboBox1.Location = new System.Drawing.Point(338, 589);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(323, 45);
-            this.comboBox1.TabIndex = 45;
+            this.comboBox1.TabIndex = 11;
             // 
             // comboBox2
             // 
@@ -251,7 +251,7 @@
             this.comboBox2.Location = new System.Drawing.Point(338, 448);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(323, 45);
-            this.comboBox2.TabIndex = 46;
+            this.comboBox2.TabIndex = 8;
             // 
             // dateTimePicker1
             // 
@@ -259,7 +259,7 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(338, 541);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(323, 41);
-            this.dateTimePicker1.TabIndex = 47;
+            this.dateTimePicker1.TabIndex = 10;
             // 
             // radioButton1
             // 
@@ -267,7 +267,7 @@
             this.radioButton1.Location = new System.Drawing.Point(405, 389);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(233, 49);
-            this.radioButton1.TabIndex = 48;
+            this.radioButton1.TabIndex = 6;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Same as Customer Details";
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -278,7 +278,7 @@
             this.radioButton2.Location = new System.Drawing.Point(744, 390);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(91, 49);
-            this.radioButton2.TabIndex = 49;
+            this.radioButton2.TabIndex = 7;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Others";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -292,7 +292,7 @@
             this.btnProceed.Margin = new System.Windows.Forms.Padding(2);
             this.btnProceed.Name = "btnProceed";
             this.btnProceed.Size = new System.Drawing.Size(203, 49);
-            this.btnProceed.TabIndex = 51;
+            this.btnProceed.TabIndex = 14;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = false;
             this.btnProceed.Click += new System.EventHandler(this.btnProceed_Click);
@@ -306,7 +306,7 @@
             this.btnMainPage.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainPage.Name = "btnMainPage";
             this.btnMainPage.Size = new System.Drawing.Size(203, 49);
-            this.btnMainPage.TabIndex = 50;
+            this.btnMainPage.TabIndex = 13;
             this.btnMainPage.Text = "Back";
             this.btnMainPage.UseVisualStyleBackColor = false;
             this.btnMainPage.Click += new System.EventHandler(this.btnCUST_Profile_Click);
