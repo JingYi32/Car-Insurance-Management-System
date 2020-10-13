@@ -148,6 +148,7 @@
             this.btnBack_UI.TabIndex = 8;
             this.btnBack_UI.Text = "Back";
             this.btnBack_UI.UseVisualStyleBackColor = false;
+            this.btnBack_UI.Click += new System.EventHandler(this.btnBack_UI_Click);
             // 
             // btnSubmit_UI
             // 

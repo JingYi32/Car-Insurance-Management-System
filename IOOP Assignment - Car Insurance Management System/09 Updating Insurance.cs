@@ -32,5 +32,12 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
 
         }
+
+        private void btnBack_UI_Click(object sender, EventArgs e)
+        {
+            Insurance_Details ins_details = new Insurance_Details();
+            ins_details.Show();
+            this.Close();
+        }
     }
 }

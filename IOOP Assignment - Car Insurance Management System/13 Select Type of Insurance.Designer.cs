@@ -37,18 +37,18 @@
             this.btnBack_IT = new System.Windows.Forms.Button();
             this.btnContinue_IT = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblRateCover_IT = new System.Windows.Forms.Label();
+            this.lblDesFireTheft_IT = new System.Windows.Forms.Label();
+            this.lblDesCover_IT = new System.Windows.Forms.Label();
+            this.lblType_IT = new System.Windows.Forms.Label();
+            this.lblCover_IT = new System.Windows.Forms.Label();
+            this.lblFireTheft_IT = new System.Windows.Forms.Label();
+            this.lblRateFireTheft_IT = new System.Windows.Forms.Label();
+            this.lblDescription_IT = new System.Windows.Forms.Label();
+            this.lblRateThird_IT = new System.Windows.Forms.Label();
+            this.lblRate_IT = new System.Windows.Forms.Label();
+            this.lblThirdParty_IT = new System.Windows.Forms.Label();
+            this.lblDesThird_IT = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,18 +147,18 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.label12, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblRateCover_IT, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblDesFireTheft_IT, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblDesCover_IT, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblType_IT, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblCover_IT, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lblFireTheft_IT, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblRateFireTheft_IT, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lblDescription_IT, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblRateThird_IT, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblRate_IT, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblThirdParty_IT, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblDesThird_IT, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(72, 124);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -170,158 +170,158 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(654, 481);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
-            // label12
+            // lblRateCover_IT
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(492, 336);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(45, 24);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "2.84";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRateCover_IT.AutoSize = true;
+            this.lblRateCover_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRateCover_IT.Location = new System.Drawing.Point(492, 336);
+            this.lblRateCover_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRateCover_IT.Name = "lblRateCover_IT";
+            this.lblRateCover_IT.Size = new System.Drawing.Size(45, 24);
+            this.lblRateCover_IT.TabIndex = 11;
+            this.lblRateCover_IT.Text = "2.84";
+            this.lblRateCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lblDesFireTheft_IT
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(165, 192);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(301, 72);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Everything above, plus coverage to your own vehicle if your car grt caught in fir" +
+            this.lblDesFireTheft_IT.AutoSize = true;
+            this.lblDesFireTheft_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesFireTheft_IT.Location = new System.Drawing.Point(165, 192);
+            this.lblDesFireTheft_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesFireTheft_IT.Name = "lblDesFireTheft_IT";
+            this.lblDesFireTheft_IT.Size = new System.Drawing.Size(301, 72);
+            this.lblDesFireTheft_IT.TabIndex = 15;
+            this.lblDesFireTheft_IT.Text = "Everything above, plus coverage to your own vehicle if your car grt caught in fir" +
     "e, or get stolen.";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.lblDesFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDesFireTheft_IT.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label11
+            // lblDesCover_IT
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(165, 336);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(314, 48);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Everything above, including fire and theft, plus coverage to your own car.";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDesCover_IT.AutoSize = true;
+            this.lblDesCover_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesCover_IT.Location = new System.Drawing.Point(165, 336);
+            this.lblDesCover_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesCover_IT.Name = "lblDesCover_IT";
+            this.lblDesCover_IT.Size = new System.Drawing.Size(314, 48);
+            this.lblDesCover_IT.TabIndex = 10;
+            this.lblDesCover_IT.Text = "Everything above, including fire and theft, plus coverage to your own car.";
+            this.lblDesCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // lblType_IT
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 24);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Insurance Type";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblType_IT.AutoSize = true;
+            this.lblType_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblType_IT.Location = new System.Drawing.Point(2, 0);
+            this.lblType_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblType_IT.Name = "lblType_IT";
+            this.lblType_IT.Size = new System.Drawing.Size(135, 24);
+            this.lblType_IT.TabIndex = 8;
+            this.lblType_IT.Text = "Insurance Type";
+            this.lblType_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblType_IT.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label10
+            // lblCover_IT
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(2, 336);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 48);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Comprehensive Cover";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.lblCover_IT.AutoSize = true;
+            this.lblCover_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCover_IT.Location = new System.Drawing.Point(2, 336);
+            this.lblCover_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCover_IT.Name = "lblCover_IT";
+            this.lblCover_IT.Size = new System.Drawing.Size(140, 48);
+            this.lblCover_IT.TabIndex = 9;
+            this.lblCover_IT.Text = "Comprehensive Cover";
+            this.lblCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCover_IT.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label7
+            // lblFireTheft_IT
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(2, 192);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(142, 48);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Third Party, Fire and Theft";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lblFireTheft_IT.AutoSize = true;
+            this.lblFireTheft_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFireTheft_IT.Location = new System.Drawing.Point(2, 192);
+            this.lblFireTheft_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFireTheft_IT.Name = "lblFireTheft_IT";
+            this.lblFireTheft_IT.Size = new System.Drawing.Size(142, 48);
+            this.lblFireTheft_IT.TabIndex = 14;
+            this.lblFireTheft_IT.Text = "Third Party, Fire and Theft";
+            this.lblFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblFireTheft_IT.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label9
+            // lblRateFireTheft_IT
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(492, 192);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 24);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "2.75";
+            this.lblRateFireTheft_IT.AutoSize = true;
+            this.lblRateFireTheft_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRateFireTheft_IT.Location = new System.Drawing.Point(492, 192);
+            this.lblRateFireTheft_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRateFireTheft_IT.Name = "lblRateFireTheft_IT";
+            this.lblRateFireTheft_IT.Size = new System.Drawing.Size(45, 24);
+            this.lblRateFireTheft_IT.TabIndex = 8;
+            this.lblRateFireTheft_IT.Text = "2.75";
             // 
-            // label2
+            // lblDescription_IT
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(165, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Description";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblDescription_IT.AutoSize = true;
+            this.lblDescription_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription_IT.Location = new System.Drawing.Point(165, 0);
+            this.lblDescription_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescription_IT.Name = "lblDescription_IT";
+            this.lblDescription_IT.Size = new System.Drawing.Size(106, 24);
+            this.lblDescription_IT.TabIndex = 9;
+            this.lblDescription_IT.Text = "Description";
+            this.lblDescription_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDescription_IT.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label6
+            // lblRateThird_IT
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(492, 48);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 24);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "2.66";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.lblRateThird_IT.AutoSize = true;
+            this.lblRateThird_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRateThird_IT.Location = new System.Drawing.Point(492, 48);
+            this.lblRateThird_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRateThird_IT.Name = "lblRateThird_IT";
+            this.lblRateThird_IT.Size = new System.Drawing.Size(45, 24);
+            this.lblRateThird_IT.TabIndex = 13;
+            this.lblRateThird_IT.Text = "2.66";
+            this.lblRateThird_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRateThird_IT.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label3
+            // lblRate_IT
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(492, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 24);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Rate (%)";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lblRate_IT.AutoSize = true;
+            this.lblRate_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRate_IT.Location = new System.Drawing.Point(492, 0);
+            this.lblRate_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRate_IT.Name = "lblRate_IT";
+            this.lblRate_IT.Size = new System.Drawing.Size(80, 24);
+            this.lblRate_IT.TabIndex = 10;
+            this.lblRate_IT.Text = "Rate (%)";
+            this.lblRate_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRate_IT.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // lblThirdParty_IT
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(2, 48);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 24);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Third Party";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblThirdParty_IT.AutoSize = true;
+            this.lblThirdParty_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThirdParty_IT.Location = new System.Drawing.Point(2, 48);
+            this.lblThirdParty_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblThirdParty_IT.Name = "lblThirdParty_IT";
+            this.lblThirdParty_IT.Size = new System.Drawing.Size(102, 24);
+            this.lblThirdParty_IT.TabIndex = 11;
+            this.lblThirdParty_IT.Text = "Third Party";
+            this.lblThirdParty_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblThirdParty_IT.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lblDesThird_IT
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(165, 48);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(309, 144);
-            this.label5.TabIndex = 12;
-            this.label5.Text = resources.GetString("label5.Text");
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lblDesThird_IT.AutoSize = true;
+            this.lblDesThird_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesThird_IT.Location = new System.Drawing.Point(165, 48);
+            this.lblDesThird_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDesThird_IT.Name = "lblDesThird_IT";
+            this.lblDesThird_IT.Size = new System.Drawing.Size(309, 144);
+            this.lblDesThird_IT.TabIndex = 12;
+            this.lblDesThird_IT.Text = resources.GetString("lblDesThird_IT.Text");
+            this.lblDesThird_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDesThird_IT.Click += new System.EventHandler(this.label5_Click);
             // 
             // Select_Type_of_Insurance
             // 
@@ -359,17 +359,17 @@
         private System.Windows.Forms.Button btnBack_IT;
         private System.Windows.Forms.Button btnContinue_IT;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblType_IT;
+        private System.Windows.Forms.Label lblDescription_IT;
+        private System.Windows.Forms.Label lblRate_IT;
+        private System.Windows.Forms.Label lblThirdParty_IT;
+        private System.Windows.Forms.Label lblDesThird_IT;
+        private System.Windows.Forms.Label lblRateThird_IT;
+        private System.Windows.Forms.Label lblFireTheft_IT;
+        private System.Windows.Forms.Label lblDesFireTheft_IT;
+        private System.Windows.Forms.Label lblRateFireTheft_IT;
+        private System.Windows.Forms.Label lblCover_IT;
+        private System.Windows.Forms.Label lblDesCover_IT;
+        private System.Windows.Forms.Label lblRateCover_IT;
     }
 }
