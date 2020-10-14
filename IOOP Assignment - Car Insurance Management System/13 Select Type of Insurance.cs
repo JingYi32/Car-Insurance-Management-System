@@ -80,5 +80,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             totalAmount.Show();
             this.Hide();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            tableLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        }
     }
 }

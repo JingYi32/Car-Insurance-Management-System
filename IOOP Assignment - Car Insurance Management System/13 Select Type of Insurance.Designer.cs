@@ -54,15 +54,16 @@
             // 
             // lblInsuranceType
             // 
-            this.lblInsuranceType.AutoSize = true;
             this.lblInsuranceType.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblInsuranceType.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInsuranceType.Location = new System.Drawing.Point(440, 25);
+            this.lblInsuranceType.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInsuranceType.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblInsuranceType.Location = new System.Drawing.Point(362, 28);
             this.lblInsuranceType.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInsuranceType.Name = "lblInsuranceType";
-            this.lblInsuranceType.Size = new System.Drawing.Size(216, 74);
+            this.lblInsuranceType.Size = new System.Drawing.Size(398, 76);
             this.lblInsuranceType.TabIndex = 0;
             this.lblInsuranceType.Text = "Insurance Type";
+            this.lblInsuranceType.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // rbThirdParty
             // 
@@ -169,53 +170,50 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(654, 481);
             this.tableLayoutPanel1.TabIndex = 7;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // lblRateCover_IT
             // 
-            this.lblRateCover_IT.AutoSize = true;
-            this.lblRateCover_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRateCover_IT.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRateCover_IT.Location = new System.Drawing.Point(492, 336);
             this.lblRateCover_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRateCover_IT.Name = "lblRateCover_IT";
-            this.lblRateCover_IT.Size = new System.Drawing.Size(45, 24);
+            this.lblRateCover_IT.Size = new System.Drawing.Size(160, 145);
             this.lblRateCover_IT.TabIndex = 11;
             this.lblRateCover_IT.Text = "2.84";
             this.lblRateCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDesFireTheft_IT
             // 
-            this.lblDesFireTheft_IT.AutoSize = true;
-            this.lblDesFireTheft_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesFireTheft_IT.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesFireTheft_IT.Location = new System.Drawing.Point(165, 192);
             this.lblDesFireTheft_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDesFireTheft_IT.Name = "lblDesFireTheft_IT";
-            this.lblDesFireTheft_IT.Size = new System.Drawing.Size(301, 72);
+            this.lblDesFireTheft_IT.Size = new System.Drawing.Size(323, 144);
             this.lblDesFireTheft_IT.TabIndex = 15;
             this.lblDesFireTheft_IT.Text = "Everything above, plus coverage to your own vehicle if your car grt caught in fir" +
     "e, or get stolen.";
-            this.lblDesFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDesFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblDesFireTheft_IT.Click += new System.EventHandler(this.label8_Click);
             // 
             // lblDesCover_IT
             // 
-            this.lblDesCover_IT.AutoSize = true;
-            this.lblDesCover_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesCover_IT.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesCover_IT.Location = new System.Drawing.Point(165, 336);
             this.lblDesCover_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDesCover_IT.Name = "lblDesCover_IT";
-            this.lblDesCover_IT.Size = new System.Drawing.Size(314, 48);
+            this.lblDesCover_IT.Size = new System.Drawing.Size(323, 145);
             this.lblDesCover_IT.TabIndex = 10;
             this.lblDesCover_IT.Text = "Everything above, including fire and theft, plus coverage to your own car.";
-            this.lblDesCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDesCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblType_IT
             // 
-            this.lblType_IT.AutoSize = true;
-            this.lblType_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblType_IT.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblType_IT.Location = new System.Drawing.Point(2, 0);
             this.lblType_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblType_IT.Name = "lblType_IT";
-            this.lblType_IT.Size = new System.Drawing.Size(135, 24);
+            this.lblType_IT.Size = new System.Drawing.Size(159, 48);
             this.lblType_IT.TabIndex = 8;
             this.lblType_IT.Text = "Insurance Type";
             this.lblType_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -223,12 +221,11 @@
             // 
             // lblCover_IT
             // 
-            this.lblCover_IT.AutoSize = true;
-            this.lblCover_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCover_IT.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCover_IT.Location = new System.Drawing.Point(2, 336);
             this.lblCover_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCover_IT.Name = "lblCover_IT";
-            this.lblCover_IT.Size = new System.Drawing.Size(140, 48);
+            this.lblCover_IT.Size = new System.Drawing.Size(159, 145);
             this.lblCover_IT.TabIndex = 9;
             this.lblCover_IT.Text = "Comprehensive Cover";
             this.lblCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -236,12 +233,11 @@
             // 
             // lblFireTheft_IT
             // 
-            this.lblFireTheft_IT.AutoSize = true;
-            this.lblFireTheft_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFireTheft_IT.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFireTheft_IT.Location = new System.Drawing.Point(2, 192);
             this.lblFireTheft_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFireTheft_IT.Name = "lblFireTheft_IT";
-            this.lblFireTheft_IT.Size = new System.Drawing.Size(142, 48);
+            this.lblFireTheft_IT.Size = new System.Drawing.Size(159, 144);
             this.lblFireTheft_IT.TabIndex = 14;
             this.lblFireTheft_IT.Text = "Third Party, Fire and Theft";
             this.lblFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -249,23 +245,22 @@
             // 
             // lblRateFireTheft_IT
             // 
-            this.lblRateFireTheft_IT.AutoSize = true;
-            this.lblRateFireTheft_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRateFireTheft_IT.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRateFireTheft_IT.Location = new System.Drawing.Point(492, 192);
             this.lblRateFireTheft_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRateFireTheft_IT.Name = "lblRateFireTheft_IT";
-            this.lblRateFireTheft_IT.Size = new System.Drawing.Size(45, 24);
+            this.lblRateFireTheft_IT.Size = new System.Drawing.Size(160, 144);
             this.lblRateFireTheft_IT.TabIndex = 8;
             this.lblRateFireTheft_IT.Text = "2.75";
+            this.lblRateFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDescription_IT
             // 
-            this.lblDescription_IT.AutoSize = true;
-            this.lblDescription_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription_IT.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription_IT.Location = new System.Drawing.Point(165, 0);
             this.lblDescription_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescription_IT.Name = "lblDescription_IT";
-            this.lblDescription_IT.Size = new System.Drawing.Size(106, 24);
+            this.lblDescription_IT.Size = new System.Drawing.Size(323, 48);
             this.lblDescription_IT.TabIndex = 9;
             this.lblDescription_IT.Text = "Description";
             this.lblDescription_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,12 +268,11 @@
             // 
             // lblRateThird_IT
             // 
-            this.lblRateThird_IT.AutoSize = true;
-            this.lblRateThird_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRateThird_IT.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRateThird_IT.Location = new System.Drawing.Point(492, 48);
             this.lblRateThird_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRateThird_IT.Name = "lblRateThird_IT";
-            this.lblRateThird_IT.Size = new System.Drawing.Size(45, 24);
+            this.lblRateThird_IT.Size = new System.Drawing.Size(160, 144);
             this.lblRateThird_IT.TabIndex = 13;
             this.lblRateThird_IT.Text = "2.66";
             this.lblRateThird_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -286,12 +280,11 @@
             // 
             // lblRate_IT
             // 
-            this.lblRate_IT.AutoSize = true;
-            this.lblRate_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRate_IT.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRate_IT.Location = new System.Drawing.Point(492, 0);
             this.lblRate_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRate_IT.Name = "lblRate_IT";
-            this.lblRate_IT.Size = new System.Drawing.Size(80, 24);
+            this.lblRate_IT.Size = new System.Drawing.Size(160, 48);
             this.lblRate_IT.TabIndex = 10;
             this.lblRate_IT.Text = "Rate (%)";
             this.lblRate_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -299,12 +292,11 @@
             // 
             // lblThirdParty_IT
             // 
-            this.lblThirdParty_IT.AutoSize = true;
-            this.lblThirdParty_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThirdParty_IT.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThirdParty_IT.Location = new System.Drawing.Point(2, 48);
             this.lblThirdParty_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblThirdParty_IT.Name = "lblThirdParty_IT";
-            this.lblThirdParty_IT.Size = new System.Drawing.Size(102, 24);
+            this.lblThirdParty_IT.Size = new System.Drawing.Size(159, 144);
             this.lblThirdParty_IT.TabIndex = 11;
             this.lblThirdParty_IT.Text = "Third Party";
             this.lblThirdParty_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -312,15 +304,14 @@
             // 
             // lblDesThird_IT
             // 
-            this.lblDesThird_IT.AutoSize = true;
-            this.lblDesThird_IT.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesThird_IT.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesThird_IT.Location = new System.Drawing.Point(165, 48);
             this.lblDesThird_IT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDesThird_IT.Name = "lblDesThird_IT";
-            this.lblDesThird_IT.Size = new System.Drawing.Size(309, 144);
+            this.lblDesThird_IT.Size = new System.Drawing.Size(323, 144);
             this.lblDesThird_IT.TabIndex = 12;
             this.lblDesThird_IT.Text = resources.GetString("lblDesThird_IT.Text");
-            this.lblDesThird_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDesThird_IT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblDesThird_IT.Click += new System.EventHandler(this.label5_Click);
             // 
             // Select_Type_of_Insurance
@@ -343,7 +334,6 @@
             this.Text = "Select_Type_of_Insurance";
             this.Load += new System.EventHandler(this.Select_Type_of_Insurance_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

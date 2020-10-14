@@ -59,7 +59,7 @@
             // lblPur_Ins
             // 
             this.lblPur_Ins.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblPur_Ins.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPur_Ins.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPur_Ins.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblPur_Ins.Location = new System.Drawing.Point(362, 28);
             this.lblPur_Ins.Name = "lblPur_Ins";
