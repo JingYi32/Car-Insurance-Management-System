@@ -36,5 +36,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
 
         }
+
+        private void Edit_Customer_Profile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

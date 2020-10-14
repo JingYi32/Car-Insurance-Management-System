@@ -65,7 +65,7 @@
             // lblInsuranceDetails
             // 
             this.lblInsuranceDetails.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblInsuranceDetails.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInsuranceDetails.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInsuranceDetails.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblInsuranceDetails.Location = new System.Drawing.Point(362, 28);
             this.lblInsuranceDetails.Name = "lblInsuranceDetails";

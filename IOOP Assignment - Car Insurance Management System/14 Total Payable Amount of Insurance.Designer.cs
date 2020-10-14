@@ -42,9 +42,8 @@
             this.lblSSTCount = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnShow_TA = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +89,7 @@
             this.btnBack_TA.BackColor = System.Drawing.Color.CadetBlue;
             this.btnBack_TA.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack_TA.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnBack_TA.Location = new System.Drawing.Point(457, 647);
+            this.btnBack_TA.Location = new System.Drawing.Point(98, 649);
             this.btnBack_TA.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnBack_TA.Name = "btnBack_TA";
             this.btnBack_TA.Size = new System.Drawing.Size(203, 49);
@@ -126,8 +125,8 @@
             this.tlpTotalAmount.Controls.Add(this.lblSSTCount, 1, 1);
             this.tlpTotalAmount.Controls.Add(this.label9, 1, 4);
             this.tlpTotalAmount.Controls.Add(this.label6, 0, 4);
-            this.tlpTotalAmount.Controls.Add(this.textBox1, 1, 0);
-            this.tlpTotalAmount.Controls.Add(this.textBox2, 1, 3);
+            this.tlpTotalAmount.Controls.Add(this.label8, 1, 0);
+            this.tlpTotalAmount.Controls.Add(this.label10, 1, 3);
             this.tlpTotalAmount.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.tlpTotalAmount.Location = new System.Drawing.Point(186, 237);
             this.tlpTotalAmount.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
@@ -232,37 +231,28 @@
             this.label6.Text = "Total Annual Premium:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnShow_TA
+            // label10
             // 
-            this.btnShow_TA.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnShow_TA.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShow_TA.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnShow_TA.Location = new System.Drawing.Point(98, 649);
-            this.btnShow_TA.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.btnShow_TA.Name = "btnShow_TA";
-            this.btnShow_TA.Size = new System.Drawing.Size(203, 49);
-            this.btnShow_TA.TabIndex = 6;
-            this.btnShow_TA.Text = "Show";
-            this.btnShow_TA.UseVisualStyleBackColor = false;
-            this.btnShow_TA.Click += new System.EventHandler(this.button1_Click);
+            this.label10.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(374, 195);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(369, 65);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "RM 00.00";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label8_Click);
             // 
-            // textBox1
+            // label8
             // 
-            this.textBox1.Font = new System.Drawing.Font("Gabriola", 16.2F);
-            this.textBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox1.Location = new System.Drawing.Point(375, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(367, 53);
-            this.textBox1.TabIndex = 14;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Gabriola", 16.2F);
-            this.textBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.textBox2.Location = new System.Drawing.Point(375, 198);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(367, 53);
-            this.textBox2.TabIndex = 15;
+            this.label8.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(374, 0);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(369, 65);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "RM 00.00";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Total_Payable_Amount_of_Insurance
             // 
@@ -270,21 +260,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.btnShow_TA);
             this.Controls.Add(this.tlpTotalAmount);
             this.Controls.Add(this.btnSave_TA);
-            this.Controls.Add(this.btnBack_TA);
             this.Controls.Add(this.lblCustomerName_TA);
             this.Controls.Add(this.lblCustomerID_TA);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnBack_TA);
             this.Font = new System.Drawing.Font("Gabriola", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "Total_Payable_Amount_of_Insurance";
             this.Text = "Total_Payable_Amount_of_Insurance";
             this.Load += new System.EventHandler(this.Total_Payable_Amount_of_Insurance_Load);
             this.tlpTotalAmount.ResumeLayout(false);
-            this.tlpTotalAmount.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -304,9 +291,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblSSTCount;
-        private System.Windows.Forms.Button btnShow_TA;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label10;
     }
 }

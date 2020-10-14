@@ -53,7 +53,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label1.Location = new System.Drawing.Point(362, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
