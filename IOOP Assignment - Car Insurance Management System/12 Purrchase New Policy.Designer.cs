@@ -302,7 +302,7 @@
             this.btnMainPage.BackColor = System.Drawing.Color.CadetBlue;
             this.btnMainPage.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMainPage.ForeColor = System.Drawing.Color.White;
-            this.btnMainPage.Location = new System.Drawing.Point(583, 692);
+            this.btnMainPage.Location = new System.Drawing.Point(98, 692);
             this.btnMainPage.Margin = new System.Windows.Forms.Padding(2);
             this.btnMainPage.Name = "btnMainPage";
             this.btnMainPage.Size = new System.Drawing.Size(203, 49);

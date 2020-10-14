@@ -19,9 +19,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnBack_TA_Click(object sender, EventArgs e)
         {
-            Select_Type_of_Insurance select = new Select_Type_of_Insurance();
-            select.Show();
-            this.Close();
+            Main_Page main_page = new Main_Page();
+            main_page.Show();
+            this.Hide();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

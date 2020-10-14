@@ -32,9 +32,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnProceed_Click(object sender, EventArgs e)
         {
-            Total_Payable_Amount_of_Insurance total_payable_amount_of_Insurance = new Total_Payable_Amount_of_Insurance();
+            Select_Type_of_Insurance select_type_of_insurance = new Select_Type_of_Insurance();
             this.Hide();
-            total_payable_amount_of_Insurance.Show();
+            select_type_of_insurance.Show();
         }
     }
 }

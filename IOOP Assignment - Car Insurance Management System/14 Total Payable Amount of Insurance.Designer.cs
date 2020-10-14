@@ -35,52 +35,53 @@
             this.btnSave_TA = new System.Windows.Forms.Button();
             this.tlpTotalAmount = new System.Windows.Forms.TableLayoutPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textInsuranceTotal_TA = new System.Windows.Forms.TextBox();
             this.lblSSTCount = new System.Windows.Forms.Label();
-            this.textNCD = new System.Windows.Forms.TextBox();
-            this.btnShow_TA = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnShow_TA = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(454, 9);
+            this.label1.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label1.Location = new System.Drawing.Point(362, 28);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 74);
+            this.label1.Size = new System.Drawing.Size(398, 76);
             this.label1.TabIndex = 0;
             this.label1.Text = "Total Amount";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCustomerID_TA
             // 
-            this.lblCustomerID_TA.AutoSize = true;
             this.lblCustomerID_TA.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblCustomerID_TA.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerID_TA.Location = new System.Drawing.Point(81, 145);
+            this.lblCustomerID_TA.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblCustomerID_TA.Location = new System.Drawing.Point(98, 145);
             this.lblCustomerID_TA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerID_TA.Name = "lblCustomerID_TA";
-            this.lblCustomerID_TA.Size = new System.Drawing.Size(150, 51);
+            this.lblCustomerID_TA.Size = new System.Drawing.Size(350, 51);
             this.lblCustomerID_TA.TabIndex = 1;
             this.lblCustomerID_TA.Text = "Customer ID:";
             // 
             // lblCustomerName_TA
             // 
-            this.lblCustomerName_TA.AutoSize = true;
             this.lblCustomerName_TA.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblCustomerName_TA.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName_TA.Location = new System.Drawing.Point(590, 145);
+            this.lblCustomerName_TA.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblCustomerName_TA.Location = new System.Drawing.Point(670, 145);
             this.lblCustomerName_TA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCustomerName_TA.Name = "lblCustomerName_TA";
-            this.lblCustomerName_TA.Size = new System.Drawing.Size(182, 51);
+            this.lblCustomerName_TA.Size = new System.Drawing.Size(350, 51);
             this.lblCustomerName_TA.TabIndex = 2;
             this.lblCustomerName_TA.Text = "Customer Name:";
             // 
@@ -88,10 +89,11 @@
             // 
             this.btnBack_TA.BackColor = System.Drawing.Color.CadetBlue;
             this.btnBack_TA.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack_TA.Location = new System.Drawing.Point(465, 647);
+            this.btnBack_TA.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnBack_TA.Location = new System.Drawing.Point(457, 647);
             this.btnBack_TA.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnBack_TA.Name = "btnBack_TA";
-            this.btnBack_TA.Size = new System.Drawing.Size(115, 63);
+            this.btnBack_TA.Size = new System.Drawing.Size(203, 49);
             this.btnBack_TA.TabIndex = 3;
             this.btnBack_TA.Text = "Back";
             this.btnBack_TA.UseVisualStyleBackColor = false;
@@ -101,10 +103,11 @@
             // 
             this.btnSave_TA.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSave_TA.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave_TA.Location = new System.Drawing.Point(675, 647);
+            this.btnSave_TA.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnSave_TA.Location = new System.Drawing.Point(817, 649);
             this.btnSave_TA.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnSave_TA.Name = "btnSave_TA";
-            this.btnSave_TA.Size = new System.Drawing.Size(115, 63);
+            this.btnSave_TA.Size = new System.Drawing.Size(203, 49);
             this.btnSave_TA.TabIndex = 4;
             this.btnSave_TA.Text = "Save";
             this.btnSave_TA.UseVisualStyleBackColor = false;
@@ -119,13 +122,14 @@
             this.tlpTotalAmount.Controls.Add(this.label2, 0, 0);
             this.tlpTotalAmount.Controls.Add(this.label5, 0, 3);
             this.tlpTotalAmount.Controls.Add(this.label4, 0, 2);
-            this.tlpTotalAmount.Controls.Add(this.textInsuranceTotal_TA, 1, 0);
             this.tlpTotalAmount.Controls.Add(this.label3, 0, 1);
             this.tlpTotalAmount.Controls.Add(this.lblSSTCount, 1, 1);
-            this.tlpTotalAmount.Controls.Add(this.textNCD, 1, 3);
             this.tlpTotalAmount.Controls.Add(this.label9, 1, 4);
             this.tlpTotalAmount.Controls.Add(this.label6, 0, 4);
-            this.tlpTotalAmount.Location = new System.Drawing.Point(226, 237);
+            this.tlpTotalAmount.Controls.Add(this.textBox1, 1, 0);
+            this.tlpTotalAmount.Controls.Add(this.textBox2, 1, 3);
+            this.tlpTotalAmount.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.tlpTotalAmount.Location = new System.Drawing.Point(186, 237);
             this.tlpTotalAmount.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.tlpTotalAmount.Name = "tlpTotalAmount";
             this.tlpTotalAmount.RowCount = 5;
@@ -135,130 +139,130 @@
             this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpTotalAmount.Size = new System.Drawing.Size(588, 329);
+            this.tlpTotalAmount.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpTotalAmount.Size = new System.Drawing.Size(745, 329);
             this.tlpTotalAmount.TabIndex = 5;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(296, 130);
+            this.label7.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(374, 130);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 24);
+            this.label7.Size = new System.Drawing.Size(369, 65);
             this.label7.TabIndex = 6;
-            this.label7.Text = "RM10";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(2, 260);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(201, 24);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Total Annual Premium:";
+            this.label7.Text = "RM 10.00";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(2, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(274, 24);
+            this.label2.Size = new System.Drawing.Size(368, 65);
             this.label2.TabIndex = 0;
             this.label2.Text = "Insurance Premium Gross Total:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(2, 195);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(223, 24);
+            this.label5.Size = new System.Drawing.Size(368, 65);
             this.label5.TabIndex = 8;
             this.label5.Text = "No-Claim Discount (NCD):";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(2, 130);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 24);
+            this.label4.Size = new System.Drawing.Size(368, 65);
             this.label4.TabIndex = 7;
             this.label4.Text = "Stamp Duty:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(2, 65);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 24);
+            this.label3.Size = new System.Drawing.Size(368, 65);
             this.label3.TabIndex = 6;
             this.label3.Text = "SST (6%):";
-            // 
-            // textInsuranceTotal_TA
-            // 
-            this.textInsuranceTotal_TA.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textInsuranceTotal_TA.Location = new System.Drawing.Point(296, 4);
-            this.textInsuranceTotal_TA.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textInsuranceTotal_TA.Name = "textInsuranceTotal_TA";
-            this.textInsuranceTotal_TA.Size = new System.Drawing.Size(130, 32);
-            this.textInsuranceTotal_TA.TabIndex = 6;
-            this.textInsuranceTotal_TA.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblSSTCount
             // 
-            this.lblSSTCount.AutoSize = true;
-            this.lblSSTCount.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSSTCount.Location = new System.Drawing.Point(296, 65);
+            this.lblSSTCount.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSSTCount.Location = new System.Drawing.Point(374, 65);
             this.lblSSTCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSSTCount.Name = "lblSSTCount";
-            this.lblSSTCount.Size = new System.Drawing.Size(38, 24);
+            this.lblSSTCount.Size = new System.Drawing.Size(369, 65);
             this.lblSSTCount.TabIndex = 10;
-            this.lblSSTCount.Text = "RM";
+            this.lblSSTCount.Text = "RM 00.00";
+            this.lblSSTCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblSSTCount.Click += new System.EventHandler(this.label8_Click);
             // 
-            // textNCD
+            // label9
             // 
-            this.textNCD.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNCD.Location = new System.Drawing.Point(296, 199);
-            this.textNCD.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textNCD.Name = "textNCD";
-            this.textNCD.Size = new System.Drawing.Size(130, 32);
-            this.textNCD.TabIndex = 11;
+            this.label9.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(374, 260);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(369, 69);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "RM 00.00";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(2, 260);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(368, 69);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Total Annual Premium:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnShow_TA
             // 
             this.btnShow_TA.BackColor = System.Drawing.Color.CadetBlue;
             this.btnShow_TA.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShow_TA.Location = new System.Drawing.Point(255, 647);
+            this.btnShow_TA.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnShow_TA.Location = new System.Drawing.Point(98, 649);
             this.btnShow_TA.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnShow_TA.Name = "btnShow_TA";
-            this.btnShow_TA.Size = new System.Drawing.Size(115, 63);
+            this.btnShow_TA.Size = new System.Drawing.Size(203, 49);
             this.btnShow_TA.TabIndex = 6;
             this.btnShow_TA.Text = "Show";
             this.btnShow_TA.UseVisualStyleBackColor = false;
             this.btnShow_TA.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label9
+            // textBox1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(296, 260);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(38, 24);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "RM";
+            this.textBox1.Font = new System.Drawing.Font("Gabriola", 16.2F);
+            this.textBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.textBox1.Location = new System.Drawing.Point(375, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(367, 53);
+            this.textBox1.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Gabriola", 16.2F);
+            this.textBox2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.textBox2.Location = new System.Drawing.Point(375, 198);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(367, 53);
+            this.textBox2.TabIndex = 15;
             // 
             // Total_Payable_Amount_of_Insurance
             // 
@@ -274,6 +278,7 @@
             this.Controls.Add(this.lblCustomerID_TA);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Gabriola", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "Total_Payable_Amount_of_Insurance";
             this.Text = "Total_Payable_Amount_of_Insurance";
@@ -281,7 +286,6 @@
             this.tlpTotalAmount.ResumeLayout(false);
             this.tlpTotalAmount.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -299,10 +303,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textInsuranceTotal_TA;
         private System.Windows.Forms.Label lblSSTCount;
         private System.Windows.Forms.Button btnShow_TA;
-        private System.Windows.Forms.TextBox textNCD;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

@@ -69,7 +69,8 @@
             // 
             this.rbThirdParty.AutoSize = true;
             this.rbThirdParty.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbThirdParty.Location = new System.Drawing.Point(800, 242);
+            this.rbThirdParty.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.rbThirdParty.Location = new System.Drawing.Point(800, 310);
             this.rbThirdParty.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.rbThirdParty.Name = "rbThirdParty";
             this.rbThirdParty.Size = new System.Drawing.Size(141, 55);
@@ -82,7 +83,8 @@
             // 
             this.rbFireTheft.AutoSize = true;
             this.rbFireTheft.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFireTheft.Location = new System.Drawing.Point(800, 311);
+            this.rbFireTheft.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.rbFireTheft.Location = new System.Drawing.Point(800, 379);
             this.rbFireTheft.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.rbFireTheft.Name = "rbFireTheft";
             this.rbFireTheft.Size = new System.Drawing.Size(273, 55);
@@ -95,7 +97,8 @@
             // 
             this.rbComprehensive.AutoSize = true;
             this.rbComprehensive.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbComprehensive.Location = new System.Drawing.Point(800, 384);
+            this.rbComprehensive.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.rbComprehensive.Location = new System.Drawing.Point(800, 452);
             this.rbComprehensive.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.rbComprehensive.Name = "rbComprehensive";
             this.rbComprehensive.Size = new System.Drawing.Size(232, 55);
@@ -106,24 +109,25 @@
             // 
             // lblSelect
             // 
-            this.lblSelect.AutoSize = true;
             this.lblSelect.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblSelect.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSelect.Location = new System.Drawing.Point(767, 172);
+            this.lblSelect.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblSelect.Location = new System.Drawing.Point(767, 240);
             this.lblSelect.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSelect.Name = "lblSelect";
-            this.lblSelect.Size = new System.Drawing.Size(262, 51);
+            this.lblSelect.Size = new System.Drawing.Size(306, 51);
             this.lblSelect.TabIndex = 4;
-            this.lblSelect.Text = "Please select Insurance Type";
+            this.lblSelect.Text = "Please select Insurance Type:";
             // 
             // btnBack_IT
             // 
             this.btnBack_IT.BackColor = System.Drawing.Color.CadetBlue;
             this.btnBack_IT.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack_IT.Location = new System.Drawing.Point(72, 644);
+            this.btnBack_IT.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnBack_IT.Location = new System.Drawing.Point(98, 649);
             this.btnBack_IT.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnBack_IT.Name = "btnBack_IT";
-            this.btnBack_IT.Size = new System.Drawing.Size(117, 58);
+            this.btnBack_IT.Size = new System.Drawing.Size(203, 49);
             this.btnBack_IT.TabIndex = 5;
             this.btnBack_IT.Text = "Back";
             this.btnBack_IT.UseVisualStyleBackColor = false;
@@ -133,10 +137,11 @@
             // 
             this.btnContinue_IT.BackColor = System.Drawing.Color.CadetBlue;
             this.btnContinue_IT.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinue_IT.Location = new System.Drawing.Point(912, 644);
+            this.btnContinue_IT.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnContinue_IT.Location = new System.Drawing.Point(817, 649);
             this.btnContinue_IT.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.btnContinue_IT.Name = "btnContinue_IT";
-            this.btnContinue_IT.Size = new System.Drawing.Size(117, 58);
+            this.btnContinue_IT.Size = new System.Drawing.Size(203, 49);
             this.btnContinue_IT.TabIndex = 6;
             this.btnContinue_IT.Text = "Continue";
             this.btnContinue_IT.UseVisualStyleBackColor = false;
@@ -160,7 +165,8 @@
             this.tableLayoutPanel1.Controls.Add(this.lblRate_IT, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblThirdParty_IT, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblDesThird_IT, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(72, 124);
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(78, 135);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
