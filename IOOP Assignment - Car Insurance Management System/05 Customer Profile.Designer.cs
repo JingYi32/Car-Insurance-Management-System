@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.lblProfile = new System.Windows.Forms.Label();
-            this.lblCustomerID = new System.Windows.Forms.Label();
-            this.lblCustomerName = new System.Windows.Forms.Label();
-            this.lblCustomerIDN = new System.Windows.Forms.Label();
-            this.lblCustomerGender = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblCustomerAddress = new System.Windows.Forms.Label();
-            this.lblCustomerPhone = new System.Windows.Forms.Label();
-            this.lblHistory = new System.Windows.Forms.Label();
+            this.lblCUST_ID = new System.Windows.Forms.Label();
+            this.lblCUST_Name = new System.Windows.Forms.Label();
+            this.lblCUST_ID_NO = new System.Windows.Forms.Label();
+            this.lblCUST_Gender = new System.Windows.Forms.Label();
+            this.lblCUST_Email = new System.Windows.Forms.Label();
+            this.lblCUST_Address = new System.Windows.Forms.Label();
+            this.lblCUST_Phone = new System.Windows.Forms.Label();
+            this.lblCUST_History = new System.Windows.Forms.Label();
             this.tlpHistory = new System.Windows.Forms.TableLayoutPanel();
             this.lblEnddate = new System.Windows.Forms.Label();
             this.lblStartdate = new System.Windows.Forms.Label();
@@ -63,93 +63,93 @@
             this.lblProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblProfile.Click += new System.EventHandler(this.lblProfile_Click);
             // 
-            // lblCustomerID
+            // lblCUST_ID
             // 
-            this.lblCustomerID.AutoSize = true;
-            this.lblCustomerID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerID.Location = new System.Drawing.Point(98, 106);
-            this.lblCustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerID.Name = "lblCustomerID";
-            this.lblCustomerID.Size = new System.Drawing.Size(119, 45);
-            this.lblCustomerID.TabIndex = 2;
-            this.lblCustomerID.Text = "Customer ID:";
+            this.lblCUST_ID.AutoSize = true;
+            this.lblCUST_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_ID.Location = new System.Drawing.Point(98, 106);
+            this.lblCUST_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_ID.Name = "lblCUST_ID";
+            this.lblCUST_ID.Size = new System.Drawing.Size(119, 45);
+            this.lblCUST_ID.TabIndex = 2;
+            this.lblCUST_ID.Text = "Customer ID:";
             // 
-            // lblCustomerName
+            // lblCUST_Name
             // 
-            this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName.Location = new System.Drawing.Point(98, 143);
-            this.lblCustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(155, 45);
-            this.lblCustomerName.TabIndex = 3;
-            this.lblCustomerName.Text = "Customer\'s Name:";
+            this.lblCUST_Name.AutoSize = true;
+            this.lblCUST_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Name.Location = new System.Drawing.Point(98, 143);
+            this.lblCUST_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_Name.Name = "lblCUST_Name";
+            this.lblCUST_Name.Size = new System.Drawing.Size(155, 45);
+            this.lblCUST_Name.TabIndex = 3;
+            this.lblCUST_Name.Text = "Customer\'s Name:";
             // 
-            // lblCustomerIDN
+            // lblCUST_ID_NO
             // 
-            this.lblCustomerIDN.AutoSize = true;
-            this.lblCustomerIDN.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerIDN.Location = new System.Drawing.Point(98, 181);
-            this.lblCustomerIDN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerIDN.Name = "lblCustomerIDN";
-            this.lblCustomerIDN.Size = new System.Drawing.Size(108, 45);
-            this.lblCustomerIDN.TabIndex = 4;
-            this.lblCustomerIDN.Text = "ID Number:";
+            this.lblCUST_ID_NO.AutoSize = true;
+            this.lblCUST_ID_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_ID_NO.Location = new System.Drawing.Point(98, 181);
+            this.lblCUST_ID_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_ID_NO.Name = "lblCUST_ID_NO";
+            this.lblCUST_ID_NO.Size = new System.Drawing.Size(108, 45);
+            this.lblCUST_ID_NO.TabIndex = 4;
+            this.lblCUST_ID_NO.Text = "ID Number:";
             // 
-            // lblCustomerGender
+            // lblCUST_Gender
             // 
-            this.lblCustomerGender.AutoSize = true;
-            this.lblCustomerGender.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerGender.Location = new System.Drawing.Point(98, 256);
-            this.lblCustomerGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerGender.Name = "lblCustomerGender";
-            this.lblCustomerGender.Size = new System.Drawing.Size(77, 45);
-            this.lblCustomerGender.TabIndex = 5;
-            this.lblCustomerGender.Text = "Gender:";
+            this.lblCUST_Gender.AutoSize = true;
+            this.lblCUST_Gender.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Gender.Location = new System.Drawing.Point(98, 256);
+            this.lblCUST_Gender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_Gender.Name = "lblCUST_Gender";
+            this.lblCUST_Gender.Size = new System.Drawing.Size(77, 45);
+            this.lblCUST_Gender.TabIndex = 5;
+            this.lblCUST_Gender.Text = "Gender:";
             // 
-            // lblEmail
+            // lblCUST_Email
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(98, 332);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(132, 45);
-            this.lblEmail.TabIndex = 6;
-            this.lblEmail.Text = "Email Address:";
+            this.lblCUST_Email.AutoSize = true;
+            this.lblCUST_Email.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Email.Location = new System.Drawing.Point(98, 332);
+            this.lblCUST_Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_Email.Name = "lblCUST_Email";
+            this.lblCUST_Email.Size = new System.Drawing.Size(132, 45);
+            this.lblCUST_Email.TabIndex = 6;
+            this.lblCUST_Email.Text = "Email Address:";
             // 
-            // lblCustomerAddress
+            // lblCUST_Address
             // 
-            this.lblCustomerAddress.AutoSize = true;
-            this.lblCustomerAddress.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerAddress.Location = new System.Drawing.Point(98, 219);
-            this.lblCustomerAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerAddress.Name = "lblCustomerAddress";
-            this.lblCustomerAddress.Size = new System.Drawing.Size(84, 45);
-            this.lblCustomerAddress.TabIndex = 7;
-            this.lblCustomerAddress.Text = "Address:";
+            this.lblCUST_Address.AutoSize = true;
+            this.lblCUST_Address.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Address.Location = new System.Drawing.Point(98, 219);
+            this.lblCUST_Address.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_Address.Name = "lblCUST_Address";
+            this.lblCUST_Address.Size = new System.Drawing.Size(84, 45);
+            this.lblCUST_Address.TabIndex = 7;
+            this.lblCUST_Address.Text = "Address:";
             // 
-            // lblCustomerPhone
+            // lblCUST_Phone
             // 
-            this.lblCustomerPhone.AutoSize = true;
-            this.lblCustomerPhone.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerPhone.Location = new System.Drawing.Point(98, 293);
-            this.lblCustomerPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerPhone.Name = "lblCustomerPhone";
-            this.lblCustomerPhone.Size = new System.Drawing.Size(149, 45);
-            this.lblCustomerPhone.TabIndex = 8;
-            this.lblCustomerPhone.Text = "Contact Number:";
+            this.lblCUST_Phone.AutoSize = true;
+            this.lblCUST_Phone.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Phone.Location = new System.Drawing.Point(98, 293);
+            this.lblCUST_Phone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_Phone.Name = "lblCUST_Phone";
+            this.lblCUST_Phone.Size = new System.Drawing.Size(149, 45);
+            this.lblCUST_Phone.TabIndex = 8;
+            this.lblCUST_Phone.Text = "Contact Number:";
             // 
-            // lblHistory
+            // lblCUST_History
             // 
-            this.lblHistory.AutoSize = true;
-            this.lblHistory.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHistory.Location = new System.Drawing.Point(98, 369);
-            this.lblHistory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblHistory.Name = "lblHistory";
-            this.lblHistory.Size = new System.Drawing.Size(150, 45);
-            this.lblHistory.TabIndex = 9;
-            this.lblHistory.Text = "Purchase History:";
+            this.lblCUST_History.AutoSize = true;
+            this.lblCUST_History.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_History.Location = new System.Drawing.Point(98, 369);
+            this.lblCUST_History.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_History.Name = "lblCUST_History";
+            this.lblCUST_History.Size = new System.Drawing.Size(150, 45);
+            this.lblCUST_History.TabIndex = 9;
+            this.lblCUST_History.Text = "Purchase History:";
             // 
             // tlpHistory
             // 
@@ -296,14 +296,14 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.tlpHistory);
-            this.Controls.Add(this.lblHistory);
-            this.Controls.Add(this.lblCustomerPhone);
-            this.Controls.Add(this.lblCustomerAddress);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblCustomerGender);
-            this.Controls.Add(this.lblCustomerIDN);
-            this.Controls.Add(this.lblCustomerName);
-            this.Controls.Add(this.lblCustomerID);
+            this.Controls.Add(this.lblCUST_History);
+            this.Controls.Add(this.lblCUST_Phone);
+            this.Controls.Add(this.lblCUST_Address);
+            this.Controls.Add(this.lblCUST_Email);
+            this.Controls.Add(this.lblCUST_Gender);
+            this.Controls.Add(this.lblCUST_ID_NO);
+            this.Controls.Add(this.lblCUST_Name);
+            this.Controls.Add(this.lblCUST_ID);
             this.Controls.Add(this.lblProfile);
             this.Font = new System.Drawing.Font("Gabriola", 15F);
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
@@ -319,14 +319,14 @@
         #endregion
 
         private System.Windows.Forms.Label lblProfile;
-        private System.Windows.Forms.Label lblCustomerID;
-        private System.Windows.Forms.Label lblCustomerName;
-        private System.Windows.Forms.Label lblCustomerIDN;
-        private System.Windows.Forms.Label lblCustomerGender;
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblCustomerAddress;
-        private System.Windows.Forms.Label lblCustomerPhone;
-        private System.Windows.Forms.Label lblHistory;
+        private System.Windows.Forms.Label lblCUST_ID;
+        private System.Windows.Forms.Label lblCUST_Name;
+        private System.Windows.Forms.Label lblCUST_ID_NO;
+        private System.Windows.Forms.Label lblCUST_Gender;
+        private System.Windows.Forms.Label lblCUST_Email;
+        private System.Windows.Forms.Label lblCUST_Address;
+        private System.Windows.Forms.Label lblCUST_Phone;
+        private System.Windows.Forms.Label lblCUST_History;
         private System.Windows.Forms.TableLayoutPanel tlpHistory;
         private System.Windows.Forms.Label lblEnddate;
         private System.Windows.Forms.Label lblStartdate;

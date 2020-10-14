@@ -34,10 +34,10 @@
             this.lblPurchasedCustomer = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblPurchasedDate = new System.Windows.Forms.Label();
-            this.btnSignin = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.SearchSearch = new System.Windows.Forms.TextBox();
+            this.btnMainPage = new System.Windows.Forms.Button();
+            this.btnCUST = new System.Windows.Forms.Button();
+            this.btnINS = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.tlpSearchResult.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,52 +122,52 @@
             this.lblPurchasedDate.Text = "Purchased Date";
             this.lblPurchasedDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnSignin
+            // btnMainPage
             // 
-            this.btnSignin.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnSignin.ForeColor = System.Drawing.Color.White;
-            this.btnSignin.Location = new System.Drawing.Point(98, 649);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(203, 49);
-            this.btnSignin.TabIndex = 8;
-            this.btnSignin.Text = "Back to Main Page";
-            this.btnSignin.UseVisualStyleBackColor = false;
-            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+            this.btnMainPage.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnMainPage.ForeColor = System.Drawing.Color.White;
+            this.btnMainPage.Location = new System.Drawing.Point(98, 649);
+            this.btnMainPage.Name = "btnMainPage";
+            this.btnMainPage.Size = new System.Drawing.Size(203, 49);
+            this.btnMainPage.TabIndex = 8;
+            this.btnMainPage.Text = "Back to Main Page";
+            this.btnMainPage.UseVisualStyleBackColor = false;
+            this.btnMainPage.Click += new System.EventHandler(this.btnSignin_Click);
             // 
-            // button1
+            // btnCUST
             // 
-            this.button1.BackColor = System.Drawing.Color.CadetBlue;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(458, 649);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(203, 49);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "View Customer Profile";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCUST.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnCUST.ForeColor = System.Drawing.Color.White;
+            this.btnCUST.Location = new System.Drawing.Point(458, 649);
+            this.btnCUST.Name = "btnCUST";
+            this.btnCUST.Size = new System.Drawing.Size(203, 49);
+            this.btnCUST.TabIndex = 9;
+            this.btnCUST.Text = "View Customer Profile";
+            this.btnCUST.UseVisualStyleBackColor = false;
+            this.btnCUST.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnINS
             // 
-            this.button2.BackColor = System.Drawing.Color.CadetBlue;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(819, 649);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(203, 49);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "View Insurance Details";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnINS.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnINS.ForeColor = System.Drawing.Color.White;
+            this.btnINS.Location = new System.Drawing.Point(819, 649);
+            this.btnINS.Name = "btnINS";
+            this.btnINS.Size = new System.Drawing.Size(203, 49);
+            this.btnINS.TabIndex = 10;
+            this.btnINS.Text = "View Insurance Details";
+            this.btnINS.UseVisualStyleBackColor = false;
+            this.btnINS.Click += new System.EventHandler(this.button2_Click);
             // 
-            // SearchSearch
+            // txtSearch
             // 
-            this.SearchSearch.BackColor = System.Drawing.Color.CadetBlue;
-            this.SearchSearch.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchSearch.ForeColor = System.Drawing.SystemColors.Control;
-            this.SearchSearch.Location = new System.Drawing.Point(98, 53);
-            this.SearchSearch.Name = "SearchSearch";
-            this.SearchSearch.Size = new System.Drawing.Size(924, 58);
-            this.SearchSearch.TabIndex = 1;
-            this.SearchSearch.Text = "Enter Customer ID or Insurance ID to Search:";
+            this.txtSearch.BackColor = System.Drawing.Color.CadetBlue;
+            this.txtSearch.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.ForeColor = System.Drawing.SystemColors.Control;
+            this.txtSearch.Location = new System.Drawing.Point(98, 53);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(924, 58);
+            this.txtSearch.TabIndex = 1;
+            this.txtSearch.Text = "Enter Customer ID or Insurance ID to Search:";
             // 
             // Searching_Page
             // 
@@ -175,11 +175,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnSignin);
+            this.Controls.Add(this.btnINS);
+            this.Controls.Add(this.btnCUST);
+            this.Controls.Add(this.btnMainPage);
             this.Controls.Add(this.tlpSearchResult);
-            this.Controls.Add(this.SearchSearch);
+            this.Controls.Add(this.txtSearch);
             this.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.Name = "Searching_Page";
@@ -197,9 +197,9 @@
         private System.Windows.Forms.Label lblPurchasedCustomer;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblPurchasedDate;
-        private System.Windows.Forms.Button btnSignin;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox SearchSearch;
+        private System.Windows.Forms.Button btnMainPage;
+        private System.Windows.Forms.Button btnCUST;
+        private System.Windows.Forms.Button btnINS;
+        private System.Windows.Forms.TextBox txtSearch;
     }
 }
