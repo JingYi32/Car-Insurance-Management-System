@@ -36,15 +36,10 @@
             this.lblContact_MP = new System.Windows.Forms.Label();
             this.lblAddress_MP = new System.Windows.Forms.Label();
             this.picProfilePicture_MP = new System.Windows.Forms.PictureBox();
-            this.tlpCurrentCustomer_MP = new System.Windows.Forms.TableLayoutPanel();
             this.btnBack_MP = new System.Windows.Forms.Button();
-            this.lblCustomerID_MP = new System.Windows.Forms.Label();
-            this.lblInsuranceID_MP = new System.Windows.Forms.Label();
-            this.lblType_MP = new System.Windows.Forms.Label();
-            this.lblSDate_MP = new System.Windows.Forms.Label();
-            this.lblEDate_MP = new System.Windows.Forms.Label();
+            this.dgvMP = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.picProfilePicture_MP)).BeginInit();
-            this.tlpCurrentCustomer_MP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMP)).BeginInit();
             this.SuspendLayout();
             // 
             // lblMyProfile
@@ -129,28 +124,6 @@
             this.picProfilePicture_MP.TabIndex = 7;
             this.picProfilePicture_MP.TabStop = false;
             // 
-            // tlpCurrentCustomer_MP
-            // 
-            this.tlpCurrentCustomer_MP.ColumnCount = 5;
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.58044F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.41956F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
-            this.tlpCurrentCustomer_MP.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tlpCurrentCustomer_MP.Controls.Add(this.lblType_MP, 2, 0);
-            this.tlpCurrentCustomer_MP.Controls.Add(this.lblEDate_MP, 4, 0);
-            this.tlpCurrentCustomer_MP.Controls.Add(this.lblInsuranceID_MP, 1, 0);
-            this.tlpCurrentCustomer_MP.Controls.Add(this.lblSDate_MP, 3, 0);
-            this.tlpCurrentCustomer_MP.Controls.Add(this.lblCustomerID_MP, 0, 0);
-            this.tlpCurrentCustomer_MP.Location = new System.Drawing.Point(64, 386);
-            this.tlpCurrentCustomer_MP.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
-            this.tlpCurrentCustomer_MP.Name = "tlpCurrentCustomer_MP";
-            this.tlpCurrentCustomer_MP.RowCount = 2;
-            this.tlpCurrentCustomer_MP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.07792F));
-            this.tlpCurrentCustomer_MP.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.92208F));
-            this.tlpCurrentCustomer_MP.Size = new System.Drawing.Size(767, 297);
-            this.tlpCurrentCustomer_MP.TabIndex = 8;
-            // 
             // btnBack_MP
             // 
             this.btnBack_MP.BackColor = System.Drawing.Color.CadetBlue;
@@ -163,55 +136,15 @@
             this.btnBack_MP.UseVisualStyleBackColor = false;
             this.btnBack_MP.Click += new System.EventHandler(this.btnBack_MP_Click);
             // 
-            // lblCustomerID_MP
+            // dgvMP
             // 
-            this.lblCustomerID_MP.AutoSize = true;
-            this.lblCustomerID_MP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerID_MP.Location = new System.Drawing.Point(3, 0);
-            this.lblCustomerID_MP.Name = "lblCustomerID_MP";
-            this.lblCustomerID_MP.Size = new System.Drawing.Size(150, 48);
-            this.lblCustomerID_MP.TabIndex = 10;
-            this.lblCustomerID_MP.Text = "Current Incharge Customer ID";
-            // 
-            // lblInsuranceID_MP
-            // 
-            this.lblInsuranceID_MP.AutoSize = true;
-            this.lblInsuranceID_MP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInsuranceID_MP.Location = new System.Drawing.Point(160, 0);
-            this.lblInsuranceID_MP.Name = "lblInsuranceID_MP";
-            this.lblInsuranceID_MP.Size = new System.Drawing.Size(113, 24);
-            this.lblInsuranceID_MP.TabIndex = 10;
-            this.lblInsuranceID_MP.Text = "Insurance ID";
-            // 
-            // lblType_MP
-            // 
-            this.lblType_MP.AutoSize = true;
-            this.lblType_MP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblType_MP.Location = new System.Drawing.Point(326, 0);
-            this.lblType_MP.Name = "lblType_MP";
-            this.lblType_MP.Size = new System.Drawing.Size(49, 24);
-            this.lblType_MP.TabIndex = 10;
-            this.lblType_MP.Text = "Type";
-            // 
-            // lblSDate_MP
-            // 
-            this.lblSDate_MP.AutoSize = true;
-            this.lblSDate_MP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSDate_MP.Location = new System.Drawing.Point(499, 0);
-            this.lblSDate_MP.Name = "lblSDate_MP";
-            this.lblSDate_MP.Size = new System.Drawing.Size(94, 24);
-            this.lblSDate_MP.TabIndex = 11;
-            this.lblSDate_MP.Text = "Start-Date";
-            // 
-            // lblEDate_MP
-            // 
-            this.lblEDate_MP.AutoSize = true;
-            this.lblEDate_MP.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEDate_MP.Location = new System.Drawing.Point(642, 0);
-            this.lblEDate_MP.Name = "lblEDate_MP";
-            this.lblEDate_MP.Size = new System.Drawing.Size(87, 24);
-            this.lblEDate_MP.TabIndex = 12;
-            this.lblEDate_MP.Text = "End-Date";
+            this.dgvMP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMP.Location = new System.Drawing.Point(104, 407);
+            this.dgvMP.Name = "dgvMP";
+            this.dgvMP.RowHeadersWidth = 51;
+            this.dgvMP.RowTemplate.Height = 24;
+            this.dgvMP.Size = new System.Drawing.Size(610, 299);
+            this.dgvMP.TabIndex = 10;
             // 
             // Profile_of_Staff
             // 
@@ -219,8 +152,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
+            this.Controls.Add(this.dgvMP);
             this.Controls.Add(this.btnBack_MP);
-            this.Controls.Add(this.tlpCurrentCustomer_MP);
             this.Controls.Add(this.picProfilePicture_MP);
             this.Controls.Add(this.lblAddress_MP);
             this.Controls.Add(this.lblContact_MP);
@@ -233,9 +166,9 @@
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.Name = "Profile_of_Staff";
             this.Text = "Profile_of_Staff";
+            this.Load += new System.EventHandler(this.Profile_of_Staff_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picProfilePicture_MP)).EndInit();
-            this.tlpCurrentCustomer_MP.ResumeLayout(false);
-            this.tlpCurrentCustomer_MP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,12 +184,7 @@
         private System.Windows.Forms.Label lblContact_MP;
         private System.Windows.Forms.Label lblAddress_MP;
         private System.Windows.Forms.PictureBox picProfilePicture_MP;
-        private System.Windows.Forms.TableLayoutPanel tlpCurrentCustomer_MP;
         private System.Windows.Forms.Button btnBack_MP;
-        private System.Windows.Forms.Label lblType_MP;
-        private System.Windows.Forms.Label lblEDate_MP;
-        private System.Windows.Forms.Label lblInsuranceID_MP;
-        private System.Windows.Forms.Label lblSDate_MP;
-        private System.Windows.Forms.Label lblCustomerID_MP;
+        private System.Windows.Forms.DataGridView dgvMP;
     }
 }

@@ -28,5 +28,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             mp.Show();
             this.Close();
         }
+
+        private void Profile_of_Staff_Load(object sender, EventArgs e)
+        {
+            DataTable dt_MP = new DataTable();
+
+            dt_MP.Columns.Add("Current Incharge Customer ID");
+            dt_MP.Columns.Add("Insurance ID");
+            dt_MP.Columns.Add("Type");
+            dt_MP.Columns.Add("Start Date");
+            dt_MP.Columns.Add("End Date");
+
+            dgvMP.DataSource = dt_MP;
+        }
     }
 }
