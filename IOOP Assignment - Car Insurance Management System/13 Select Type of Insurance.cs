@@ -79,6 +79,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             Total_Payable_Amount_of_Insurance totalAmount = new Total_Payable_Amount_of_Insurance();
             totalAmount.Show();
             this.Hide();
+
+            double insuranceType;
+            if (rbThirdParty.Checked)
+                insuranceType = 2.66;
+            else if (rbFireTheft.Checked)
+                insuranceType = 2.75;
+            else if (rbComprehensive.Checked)
+                insuranceType = 2.84;
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
