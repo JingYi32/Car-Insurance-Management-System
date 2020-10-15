@@ -43,12 +43,14 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblUpdateInsurance
             // 
             this.lblUpdateInsurance.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lblUpdateInsurance.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpdateInsurance.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUpdateInsurance.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblUpdateInsurance.Location = new System.Drawing.Point(362, 28);
             this.lblUpdateInsurance.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -167,6 +169,7 @@
             // textReasons_UI
             // 
             this.textReasons_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textReasons_UI.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.textReasons_UI.Location = new System.Drawing.Point(370, 446);
             this.textReasons_UI.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textReasons_UI.Name = "textReasons_UI";
@@ -176,6 +179,7 @@
             // textTotalAmount_UI
             // 
             this.textTotalAmount_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textTotalAmount_UI.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.textTotalAmount_UI.Location = new System.Drawing.Point(370, 508);
             this.textTotalAmount_UI.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.textTotalAmount_UI.Name = "textTotalAmount_UI";
@@ -184,6 +188,7 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.DarkSlateGray;
             this.dateTimePicker1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(370, 260);
             this.dateTimePicker1.Name = "dateTimePicker1";
@@ -192,6 +197,7 @@
             // 
             // dateTimePicker2
             // 
+            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.DarkSlateGray;
             this.dateTimePicker2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Location = new System.Drawing.Point(370, 322);
             this.dateTimePicker2.Name = "dateTimePicker2";
@@ -201,11 +207,32 @@
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(370, 384);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(650, 58);
             this.comboBox1.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(370, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 51);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "(Show Customer ID)";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(370, 204);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 51);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "(Insurance ID)";
             // 
             // Updating_Insurance
             // 
@@ -213,6 +240,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.textTotalAmount_UI);
@@ -229,6 +258,7 @@
             this.Controls.Add(this.lblUpdateInsurance);
             this.Controls.Add(this.dateTimePicker1);
             this.Font = new System.Drawing.Font("Gabriola", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "Updating_Insurance";
             this.Text = "Updating_Insurance";
@@ -255,5 +285,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

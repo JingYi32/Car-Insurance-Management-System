@@ -38,7 +38,9 @@
             this.btnCUST = new System.Windows.Forms.Button();
             this.btnINS = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.dgvSearchResult = new System.Windows.Forms.DataGridView();
             this.tlpSearchResult.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResult)).BeginInit();
             this.SuspendLayout();
             // 
             // tlpSearchResult
@@ -169,6 +171,16 @@
             this.txtSearch.TabIndex = 1;
             this.txtSearch.Text = "Enter Customer ID or Insurance ID to Search:";
             // 
+            // dgvSearchResult
+            // 
+            this.dgvSearchResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSearchResult.Location = new System.Drawing.Point(98, 149);
+            this.dgvSearchResult.Name = "dgvSearchResult";
+            this.dgvSearchResult.RowHeadersWidth = 51;
+            this.dgvSearchResult.RowTemplate.Height = 24;
+            this.dgvSearchResult.Size = new System.Drawing.Size(924, 463);
+            this.dgvSearchResult.TabIndex = 11;
+            // 
             // Searching_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
@@ -178,13 +190,15 @@
             this.Controls.Add(this.btnINS);
             this.Controls.Add(this.btnCUST);
             this.Controls.Add(this.btnMainPage);
-            this.Controls.Add(this.tlpSearchResult);
             this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.dgvSearchResult);
+            this.Controls.Add(this.tlpSearchResult);
             this.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.Name = "Searching_Page";
             this.Text = "Searching_Page";
             this.tlpSearchResult.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +215,6 @@
         private System.Windows.Forms.Button btnCUST;
         private System.Windows.Forms.Button btnINS;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.DataGridView dgvSearchResult;
     }
 }

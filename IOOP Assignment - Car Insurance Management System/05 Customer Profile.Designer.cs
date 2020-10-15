@@ -46,7 +46,9 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnPurchase = new System.Windows.Forms.Button();
+            this.dgvHistory = new System.Windows.Forms.DataGridView();
             this.tlpHistory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // lblProfile
@@ -286,6 +288,16 @@
             this.btnPurchase.UseVisualStyleBackColor = false;
             this.btnPurchase.Click += new System.EventHandler(this.btnPurchase_Click);
             // 
+            // dgvHistory
+            // 
+            this.dgvHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHistory.Location = new System.Drawing.Point(98, 417);
+            this.dgvHistory.Name = "dgvHistory";
+            this.dgvHistory.RowHeadersWidth = 51;
+            this.dgvHistory.RowTemplate.Height = 24;
+            this.dgvHistory.Size = new System.Drawing.Size(924, 211);
+            this.dgvHistory.TabIndex = 14;
+            // 
             // Customer_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 46F);
@@ -295,7 +307,6 @@
             this.Controls.Add(this.btnPurchase);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.tlpHistory);
             this.Controls.Add(this.lblCUST_History);
             this.Controls.Add(this.lblCUST_Phone);
             this.Controls.Add(this.lblCUST_Address);
@@ -305,12 +316,15 @@
             this.Controls.Add(this.lblCUST_Name);
             this.Controls.Add(this.lblCUST_ID);
             this.Controls.Add(this.lblProfile);
+            this.Controls.Add(this.dgvHistory);
+            this.Controls.Add(this.tlpHistory);
             this.Font = new System.Drawing.Font("Gabriola", 15F);
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
             this.Name = "Customer_Profile";
             this.Text = "Customer_Profile";
             this.tlpHistory.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +350,6 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnPurchase;
+        private System.Windows.Forms.DataGridView dgvHistory;
     }
 }

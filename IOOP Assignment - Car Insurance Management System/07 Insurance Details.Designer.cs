@@ -29,25 +29,44 @@
         private void InitializeComponent()
         {
             this.lblInsuranceDetails = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbVehicle = new System.Windows.Forms.GroupBox();
+            this.lblShowVehicle_Price = new System.Windows.Forms.Label();
+            this.lblShowVehicle_YOM = new System.Windows.Forms.Label();
+            this.lblShowVehicle_Model = new System.Windows.Forms.Label();
+            this.lblShowVehicle_Brand = new System.Windows.Forms.Label();
+            this.lblShowVehicle_NO = new System.Windows.Forms.Label();
             this.lblVehicle_YOM = new System.Windows.Forms.Label();
             this.lblVehicle_Price = new System.Windows.Forms.Label();
             this.lblVehicle_Model = new System.Windows.Forms.Label();
             this.lblVehicle_Brand = new System.Windows.Forms.Label();
             this.lblVehicle_NO = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbIns = new System.Windows.Forms.GroupBox();
+            this.lblShowIns_Status = new System.Windows.Forms.Label();
+            this.lblShowIns_PurcDate = new System.Windows.Forms.Label();
+            this.lblShowIns_Last_Renewal = new System.Windows.Forms.Label();
+            this.lblShowIns_EndDate = new System.Windows.Forms.Label();
+            this.lblShowIns_Type = new System.Windows.Forms.Label();
             this.lblIns_Last_Renewal = new System.Windows.Forms.Label();
             this.lblIns_Type = new System.Windows.Forms.Label();
             this.lblIns_Status = new System.Windows.Forms.Label();
             this.lblIns_EndDate = new System.Windows.Forms.Label();
             this.lblIns_PurcDate = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gbOwner = new System.Windows.Forms.GroupBox();
+            this.lblShowOwner_IDTypes = new System.Windows.Forms.Label();
+            this.lblShowOwner_IDNumber = new System.Windows.Forms.Label();
+            this.lblShowOwner_DOB = new System.Windows.Forms.Label();
+            this.lblShowOwner_Gender = new System.Windows.Forms.Label();
+            this.lblShowOwner_Postcode = new System.Windows.Forms.Label();
             this.lblOwner_Gender = new System.Windows.Forms.Label();
             this.lblOwner_IDTypes = new System.Windows.Forms.Label();
             this.lblOwner_Postcode = new System.Windows.Forms.Label();
             this.lblOwner_IDNumber = new System.Windows.Forms.Label();
             this.lblOwner_DOB = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbAmount = new System.Windows.Forms.GroupBox();
+            this.lblShowIns_GrossTotal = new System.Windows.Forms.Label();
+            this.lblShowIns_SST = new System.Windows.Forms.Label();
+            this.lblShowIns_StampDuty = new System.Windows.Forms.Label();
+            this.lblShowIns_Total = new System.Windows.Forms.Label();
             this.lblIns_Total = new System.Windows.Forms.Label();
             this.lblIns_StampDuty = new System.Windows.Forms.Label();
             this.lblIns_SST = new System.Windows.Forms.Label();
@@ -56,29 +75,10 @@
             this.btnCancel_Ins = new System.Windows.Forms.Button();
             this.btnBack_Cust_Profile = new System.Windows.Forms.Button();
             this.btnRenew_Ins = new System.Windows.Forms.Button();
-            this.lblShowVehicle_NO = new System.Windows.Forms.Label();
-            this.lblShowVehicle_Brand = new System.Windows.Forms.Label();
-            this.lblShowVehicle_Model = new System.Windows.Forms.Label();
-            this.lblShowVehicle_YOM = new System.Windows.Forms.Label();
-            this.lblShowVehicle_Price = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lblShowIns_GrossTotal = new System.Windows.Forms.Label();
-            this.lblShowIns_SST = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.gbVehicle.SuspendLayout();
+            this.gbIns.SuspendLayout();
+            this.gbOwner.SuspendLayout();
+            this.gbAmount.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblInsuranceDetails
@@ -94,26 +94,71 @@
             this.lblInsuranceDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblInsuranceDetails.Click += new System.EventHandler(this.lblInsuranceDetails_Click);
             // 
-            // groupBox1
+            // gbVehicle
             // 
-            this.groupBox1.Controls.Add(this.lblShowVehicle_Price);
-            this.groupBox1.Controls.Add(this.lblShowVehicle_YOM);
-            this.groupBox1.Controls.Add(this.lblShowVehicle_Model);
-            this.groupBox1.Controls.Add(this.lblShowVehicle_Brand);
-            this.groupBox1.Controls.Add(this.lblShowVehicle_NO);
-            this.groupBox1.Controls.Add(this.lblVehicle_YOM);
-            this.groupBox1.Controls.Add(this.lblVehicle_Price);
-            this.groupBox1.Controls.Add(this.lblVehicle_Model);
-            this.groupBox1.Controls.Add(this.lblVehicle_Brand);
-            this.groupBox1.Controls.Add(this.lblVehicle_NO);
-            this.groupBox1.Location = new System.Drawing.Point(38, 135);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(592, 232);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Vehicle Details";
+            this.gbVehicle.Controls.Add(this.lblShowVehicle_Price);
+            this.gbVehicle.Controls.Add(this.lblShowVehicle_YOM);
+            this.gbVehicle.Controls.Add(this.lblShowVehicle_Model);
+            this.gbVehicle.Controls.Add(this.lblShowVehicle_Brand);
+            this.gbVehicle.Controls.Add(this.lblShowVehicle_NO);
+            this.gbVehicle.Controls.Add(this.lblVehicle_YOM);
+            this.gbVehicle.Controls.Add(this.lblVehicle_Price);
+            this.gbVehicle.Controls.Add(this.lblVehicle_Model);
+            this.gbVehicle.Controls.Add(this.lblVehicle_Brand);
+            this.gbVehicle.Controls.Add(this.lblVehicle_NO);
+            this.gbVehicle.Location = new System.Drawing.Point(38, 135);
+            this.gbVehicle.Margin = new System.Windows.Forms.Padding(2);
+            this.gbVehicle.Name = "gbVehicle";
+            this.gbVehicle.Padding = new System.Windows.Forms.Padding(2);
+            this.gbVehicle.Size = new System.Drawing.Size(592, 232);
+            this.gbVehicle.TabIndex = 5;
+            this.gbVehicle.TabStop = false;
+            this.gbVehicle.Text = "Vehicle Details";
+            // 
+            // lblShowVehicle_Price
+            // 
+            this.lblShowVehicle_Price.AutoSize = true;
+            this.lblShowVehicle_Price.Location = new System.Drawing.Point(123, 180);
+            this.lblShowVehicle_Price.Name = "lblShowVehicle_Price";
+            this.lblShowVehicle_Price.Size = new System.Drawing.Size(135, 35);
+            this.lblShowVehicle_Price.TabIndex = 9;
+            this.lblShowVehicle_Price.Text = "(Show Market Price)";
+            // 
+            // lblShowVehicle_YOM
+            // 
+            this.lblShowVehicle_YOM.AutoSize = true;
+            this.lblShowVehicle_YOM.Location = new System.Drawing.Point(159, 144);
+            this.lblShowVehicle_YOM.Name = "lblShowVehicle_YOM";
+            this.lblShowVehicle_YOM.Size = new System.Drawing.Size(165, 35);
+            this.lblShowVehicle_YOM.TabIndex = 8;
+            this.lblShowVehicle_YOM.Text = "(Show Manufacture Year)";
+            // 
+            // lblShowVehicle_Model
+            // 
+            this.lblShowVehicle_Model.AutoSize = true;
+            this.lblShowVehicle_Model.Location = new System.Drawing.Point(78, 108);
+            this.lblShowVehicle_Model.Name = "lblShowVehicle_Model";
+            this.lblShowVehicle_Model.Size = new System.Drawing.Size(96, 35);
+            this.lblShowVehicle_Model.TabIndex = 7;
+            this.lblShowVehicle_Model.Text = "(Show Model)";
+            // 
+            // lblShowVehicle_Brand
+            // 
+            this.lblShowVehicle_Brand.AutoSize = true;
+            this.lblShowVehicle_Brand.Location = new System.Drawing.Point(79, 72);
+            this.lblShowVehicle_Brand.Name = "lblShowVehicle_Brand";
+            this.lblShowVehicle_Brand.Size = new System.Drawing.Size(96, 35);
+            this.lblShowVehicle_Brand.TabIndex = 6;
+            this.lblShowVehicle_Brand.Text = "(Show Brand)";
+            // 
+            // lblShowVehicle_NO
+            // 
+            this.lblShowVehicle_NO.AutoSize = true;
+            this.lblShowVehicle_NO.Location = new System.Drawing.Point(234, 36);
+            this.lblShowVehicle_NO.Name = "lblShowVehicle_NO";
+            this.lblShowVehicle_NO.Size = new System.Drawing.Size(230, 35);
+            this.lblShowVehicle_NO.TabIndex = 5;
+            this.lblShowVehicle_NO.Text = "(Show Vehicle Registration Number)";
             // 
             // lblVehicle_YOM
             // 
@@ -166,25 +211,70 @@
             this.lblVehicle_NO.TabIndex = 0;
             this.lblVehicle_NO.Text = "Vehicle Registration Number:";
             // 
-            // groupBox2
+            // gbIns
             // 
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.lblIns_Last_Renewal);
-            this.groupBox2.Controls.Add(this.lblIns_Type);
-            this.groupBox2.Controls.Add(this.lblIns_Status);
-            this.groupBox2.Controls.Add(this.lblIns_EndDate);
-            this.groupBox2.Controls.Add(this.lblIns_PurcDate);
-            this.groupBox2.Location = new System.Drawing.Point(657, 146);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(396, 204);
-            this.groupBox2.TabIndex = 6;
-            this.groupBox2.TabStop = false;
+            this.gbIns.Controls.Add(this.lblShowIns_Status);
+            this.gbIns.Controls.Add(this.lblShowIns_PurcDate);
+            this.gbIns.Controls.Add(this.lblShowIns_Last_Renewal);
+            this.gbIns.Controls.Add(this.lblShowIns_EndDate);
+            this.gbIns.Controls.Add(this.lblShowIns_Type);
+            this.gbIns.Controls.Add(this.lblIns_Last_Renewal);
+            this.gbIns.Controls.Add(this.lblIns_Type);
+            this.gbIns.Controls.Add(this.lblIns_Status);
+            this.gbIns.Controls.Add(this.lblIns_EndDate);
+            this.gbIns.Controls.Add(this.lblIns_PurcDate);
+            this.gbIns.Location = new System.Drawing.Point(657, 146);
+            this.gbIns.Margin = new System.Windows.Forms.Padding(2);
+            this.gbIns.Name = "gbIns";
+            this.gbIns.Padding = new System.Windows.Forms.Padding(2);
+            this.gbIns.Size = new System.Drawing.Size(396, 204);
+            this.gbIns.TabIndex = 6;
+            this.gbIns.TabStop = false;
+            // 
+            // lblShowIns_Status
+            // 
+            this.lblShowIns_Status.AutoSize = true;
+            this.lblShowIns_Status.Location = new System.Drawing.Point(89, 25);
+            this.lblShowIns_Status.Name = "lblShowIns_Status";
+            this.lblShowIns_Status.Size = new System.Drawing.Size(97, 35);
+            this.lblShowIns_Status.TabIndex = 18;
+            this.lblShowIns_Status.Text = "(Show Status)";
+            // 
+            // lblShowIns_PurcDate
+            // 
+            this.lblShowIns_PurcDate.AutoSize = true;
+            this.lblShowIns_PurcDate.Location = new System.Drawing.Point(154, 61);
+            this.lblShowIns_PurcDate.Name = "lblShowIns_PurcDate";
+            this.lblShowIns_PurcDate.Size = new System.Drawing.Size(153, 35);
+            this.lblShowIns_PurcDate.TabIndex = 19;
+            this.lblShowIns_PurcDate.Text = "(Show Purchased Date)";
+            // 
+            // lblShowIns_Last_Renewal
+            // 
+            this.lblShowIns_Last_Renewal.AutoSize = true;
+            this.lblShowIns_Last_Renewal.Location = new System.Drawing.Point(172, 96);
+            this.lblShowIns_Last_Renewal.Name = "lblShowIns_Last_Renewal";
+            this.lblShowIns_Last_Renewal.Size = new System.Drawing.Size(153, 35);
+            this.lblShowIns_Last_Renewal.TabIndex = 20;
+            this.lblShowIns_Last_Renewal.Text = "(Show Purchased Date)";
+            // 
+            // lblShowIns_EndDate
+            // 
+            this.lblShowIns_EndDate.AutoSize = true;
+            this.lblShowIns_EndDate.Location = new System.Drawing.Point(109, 131);
+            this.lblShowIns_EndDate.Name = "lblShowIns_EndDate";
+            this.lblShowIns_EndDate.Size = new System.Drawing.Size(114, 35);
+            this.lblShowIns_EndDate.TabIndex = 21;
+            this.lblShowIns_EndDate.Text = "(Show End Date)";
+            // 
+            // lblShowIns_Type
+            // 
+            this.lblShowIns_Type.AutoSize = true;
+            this.lblShowIns_Type.Location = new System.Drawing.Point(76, 166);
+            this.lblShowIns_Type.Name = "lblShowIns_Type";
+            this.lblShowIns_Type.Size = new System.Drawing.Size(85, 35);
+            this.lblShowIns_Type.TabIndex = 22;
+            this.lblShowIns_Type.Text = "(Show Type)";
             // 
             // lblIns_Last_Renewal
             // 
@@ -237,26 +327,71 @@
             this.lblIns_PurcDate.TabIndex = 6;
             this.lblIns_PurcDate.Text = "Purchased Date:";
             // 
-            // groupBox3
+            // gbOwner
             // 
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.lblOwner_Gender);
-            this.groupBox3.Controls.Add(this.lblOwner_IDTypes);
-            this.groupBox3.Controls.Add(this.lblOwner_Postcode);
-            this.groupBox3.Controls.Add(this.lblOwner_IDNumber);
-            this.groupBox3.Controls.Add(this.lblOwner_DOB);
-            this.groupBox3.Location = new System.Drawing.Point(96, 392);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(310, 229);
-            this.groupBox3.TabIndex = 7;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Owner Details";
+            this.gbOwner.Controls.Add(this.lblShowOwner_IDTypes);
+            this.gbOwner.Controls.Add(this.lblShowOwner_IDNumber);
+            this.gbOwner.Controls.Add(this.lblShowOwner_DOB);
+            this.gbOwner.Controls.Add(this.lblShowOwner_Gender);
+            this.gbOwner.Controls.Add(this.lblShowOwner_Postcode);
+            this.gbOwner.Controls.Add(this.lblOwner_Gender);
+            this.gbOwner.Controls.Add(this.lblOwner_IDTypes);
+            this.gbOwner.Controls.Add(this.lblOwner_Postcode);
+            this.gbOwner.Controls.Add(this.lblOwner_IDNumber);
+            this.gbOwner.Controls.Add(this.lblOwner_DOB);
+            this.gbOwner.Location = new System.Drawing.Point(96, 392);
+            this.gbOwner.Margin = new System.Windows.Forms.Padding(2);
+            this.gbOwner.Name = "gbOwner";
+            this.gbOwner.Padding = new System.Windows.Forms.Padding(2);
+            this.gbOwner.Size = new System.Drawing.Size(310, 229);
+            this.gbOwner.TabIndex = 7;
+            this.gbOwner.TabStop = false;
+            this.gbOwner.Text = "Owner Details";
+            // 
+            // lblShowOwner_IDTypes
+            // 
+            this.lblShowOwner_IDTypes.AutoSize = true;
+            this.lblShowOwner_IDTypes.Location = new System.Drawing.Point(94, 45);
+            this.lblShowOwner_IDTypes.Name = "lblShowOwner_IDTypes";
+            this.lblShowOwner_IDTypes.Size = new System.Drawing.Size(102, 35);
+            this.lblShowOwner_IDTypes.TabIndex = 18;
+            this.lblShowOwner_IDTypes.Text = "(Show ID Type)";
+            // 
+            // lblShowOwner_IDNumber
+            // 
+            this.lblShowOwner_IDNumber.AutoSize = true;
+            this.lblShowOwner_IDNumber.Location = new System.Drawing.Point(121, 80);
+            this.lblShowOwner_IDNumber.Name = "lblShowOwner_IDNumber";
+            this.lblShowOwner_IDNumber.Size = new System.Drawing.Size(126, 35);
+            this.lblShowOwner_IDNumber.TabIndex = 19;
+            this.lblShowOwner_IDNumber.Text = "(Show ID Number)";
+            // 
+            // lblShowOwner_DOB
+            // 
+            this.lblShowOwner_DOB.AutoSize = true;
+            this.lblShowOwner_DOB.Location = new System.Drawing.Point(86, 115);
+            this.lblShowOwner_DOB.Name = "lblShowOwner_DOB";
+            this.lblShowOwner_DOB.Size = new System.Drawing.Size(91, 35);
+            this.lblShowOwner_DOB.TabIndex = 20;
+            this.lblShowOwner_DOB.Text = "(Show D.O.B)";
+            // 
+            // lblShowOwner_Gender
+            // 
+            this.lblShowOwner_Gender.AutoSize = true;
+            this.lblShowOwner_Gender.Location = new System.Drawing.Point(95, 150);
+            this.lblShowOwner_Gender.Name = "lblShowOwner_Gender";
+            this.lblShowOwner_Gender.Size = new System.Drawing.Size(103, 35);
+            this.lblShowOwner_Gender.TabIndex = 21;
+            this.lblShowOwner_Gender.Text = "(Show Gender)";
+            // 
+            // lblShowOwner_Postcode
+            // 
+            this.lblShowOwner_Postcode.AutoSize = true;
+            this.lblShowOwner_Postcode.Location = new System.Drawing.Point(105, 185);
+            this.lblShowOwner_Postcode.Name = "lblShowOwner_Postcode";
+            this.lblShowOwner_Postcode.Size = new System.Drawing.Size(111, 35);
+            this.lblShowOwner_Postcode.TabIndex = 22;
+            this.lblShowOwner_Postcode.Text = "(Show Postcode)";
             // 
             // lblOwner_Gender
             // 
@@ -309,25 +444,61 @@
             this.lblOwner_DOB.TabIndex = 7;
             this.lblOwner_DOB.Text = "D.O.B.:";
             // 
-            // groupBox4
+            // gbAmount
             // 
-            this.groupBox4.Controls.Add(this.lblShowIns_GrossTotal);
-            this.groupBox4.Controls.Add(this.lblShowIns_SST);
-            this.groupBox4.Controls.Add(this.label18);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.lblIns_Total);
-            this.groupBox4.Controls.Add(this.lblIns_StampDuty);
-            this.groupBox4.Controls.Add(this.lblIns_SST);
-            this.groupBox4.Controls.Add(this.lblIns_GrossTotal);
-            this.groupBox4.Font = new System.Drawing.Font("Gabriola", 10.8F);
-            this.groupBox4.Location = new System.Drawing.Point(509, 392);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(486, 229);
-            this.groupBox4.TabIndex = 8;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Amount";
+            this.gbAmount.Controls.Add(this.lblShowIns_GrossTotal);
+            this.gbAmount.Controls.Add(this.lblShowIns_SST);
+            this.gbAmount.Controls.Add(this.lblShowIns_StampDuty);
+            this.gbAmount.Controls.Add(this.lblShowIns_Total);
+            this.gbAmount.Controls.Add(this.lblIns_Total);
+            this.gbAmount.Controls.Add(this.lblIns_StampDuty);
+            this.gbAmount.Controls.Add(this.lblIns_SST);
+            this.gbAmount.Controls.Add(this.lblIns_GrossTotal);
+            this.gbAmount.Font = new System.Drawing.Font("Gabriola", 10.8F);
+            this.gbAmount.Location = new System.Drawing.Point(509, 392);
+            this.gbAmount.Margin = new System.Windows.Forms.Padding(2);
+            this.gbAmount.Name = "gbAmount";
+            this.gbAmount.Padding = new System.Windows.Forms.Padding(2);
+            this.gbAmount.Size = new System.Drawing.Size(486, 229);
+            this.gbAmount.TabIndex = 8;
+            this.gbAmount.TabStop = false;
+            this.gbAmount.Text = "Amount";
+            // 
+            // lblShowIns_GrossTotal
+            // 
+            this.lblShowIns_GrossTotal.AutoSize = true;
+            this.lblShowIns_GrossTotal.Location = new System.Drawing.Point(230, 33);
+            this.lblShowIns_GrossTotal.Name = "lblShowIns_GrossTotal";
+            this.lblShowIns_GrossTotal.Size = new System.Drawing.Size(127, 35);
+            this.lblShowIns_GrossTotal.TabIndex = 18;
+            this.lblShowIns_GrossTotal.Text = "(Show Gross Total)";
+            // 
+            // lblShowIns_SST
+            // 
+            this.lblShowIns_SST.AutoSize = true;
+            this.lblShowIns_SST.Location = new System.Drawing.Point(166, 70);
+            this.lblShowIns_SST.Name = "lblShowIns_SST";
+            this.lblShowIns_SST.Size = new System.Drawing.Size(81, 35);
+            this.lblShowIns_SST.TabIndex = 19;
+            this.lblShowIns_SST.Text = "(Show SST)";
+            // 
+            // lblShowIns_StampDuty
+            // 
+            this.lblShowIns_StampDuty.AutoSize = true;
+            this.lblShowIns_StampDuty.Location = new System.Drawing.Point(113, 105);
+            this.lblShowIns_StampDuty.Name = "lblShowIns_StampDuty";
+            this.lblShowIns_StampDuty.Size = new System.Drawing.Size(130, 35);
+            this.lblShowIns_StampDuty.TabIndex = 20;
+            this.lblShowIns_StampDuty.Text = "(Show Stamp Duty)";
+            // 
+            // lblShowIns_Total
+            // 
+            this.lblShowIns_Total.AutoSize = true;
+            this.lblShowIns_Total.Location = new System.Drawing.Point(199, 177);
+            this.lblShowIns_Total.Name = "lblShowIns_Total";
+            this.lblShowIns_Total.Size = new System.Drawing.Size(195, 35);
+            this.lblShowIns_Total.TabIndex = 21;
+            this.lblShowIns_Total.Text = "(Show Total Annual Premium)";
             // 
             // lblIns_Total
             // 
@@ -426,177 +597,6 @@
             this.btnRenew_Ins.UseVisualStyleBackColor = false;
             this.btnRenew_Ins.Click += new System.EventHandler(this.btnRenew_Ins_Click);
             // 
-            // lblShowVehicle_NO
-            // 
-            this.lblShowVehicle_NO.AutoSize = true;
-            this.lblShowVehicle_NO.Location = new System.Drawing.Point(234, 36);
-            this.lblShowVehicle_NO.Name = "lblShowVehicle_NO";
-            this.lblShowVehicle_NO.Size = new System.Drawing.Size(230, 35);
-            this.lblShowVehicle_NO.TabIndex = 5;
-            this.lblShowVehicle_NO.Text = "(Show Vehicle Registration Number)";
-            // 
-            // lblShowVehicle_Brand
-            // 
-            this.lblShowVehicle_Brand.AutoSize = true;
-            this.lblShowVehicle_Brand.Location = new System.Drawing.Point(79, 72);
-            this.lblShowVehicle_Brand.Name = "lblShowVehicle_Brand";
-            this.lblShowVehicle_Brand.Size = new System.Drawing.Size(96, 35);
-            this.lblShowVehicle_Brand.TabIndex = 6;
-            this.lblShowVehicle_Brand.Text = "(Show Brand)";
-            // 
-            // lblShowVehicle_Model
-            // 
-            this.lblShowVehicle_Model.AutoSize = true;
-            this.lblShowVehicle_Model.Location = new System.Drawing.Point(78, 108);
-            this.lblShowVehicle_Model.Name = "lblShowVehicle_Model";
-            this.lblShowVehicle_Model.Size = new System.Drawing.Size(96, 35);
-            this.lblShowVehicle_Model.TabIndex = 7;
-            this.lblShowVehicle_Model.Text = "(Show Model)";
-            // 
-            // lblShowVehicle_YOM
-            // 
-            this.lblShowVehicle_YOM.AutoSize = true;
-            this.lblShowVehicle_YOM.Location = new System.Drawing.Point(159, 144);
-            this.lblShowVehicle_YOM.Name = "lblShowVehicle_YOM";
-            this.lblShowVehicle_YOM.Size = new System.Drawing.Size(165, 35);
-            this.lblShowVehicle_YOM.TabIndex = 8;
-            this.lblShowVehicle_YOM.Text = "(Show Manufacture Year)";
-            // 
-            // lblShowVehicle_Price
-            // 
-            this.lblShowVehicle_Price.AutoSize = true;
-            this.lblShowVehicle_Price.Location = new System.Drawing.Point(123, 180);
-            this.lblShowVehicle_Price.Name = "lblShowVehicle_Price";
-            this.lblShowVehicle_Price.Size = new System.Drawing.Size(135, 35);
-            this.lblShowVehicle_Price.TabIndex = 9;
-            this.lblShowVehicle_Price.Text = "(Show Market Price)";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(94, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 35);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "(Show ID Type)";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(121, 80);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 35);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "(Show ID Number)";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(86, 115);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 35);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "(Show D.O.B)";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(95, 150);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 35);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "(Show Gender)";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(105, 185);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 35);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "(Show Postcode)";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(89, 25);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 35);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "(Show Status)";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(154, 61);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(153, 35);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "(Show Purchased Date)";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(172, 96);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(153, 35);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "(Show Purchased Date)";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(109, 131);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(114, 35);
-            this.label14.TabIndex = 21;
-            this.label14.Text = "(Show End Date)";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(76, 166);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 35);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "(Show Type)";
-            // 
-            // lblShowIns_GrossTotal
-            // 
-            this.lblShowIns_GrossTotal.AutoSize = true;
-            this.lblShowIns_GrossTotal.Location = new System.Drawing.Point(230, 33);
-            this.lblShowIns_GrossTotal.Name = "lblShowIns_GrossTotal";
-            this.lblShowIns_GrossTotal.Size = new System.Drawing.Size(127, 35);
-            this.lblShowIns_GrossTotal.TabIndex = 18;
-            this.lblShowIns_GrossTotal.Text = "(Show Gross Total)";
-            // 
-            // lblShowIns_SST
-            // 
-            this.lblShowIns_SST.AutoSize = true;
-            this.lblShowIns_SST.Location = new System.Drawing.Point(166, 70);
-            this.lblShowIns_SST.Name = "lblShowIns_SST";
-            this.lblShowIns_SST.Size = new System.Drawing.Size(81, 35);
-            this.lblShowIns_SST.TabIndex = 19;
-            this.lblShowIns_SST.Text = "(Show SST)";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(113, 105);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(130, 35);
-            this.label18.TabIndex = 20;
-            this.label18.Text = "(Show Stamp Duty)";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(199, 177);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(195, 35);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "(Show Total Annual Premium)";
-            // 
             // Insurance_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 33F);
@@ -607,24 +607,24 @@
             this.Controls.Add(this.btnUpdate_Ins);
             this.Controls.Add(this.btnCancel_Ins);
             this.Controls.Add(this.btnBack_Cust_Profile);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gbAmount);
+            this.Controls.Add(this.gbOwner);
+            this.Controls.Add(this.gbIns);
             this.Controls.Add(this.lblInsuranceDetails);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbVehicle);
             this.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.Name = "Insurance_Details";
             this.Text = "Insurance_Details";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.gbVehicle.ResumeLayout(false);
+            this.gbVehicle.PerformLayout();
+            this.gbIns.ResumeLayout(false);
+            this.gbIns.PerformLayout();
+            this.gbOwner.ResumeLayout(false);
+            this.gbOwner.PerformLayout();
+            this.gbAmount.ResumeLayout(false);
+            this.gbAmount.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -632,11 +632,11 @@
         #endregion
 
         private System.Windows.Forms.Label lblInsuranceDetails;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbVehicle;
         private System.Windows.Forms.Label lblVehicle_NO;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbIns;
+        private System.Windows.Forms.GroupBox gbOwner;
+        private System.Windows.Forms.GroupBox gbAmount;
         private System.Windows.Forms.Label lblVehicle_YOM;
         private System.Windows.Forms.Label lblVehicle_Price;
         private System.Windows.Forms.Label lblVehicle_Model;
@@ -664,19 +664,19 @@
         private System.Windows.Forms.Label lblShowVehicle_Model;
         private System.Windows.Forms.Label lblShowVehicle_Brand;
         private System.Windows.Forms.Label lblShowVehicle_NO;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblShowIns_Status;
+        private System.Windows.Forms.Label lblShowIns_PurcDate;
+        private System.Windows.Forms.Label lblShowIns_Last_Renewal;
+        private System.Windows.Forms.Label lblShowIns_EndDate;
+        private System.Windows.Forms.Label lblShowIns_Type;
+        private System.Windows.Forms.Label lblShowOwner_IDTypes;
+        private System.Windows.Forms.Label lblShowOwner_IDNumber;
+        private System.Windows.Forms.Label lblShowOwner_DOB;
+        private System.Windows.Forms.Label lblShowOwner_Gender;
+        private System.Windows.Forms.Label lblShowOwner_Postcode;
         private System.Windows.Forms.Label lblShowIns_GrossTotal;
         private System.Windows.Forms.Label lblShowIns_SST;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblShowIns_StampDuty;
+        private System.Windows.Forms.Label lblShowIns_Total;
     }
 }
