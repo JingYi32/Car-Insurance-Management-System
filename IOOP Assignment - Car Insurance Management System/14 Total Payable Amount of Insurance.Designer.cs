@@ -34,16 +34,16 @@
             this.btnBack_TA = new System.Windows.Forms.Button();
             this.btnSave_TA = new System.Windows.Forms.Button();
             this.tlpTotalAmount = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblRM10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblSSTCount = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblRMtotal = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblRMInsuranceTotal = new System.Windows.Forms.Label();
+            this.lblRM_NCD = new System.Windows.Forms.Label();
             this.tlpTotalAmount.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,16 +117,16 @@
             this.tlpTotalAmount.ColumnCount = 2;
             this.tlpTotalAmount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpTotalAmount.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpTotalAmount.Controls.Add(this.label7, 1, 2);
+            this.tlpTotalAmount.Controls.Add(this.lblRM10, 1, 2);
             this.tlpTotalAmount.Controls.Add(this.label2, 0, 0);
             this.tlpTotalAmount.Controls.Add(this.label5, 0, 3);
             this.tlpTotalAmount.Controls.Add(this.label4, 0, 2);
             this.tlpTotalAmount.Controls.Add(this.label3, 0, 1);
             this.tlpTotalAmount.Controls.Add(this.lblSSTCount, 1, 1);
-            this.tlpTotalAmount.Controls.Add(this.label9, 1, 4);
+            this.tlpTotalAmount.Controls.Add(this.lblRMtotal, 1, 4);
             this.tlpTotalAmount.Controls.Add(this.label6, 0, 4);
-            this.tlpTotalAmount.Controls.Add(this.label8, 1, 0);
-            this.tlpTotalAmount.Controls.Add(this.label10, 1, 3);
+            this.tlpTotalAmount.Controls.Add(this.lblRMInsuranceTotal, 1, 0);
+            this.tlpTotalAmount.Controls.Add(this.lblRM_NCD, 1, 3);
             this.tlpTotalAmount.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.tlpTotalAmount.Location = new System.Drawing.Point(186, 237);
             this.tlpTotalAmount.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
@@ -142,16 +142,16 @@
             this.tlpTotalAmount.Size = new System.Drawing.Size(745, 329);
             this.tlpTotalAmount.TabIndex = 5;
             // 
-            // label7
+            // lblRM10
             // 
-            this.label7.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(374, 130);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(369, 65);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "RM 10.00";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRM10.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRM10.Location = new System.Drawing.Point(374, 130);
+            this.lblRM10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRM10.Name = "lblRM10";
+            this.lblRM10.Size = new System.Drawing.Size(369, 65);
+            this.lblRM10.TabIndex = 6;
+            this.lblRM10.Text = "RM 10.00";
+            this.lblRM10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -209,16 +209,16 @@
             this.lblSSTCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblSSTCount.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label9
+            // lblRMtotal
             // 
-            this.label9.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(374, 260);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(369, 69);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "RM 00.00";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRMtotal.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRMtotal.Location = new System.Drawing.Point(374, 260);
+            this.lblRMtotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRMtotal.Name = "lblRMtotal";
+            this.lblRMtotal.Size = new System.Drawing.Size(369, 69);
+            this.lblRMtotal.TabIndex = 13;
+            this.lblRMtotal.Text = "RM 00.00";
+            this.lblRMtotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
@@ -231,28 +231,28 @@
             this.label6.Text = "Total Annual Premium:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label10
+            // lblRMInsuranceTotal
             // 
-            this.label10.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(374, 195);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(369, 65);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "RM 00.00";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label10.Click += new System.EventHandler(this.label8_Click);
+            this.lblRMInsuranceTotal.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRMInsuranceTotal.Location = new System.Drawing.Point(374, 0);
+            this.lblRMInsuranceTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRMInsuranceTotal.Name = "lblRMInsuranceTotal";
+            this.lblRMInsuranceTotal.Size = new System.Drawing.Size(369, 65);
+            this.lblRMInsuranceTotal.TabIndex = 6;
+            this.lblRMInsuranceTotal.Text = "RM 00.00";
+            this.lblRMInsuranceTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // lblRM_NCD
             // 
-            this.label8.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(374, 0);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(369, 65);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "RM 00.00";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRM_NCD.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRM_NCD.Location = new System.Drawing.Point(374, 195);
+            this.lblRM_NCD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRM_NCD.Name = "lblRM_NCD";
+            this.lblRM_NCD.Size = new System.Drawing.Size(369, 65);
+            this.lblRM_NCD.TabIndex = 10;
+            this.lblRM_NCD.Text = "RM 00.00";
+            this.lblRM_NCD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRM_NCD.Click += new System.EventHandler(this.label8_Click);
             // 
             // Total_Payable_Amount_of_Insurance
             // 
@@ -289,10 +289,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblRM10;
         private System.Windows.Forms.Label lblSSTCount;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblRMtotal;
+        private System.Windows.Forms.Label lblRMInsuranceTotal;
+        private System.Windows.Forms.Label lblRM_NCD;
     }
 }
