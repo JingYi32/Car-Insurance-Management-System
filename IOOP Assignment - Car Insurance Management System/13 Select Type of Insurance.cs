@@ -80,14 +80,21 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             totalAmount.Show();
             this.Hide();
 
-            double insuranceType;
-            if (rbThirdParty.Checked)
-                insuranceType = 2.66;
-            else if (rbFireTheft.Checked)
-                insuranceType = 2.75;
-            else if (rbComprehensive.Checked)
-                insuranceType = 2.84;
+            double insuranceType = 0;
+            double marketPrice; //retrieve from other form
 
+            InsType(ref insuranceType);
+            double premiumTotal = insuranceType * marketPrice; 
+        }
+
+        private void InsType(ref double value)
+        {
+            if (rbThirdParty.Checked)
+                value = 2.66;
+            else if (rbFireTheft.Checked)
+                value = 2.75;
+            else if (rbComprehensive.Checked)
+                value = 2.84;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
