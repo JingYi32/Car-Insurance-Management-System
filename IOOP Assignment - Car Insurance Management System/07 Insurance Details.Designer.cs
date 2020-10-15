@@ -52,13 +52,11 @@
             this.lblIns_EndDate = new System.Windows.Forms.Label();
             this.lblIns_PurcDate = new System.Windows.Forms.Label();
             this.gbOwner = new System.Windows.Forms.GroupBox();
-            this.lblShowOwner_IDTypes = new System.Windows.Forms.Label();
             this.lblShowOwner_IDNumber = new System.Windows.Forms.Label();
             this.lblShowOwner_DOB = new System.Windows.Forms.Label();
             this.lblShowOwner_Gender = new System.Windows.Forms.Label();
             this.lblShowOwner_Postcode = new System.Windows.Forms.Label();
             this.lblOwner_Gender = new System.Windows.Forms.Label();
-            this.lblOwner_IDTypes = new System.Windows.Forms.Label();
             this.lblOwner_Postcode = new System.Windows.Forms.Label();
             this.lblOwner_IDNumber = new System.Windows.Forms.Label();
             this.lblOwner_DOB = new System.Windows.Forms.Label();
@@ -329,47 +327,36 @@
             // 
             // gbOwner
             // 
-            this.gbOwner.Controls.Add(this.lblShowOwner_IDTypes);
             this.gbOwner.Controls.Add(this.lblShowOwner_IDNumber);
             this.gbOwner.Controls.Add(this.lblShowOwner_DOB);
             this.gbOwner.Controls.Add(this.lblShowOwner_Gender);
             this.gbOwner.Controls.Add(this.lblShowOwner_Postcode);
             this.gbOwner.Controls.Add(this.lblOwner_Gender);
-            this.gbOwner.Controls.Add(this.lblOwner_IDTypes);
             this.gbOwner.Controls.Add(this.lblOwner_Postcode);
             this.gbOwner.Controls.Add(this.lblOwner_IDNumber);
             this.gbOwner.Controls.Add(this.lblOwner_DOB);
-            this.gbOwner.Location = new System.Drawing.Point(96, 392);
+            this.gbOwner.Location = new System.Drawing.Point(113, 420);
             this.gbOwner.Margin = new System.Windows.Forms.Padding(2);
             this.gbOwner.Name = "gbOwner";
             this.gbOwner.Padding = new System.Windows.Forms.Padding(2);
-            this.gbOwner.Size = new System.Drawing.Size(310, 229);
+            this.gbOwner.Size = new System.Drawing.Size(310, 184);
             this.gbOwner.TabIndex = 7;
             this.gbOwner.TabStop = false;
             this.gbOwner.Text = "Owner Details";
             // 
-            // lblShowOwner_IDTypes
-            // 
-            this.lblShowOwner_IDTypes.AutoSize = true;
-            this.lblShowOwner_IDTypes.Location = new System.Drawing.Point(94, 45);
-            this.lblShowOwner_IDTypes.Name = "lblShowOwner_IDTypes";
-            this.lblShowOwner_IDTypes.Size = new System.Drawing.Size(102, 35);
-            this.lblShowOwner_IDTypes.TabIndex = 18;
-            this.lblShowOwner_IDTypes.Text = "(Show ID Type)";
-            // 
             // lblShowOwner_IDNumber
             // 
             this.lblShowOwner_IDNumber.AutoSize = true;
-            this.lblShowOwner_IDNumber.Location = new System.Drawing.Point(121, 80);
+            this.lblShowOwner_IDNumber.Location = new System.Drawing.Point(121, 33);
             this.lblShowOwner_IDNumber.Name = "lblShowOwner_IDNumber";
-            this.lblShowOwner_IDNumber.Size = new System.Drawing.Size(126, 35);
+            this.lblShowOwner_IDNumber.Size = new System.Drawing.Size(125, 35);
             this.lblShowOwner_IDNumber.TabIndex = 19;
-            this.lblShowOwner_IDNumber.Text = "(Show ID Number)";
+            this.lblShowOwner_IDNumber.Text = "(Show IC Number)";
             // 
             // lblShowOwner_DOB
             // 
             this.lblShowOwner_DOB.AutoSize = true;
-            this.lblShowOwner_DOB.Location = new System.Drawing.Point(86, 115);
+            this.lblShowOwner_DOB.Location = new System.Drawing.Point(86, 68);
             this.lblShowOwner_DOB.Name = "lblShowOwner_DOB";
             this.lblShowOwner_DOB.Size = new System.Drawing.Size(91, 35);
             this.lblShowOwner_DOB.TabIndex = 20;
@@ -378,7 +365,7 @@
             // lblShowOwner_Gender
             // 
             this.lblShowOwner_Gender.AutoSize = true;
-            this.lblShowOwner_Gender.Location = new System.Drawing.Point(95, 150);
+            this.lblShowOwner_Gender.Location = new System.Drawing.Point(95, 103);
             this.lblShowOwner_Gender.Name = "lblShowOwner_Gender";
             this.lblShowOwner_Gender.Size = new System.Drawing.Size(103, 35);
             this.lblShowOwner_Gender.TabIndex = 21;
@@ -387,7 +374,7 @@
             // lblShowOwner_Postcode
             // 
             this.lblShowOwner_Postcode.AutoSize = true;
-            this.lblShowOwner_Postcode.Location = new System.Drawing.Point(105, 185);
+            this.lblShowOwner_Postcode.Location = new System.Drawing.Point(105, 138);
             this.lblShowOwner_Postcode.Name = "lblShowOwner_Postcode";
             this.lblShowOwner_Postcode.Size = new System.Drawing.Size(111, 35);
             this.lblShowOwner_Postcode.TabIndex = 22;
@@ -397,28 +384,17 @@
             // 
             this.lblOwner_Gender.AutoSize = true;
             this.lblOwner_Gender.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblOwner_Gender.Location = new System.Drawing.Point(20, 150);
+            this.lblOwner_Gender.Location = new System.Drawing.Point(20, 103);
             this.lblOwner_Gender.Name = "lblOwner_Gender";
             this.lblOwner_Gender.Size = new System.Drawing.Size(69, 35);
             this.lblOwner_Gender.TabIndex = 9;
             this.lblOwner_Gender.Text = "Gender:";
             // 
-            // lblOwner_IDTypes
-            // 
-            this.lblOwner_IDTypes.AutoSize = true;
-            this.lblOwner_IDTypes.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblOwner_IDTypes.Location = new System.Drawing.Point(20, 45);
-            this.lblOwner_IDTypes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblOwner_IDTypes.Name = "lblOwner_IDTypes";
-            this.lblOwner_IDTypes.Size = new System.Drawing.Size(69, 35);
-            this.lblOwner_IDTypes.TabIndex = 5;
-            this.lblOwner_IDTypes.Text = "ID Type:";
-            // 
             // lblOwner_Postcode
             // 
             this.lblOwner_Postcode.AutoSize = true;
             this.lblOwner_Postcode.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblOwner_Postcode.Location = new System.Drawing.Point(20, 185);
+            this.lblOwner_Postcode.Location = new System.Drawing.Point(20, 138);
             this.lblOwner_Postcode.Name = "lblOwner_Postcode";
             this.lblOwner_Postcode.Size = new System.Drawing.Size(79, 35);
             this.lblOwner_Postcode.TabIndex = 8;
@@ -428,17 +404,17 @@
             // 
             this.lblOwner_IDNumber.AutoSize = true;
             this.lblOwner_IDNumber.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblOwner_IDNumber.Location = new System.Drawing.Point(20, 80);
+            this.lblOwner_IDNumber.Location = new System.Drawing.Point(20, 33);
             this.lblOwner_IDNumber.Name = "lblOwner_IDNumber";
-            this.lblOwner_IDNumber.Size = new System.Drawing.Size(95, 35);
+            this.lblOwner_IDNumber.Size = new System.Drawing.Size(94, 35);
             this.lblOwner_IDNumber.TabIndex = 6;
-            this.lblOwner_IDNumber.Text = "ID Number:";
+            this.lblOwner_IDNumber.Text = "IC Number:";
             // 
             // lblOwner_DOB
             // 
             this.lblOwner_DOB.AutoSize = true;
             this.lblOwner_DOB.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblOwner_DOB.Location = new System.Drawing.Point(20, 115);
+            this.lblOwner_DOB.Location = new System.Drawing.Point(20, 68);
             this.lblOwner_DOB.Name = "lblOwner_DOB";
             this.lblOwner_DOB.Size = new System.Drawing.Size(60, 35);
             this.lblOwner_DOB.TabIndex = 7;
@@ -646,7 +622,6 @@
         private System.Windows.Forms.Label lblIns_EndDate;
         private System.Windows.Forms.Label lblIns_PurcDate;
         private System.Windows.Forms.Label lblOwner_Gender;
-        private System.Windows.Forms.Label lblOwner_IDTypes;
         private System.Windows.Forms.Label lblOwner_Postcode;
         private System.Windows.Forms.Label lblOwner_IDNumber;
         private System.Windows.Forms.Label lblOwner_DOB;
@@ -669,7 +644,6 @@
         private System.Windows.Forms.Label lblShowIns_Last_Renewal;
         private System.Windows.Forms.Label lblShowIns_EndDate;
         private System.Windows.Forms.Label lblShowIns_Type;
-        private System.Windows.Forms.Label lblShowOwner_IDTypes;
         private System.Windows.Forms.Label lblShowOwner_IDNumber;
         private System.Windows.Forms.Label lblShowOwner_DOB;
         private System.Windows.Forms.Label lblShowOwner_Gender;
