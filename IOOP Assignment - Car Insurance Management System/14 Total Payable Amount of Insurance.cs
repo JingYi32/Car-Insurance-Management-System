@@ -43,5 +43,42 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
 
         }
+
+        private void Calculate()
+        {
+            double premT_TP = Select_Type_of_Insurance.premiumTotal;
+            lblRMInsuranceTotal.Text = premT_TP.ToString();
+
+            double sst_TP = premT_TP * 0.06;
+            lblSSTCount.Text = sst_TP.ToString();
+
+            double value = 0;
+            CalculateNCD(ref value);
+            double NCD_TP = premT_TP * value;
+            lblRM_NCD.Text = NCD_TP.ToString();
+
+            double Total_TP = premT_TP + sst_TP + 10 + NCD_TP;
+            lblRMtotal.Text = Total_TP.ToString();
+        }
+
+        private void CalculateNCD(ref double NCD)
+        {
+            double year = 1; //Should from database
+           
+            if (year == 1)
+                NCD = 0.25;
+            else if (year == 2)
+                NCD = 0.30;
+            else if (year == 3)
+                NCD = 0.3833;
+            else if (year == 4)
+                NCD = 0.45;
+            else if (year >= 5)
+                NCD = 0.55;
+            else
+                NCD = 0;
+
+        }
+
     }
 }
