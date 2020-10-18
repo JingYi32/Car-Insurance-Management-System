@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -90,12 +91,20 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void InsType(ref double value)
         {
-            if (rbThirdParty.Checked)
-                value = 2.66;
-            else if (rbFireTheft.Checked)
-                value = 2.75;
-            else if (rbComprehensive.Checked)
-                value = 2.84;
+            try
+            {
+                if (rbThirdParty.Checked)
+                    value = 2.66;
+                else if (rbFireTheft.Checked)
+                    value = 2.75;
+                else if (rbComprehensive.Checked)
+                    value = 2.84;
+            }
+            catch
+            {
+                MessageBox.Show("Please select the insurance type.");
+            }
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)

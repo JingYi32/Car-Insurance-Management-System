@@ -25,7 +25,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnSubmit_UI_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lblUpdateInsurance_Click(object sender, EventArgs e)

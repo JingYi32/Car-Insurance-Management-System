@@ -59,6 +59,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
             double Total_TP = premT_TP + sst_TP + 10 + NCD_TP;
             lblRMtotal.Text = Total_TP.ToString();
+
+            //Havent save into database
         }
 
         private void CalculateNCD(ref double NCD)
