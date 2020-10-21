@@ -44,14 +44,14 @@
             this.btnExitEdit = new System.Windows.Forms.Button();
             this.lblCUST_ID = new System.Windows.Forms.Label();
             this.lblCUST_Name = new System.Windows.Forms.Label();
-            this.lblCUST_ID_NO = new System.Windows.Forms.Label();
+            this.lblCUST_IC = new System.Windows.Forms.Label();
             this.lblCUST_Gender = new System.Windows.Forms.Label();
             this.lblCUST_Email = new System.Windows.Forms.Label();
             this.lblCUST_Address = new System.Windows.Forms.Label();
             this.lblCUST_Phone = new System.Windows.Forms.Label();
             this.lblShowCUST_ID = new System.Windows.Forms.Label();
             this.lblShowCUST_Name = new System.Windows.Forms.Label();
-            this.lblShowCUST_ID_NO = new System.Windows.Forms.Label();
+            this.lblShowCUST_IC = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblEditProfile
@@ -216,15 +216,15 @@
             this.lblCUST_Name.TabIndex = 11;
             this.lblCUST_Name.Text = "Customer\'s Name\t:";
             // 
-            // lblCUST_ID_NO
+            // lblCUST_IC
             // 
-            this.lblCUST_ID_NO.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCUST_ID_NO.Location = new System.Drawing.Point(98, 291);
-            this.lblCUST_ID_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCUST_ID_NO.Name = "lblCUST_ID_NO";
-            this.lblCUST_ID_NO.Size = new System.Drawing.Size(213, 53);
-            this.lblCUST_ID_NO.TabIndex = 12;
-            this.lblCUST_ID_NO.Text = "ID Number\t:";
+            this.lblCUST_IC.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_IC.Location = new System.Drawing.Point(98, 291);
+            this.lblCUST_IC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_IC.Name = "lblCUST_IC";
+            this.lblCUST_IC.Size = new System.Drawing.Size(213, 53);
+            this.lblCUST_IC.TabIndex = 12;
+            this.lblCUST_IC.Text = "IC Number\t:";
             // 
             // lblCUST_Gender
             // 
@@ -282,13 +282,13 @@
             this.lblShowCUST_Name.TabIndex = 24;
             this.lblShowCUST_Name.Text = "(Show Customer Name)";
             // 
-            // lblShowCUST_ID_NO
+            // lblShowCUST_IC
             // 
-            this.lblShowCUST_ID_NO.Location = new System.Drawing.Point(374, 291);
-            this.lblShowCUST_ID_NO.Name = "lblShowCUST_ID_NO";
-            this.lblShowCUST_ID_NO.Size = new System.Drawing.Size(646, 51);
-            this.lblShowCUST_ID_NO.TabIndex = 25;
-            this.lblShowCUST_ID_NO.Text = "(Show ID Number)";
+            this.lblShowCUST_IC.Location = new System.Drawing.Point(374, 291);
+            this.lblShowCUST_IC.Name = "lblShowCUST_IC";
+            this.lblShowCUST_IC.Size = new System.Drawing.Size(646, 51);
+            this.lblShowCUST_IC.TabIndex = 25;
+            this.lblShowCUST_IC.Text = "(Show IC Number)";
             // 
             // Edit_Customer_Profile
             // 
@@ -296,7 +296,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.lblShowCUST_ID_NO);
+            this.Controls.Add(this.lblShowCUST_IC);
             this.Controls.Add(this.lblShowCUST_Name);
             this.Controls.Add(this.lblShowCUST_ID);
             this.Controls.Add(this.btnDoneEdit);
@@ -313,7 +313,7 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblCUST_Gender);
             this.Controls.Add(this.lblCustomerGender);
-            this.Controls.Add(this.lblCUST_ID_NO);
+            this.Controls.Add(this.lblCUST_IC);
             this.Controls.Add(this.lblCustomerIDN);
             this.Controls.Add(this.lblCUST_Name);
             this.Controls.Add(this.lblCustomerName);
@@ -349,13 +349,13 @@
         private System.Windows.Forms.Button btnExitEdit;
         private System.Windows.Forms.Label lblCUST_ID;
         private System.Windows.Forms.Label lblCUST_Name;
-        private System.Windows.Forms.Label lblCUST_ID_NO;
+        private System.Windows.Forms.Label lblCUST_IC;
         private System.Windows.Forms.Label lblCUST_Gender;
         private System.Windows.Forms.Label lblCUST_Email;
         private System.Windows.Forms.Label lblCUST_Address;
         private System.Windows.Forms.Label lblCUST_Phone;
         private System.Windows.Forms.Label lblShowCUST_ID;
         private System.Windows.Forms.Label lblShowCUST_Name;
-        private System.Windows.Forms.Label lblShowCUST_ID_NO;
+        private System.Windows.Forms.Label lblShowCUST_IC;
     }
 }

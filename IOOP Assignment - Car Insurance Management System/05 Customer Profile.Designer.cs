@@ -31,7 +31,7 @@
             this.lblProfile = new System.Windows.Forms.Label();
             this.lblCUST_ID = new System.Windows.Forms.Label();
             this.lblCUST_Name = new System.Windows.Forms.Label();
-            this.lblCUST_ID_NO = new System.Windows.Forms.Label();
+            this.lblCUST_IC = new System.Windows.Forms.Label();
             this.lblCUST_Gender = new System.Windows.Forms.Label();
             this.lblCUST_Email = new System.Windows.Forms.Label();
             this.lblCUST_Address = new System.Windows.Forms.Label();
@@ -87,16 +87,16 @@
             this.lblCUST_Name.TabIndex = 3;
             this.lblCUST_Name.Text = "Customer\'s Name:";
             // 
-            // lblCUST_ID_NO
+            // lblCUST_IC
             // 
-            this.lblCUST_ID_NO.AutoSize = true;
-            this.lblCUST_ID_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCUST_ID_NO.Location = new System.Drawing.Point(98, 181);
-            this.lblCUST_ID_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCUST_ID_NO.Name = "lblCUST_ID_NO";
-            this.lblCUST_ID_NO.Size = new System.Drawing.Size(108, 45);
-            this.lblCUST_ID_NO.TabIndex = 4;
-            this.lblCUST_ID_NO.Text = "ID Number:";
+            this.lblCUST_IC.AutoSize = true;
+            this.lblCUST_IC.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_IC.Location = new System.Drawing.Point(98, 181);
+            this.lblCUST_IC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCUST_IC.Name = "lblCUST_IC";
+            this.lblCUST_IC.Size = new System.Drawing.Size(107, 45);
+            this.lblCUST_IC.TabIndex = 4;
+            this.lblCUST_IC.Text = "IC Number:";
             // 
             // lblCUST_Gender
             // 
@@ -312,7 +312,7 @@
             this.Controls.Add(this.lblCUST_Address);
             this.Controls.Add(this.lblCUST_Email);
             this.Controls.Add(this.lblCUST_Gender);
-            this.Controls.Add(this.lblCUST_ID_NO);
+            this.Controls.Add(this.lblCUST_IC);
             this.Controls.Add(this.lblCUST_Name);
             this.Controls.Add(this.lblCUST_ID);
             this.Controls.Add(this.lblProfile);
@@ -335,7 +335,7 @@
         private System.Windows.Forms.Label lblProfile;
         private System.Windows.Forms.Label lblCUST_ID;
         private System.Windows.Forms.Label lblCUST_Name;
-        private System.Windows.Forms.Label lblCUST_ID_NO;
+        private System.Windows.Forms.Label lblCUST_IC;
         private System.Windows.Forms.Label lblCUST_Gender;
         private System.Windows.Forms.Label lblCUST_Email;
         private System.Windows.Forms.Label lblCUST_Address;

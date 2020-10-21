@@ -55,9 +55,9 @@
             this.lblShowOwner_IDNumber = new System.Windows.Forms.Label();
             this.lblShowOwner_DOB = new System.Windows.Forms.Label();
             this.lblShowOwner_Gender = new System.Windows.Forms.Label();
-            this.lblShowOwner_Postcode = new System.Windows.Forms.Label();
+            this.lblShowOwner_Phone = new System.Windows.Forms.Label();
             this.lblOwner_Gender = new System.Windows.Forms.Label();
-            this.lblOwner_Postcode = new System.Windows.Forms.Label();
+            this.lblOwner_Phone = new System.Windows.Forms.Label();
             this.lblOwner_IDNumber = new System.Windows.Forms.Label();
             this.lblOwner_DOB = new System.Windows.Forms.Label();
             this.gbAmount = new System.Windows.Forms.GroupBox();
@@ -73,6 +73,8 @@
             this.btnCancel_Ins = new System.Windows.Forms.Button();
             this.btnBack_Cust_Profile = new System.Windows.Forms.Button();
             this.btnRenew_Ins = new System.Windows.Forms.Button();
+            this.lblShowOwner_Address = new System.Windows.Forms.Label();
+            this.lblOwner_Address = new System.Windows.Forms.Label();
             this.gbVehicle.SuspendLayout();
             this.gbIns.SuspendLayout();
             this.gbOwner.SuspendLayout();
@@ -327,19 +329,21 @@
             // 
             // gbOwner
             // 
+            this.gbOwner.Controls.Add(this.lblShowOwner_Address);
+            this.gbOwner.Controls.Add(this.lblOwner_Address);
             this.gbOwner.Controls.Add(this.lblShowOwner_IDNumber);
             this.gbOwner.Controls.Add(this.lblShowOwner_DOB);
             this.gbOwner.Controls.Add(this.lblShowOwner_Gender);
-            this.gbOwner.Controls.Add(this.lblShowOwner_Postcode);
+            this.gbOwner.Controls.Add(this.lblShowOwner_Phone);
             this.gbOwner.Controls.Add(this.lblOwner_Gender);
-            this.gbOwner.Controls.Add(this.lblOwner_Postcode);
+            this.gbOwner.Controls.Add(this.lblOwner_Phone);
             this.gbOwner.Controls.Add(this.lblOwner_IDNumber);
             this.gbOwner.Controls.Add(this.lblOwner_DOB);
-            this.gbOwner.Location = new System.Drawing.Point(113, 420);
+            this.gbOwner.Location = new System.Drawing.Point(112, 392);
             this.gbOwner.Margin = new System.Windows.Forms.Padding(2);
             this.gbOwner.Name = "gbOwner";
             this.gbOwner.Padding = new System.Windows.Forms.Padding(2);
-            this.gbOwner.Size = new System.Drawing.Size(310, 184);
+            this.gbOwner.Size = new System.Drawing.Size(310, 212);
             this.gbOwner.TabIndex = 7;
             this.gbOwner.TabStop = false;
             this.gbOwner.Text = "Owner Details";
@@ -371,14 +375,14 @@
             this.lblShowOwner_Gender.TabIndex = 21;
             this.lblShowOwner_Gender.Text = "(Show Gender)";
             // 
-            // lblShowOwner_Postcode
+            // lblShowOwner_Phone
             // 
-            this.lblShowOwner_Postcode.AutoSize = true;
-            this.lblShowOwner_Postcode.Location = new System.Drawing.Point(105, 138);
-            this.lblShowOwner_Postcode.Name = "lblShowOwner_Postcode";
-            this.lblShowOwner_Postcode.Size = new System.Drawing.Size(111, 35);
-            this.lblShowOwner_Postcode.TabIndex = 22;
-            this.lblShowOwner_Postcode.Text = "(Show Postcode)";
+            this.lblShowOwner_Phone.AutoSize = true;
+            this.lblShowOwner_Phone.Location = new System.Drawing.Point(105, 138);
+            this.lblShowOwner_Phone.Name = "lblShowOwner_Phone";
+            this.lblShowOwner_Phone.Size = new System.Drawing.Size(96, 35);
+            this.lblShowOwner_Phone.TabIndex = 22;
+            this.lblShowOwner_Phone.Text = "(Show Phone)";
             // 
             // lblOwner_Gender
             // 
@@ -390,15 +394,15 @@
             this.lblOwner_Gender.TabIndex = 9;
             this.lblOwner_Gender.Text = "Gender:";
             // 
-            // lblOwner_Postcode
+            // lblOwner_Phone
             // 
-            this.lblOwner_Postcode.AutoSize = true;
-            this.lblOwner_Postcode.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblOwner_Postcode.Location = new System.Drawing.Point(20, 138);
-            this.lblOwner_Postcode.Name = "lblOwner_Postcode";
-            this.lblOwner_Postcode.Size = new System.Drawing.Size(79, 35);
-            this.lblOwner_Postcode.TabIndex = 8;
-            this.lblOwner_Postcode.Text = "Postcode:";
+            this.lblOwner_Phone.AutoSize = true;
+            this.lblOwner_Phone.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lblOwner_Phone.Location = new System.Drawing.Point(20, 138);
+            this.lblOwner_Phone.Name = "lblOwner_Phone";
+            this.lblOwner_Phone.Size = new System.Drawing.Size(61, 35);
+            this.lblOwner_Phone.TabIndex = 8;
+            this.lblOwner_Phone.Text = "Phone:";
             // 
             // lblOwner_IDNumber
             // 
@@ -573,6 +577,25 @@
             this.btnRenew_Ins.UseVisualStyleBackColor = false;
             this.btnRenew_Ins.Click += new System.EventHandler(this.btnRenew_Ins_Click);
             // 
+            // lblShowOwner_Address
+            // 
+            this.lblShowOwner_Address.AutoSize = true;
+            this.lblShowOwner_Address.Location = new System.Drawing.Point(105, 173);
+            this.lblShowOwner_Address.Name = "lblShowOwner_Address";
+            this.lblShowOwner_Address.Size = new System.Drawing.Size(108, 35);
+            this.lblShowOwner_Address.TabIndex = 24;
+            this.lblShowOwner_Address.Text = "(Show Address)";
+            // 
+            // lblOwner_Address
+            // 
+            this.lblOwner_Address.AutoSize = true;
+            this.lblOwner_Address.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lblOwner_Address.Location = new System.Drawing.Point(20, 173);
+            this.lblOwner_Address.Name = "lblOwner_Address";
+            this.lblOwner_Address.Size = new System.Drawing.Size(75, 35);
+            this.lblOwner_Address.TabIndex = 23;
+            this.lblOwner_Address.Text = "Address:";
+            // 
             // Insurance_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 33F);
@@ -622,7 +645,7 @@
         private System.Windows.Forms.Label lblIns_EndDate;
         private System.Windows.Forms.Label lblIns_PurcDate;
         private System.Windows.Forms.Label lblOwner_Gender;
-        private System.Windows.Forms.Label lblOwner_Postcode;
+        private System.Windows.Forms.Label lblOwner_Phone;
         private System.Windows.Forms.Label lblOwner_IDNumber;
         private System.Windows.Forms.Label lblOwner_DOB;
         private System.Windows.Forms.Label lblIns_Total;
@@ -647,10 +670,12 @@
         private System.Windows.Forms.Label lblShowOwner_IDNumber;
         private System.Windows.Forms.Label lblShowOwner_DOB;
         private System.Windows.Forms.Label lblShowOwner_Gender;
-        private System.Windows.Forms.Label lblShowOwner_Postcode;
+        private System.Windows.Forms.Label lblShowOwner_Phone;
         private System.Windows.Forms.Label lblShowIns_GrossTotal;
         private System.Windows.Forms.Label lblShowIns_SST;
         private System.Windows.Forms.Label lblShowIns_StampDuty;
         private System.Windows.Forms.Label lblShowIns_Total;
+        private System.Windows.Forms.Label lblShowOwner_Address;
+        private System.Windows.Forms.Label lblOwner_Address;
     }
 }
