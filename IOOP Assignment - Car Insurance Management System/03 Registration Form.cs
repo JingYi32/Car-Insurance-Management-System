@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 {
     public partial class Registration_Form : Form
     {
+        OleDbConnection con = new OleDbConnection();
+        OleDbCommand cmd = new OleDbCommand();
+
         public Registration_Form()
         {
             InitializeComponent();
@@ -31,7 +35,14 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void button2_Click(object sender, EventArgs e)
         {
+            cmd.CommandText = "INSERT INTO CUSTOMER VALUES ('G00002', 'Dennis', 'Chiu', '011309-10-1293','6, Taman Bunga, Puchong, 12345 Selangor.', 'Male', '060-876567576', 'dennischiu@yahoo.com')";
+            cmd.Connection = con;
+        }
 
+        private void Registration_Form_Load(object sender, EventArgs e)
+        {
+            con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
+            con.Open();
         }
     }
 }

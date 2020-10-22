@@ -86,7 +86,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             double marketPrice; //retrieve from other form
 
             InsType(ref insuranceType);
-            double premiumTotal = insuranceType * marketPrice; 
+            //double premiumTotal = insuranceType * marketPrice; 
         }
 
         private void InsType(ref double value)

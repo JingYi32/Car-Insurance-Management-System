@@ -152,6 +152,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 14, 5, 14);
             this.Name = "Login_Page";
             this.Text = "Login_Page";
+            this.Load += new System.EventHandler(this.Login_Page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
