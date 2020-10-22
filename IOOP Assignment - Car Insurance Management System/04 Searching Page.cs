@@ -39,17 +39,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             mainMenu.Show();
         }
 
-        private void btnCUST_Click(object sender, EventArgs e)
-        {
-            Customer_Profile customer_Profile = new Customer_Profile();
-            this.Hide();
-            customer_Profile.Show();
-        }
-
-        private void btnINS_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -86,10 +75,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dgvSearchResult.Rows[e.RowIndex];
-                Save save = new Save();
-                save.CUSTOMERID = row.Cells["Customer ID"].Value.ToString();
-                save.INSURANCEID = row.Cells["Insurance ID"].Value.ToString();
-                MessageBox.Show(save.CUSTOMERID + "........" + save.INSURANCEID);
+                Save.customerid = row.Cells["Customer ID"].Value.ToString();
+                Save.insuranceid = row.Cells["Insurance ID"].Value.ToString();
                 //Go To Insurance Page
                 Insurance_Details insurance_Details = new Insurance_Details();
                 this.Hide();

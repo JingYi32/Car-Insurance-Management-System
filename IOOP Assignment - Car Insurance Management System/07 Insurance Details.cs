@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,10 +14,55 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 {
     public partial class Insurance_Details : Form
     {
+        OleDbConnection con = new OleDbConnection();
+        OleDbCommand cmd = new OleDbCommand();
+
+        private void Insurance_Details_Load(object sender, EventArgs e)
+        {
+            con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
+            con.Open();
+            cmd.CommandText = "SELECT Insurance.*, Vehicle.*, Owner.* FROM (Insurance INNER JOIN Vehicle ON Insurance.Vehicle_RegistrationNo = Vehicle.Vehicle_RegistrationNo) INNER JOIN Owner ON Insurance.Owner_IC = Owner.Owner_IC WHERE Insurance.ID = " + Save.insuranceid + "";
+            cmd.Connection = con;
+
+            OleDbDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                lblInsuranceDetails.Text = dr[0].ToString() + " 's Details";
+                lblShowVehicle_NO.Text = ":  " + dr[13].ToString();
+                lblShowVehicle_Brand.Text = ":  " + dr[14].ToString();
+                lblShowVehicle_Model.Text = ":  " + dr[15].ToString();
+                lblShowVehicle_YOM.Text = ":  " + dr[16].ToString();
+                lblShowVehicle_Price.Text = ":  " + dr[17].ToString();
+                lblShowOwner_ICNumber.Text = ":  " + dr[18].ToString();
+                lblShowOwner_DOB.Text = ":  " + dr[19].ToString();
+                lblShowOwner_Gender.Text = ":  " + dr[20].ToString();
+                lblShowOwner_Phone.Text = ":  " + dr[21].ToString();
+                lblShowOwner_Address.Text = ":  " + dr[22].ToString();
+                lblShowIns_Status.Text = ":  " + dr[2].ToString();
+                lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
+                lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
+                lblShowIns_EndDate.Text = ":  " + dr[5].ToString();
+                lblShowIns_Type.Text = ":  " + dr[6].ToString();
+                lblShowIns_GrossTotal.Text = ":  " + dr[7].ToString();
+                lblShowIns_SST.Text = ":  " + dr[8].ToString();
+                lblShowIns_StampDuty.Text = ":  " + dr[9].ToString();
+                lblShowIns_Total.Text = ":  " + dr[10].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Record not found.");
+            }
+            dr.Close();
+        }
+
         public Insurance_Details()
         {
             InitializeComponent();
         }
+
+        //
+        //Button
+        //
 
         private void btnBack_Cust_Profile_Click(object sender, EventArgs e)
         {
@@ -46,9 +92,5 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             updating_Insurance.Show();
         }
 
-        private void lblInsuranceDetails_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

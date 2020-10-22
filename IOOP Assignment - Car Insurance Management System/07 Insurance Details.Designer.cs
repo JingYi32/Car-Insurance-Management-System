@@ -52,7 +52,9 @@
             this.lblIns_EndDate = new System.Windows.Forms.Label();
             this.lblIns_PurcDate = new System.Windows.Forms.Label();
             this.gbOwner = new System.Windows.Forms.GroupBox();
-            this.lblShowOwner_IDNumber = new System.Windows.Forms.Label();
+            this.lblShowOwner_Address = new System.Windows.Forms.Label();
+            this.lblOwner_Address = new System.Windows.Forms.Label();
+            this.lblShowOwner_ICNumber = new System.Windows.Forms.Label();
             this.lblShowOwner_DOB = new System.Windows.Forms.Label();
             this.lblShowOwner_Gender = new System.Windows.Forms.Label();
             this.lblShowOwner_Phone = new System.Windows.Forms.Label();
@@ -73,8 +75,6 @@
             this.btnCancel_Ins = new System.Windows.Forms.Button();
             this.btnBack_Cust_Profile = new System.Windows.Forms.Button();
             this.btnRenew_Ins = new System.Windows.Forms.Button();
-            this.lblShowOwner_Address = new System.Windows.Forms.Label();
-            this.lblOwner_Address = new System.Windows.Forms.Label();
             this.gbVehicle.SuspendLayout();
             this.gbIns.SuspendLayout();
             this.gbOwner.SuspendLayout();
@@ -92,7 +92,6 @@
             this.lblInsuranceDetails.TabIndex = 4;
             this.lblInsuranceDetails.Text = "(Insurance ID) \'s Details";
             this.lblInsuranceDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblInsuranceDetails.Click += new System.EventHandler(this.lblInsuranceDetails_Click);
             // 
             // gbVehicle
             // 
@@ -118,7 +117,7 @@
             // lblShowVehicle_Price
             // 
             this.lblShowVehicle_Price.AutoSize = true;
-            this.lblShowVehicle_Price.Location = new System.Drawing.Point(123, 180);
+            this.lblShowVehicle_Price.Location = new System.Drawing.Point(224, 180);
             this.lblShowVehicle_Price.Name = "lblShowVehicle_Price";
             this.lblShowVehicle_Price.Size = new System.Drawing.Size(135, 35);
             this.lblShowVehicle_Price.TabIndex = 9;
@@ -127,7 +126,7 @@
             // lblShowVehicle_YOM
             // 
             this.lblShowVehicle_YOM.AutoSize = true;
-            this.lblShowVehicle_YOM.Location = new System.Drawing.Point(159, 144);
+            this.lblShowVehicle_YOM.Location = new System.Drawing.Point(224, 144);
             this.lblShowVehicle_YOM.Name = "lblShowVehicle_YOM";
             this.lblShowVehicle_YOM.Size = new System.Drawing.Size(165, 35);
             this.lblShowVehicle_YOM.TabIndex = 8;
@@ -136,7 +135,7 @@
             // lblShowVehicle_Model
             // 
             this.lblShowVehicle_Model.AutoSize = true;
-            this.lblShowVehicle_Model.Location = new System.Drawing.Point(78, 108);
+            this.lblShowVehicle_Model.Location = new System.Drawing.Point(224, 108);
             this.lblShowVehicle_Model.Name = "lblShowVehicle_Model";
             this.lblShowVehicle_Model.Size = new System.Drawing.Size(96, 35);
             this.lblShowVehicle_Model.TabIndex = 7;
@@ -145,7 +144,7 @@
             // lblShowVehicle_Brand
             // 
             this.lblShowVehicle_Brand.AutoSize = true;
-            this.lblShowVehicle_Brand.Location = new System.Drawing.Point(79, 72);
+            this.lblShowVehicle_Brand.Location = new System.Drawing.Point(224, 72);
             this.lblShowVehicle_Brand.Name = "lblShowVehicle_Brand";
             this.lblShowVehicle_Brand.Size = new System.Drawing.Size(96, 35);
             this.lblShowVehicle_Brand.TabIndex = 6;
@@ -154,7 +153,7 @@
             // lblShowVehicle_NO
             // 
             this.lblShowVehicle_NO.AutoSize = true;
-            this.lblShowVehicle_NO.Location = new System.Drawing.Point(234, 36);
+            this.lblShowVehicle_NO.Location = new System.Drawing.Point(224, 36);
             this.lblShowVehicle_NO.Name = "lblShowVehicle_NO";
             this.lblShowVehicle_NO.Size = new System.Drawing.Size(230, 35);
             this.lblShowVehicle_NO.TabIndex = 5;
@@ -234,7 +233,7 @@
             // lblShowIns_Status
             // 
             this.lblShowIns_Status.AutoSize = true;
-            this.lblShowIns_Status.Location = new System.Drawing.Point(89, 25);
+            this.lblShowIns_Status.Location = new System.Drawing.Point(79, 25);
             this.lblShowIns_Status.Name = "lblShowIns_Status";
             this.lblShowIns_Status.Size = new System.Drawing.Size(97, 35);
             this.lblShowIns_Status.TabIndex = 18;
@@ -243,7 +242,7 @@
             // lblShowIns_PurcDate
             // 
             this.lblShowIns_PurcDate.AutoSize = true;
-            this.lblShowIns_PurcDate.Location = new System.Drawing.Point(154, 61);
+            this.lblShowIns_PurcDate.Location = new System.Drawing.Point(144, 61);
             this.lblShowIns_PurcDate.Name = "lblShowIns_PurcDate";
             this.lblShowIns_PurcDate.Size = new System.Drawing.Size(153, 35);
             this.lblShowIns_PurcDate.TabIndex = 19;
@@ -252,7 +251,7 @@
             // lblShowIns_Last_Renewal
             // 
             this.lblShowIns_Last_Renewal.AutoSize = true;
-            this.lblShowIns_Last_Renewal.Location = new System.Drawing.Point(172, 96);
+            this.lblShowIns_Last_Renewal.Location = new System.Drawing.Point(162, 96);
             this.lblShowIns_Last_Renewal.Name = "lblShowIns_Last_Renewal";
             this.lblShowIns_Last_Renewal.Size = new System.Drawing.Size(153, 35);
             this.lblShowIns_Last_Renewal.TabIndex = 20;
@@ -261,7 +260,7 @@
             // lblShowIns_EndDate
             // 
             this.lblShowIns_EndDate.AutoSize = true;
-            this.lblShowIns_EndDate.Location = new System.Drawing.Point(109, 131);
+            this.lblShowIns_EndDate.Location = new System.Drawing.Point(99, 131);
             this.lblShowIns_EndDate.Name = "lblShowIns_EndDate";
             this.lblShowIns_EndDate.Size = new System.Drawing.Size(114, 35);
             this.lblShowIns_EndDate.TabIndex = 21;
@@ -270,7 +269,7 @@
             // lblShowIns_Type
             // 
             this.lblShowIns_Type.AutoSize = true;
-            this.lblShowIns_Type.Location = new System.Drawing.Point(76, 166);
+            this.lblShowIns_Type.Location = new System.Drawing.Point(66, 166);
             this.lblShowIns_Type.Name = "lblShowIns_Type";
             this.lblShowIns_Type.Size = new System.Drawing.Size(85, 35);
             this.lblShowIns_Type.TabIndex = 22;
@@ -331,7 +330,7 @@
             // 
             this.gbOwner.Controls.Add(this.lblShowOwner_Address);
             this.gbOwner.Controls.Add(this.lblOwner_Address);
-            this.gbOwner.Controls.Add(this.lblShowOwner_IDNumber);
+            this.gbOwner.Controls.Add(this.lblShowOwner_ICNumber);
             this.gbOwner.Controls.Add(this.lblShowOwner_DOB);
             this.gbOwner.Controls.Add(this.lblShowOwner_Gender);
             this.gbOwner.Controls.Add(this.lblShowOwner_Phone);
@@ -348,19 +347,38 @@
             this.gbOwner.TabStop = false;
             this.gbOwner.Text = "Owner Details";
             // 
-            // lblShowOwner_IDNumber
+            // lblShowOwner_Address
             // 
-            this.lblShowOwner_IDNumber.AutoSize = true;
-            this.lblShowOwner_IDNumber.Location = new System.Drawing.Point(121, 33);
-            this.lblShowOwner_IDNumber.Name = "lblShowOwner_IDNumber";
-            this.lblShowOwner_IDNumber.Size = new System.Drawing.Size(125, 35);
-            this.lblShowOwner_IDNumber.TabIndex = 19;
-            this.lblShowOwner_IDNumber.Text = "(Show IC Number)";
+            this.lblShowOwner_Address.AutoSize = true;
+            this.lblShowOwner_Address.Location = new System.Drawing.Point(95, 173);
+            this.lblShowOwner_Address.Name = "lblShowOwner_Address";
+            this.lblShowOwner_Address.Size = new System.Drawing.Size(108, 35);
+            this.lblShowOwner_Address.TabIndex = 24;
+            this.lblShowOwner_Address.Text = "(Show Address)";
+            // 
+            // lblOwner_Address
+            // 
+            this.lblOwner_Address.AutoSize = true;
+            this.lblOwner_Address.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
+            this.lblOwner_Address.Location = new System.Drawing.Point(20, 173);
+            this.lblOwner_Address.Name = "lblOwner_Address";
+            this.lblOwner_Address.Size = new System.Drawing.Size(75, 35);
+            this.lblOwner_Address.TabIndex = 23;
+            this.lblOwner_Address.Text = "Address:";
+            // 
+            // lblShowOwner_ICNumber
+            // 
+            this.lblShowOwner_ICNumber.AutoSize = true;
+            this.lblShowOwner_ICNumber.Location = new System.Drawing.Point(111, 33);
+            this.lblShowOwner_ICNumber.Name = "lblShowOwner_ICNumber";
+            this.lblShowOwner_ICNumber.Size = new System.Drawing.Size(125, 35);
+            this.lblShowOwner_ICNumber.TabIndex = 19;
+            this.lblShowOwner_ICNumber.Text = "(Show IC Number)";
             // 
             // lblShowOwner_DOB
             // 
             this.lblShowOwner_DOB.AutoSize = true;
-            this.lblShowOwner_DOB.Location = new System.Drawing.Point(86, 68);
+            this.lblShowOwner_DOB.Location = new System.Drawing.Point(76, 68);
             this.lblShowOwner_DOB.Name = "lblShowOwner_DOB";
             this.lblShowOwner_DOB.Size = new System.Drawing.Size(91, 35);
             this.lblShowOwner_DOB.TabIndex = 20;
@@ -369,7 +387,7 @@
             // lblShowOwner_Gender
             // 
             this.lblShowOwner_Gender.AutoSize = true;
-            this.lblShowOwner_Gender.Location = new System.Drawing.Point(95, 103);
+            this.lblShowOwner_Gender.Location = new System.Drawing.Point(85, 103);
             this.lblShowOwner_Gender.Name = "lblShowOwner_Gender";
             this.lblShowOwner_Gender.Size = new System.Drawing.Size(103, 35);
             this.lblShowOwner_Gender.TabIndex = 21;
@@ -378,7 +396,7 @@
             // lblShowOwner_Phone
             // 
             this.lblShowOwner_Phone.AutoSize = true;
-            this.lblShowOwner_Phone.Location = new System.Drawing.Point(105, 138);
+            this.lblShowOwner_Phone.Location = new System.Drawing.Point(95, 138);
             this.lblShowOwner_Phone.Name = "lblShowOwner_Phone";
             this.lblShowOwner_Phone.Size = new System.Drawing.Size(96, 35);
             this.lblShowOwner_Phone.TabIndex = 22;
@@ -447,7 +465,7 @@
             // lblShowIns_GrossTotal
             // 
             this.lblShowIns_GrossTotal.AutoSize = true;
-            this.lblShowIns_GrossTotal.Location = new System.Drawing.Point(230, 33);
+            this.lblShowIns_GrossTotal.Location = new System.Drawing.Point(220, 33);
             this.lblShowIns_GrossTotal.Name = "lblShowIns_GrossTotal";
             this.lblShowIns_GrossTotal.Size = new System.Drawing.Size(127, 35);
             this.lblShowIns_GrossTotal.TabIndex = 18;
@@ -456,7 +474,7 @@
             // lblShowIns_SST
             // 
             this.lblShowIns_SST.AutoSize = true;
-            this.lblShowIns_SST.Location = new System.Drawing.Point(166, 70);
+            this.lblShowIns_SST.Location = new System.Drawing.Point(156, 70);
             this.lblShowIns_SST.Name = "lblShowIns_SST";
             this.lblShowIns_SST.Size = new System.Drawing.Size(81, 35);
             this.lblShowIns_SST.TabIndex = 19;
@@ -465,7 +483,7 @@
             // lblShowIns_StampDuty
             // 
             this.lblShowIns_StampDuty.AutoSize = true;
-            this.lblShowIns_StampDuty.Location = new System.Drawing.Point(113, 105);
+            this.lblShowIns_StampDuty.Location = new System.Drawing.Point(103, 105);
             this.lblShowIns_StampDuty.Name = "lblShowIns_StampDuty";
             this.lblShowIns_StampDuty.Size = new System.Drawing.Size(130, 35);
             this.lblShowIns_StampDuty.TabIndex = 20;
@@ -474,7 +492,7 @@
             // lblShowIns_Total
             // 
             this.lblShowIns_Total.AutoSize = true;
-            this.lblShowIns_Total.Location = new System.Drawing.Point(199, 177);
+            this.lblShowIns_Total.Location = new System.Drawing.Point(189, 177);
             this.lblShowIns_Total.Name = "lblShowIns_Total";
             this.lblShowIns_Total.Size = new System.Drawing.Size(195, 35);
             this.lblShowIns_Total.TabIndex = 21;
@@ -559,7 +577,7 @@
             this.btnBack_Cust_Profile.Name = "btnBack_Cust_Profile";
             this.btnBack_Cust_Profile.Size = new System.Drawing.Size(203, 49);
             this.btnBack_Cust_Profile.TabIndex = 14;
-            this.btnBack_Cust_Profile.Text = "Back";
+            this.btnBack_Cust_Profile.Text = "Customer Profile";
             this.btnBack_Cust_Profile.UseVisualStyleBackColor = false;
             this.btnBack_Cust_Profile.Click += new System.EventHandler(this.btnBack_Cust_Profile_Click);
             // 
@@ -576,25 +594,6 @@
             this.btnRenew_Ins.Text = "Renew Policy";
             this.btnRenew_Ins.UseVisualStyleBackColor = false;
             this.btnRenew_Ins.Click += new System.EventHandler(this.btnRenew_Ins_Click);
-            // 
-            // lblShowOwner_Address
-            // 
-            this.lblShowOwner_Address.AutoSize = true;
-            this.lblShowOwner_Address.Location = new System.Drawing.Point(105, 173);
-            this.lblShowOwner_Address.Name = "lblShowOwner_Address";
-            this.lblShowOwner_Address.Size = new System.Drawing.Size(108, 35);
-            this.lblShowOwner_Address.TabIndex = 24;
-            this.lblShowOwner_Address.Text = "(Show Address)";
-            // 
-            // lblOwner_Address
-            // 
-            this.lblOwner_Address.AutoSize = true;
-            this.lblOwner_Address.Font = new System.Drawing.Font("Gabriola", 10.8F, System.Drawing.FontStyle.Bold);
-            this.lblOwner_Address.Location = new System.Drawing.Point(20, 173);
-            this.lblOwner_Address.Name = "lblOwner_Address";
-            this.lblOwner_Address.Size = new System.Drawing.Size(75, 35);
-            this.lblOwner_Address.TabIndex = 23;
-            this.lblOwner_Address.Text = "Address:";
             // 
             // Insurance_Details
             // 
@@ -616,6 +615,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.Name = "Insurance_Details";
             this.Text = "Insurance_Details";
+            this.Load += new System.EventHandler(this.Insurance_Details_Load);
             this.gbVehicle.ResumeLayout(false);
             this.gbVehicle.PerformLayout();
             this.gbIns.ResumeLayout(false);
@@ -667,7 +667,7 @@
         private System.Windows.Forms.Label lblShowIns_Last_Renewal;
         private System.Windows.Forms.Label lblShowIns_EndDate;
         private System.Windows.Forms.Label lblShowIns_Type;
-        private System.Windows.Forms.Label lblShowOwner_IDNumber;
+        private System.Windows.Forms.Label lblShowOwner_ICNumber;
         private System.Windows.Forms.Label lblShowOwner_DOB;
         private System.Windows.Forms.Label lblShowOwner_Gender;
         private System.Windows.Forms.Label lblShowOwner_Phone;

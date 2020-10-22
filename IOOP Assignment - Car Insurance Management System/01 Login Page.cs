@@ -36,8 +36,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 if (txtPassword.Text == drusername[2].ToString())
                 {
-                    Save save = new Save();
-                    save.STAFFID = drusername[0].ToString();
+                    Save.staffid = drusername[0].ToString();
                     Main_Page mainMenu = new Main_Page();
                     this.Hide();
                     mainMenu.Show();
