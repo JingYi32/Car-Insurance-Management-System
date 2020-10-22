@@ -34,25 +34,29 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowVehicle_YOM.Text = ":  " + dr[16].ToString();
                 lblShowVehicle_Price.Text = ":  " + dr[17].ToString();
                 lblShowOwner_ICNumber.Text = ":  " + dr[18].ToString();
-                lblShowOwner_DOB.Text = ":  " + dr[19].ToString();
-                lblShowOwner_Gender.Text = ":  " + dr[20].ToString();
-                lblShowOwner_Phone.Text = ":  " + dr[21].ToString();
-                lblShowOwner_Address.Text = ":  " + dr[22].ToString();
+                lblShowOwner_Name.Text = ":  " + dr[19].ToString() + dr[20].ToString();
+                lblShowOwner_Gender.Text = ":  " + dr[21].ToString();
+                lblShowOwner_Phone.Text = ":  " + dr[22].ToString();
+                lblShowOwner_Address.Text = ":  " + dr[23].ToString();
                 lblShowIns_Status.Text = ":  " + dr[2].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
                 lblShowIns_EndDate.Text = ":  " + dr[5].ToString();
                 lblShowIns_Type.Text = ":  " + dr[6].ToString();
-                lblShowIns_GrossTotal.Text = ":  " + dr[7].ToString();
-                lblShowIns_SST.Text = ":  " + dr[8].ToString();
-                lblShowIns_StampDuty.Text = ":  " + dr[9].ToString();
-                lblShowIns_Total.Text = ":  " + dr[10].ToString();
+                lblShowIns_GrossTotal.Text = ":  RM " + dr[7].ToString();
+                lblShowIns_SST.Text = ":  RM " + dr[8].ToString();
+                lblShowIns_StampDuty.Text = ":  RM " + dr[9].ToString();
+                lblShowIns_Total.Text = ":  RM " + dr[10].ToString();
+                Save.GrossTotal = dr[7].ToString();
+                Save.purchasedate = Convert.ToDateTime(dr[3].ToString());
+                Save.lastrenewaldate = Convert.ToDateTime(dr[4].ToString());
             }
             else
             {
                 MessageBox.Show("Record not found.");
             }
             dr.Close();
+            
         }
 
         public Insurance_Details()

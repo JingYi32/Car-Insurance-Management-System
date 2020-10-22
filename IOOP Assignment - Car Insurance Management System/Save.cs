@@ -11,5 +11,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static string staffid;
         public static string customerid;
         public static string insuranceid;
+        public static string GrossTotal;
+        public static DateTime purchasedate;
+        public static DateTime lastrenewaldate;
     }
 }
