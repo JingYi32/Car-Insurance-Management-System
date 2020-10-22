@@ -34,10 +34,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             OleDbDataReader drusername = cmd.ExecuteReader();
             if (drusername.Read())
             {
-                cmd.CommandText = "select * from staff where password = '" + txtPassword.Text + "'";
-                cmd.Connection = con;
-                OleDbDataReader drpassword = cmd.ExecuteReader();
-                if (drpassword.Read())
+                if (txtPassword.Text == drusername[2].ToString())
                 {
                     Main_Page mainMenu = new Main_Page();
                     this.Hide();
@@ -47,7 +44,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 {
                     MessageBox.Show("Wrong Password.");
                 }
-                drpassword.Close();
             }
             else
             {
