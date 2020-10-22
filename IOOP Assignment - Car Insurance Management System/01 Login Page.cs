@@ -28,12 +28,32 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //cmd.CommandText = "select * from student where studenttp = '" + txtTP.Text + "'";
-            //cmd.Connection = con;
-            //OleDbDataReader dr = cmd.ExecuteReader();
-            Main_Page mainMenu = new Main_Page();
-            this.Hide();
-            mainMenu.Show();
+            cmd.CommandText = "select * from staff where username = '" + txtUsername.Text + "'";
+            cmd.Connection = con;
+
+            OleDbDataReader drusername = cmd.ExecuteReader();
+            if (drusername.Read())
+            {
+                cmd.CommandText = "select * from staff where password = '" + txtPassword.Text + "'";
+                cmd.Connection = con;
+                OleDbDataReader drpassword = cmd.ExecuteReader();
+                if (drpassword.Read())
+                {
+                    Main_Page mainMenu = new Main_Page();
+                    this.Hide();
+                    mainMenu.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Password.");
+                }
+                drpassword.Close();
+            }
+            else
+            {
+                MessageBox.Show("Record not found.");
+            }
+            drusername.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
