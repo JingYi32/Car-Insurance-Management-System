@@ -61,10 +61,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 Save save = new Save();
                 save.CUSTOMERID = row.Cells["Customer ID"].Value.ToString();
                 save.INSURANCEID = row.Cells["Insurance ID"].Value.ToString();
-                MessageBox.Show(save.CUSTOMERID + save.INSURANCEID);
-                //Eid_txt.Text = row.Cells[""].Value.ToString();
-                //Name_txt.Text = row.Cells["First Name"].Value.ToString();
-                //Surname_txt.Text = row.Cells["Last Name"].Value.ToString();
             }
         }
 
@@ -77,10 +73,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             if (cbSelect.SelectedItem == "Customer ID")
             {
-                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID;";
+                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID WHERE Customer.ID = '" + txtSearch.Text + "'";
                 cmd.Connection = con;
 
-                //Display in DataGridView
                 DataTable dt = new DataTable();
                 dt.Load(cmd.ExecuteReader());
                 dgvSearchResult.DataSource = dt;
@@ -89,10 +84,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else if (cbSelect.SelectedItem == "Insurance ID")
             {
-                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID;";
+                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID WHERE Insurance.ID = '" + txtSearch.Text + "'";
                 cmd.Connection = con;
 
-                //Display in DataGridView
                 DataTable dt = new DataTable();
                 dt.Load(cmd.ExecuteReader());
                 dgvSearchResult.DataSource = dt;
