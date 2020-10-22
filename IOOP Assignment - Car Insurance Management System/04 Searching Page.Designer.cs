@@ -34,6 +34,7 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvSearchResult = new System.Windows.Forms.DataGridView();
             this.cbSelect = new System.Windows.Forms.ComboBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,9 +87,12 @@
             // 
             // dgvSearchResult
             // 
+            this.dgvSearchResult.AllowUserToAddRows = false;
+            this.dgvSearchResult.AllowUserToDeleteRows = false;
             this.dgvSearchResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSearchResult.Location = new System.Drawing.Point(98, 179);
             this.dgvSearchResult.Name = "dgvSearchResult";
+            this.dgvSearchResult.ReadOnly = true;
             this.dgvSearchResult.RowHeadersWidth = 51;
             this.dgvSearchResult.RowTemplate.Height = 24;
             this.dgvSearchResult.Size = new System.Drawing.Size(924, 450);
@@ -107,12 +111,25 @@
             this.cbSelect.TabIndex = 6;
             this.cbSelect.SelectedIndexChanged += new System.EventHandler(this.cbSelect_SelectedIndexChanged);
             // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(819, 53);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(203, 49);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
             // Searching_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cbSelect);
             this.Controls.Add(this.dgvSearchResult);
             this.Controls.Add(this.btnINS);
@@ -137,5 +154,6 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvSearchResult;
         private System.Windows.Forms.ComboBox cbSelect;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

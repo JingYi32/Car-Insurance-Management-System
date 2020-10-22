@@ -58,13 +58,22 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.dgvSearchResult.Rows[e.RowIndex];
-                Eid_txt.Text = row.Cells[""].Value.ToString();
-                Name_txt.Text = row.Cells["First Name"].Value.ToString();
-                Surname_txt.Text = row.Cells["Last Name"].Value.ToString();
+                Save save = new Save();
+                save.CUSTOMERID = row.Cells["Customer ID"].Value.ToString();
+                save.INSURANCEID = row.Cells["Insurance ID"].Value.ToString();
+                MessageBox.Show(save.CUSTOMERID + save.INSURANCEID);
+                //Eid_txt.Text = row.Cells[""].Value.ToString();
+                //Name_txt.Text = row.Cells["First Name"].Value.ToString();
+                //Surname_txt.Text = row.Cells["Last Name"].Value.ToString();
             }
-    }
+        }
 
         private void cbSelect_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
         {
             if (cbSelect.SelectedItem == "Customer ID")
             {
@@ -92,3 +101,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
         }
     }
+}
+
+
