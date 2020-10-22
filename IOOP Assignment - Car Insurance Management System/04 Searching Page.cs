@@ -48,24 +48,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnINS_Click(object sender, EventArgs e)
         {
-            Insurance_Details insurance_Details = new Insurance_Details();
-            this.Hide();
-            insurance_Details.Show();
-        }
-
-        private void dgvSearchResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = this.dgvSearchResult.Rows[e.RowIndex];
-                Save save = new Save();
-                save.CUSTOMERID = row.Cells["Customer ID"].Value.ToString();
-                save.INSURANCEID = row.Cells["Insurance ID"].Value.ToString();
-            }
-        }
-
-        private void cbSelect_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -84,7 +66,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else if (cbSelect.SelectedItem == "Insurance ID")
             {
-                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID WHERE Insurance.ID = '" + txtSearch.Text + "'";
+                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID WHERE Insurance.ID = " + txtSearch.Text + "";
                 cmd.Connection = con;
 
                 DataTable dt = new DataTable();
@@ -94,6 +76,27 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 dgvSearchResult.AutoResizeRows();
             }
         }
+
+        //
+        //Search Result & Go To Other Form
+        //
+
+        private void dgvSearchResult_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvSearchResult.Rows[e.RowIndex];
+                Save save = new Save();
+                save.CUSTOMERID = row.Cells["Customer ID"].Value.ToString();
+                save.INSURANCEID = row.Cells["Insurance ID"].Value.ToString();
+                MessageBox.Show(save.CUSTOMERID + "........" + save.INSURANCEID);
+                //Go To Insurance Page
+                Insurance_Details insurance_Details = new Insurance_Details();
+                this.Hide();
+                insurance_Details.Show();
+            }
+        }
+
     }
 }
 

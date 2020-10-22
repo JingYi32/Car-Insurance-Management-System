@@ -33,8 +33,9 @@
             this.btnINS = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvSearchResult = new System.Windows.Forms.DataGridView();
-            this.cbSelect = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.cbSelect = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSearchResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             this.btnMainPage.Location = new System.Drawing.Point(98, 649);
             this.btnMainPage.Name = "btnMainPage";
             this.btnMainPage.Size = new System.Drawing.Size(203, 49);
-            this.btnMainPage.TabIndex = 3;
+            this.btnMainPage.TabIndex = 4;
             this.btnMainPage.Text = "Back to Main Page";
             this.btnMainPage.UseVisualStyleBackColor = false;
             this.btnMainPage.Click += new System.EventHandler(this.btnMainPage_Click);
@@ -57,7 +58,7 @@
             this.btnCUST.Location = new System.Drawing.Point(458, 649);
             this.btnCUST.Name = "btnCUST";
             this.btnCUST.Size = new System.Drawing.Size(203, 49);
-            this.btnCUST.TabIndex = 4;
+            this.btnCUST.TabIndex = 5;
             this.btnCUST.Text = "View Customer Profile";
             this.btnCUST.UseVisualStyleBackColor = false;
             this.btnCUST.Click += new System.EventHandler(this.btnCUST_Click);
@@ -69,7 +70,7 @@
             this.btnINS.Location = new System.Drawing.Point(819, 649);
             this.btnINS.Name = "btnINS";
             this.btnINS.Size = new System.Drawing.Size(203, 49);
-            this.btnINS.TabIndex = 5;
+            this.btnINS.TabIndex = 6;
             this.btnINS.Text = "View Insurance Details";
             this.btnINS.UseVisualStyleBackColor = false;
             this.btnINS.Click += new System.EventHandler(this.btnINS_Click);
@@ -90,26 +91,14 @@
             this.dgvSearchResult.AllowUserToAddRows = false;
             this.dgvSearchResult.AllowUserToDeleteRows = false;
             this.dgvSearchResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSearchResult.Location = new System.Drawing.Point(98, 179);
+            this.dgvSearchResult.Location = new System.Drawing.Point(98, 178);
             this.dgvSearchResult.Name = "dgvSearchResult";
             this.dgvSearchResult.ReadOnly = true;
             this.dgvSearchResult.RowHeadersWidth = 51;
             this.dgvSearchResult.RowTemplate.Height = 24;
             this.dgvSearchResult.Size = new System.Drawing.Size(924, 450);
-            this.dgvSearchResult.TabIndex = 2;
+            this.dgvSearchResult.TabIndex = 3;
             this.dgvSearchResult.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSearchResult_CellContentClick);
-            // 
-            // cbSelect
-            // 
-            this.cbSelect.FormattingEnabled = true;
-            this.cbSelect.Items.AddRange(new object[] {
-            "Customer ID",
-            "Insurance ID"});
-            this.cbSelect.Location = new System.Drawing.Point(98, 53);
-            this.cbSelect.Name = "cbSelect";
-            this.cbSelect.Size = new System.Drawing.Size(457, 50);
-            this.cbSelect.TabIndex = 6;
-            this.cbSelect.SelectedIndexChanged += new System.EventHandler(this.cbSelect_SelectedIndexChanged);
             // 
             // btnSearch
             // 
@@ -118,10 +107,32 @@
             this.btnSearch.Location = new System.Drawing.Point(819, 53);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(203, 49);
-            this.btnSearch.TabIndex = 7;
+            this.btnSearch.TabIndex = 2;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // cbSelect
+            // 
+            this.cbSelect.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSelect.FormattingEnabled = true;
+            this.cbSelect.Items.AddRange(new object[] {
+            "Customer ID",
+            "Insurance ID"});
+            this.cbSelect.Location = new System.Drawing.Point(98, 41);
+            this.cbSelect.Name = "cbSelect";
+            this.cbSelect.Size = new System.Drawing.Size(457, 63);
+            this.cbSelect.TabIndex = 0;
+            this.cbSelect.Text = "Select Type of ID to Search";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(260, 705);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 45);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "label1";
             // 
             // Searching_Page
             // 
@@ -129,8 +140,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cbSelect);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.dgvSearchResult);
             this.Controls.Add(this.btnINS);
             this.Controls.Add(this.btnCUST);
@@ -153,7 +165,8 @@
         private System.Windows.Forms.Button btnINS;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.DataGridView dgvSearchResult;
-        private System.Windows.Forms.ComboBox cbSelect;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ComboBox cbSelect;
+        private System.Windows.Forms.Label label1;
     }
 }
