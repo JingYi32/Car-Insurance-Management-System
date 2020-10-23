@@ -50,5 +50,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             ins_details.Show();
             this.Close();
         }
+
+        private void CBAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CBAccount.Items.Add("CIMB Bank");
+            CBAccount.Items.Add("Public Bank");
+            CBAccount.Items.Add("MayBank");
+            CBAccount.Items.Add("Hong Leong Bank");
+            CBAccount.Items.Add("HSBC Bank");
+            CBAccount.Items.Add("OCBC Bank");
+        }
     }
 }

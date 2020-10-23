@@ -24,16 +24,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static DateTime RenewalEndDate;
 
         //Amount
-        public static int GrossTotal;
-        public static int SST;
-        public static int Total;
+        public static double GrossTotal;
+        public static double SST;
+        public static double Total;
 
         //Vehicle
         public static string Vehicle_NO;
         public static string Vehicle_Brand;
         public static string Vehicle_Model;
         public static int Vehicle_YOM;
-        public static int Vehicle_Price;
+        public static double Vehicle_Price;
 
         //Owner
         public static string Owner_IC;

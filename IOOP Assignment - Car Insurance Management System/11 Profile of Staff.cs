@@ -59,15 +59,24 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             dr.Close();
 
+            
+        }
+
+        private void DT()
+        {
+            cmd.CommandText = "";
+            cmd.Connection = con;
+            OleDbDataReader drDataTable = cmd.ExecuteReader();
+
             DataTable dt_MP = new DataTable();
 
-            dt_MP.Columns.Add("Current Incharge Customer ID");
-            dt_MP.Columns.Add("Insurance ID");
-            dt_MP.Columns.Add("Type");
-            dt_MP.Columns.Add("Start Date");
-            dt_MP.Columns.Add("End Date");
+            //dt_MP.Columns.Add("Current Incharge Customer ID");
+            //dt_MP.Columns.Add("Insurance ID");
+            //dt_MP.Columns.Add("Type");
+            //dt_MP.Columns.Add("Start Date");
+            //dt_MP.Columns.Add("End Date");
 
-            dgvMP.DataSource = dt_MP;
+            //dgvMP.DataSource = dt_MP;
         }
     }
 }

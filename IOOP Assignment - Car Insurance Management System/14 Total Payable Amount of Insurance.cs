@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 {
     public partial class Total_Payable_Amount_of_Insurance : Form
     {
+        OleDbConnection conTA = new OleDbConnection();
+        OleDbCommand cmdTA = new OleDbCommand();
+
         public Total_Payable_Amount_of_Insurance()
         {
             InitializeComponent();
@@ -47,18 +51,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void Calculate()
         {
             double premT_TP = Select_Type_of_Insurance.premiumTotal;
-            lblRMInsuranceTotal.Text = premT_TP.ToString();
+            lblRMInsuranceTotal.Text = "RM" + premT_TP;
 
             double sst_TP = premT_TP * 0.06;
-            lblSSTCount.Text = sst_TP.ToString();
+            lblSSTCount.Text = "RM" + sst_TP;
 
             double value = 0;
             CalculateNCD(ref value);
             double NCD_TP = premT_TP * value;
-            lblRM_NCD.Text = NCD_TP.ToString();
+            lblRM_NCD.Text = "RM" + NCD_TP;
 
             double Total_TP = premT_TP + sst_TP + 10 + NCD_TP;
-            lblRMtotal.Text = Total_TP.ToString();
+            lblRMtotal.Text = "RM" + Total_TP;
 
             //Havent save into database
         }

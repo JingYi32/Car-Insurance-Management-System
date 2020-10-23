@@ -83,10 +83,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             this.Hide();
 
             double insuranceType = 0;
-            double marketPrice; //retrieve from other form
+            double marketPrice = Save.Vehicle_Price;
 
             InsType(ref insuranceType);
-            //double premiumTotal = insuranceType * marketPrice; 
+            double premiumTotal = insuranceType * marketPrice; 
         }
 
         private void InsType(ref double value)
