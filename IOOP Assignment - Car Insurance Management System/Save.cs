@@ -21,10 +21,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static string Vehicle_Model;
         public static int Vehicle_YOM;
         public static int Vehicle_Price;
-        public static string Owner_IC;
+        public static int Owner_IC;
         public static string Owner_Name;
         public static string Owner_Gender;
-        public static string Owner_Phone;
+        public static int Owner_Phone;
         public static string Owner_Address;
     }
 }

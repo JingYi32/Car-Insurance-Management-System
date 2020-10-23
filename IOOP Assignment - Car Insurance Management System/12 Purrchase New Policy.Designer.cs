@@ -335,6 +335,7 @@
             this.txtOwner_Phone.Size = new System.Drawing.Size(260, 41);
             this.txtOwner_Phone.TabIndex = 9;
             this.txtOwner_Phone.Visible = false;
+            this.txtOwner_Phone.Validating += new System.ComponentModel.CancelEventHandler(this.txtOwner_Phone_Validating);
             // 
             // cbOwner_Gender
             // 
@@ -348,6 +349,7 @@
             this.cbOwner_Gender.Size = new System.Drawing.Size(323, 45);
             this.cbOwner_Gender.TabIndex = 8;
             this.cbOwner_Gender.Visible = false;
+            this.cbOwner_Gender.Validating += new System.ComponentModel.CancelEventHandler(this.cbOwner_Gender_Validating);
             // 
             // txtOwner_Name
             // 
@@ -357,6 +359,7 @@
             this.txtOwner_Name.Size = new System.Drawing.Size(323, 41);
             this.txtOwner_Name.TabIndex = 7;
             this.txtOwner_Name.Visible = false;
+            this.txtOwner_Name.Validating += new System.ComponentModel.CancelEventHandler(this.txtOwner_Name_Validating);
             // 
             // txtOwner_Address
             // 
@@ -366,6 +369,7 @@
             this.txtOwner_Address.Size = new System.Drawing.Size(323, 41);
             this.txtOwner_Address.TabIndex = 10;
             this.txtOwner_Address.Visible = false;
+            this.txtOwner_Address.Validating += new System.ComponentModel.CancelEventHandler(this.txtOwner_Address_Validating);
             // 
             // txtOwner_ICNumber
             // 

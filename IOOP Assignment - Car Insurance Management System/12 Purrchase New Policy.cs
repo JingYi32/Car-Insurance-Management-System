@@ -41,9 +41,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnProceed_Click(object sender, EventArgs e)
         {
-            Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
-            this.Hide();
-            selectpage.Show();
+            if ((string.IsNullOrWhiteSpace(txtVehicle_NO.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Model.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Price.Text)) || (cbCustomerID.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_ICNumber.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Name.Text)) || (cbOwner_Gender.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_Phone.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Address.Text)))
+            {
+                MessageBox.Show("Please fill in all field.");
+            }
+            else
+            {
+                Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
+                this.Hide();
+                selectpage.Show();
+            }
         }
 
         //
@@ -195,7 +202,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     txtVehicle_Price.Focus();
                     errorProvider5.SetError(txtVehicle_Price, "Please Enter A Valid Value.");
                 }
-
             }
         }
 
@@ -225,18 +231,141 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 {
                     e.Cancel = true;
                     txtOwner_ICNumber.Focus();
-                    errorProvider7.SetError(txtOwner_ICNumber, "Please Enter IC Number of Vehicle Owner.");
+                    errorProvider7.SetError(txtOwner_ICNumber, "Please Enter IC Number of the Vehicle Owner.");
                 }
                 else
                 {
                     e.Cancel = false;
                     errorProvider7.SetError(txtOwner_ICNumber, "");
+                    Save.Owner_IC = int.Parse(txtOwner_ICNumber.Text);
                 }
             }
             else
             {
                 e.Cancel = false;
                 errorProvider7.SetError(txtOwner_ICNumber, "");
+                Save.Owner_IC = int.Parse(lblOwner_ICNumber.Text);
+            }
+        }
+
+        //Owner Name
+        private void txtOwner_Name_Validating(object sender, CancelEventArgs e)
+        {
+            if (rbOthers.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtOwner_Name.Text))
+                {
+                    e.Cancel = true;
+                    txtOwner_Name.Focus();
+                    errorProvider8.SetError(txtOwner_Name, "Please Enter Name of the Vehicle Owner.");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider8.SetError(txtOwner_Name, "");
+                    Save.Owner_Name = txtOwner_Name.Text;
+                }
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider8.SetError(txtOwner_Name, "");
+                Save.Owner_Name = lblOwner_Name.Text;
+            }
+        }
+
+        //Owner Gender
+        private void cbOwner_Gender_Validating(object sender, CancelEventArgs e)
+        {
+            if (rbOthers.Checked)
+            {
+                if (cbOwner_Gender.SelectedIndex == -1)
+                {
+                    e.Cancel = true;
+                    cbOwner_Gender.Focus();
+                    errorProvider9.SetError(cbOwner_Gender, "Please Select Gender of the Vehicle Onwer.");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider9.SetError(cbOwner_Gender, "");
+                    Save.Owner_Gender = cbOwner_Gender.SelectedItem.ToString();
+                }
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider9.SetError(cbOwner_Gender, "");
+                Save.Owner_Gender = cbOwner_Gender.Text;
+            }
+        }
+
+        //Owner Phone
+        private void txtOwner_Phone_Validating(object sender, CancelEventArgs e)
+        {
+            if (rbOthers.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtOwner_Phone.Text))
+                {
+                    e.Cancel = true;
+                    txtOwner_Phone.Focus();
+                    errorProvider10.SetError(txtOwner_Phone, "Please Enter Phone Number of the Vehicle Owner.");
+                }
+                else
+                {
+                    try
+                    {
+                        if ((txtOwner_Phone.Text.Length > 9) || (txtOwner_Phone.Text.Length < 9))
+                        {
+                            e.Cancel = true;
+                            txtOwner_Phone.Focus();
+                            errorProvider10.SetError(txtOwner_Phone, "Please Enter A Valid Value.");
+                        }
+                        else
+                        {
+                            e.Cancel = false;
+                            errorProvider10.SetError(txtOwner_Phone, "");
+                            Save.Owner_Phone = int.Parse(txtOwner_Phone.Text);
+                        }
+                    }
+                    catch
+                    {
+                        e.Cancel = true;
+                        txtOwner_Phone.Focus();
+                        errorProvider10.SetError(txtOwner_Phone, "Please Enter A Valid Value.");
+                    }
+                }
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider10.SetError(txtOwner_Phone, "");
+                Save.Owner_Phone = int.Parse(lblOwner_Phone.Text);
+            }
+        }
+
+        private void txtOwner_Address_Validating(object sender, CancelEventArgs e)
+        {
+            if (rbOthers.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtOwner_Address.Text))
+                {
+                    e.Cancel = true;
+                    txtOwner_Address.Focus();
+                    errorProvider11.SetError(txtOwner_Address, "Please Enter Address of the Vehicle Owner.");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider11.SetError(txtOwner_Address, "");
+                    Save.Owner_Address = txtOwner_Address.Text;
+                }
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider11.SetError(txtOwner_Address, "");
+                Save.Owner_Address = lblOwner_Address.Text;
             }
         }
     }
