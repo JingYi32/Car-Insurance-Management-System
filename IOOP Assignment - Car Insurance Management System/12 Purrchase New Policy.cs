@@ -212,6 +212,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 e.Cancel = false;
                 errorProvider6.SetError(cbCustomerID, "");
+                Save.customerid = cbCustomerID.SelectedItem.ToString();
             }
         }
 
@@ -224,7 +225,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 {
                     e.Cancel = true;
                     txtOwner_ICNumber.Focus();
-                    errorProvider7.SetError(txtOwner_ICNumber, "Please Enter IC of Vehicle Owner.");
+                    errorProvider7.SetError(txtOwner_ICNumber, "Please Enter IC Number of Vehicle Owner.");
                 }
                 else
                 {
