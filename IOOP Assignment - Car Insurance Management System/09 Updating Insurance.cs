@@ -26,11 +26,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
+            Save.customerid = showCUSID.Text;
+            Save.insuranceid = showINSID.Text;
+            
         }
 
         private void btnSubmit_UI_Click(object sender, EventArgs e)
         {
-            cmd.CommandText = "insert into update VALUES('customer id', 'insurance id', 'date to apply', 'date to approve', 'bank account', 'reasons', 'amount gained')";
+            
+            cmd.CommandText = "insert into update VALUES('"+ showCUSID.Text+"', '"+showINSID.Text+"', '"+dtApply.Text+"', '"+dtApprove.Text+"', '"+CBAccount.Text+"', '"+textReasons_UI.Text+"', '"+textTotalAmount_UI.Text+"')";
             cmd.Connection = con;
             cmd.ExecuteNonQuery();
         }
