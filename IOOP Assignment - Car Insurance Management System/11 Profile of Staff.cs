@@ -55,7 +55,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else
             {
-                MessageBox.Show("Record not found");
+                MessageBox.Show("Error Exists");
             }
             dr.Close();
 

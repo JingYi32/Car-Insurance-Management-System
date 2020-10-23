@@ -94,11 +94,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             try
             {
                 if (rbThirdParty.Checked)
-                    value = 2.66;
+                    value = 0.0266;
                 else if (rbFireTheft.Checked)
-                    value = 2.75;
+                    value = 0.0275;
                 else if (rbComprehensive.Checked)
-                    value = 2.84;
+                    value = 0.0284;
             }
             catch
             {
