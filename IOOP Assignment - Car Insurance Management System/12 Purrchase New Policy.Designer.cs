@@ -63,7 +63,28 @@
             this.lblShowOwner_Address = new System.Windows.Forms.Label();
             this.lblShowOwner_Name = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider8 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider9 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider10 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider11 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider11)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPur_Ins
@@ -176,6 +197,7 @@
             this.txtVehicle_NO.Name = "txtVehicle_NO";
             this.txtVehicle_NO.Size = new System.Drawing.Size(615, 45);
             this.txtVehicle_NO.TabIndex = 0;
+            this.txtVehicle_NO.Validating += new System.ComponentModel.CancelEventHandler(this.txtVehicle_NO_Validating);
             // 
             // txtVehicle_Price
             // 
@@ -184,6 +206,7 @@
             this.txtVehicle_Price.Name = "txtVehicle_Price";
             this.txtVehicle_Price.Size = new System.Drawing.Size(615, 45);
             this.txtVehicle_Price.TabIndex = 4;
+            this.txtVehicle_Price.Validating += new System.ComponentModel.CancelEventHandler(this.txtVehicle_Price_Validating);
             // 
             // txtVehicle_YOM
             // 
@@ -192,6 +215,7 @@
             this.txtVehicle_YOM.Name = "txtVehicle_YOM";
             this.txtVehicle_YOM.Size = new System.Drawing.Size(615, 45);
             this.txtVehicle_YOM.TabIndex = 3;
+            this.txtVehicle_YOM.Validating += new System.ComponentModel.CancelEventHandler(this.txtVehicle_YOM_Validating);
             // 
             // txtVehicle_Model
             // 
@@ -200,6 +224,7 @@
             this.txtVehicle_Model.Name = "txtVehicle_Model";
             this.txtVehicle_Model.Size = new System.Drawing.Size(615, 45);
             this.txtVehicle_Model.TabIndex = 2;
+            this.txtVehicle_Model.Validating += new System.ComponentModel.CancelEventHandler(this.txtVehicle_Model_Validating);
             // 
             // txtVehicle_Brand
             // 
@@ -208,6 +233,7 @@
             this.txtVehicle_Brand.Name = "txtVehicle_Brand";
             this.txtVehicle_Brand.Size = new System.Drawing.Size(615, 45);
             this.txtVehicle_Brand.TabIndex = 1;
+            this.txtVehicle_Brand.Validating += new System.ComponentModel.CancelEventHandler(this.txtVehicle_Brand_Validating);
             // 
             // rbSame
             // 
@@ -242,7 +268,7 @@
             this.btnProceed.Margin = new System.Windows.Forms.Padding(2);
             this.btnProceed.Name = "btnProceed";
             this.btnProceed.Size = new System.Drawing.Size(203, 49);
-            this.btnProceed.TabIndex = 13;
+            this.btnProceed.TabIndex = 11;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = false;
             this.btnProceed.Click += new System.EventHandler(this.btnProceed_Click);
@@ -298,15 +324,16 @@
             this.cbCustomerID.Location = new System.Drawing.Point(405, 351);
             this.cbCustomerID.Name = "cbCustomerID";
             this.cbCustomerID.Size = new System.Drawing.Size(615, 48);
-            this.cbCustomerID.TabIndex = 44;
+            this.cbCustomerID.TabIndex = 5;
+            this.cbCustomerID.Validating += new System.ComponentModel.CancelEventHandler(this.cbCustomerID_Validating);
             // 
             // txtOwner_Phone
             // 
             this.txtOwner_Phone.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOwner_Phone.Location = new System.Drawing.Point(405, 595);
+            this.txtOwner_Phone.Location = new System.Drawing.Point(468, 595);
             this.txtOwner_Phone.Name = "txtOwner_Phone";
-            this.txtOwner_Phone.Size = new System.Drawing.Size(323, 41);
-            this.txtOwner_Phone.TabIndex = 41;
+            this.txtOwner_Phone.Size = new System.Drawing.Size(260, 41);
+            this.txtOwner_Phone.TabIndex = 9;
             this.txtOwner_Phone.Visible = false;
             // 
             // cbOwner_Gender
@@ -319,7 +346,7 @@
             this.cbOwner_Gender.Location = new System.Drawing.Point(405, 544);
             this.cbOwner_Gender.Name = "cbOwner_Gender";
             this.cbOwner_Gender.Size = new System.Drawing.Size(323, 45);
-            this.cbOwner_Gender.TabIndex = 11;
+            this.cbOwner_Gender.TabIndex = 8;
             this.cbOwner_Gender.Visible = false;
             // 
             // txtOwner_Name
@@ -328,7 +355,7 @@
             this.txtOwner_Name.Location = new System.Drawing.Point(405, 497);
             this.txtOwner_Name.Name = "txtOwner_Name";
             this.txtOwner_Name.Size = new System.Drawing.Size(323, 41);
-            this.txtOwner_Name.TabIndex = 39;
+            this.txtOwner_Name.TabIndex = 7;
             this.txtOwner_Name.Visible = false;
             // 
             // txtOwner_Address
@@ -337,7 +364,7 @@
             this.txtOwner_Address.Location = new System.Drawing.Point(405, 642);
             this.txtOwner_Address.Name = "txtOwner_Address";
             this.txtOwner_Address.Size = new System.Drawing.Size(323, 41);
-            this.txtOwner_Address.TabIndex = 43;
+            this.txtOwner_Address.TabIndex = 10;
             this.txtOwner_Address.Visible = false;
             // 
             // txtOwner_ICNumber
@@ -346,8 +373,9 @@
             this.txtOwner_ICNumber.Location = new System.Drawing.Point(405, 450);
             this.txtOwner_ICNumber.Name = "txtOwner_ICNumber";
             this.txtOwner_ICNumber.Size = new System.Drawing.Size(323, 41);
-            this.txtOwner_ICNumber.TabIndex = 9;
+            this.txtOwner_ICNumber.TabIndex = 6;
             this.txtOwner_ICNumber.Visible = false;
+            this.txtOwner_ICNumber.Validating += new System.ComponentModel.CancelEventHandler(this.txtOwner_ICNumber_Validating);
             // 
             // lblShowOwner_Phone
             // 
@@ -408,20 +436,67 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
+            // errorProvider4
+            // 
+            this.errorProvider4.ContainerControl = this;
+            // 
+            // errorProvider5
+            // 
+            this.errorProvider5.ContainerControl = this;
+            // 
+            // errorProvider6
+            // 
+            this.errorProvider6.ContainerControl = this;
+            // 
+            // errorProvider7
+            // 
+            this.errorProvider7.ContainerControl = this;
+            // 
+            // errorProvider8
+            // 
+            this.errorProvider8.ContainerControl = this;
+            // 
+            // errorProvider9
+            // 
+            this.errorProvider9.ContainerControl = this;
+            // 
+            // errorProvider10
+            // 
+            this.errorProvider10.ContainerControl = this;
+            // 
+            // errorProvider11
+            // 
+            this.errorProvider11.ContainerControl = this;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(418, 598);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 37);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "060-";
+            this.label1.Visible = false;
+            // 
             // Purrchase_New_Policy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.lblShowOwner_Name);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cbCustomerID);
-            this.Controls.Add(this.lblShowOwner_Address);
             this.Controls.Add(this.lblCust_ID);
-            this.Controls.Add(this.lblShowOwner_ICNumber);
-            this.Controls.Add(this.lblShowOwner_Gender);
             this.Controls.Add(this.rbOthers);
-            this.Controls.Add(this.lblShowOwner_Phone);
             this.Controls.Add(this.lblOwner_Name);
             this.Controls.Add(this.txtOwner_ICNumber);
             this.Controls.Add(this.rbSame);
@@ -447,6 +522,11 @@
             this.Controls.Add(this.lblVehicle_Brand);
             this.Controls.Add(this.lblVehicle_NO);
             this.Controls.Add(this.lblPur_Ins);
+            this.Controls.Add(this.lblShowOwner_Name);
+            this.Controls.Add(this.lblShowOwner_Address);
+            this.Controls.Add(this.lblShowOwner_ICNumber);
+            this.Controls.Add(this.lblShowOwner_Gender);
+            this.Controls.Add(this.lblShowOwner_Phone);
             this.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
@@ -454,6 +534,16 @@
             this.Text = "Purrchase_New_Policy";
             this.Load += new System.EventHandler(this.Purrchase_New_Policy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -495,5 +585,16 @@
         private System.Windows.Forms.ComboBox cbOwner_Gender;
         private System.Windows.Forms.TextBox txtOwner_Phone;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.ErrorProvider errorProvider4;
+        private System.Windows.Forms.ErrorProvider errorProvider5;
+        private System.Windows.Forms.ErrorProvider errorProvider6;
+        private System.Windows.Forms.ErrorProvider errorProvider7;
+        private System.Windows.Forms.ErrorProvider errorProvider8;
+        private System.Windows.Forms.ErrorProvider errorProvider9;
+        private System.Windows.Forms.ErrorProvider errorProvider10;
+        private System.Windows.Forms.ErrorProvider errorProvider11;
+        private System.Windows.Forms.Label label1;
     }
 }

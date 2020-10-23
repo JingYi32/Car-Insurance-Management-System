@@ -47,7 +47,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowIns_SST.Text = ":  RM " + dr[8].ToString();
                 lblShowIns_StampDuty.Text = ":  RM " + dr[9].ToString();
                 lblShowIns_Total.Text = ":  RM " + dr[10].ToString();
-                Save.GrossTotal = dr[7].ToString();
+                Save.GrossTotal = int.Parse(dr[7].ToString());
                 Save.purchasedate = Convert.ToDateTime(dr[3].ToString());
                 Save.lastrenewaldate = Convert.ToDateTime(dr[4].ToString());
             }

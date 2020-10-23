@@ -28,6 +28,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             InitializeComponent();
         }
 
+        //
+        //Button
+        //
+
         private void btnCUST_Profile_Click(object sender, EventArgs e)
         {
             Main_Page main_page = new Main_Page();
@@ -37,24 +41,13 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnProceed_Click(object sender, EventArgs e)
         {
-            var controls = new[] { txtVehicle_NO, txtVehicle_Brand, txtVehicle_Model, txtVehicle_YOM, txtVehicle_Price};
-            foreach (var box in controls)
-            {
-                if (string.IsNullOrWhiteSpace(box.Text))
-                {
-                    errorProvider1.SetError(box, "Please fill the required field");
-                }
-                else
-                {
-                    Select_Type_of_Insurance select_type_of_insurance = new Select_Type_of_Insurance();
-                    this.Hide();
-                    select_type_of_insurance.Show();
-                }
-            }
+            Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
+            this.Hide();
+            selectpage.Show();
         }
 
         //
-        //OwnerDetails
+        //Radio Button of OwnerDetails
         //
 
         private void rbSame_CheckedChanged(object sender, EventArgs e)
@@ -62,6 +55,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             txtOwner_ICNumber.Visible = false;
             txtOwner_Name.Visible = false;
             cbOwner_Gender.Visible = false;
+            label1.Visible = false;
             txtOwner_Phone.Visible = false;
             txtOwner_Address.Visible = false;
             lblShowOwner_ICNumber.Visible = true;
@@ -81,9 +75,168 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             txtOwner_ICNumber.Visible = true;
             txtOwner_Name.Visible = true;
             cbOwner_Gender.Visible = true;
+            label1.Visible = true;
             txtOwner_Phone.Visible = true;
             txtOwner_Address.Visible = true;
 
-        }          
+        }
+
+        //
+        //Validation & Save
+        //
+
+        //Vehicle Registration Number
+        private void txtVehicle_NO_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtVehicle_NO.Text))
+            {
+                e.Cancel = true;
+                txtVehicle_NO.Focus();
+                errorProvider1.SetError(txtVehicle_NO, "Please Enter Vehicle Registration Number.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtVehicle_NO, "");
+                Save.Vehicle_NO = txtVehicle_NO.Text;
+            }
+        }
+
+        //Brand of Vehicle
+        private void txtVehicle_Brand_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text))
+            {
+                e.Cancel = true;
+                txtVehicle_Brand.Focus();
+                errorProvider2.SetError(txtVehicle_Brand, "Please Enter Brand of Vehicle.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider2.SetError(txtVehicle_Brand, "");
+                Save.Vehicle_Brand = txtVehicle_Brand.Text;
+            }
+        }
+
+        //Model of Vehicle
+        private void txtVehicle_Model_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtVehicle_Model.Text))
+            {
+                e.Cancel = true;
+                txtVehicle_Model.Focus();
+                errorProvider3.SetError(txtVehicle_Model, "Please Enter Model of Vehicle.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider3.SetError(txtVehicle_Model, "");
+                Save.Vehicle_Model = txtVehicle_Model.Text;
+            }
+        }
+
+        //Manufacture Year of Vehicle
+        private void txtVehicle_YOM_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text))
+            {
+                e.Cancel = true;
+                txtVehicle_YOM.Focus();
+                errorProvider4.SetError(txtVehicle_YOM, "Please Enter Manufacture Year of Vehicle.");
+            }
+            else
+            {
+                try
+                {
+                    if ((txtVehicle_YOM.Text.Length > 4) || (txtVehicle_YOM.Text.Length < 4))
+                    {
+                        e.Cancel = true;
+                        txtVehicle_YOM.Focus();
+                        errorProvider4.SetError(txtVehicle_YOM, "Please Enter A Valid Value.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider4.SetError(txtVehicle_YOM, "");
+                        Save.Vehicle_YOM = int.Parse(txtVehicle_YOM.Text);
+                    }
+                }
+                catch
+                {
+                    e.Cancel = true;
+                    txtVehicle_YOM.Focus();
+                    errorProvider4.SetError(txtVehicle_YOM, "Please Enter A Valid Value.");
+                }
+
+            }
+        }
+
+        //Purchased Price of Vehicle
+        private void txtVehicle_Price_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtVehicle_Price.Text))
+            {
+                e.Cancel = true;
+                txtVehicle_Price.Focus();
+                errorProvider5.SetError(txtVehicle_Price, "Please Enter Purchased Price of Vehicle.");
+            }
+            else
+            {
+                try
+                {
+                    Save.Vehicle_Price = int.Parse(txtVehicle_Price.Text);
+                    e.Cancel = false;
+                    errorProvider5.SetError(txtVehicle_Price, "");
+                }
+                catch
+                {
+                    e.Cancel = true;
+                    txtVehicle_Price.Focus();
+                    errorProvider5.SetError(txtVehicle_Price, "Please Enter A Valid Value.");
+                }
+
+            }
+        }
+
+        //Customer ID
+        private void cbCustomerID_Validating(object sender, CancelEventArgs e)
+        {
+            if (cbCustomerID.SelectedIndex == -1)
+            {
+                e.Cancel = true;
+                cbCustomerID.Focus();
+                errorProvider6.SetError(cbCustomerID, "Please select a Customer ID.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider6.SetError(cbCustomerID, "");
+            }
+        }
+
+        //Owner IC
+        private void txtOwner_ICNumber_Validating(object sender, CancelEventArgs e)
+        {
+            if (rbOthers.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txtOwner_ICNumber.Text))
+                {
+                    e.Cancel = true;
+                    txtOwner_ICNumber.Focus();
+                    errorProvider7.SetError(txtOwner_ICNumber, "Please Enter IC of Vehicle Owner.");
+                }
+                else
+                {
+                    e.Cancel = false;
+                    errorProvider7.SetError(txtOwner_ICNumber, "");
+                }
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider7.SetError(txtOwner_ICNumber, "");
+            }
+        }
     }
 }
