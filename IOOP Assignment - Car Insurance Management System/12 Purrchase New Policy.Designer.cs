@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPur_Ins = new System.Windows.Forms.Label();
             this.lblVehicle_YOM = new System.Windows.Forms.Label();
             this.lblVehicle_Price = new System.Windows.Forms.Label();
@@ -36,22 +37,33 @@
             this.lblVehicle_NO = new System.Windows.Forms.Label();
             this.lblOwner_Details = new System.Windows.Forms.Label();
             this.lblOwner_Gender = new System.Windows.Forms.Label();
-            this.lblOwner_IDNumber = new System.Windows.Forms.Label();
-            this.lblOwner_DOB = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.lblOwner_ICNumber = new System.Windows.Forms.Label();
+            this.lblOwner_Name = new System.Windows.Forms.Label();
+            this.txtVehicle_NO = new System.Windows.Forms.TextBox();
+            this.txtVehicle_Price = new System.Windows.Forms.TextBox();
+            this.txtVehicle_YOM = new System.Windows.Forms.TextBox();
+            this.txtVehicle_Model = new System.Windows.Forms.TextBox();
+            this.txtVehicle_Brand = new System.Windows.Forms.TextBox();
+            this.rbSame = new System.Windows.Forms.RadioButton();
+            this.rbOthers = new System.Windows.Forms.RadioButton();
             this.btnProceed = new System.Windows.Forms.Button();
             this.btnMainPage = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCust_ID = new System.Windows.Forms.Label();
+            this.lblOwner_Phone = new System.Windows.Forms.Label();
+            this.lblOwner_Address = new System.Windows.Forms.Label();
+            this.cbCustomerID = new System.Windows.Forms.ComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtOwner_Phone = new System.Windows.Forms.TextBox();
+            this.cbOwner_Gender = new System.Windows.Forms.ComboBox();
+            this.txtOwner_Name = new System.Windows.Forms.TextBox();
+            this.txtOwner_Address = new System.Windows.Forms.TextBox();
+            this.txtOwner_ICNumber = new System.Windows.Forms.TextBox();
+            this.lblShowOwner_Phone = new System.Windows.Forms.Label();
+            this.lblShowOwner_Gender = new System.Windows.Forms.Label();
+            this.lblShowOwner_ICNumber = new System.Windows.Forms.Label();
+            this.lblShowOwner_Address = new System.Windows.Forms.Label();
+            this.lblShowOwner_Name = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPur_Ins
@@ -70,7 +82,7 @@
             // 
             this.lblVehicle_YOM.AutoSize = true;
             this.lblVehicle_YOM.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_YOM.Location = new System.Drawing.Point(98, 292);
+            this.lblVehicle_YOM.Location = new System.Drawing.Point(98, 259);
             this.lblVehicle_YOM.Name = "lblVehicle_YOM";
             this.lblVehicle_YOM.Size = new System.Drawing.Size(172, 45);
             this.lblVehicle_YOM.TabIndex = 30;
@@ -80,7 +92,7 @@
             // 
             this.lblVehicle_Price.AutoSize = true;
             this.lblVehicle_Price.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_Price.Location = new System.Drawing.Point(98, 346);
+            this.lblVehicle_Price.Location = new System.Drawing.Point(96, 305);
             this.lblVehicle_Price.Name = "lblVehicle_Price";
             this.lblVehicle_Price.Size = new System.Drawing.Size(130, 45);
             this.lblVehicle_Price.TabIndex = 29;
@@ -90,7 +102,7 @@
             // 
             this.lblVehicle_Model.AutoSize = true;
             this.lblVehicle_Model.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_Model.Location = new System.Drawing.Point(98, 238);
+            this.lblVehicle_Model.Location = new System.Drawing.Point(98, 213);
             this.lblVehicle_Model.Name = "lblVehicle_Model";
             this.lblVehicle_Model.Size = new System.Drawing.Size(76, 45);
             this.lblVehicle_Model.TabIndex = 28;
@@ -100,7 +112,7 @@
             // 
             this.lblVehicle_Brand.AutoSize = true;
             this.lblVehicle_Brand.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_Brand.Location = new System.Drawing.Point(98, 184);
+            this.lblVehicle_Brand.Location = new System.Drawing.Point(98, 167);
             this.lblVehicle_Brand.Name = "lblVehicle_Brand";
             this.lblVehicle_Brand.Size = new System.Drawing.Size(77, 45);
             this.lblVehicle_Brand.TabIndex = 27;
@@ -110,7 +122,7 @@
             // 
             this.lblVehicle_NO.AutoSize = true;
             this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVehicle_NO.Location = new System.Drawing.Point(98, 130);
+            this.lblVehicle_NO.Location = new System.Drawing.Point(98, 121);
             this.lblVehicle_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVehicle_NO.Name = "lblVehicle_NO";
             this.lblVehicle_NO.Size = new System.Drawing.Size(264, 45);
@@ -121,7 +133,7 @@
             // 
             this.lblOwner_Details.AutoSize = true;
             this.lblOwner_Details.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_Details.Location = new System.Drawing.Point(98, 461);
+            this.lblOwner_Details.Location = new System.Drawing.Point(96, 397);
             this.lblOwner_Details.Name = "lblOwner_Details";
             this.lblOwner_Details.Size = new System.Drawing.Size(155, 45);
             this.lblOwner_Details.TabIndex = 31;
@@ -131,116 +143,96 @@
             // 
             this.lblOwner_Gender.AutoSize = true;
             this.lblOwner_Gender.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_Gender.Location = new System.Drawing.Point(135, 613);
+            this.lblOwner_Gender.Location = new System.Drawing.Point(128, 547);
             this.lblOwner_Gender.Name = "lblOwner_Gender";
             this.lblOwner_Gender.Size = new System.Drawing.Size(72, 37);
             this.lblOwner_Gender.TabIndex = 36;
             this.lblOwner_Gender.Text = "Gender:";
             // 
-            // lblOwner_IDNumber
+            // lblOwner_ICNumber
             // 
-            this.lblOwner_IDNumber.AutoSize = true;
-            this.lblOwner_IDNumber.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_IDNumber.Location = new System.Drawing.Point(135, 519);
-            this.lblOwner_IDNumber.Name = "lblOwner_IDNumber";
-            this.lblOwner_IDNumber.Size = new System.Drawing.Size(99, 37);
-            this.lblOwner_IDNumber.TabIndex = 33;
-            this.lblOwner_IDNumber.Text = "ID Number:";
+            this.lblOwner_ICNumber.AutoSize = true;
+            this.lblOwner_ICNumber.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_ICNumber.Location = new System.Drawing.Point(128, 453);
+            this.lblOwner_ICNumber.Name = "lblOwner_ICNumber";
+            this.lblOwner_ICNumber.Size = new System.Drawing.Size(98, 37);
+            this.lblOwner_ICNumber.TabIndex = 33;
+            this.lblOwner_ICNumber.Text = "IC Number:";
             // 
-            // lblOwner_DOB
+            // lblOwner_Name
             // 
-            this.lblOwner_DOB.AutoSize = true;
-            this.lblOwner_DOB.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_DOB.Location = new System.Drawing.Point(135, 566);
-            this.lblOwner_DOB.Name = "lblOwner_DOB";
-            this.lblOwner_DOB.Size = new System.Drawing.Size(65, 37);
-            this.lblOwner_DOB.TabIndex = 34;
-            this.lblOwner_DOB.Text = "D.O.B.:";
+            this.lblOwner_Name.AutoSize = true;
+            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_Name.Location = new System.Drawing.Point(128, 500);
+            this.lblOwner_Name.Name = "lblOwner_Name";
+            this.lblOwner_Name.Size = new System.Drawing.Size(61, 37);
+            this.lblOwner_Name.TabIndex = 34;
+            this.lblOwner_Name.Text = "Name:";
             // 
-            // textBox1
+            // txtVehicle_NO
             // 
-            this.textBox1.Location = new System.Drawing.Point(405, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(615, 47);
-            this.textBox1.TabIndex = 0;
+            this.txtVehicle_NO.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVehicle_NO.Location = new System.Drawing.Point(405, 121);
+            this.txtVehicle_NO.Name = "txtVehicle_NO";
+            this.txtVehicle_NO.Size = new System.Drawing.Size(615, 45);
+            this.txtVehicle_NO.TabIndex = 0;
+            this.txtVehicle_NO.Validating += new System.ComponentModel.CancelEventHandler(this.txtVehicle_NO_Validating);
             // 
-            // textBox3
+            // txtVehicle_Price
             // 
-            this.textBox3.Location = new System.Drawing.Point(405, 343);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(615, 47);
-            this.textBox3.TabIndex = 4;
+            this.txtVehicle_Price.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVehicle_Price.Location = new System.Drawing.Point(405, 305);
+            this.txtVehicle_Price.Name = "txtVehicle_Price";
+            this.txtVehicle_Price.Size = new System.Drawing.Size(615, 45);
+            this.txtVehicle_Price.TabIndex = 4;
             // 
-            // textBox4
+            // txtVehicle_YOM
             // 
-            this.textBox4.Location = new System.Drawing.Point(405, 289);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(615, 47);
-            this.textBox4.TabIndex = 3;
+            this.txtVehicle_YOM.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVehicle_YOM.Location = new System.Drawing.Point(405, 259);
+            this.txtVehicle_YOM.Name = "txtVehicle_YOM";
+            this.txtVehicle_YOM.Size = new System.Drawing.Size(615, 45);
+            this.txtVehicle_YOM.TabIndex = 3;
             // 
-            // textBox5
+            // txtVehicle_Model
             // 
-            this.textBox5.Location = new System.Drawing.Point(405, 235);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(615, 47);
-            this.textBox5.TabIndex = 2;
+            this.txtVehicle_Model.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVehicle_Model.Location = new System.Drawing.Point(405, 213);
+            this.txtVehicle_Model.Name = "txtVehicle_Model";
+            this.txtVehicle_Model.Size = new System.Drawing.Size(615, 45);
+            this.txtVehicle_Model.TabIndex = 2;
             // 
-            // textBox6
+            // txtVehicle_Brand
             // 
-            this.textBox6.Location = new System.Drawing.Point(405, 181);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(615, 47);
-            this.textBox6.TabIndex = 1;
+            this.txtVehicle_Brand.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVehicle_Brand.Location = new System.Drawing.Point(405, 167);
+            this.txtVehicle_Brand.Name = "txtVehicle_Brand";
+            this.txtVehicle_Brand.Size = new System.Drawing.Size(615, 45);
+            this.txtVehicle_Brand.TabIndex = 1;
             // 
-            // textBox2
+            // rbSame
             // 
-            this.textBox2.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(338, 516);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(323, 41);
-            this.textBox2.TabIndex = 9;
+            this.rbSame.AutoSize = true;
+            this.rbSame.Location = new System.Drawing.Point(405, 394);
+            this.rbSame.Name = "rbSame";
+            this.rbSame.Size = new System.Drawing.Size(233, 49);
+            this.rbSame.TabIndex = 6;
+            this.rbSame.TabStop = true;
+            this.rbSame.Text = "Same as Customer Details";
+            this.rbSame.UseVisualStyleBackColor = true;
+            this.rbSame.CheckedChanged += new System.EventHandler(this.rbSame_CheckedChanged);
             // 
-            // comboBox1
+            // rbOthers
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "FEMALE",
-            "MALE"});
-            this.comboBox1.Location = new System.Drawing.Point(338, 610);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(323, 45);
-            this.comboBox1.TabIndex = 11;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(338, 562);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(323, 41);
-            this.dateTimePicker1.TabIndex = 10;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(405, 457);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(233, 49);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Same as Customer Details";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(744, 458);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(91, 49);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Others";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbOthers.AutoSize = true;
+            this.rbOthers.Location = new System.Drawing.Point(744, 395);
+            this.rbOthers.Name = "rbOthers";
+            this.rbOthers.Size = new System.Drawing.Size(91, 49);
+            this.rbOthers.TabIndex = 7;
+            this.rbOthers.TabStop = true;
+            this.rbOthers.Text = "Others";
+            this.rbOthers.UseVisualStyleBackColor = true;
+            this.rbOthers.CheckedChanged += new System.EventHandler(this.rbOthers_CheckedChanged);
             // 
             // btnProceed
             // 
@@ -270,22 +262,152 @@
             this.btnMainPage.UseVisualStyleBackColor = false;
             this.btnMainPage.Click += new System.EventHandler(this.btnCUST_Profile_Click);
             // 
-            // textBox7
+            // lblCust_ID
             // 
-            this.textBox7.Location = new System.Drawing.Point(405, 396);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(615, 47);
-            this.textBox7.TabIndex = 5;
+            this.lblCust_ID.AutoSize = true;
+            this.lblCust_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCust_ID.Location = new System.Drawing.Point(96, 351);
+            this.lblCust_ID.Name = "lblCust_ID";
+            this.lblCust_ID.Size = new System.Drawing.Size(131, 45);
+            this.lblCust_ID.TabIndex = 38;
+            this.lblCust_ID.Text = "Customer ID:";
             // 
-            // label1
+            // lblOwner_Phone
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(98, 399);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 45);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Customer ID:";
+            this.lblOwner_Phone.AutoSize = true;
+            this.lblOwner_Phone.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_Phone.Location = new System.Drawing.Point(128, 599);
+            this.lblOwner_Phone.Name = "lblOwner_Phone";
+            this.lblOwner_Phone.Size = new System.Drawing.Size(64, 37);
+            this.lblOwner_Phone.TabIndex = 40;
+            this.lblOwner_Phone.Text = "Phone:";
+            // 
+            // lblOwner_Address
+            // 
+            this.lblOwner_Address.AutoSize = true;
+            this.lblOwner_Address.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_Address.Location = new System.Drawing.Point(128, 646);
+            this.lblOwner_Address.Name = "lblOwner_Address";
+            this.lblOwner_Address.Size = new System.Drawing.Size(78, 37);
+            this.lblOwner_Address.TabIndex = 42;
+            this.lblOwner_Address.Text = "Address:";
+            // 
+            // cbCustomerID
+            // 
+            this.cbCustomerID.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCustomerID.FormattingEnabled = true;
+            this.cbCustomerID.Location = new System.Drawing.Point(405, 351);
+            this.cbCustomerID.Name = "cbCustomerID";
+            this.cbCustomerID.Size = new System.Drawing.Size(615, 48);
+            this.cbCustomerID.TabIndex = 44;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // txtOwner_Phone
+            // 
+            this.txtOwner_Phone.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwner_Phone.Location = new System.Drawing.Point(405, 595);
+            this.txtOwner_Phone.Name = "txtOwner_Phone";
+            this.txtOwner_Phone.Size = new System.Drawing.Size(323, 41);
+            this.txtOwner_Phone.TabIndex = 41;
+            this.txtOwner_Phone.Visible = false;
+            // 
+            // cbOwner_Gender
+            // 
+            this.cbOwner_Gender.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbOwner_Gender.FormattingEnabled = true;
+            this.cbOwner_Gender.Items.AddRange(new object[] {
+            "FEMALE",
+            "MALE"});
+            this.cbOwner_Gender.Location = new System.Drawing.Point(405, 544);
+            this.cbOwner_Gender.Name = "cbOwner_Gender";
+            this.cbOwner_Gender.Size = new System.Drawing.Size(323, 45);
+            this.cbOwner_Gender.TabIndex = 11;
+            this.cbOwner_Gender.Visible = false;
+            // 
+            // txtOwner_Name
+            // 
+            this.txtOwner_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwner_Name.Location = new System.Drawing.Point(405, 497);
+            this.txtOwner_Name.Name = "txtOwner_Name";
+            this.txtOwner_Name.Size = new System.Drawing.Size(323, 41);
+            this.txtOwner_Name.TabIndex = 39;
+            this.txtOwner_Name.Visible = false;
+            // 
+            // txtOwner_Address
+            // 
+            this.txtOwner_Address.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwner_Address.Location = new System.Drawing.Point(405, 642);
+            this.txtOwner_Address.Name = "txtOwner_Address";
+            this.txtOwner_Address.Size = new System.Drawing.Size(323, 41);
+            this.txtOwner_Address.TabIndex = 43;
+            this.txtOwner_Address.Visible = false;
+            // 
+            // txtOwner_ICNumber
+            // 
+            this.txtOwner_ICNumber.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOwner_ICNumber.Location = new System.Drawing.Point(405, 450);
+            this.txtOwner_ICNumber.Name = "txtOwner_ICNumber";
+            this.txtOwner_ICNumber.Size = new System.Drawing.Size(323, 41);
+            this.txtOwner_ICNumber.TabIndex = 9;
+            this.txtOwner_ICNumber.Visible = false;
+            // 
+            // lblShowOwner_Phone
+            // 
+            this.lblShowOwner_Phone.AutoSize = true;
+            this.lblShowOwner_Phone.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowOwner_Phone.Location = new System.Drawing.Point(398, 597);
+            this.lblShowOwner_Phone.Name = "lblShowOwner_Phone";
+            this.lblShowOwner_Phone.Size = new System.Drawing.Size(100, 37);
+            this.lblShowOwner_Phone.TabIndex = 49;
+            this.lblShowOwner_Phone.Text = "(Show Phone)";
+            this.lblShowOwner_Phone.Visible = false;
+            // 
+            // lblShowOwner_Gender
+            // 
+            this.lblShowOwner_Gender.AutoSize = true;
+            this.lblShowOwner_Gender.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowOwner_Gender.Location = new System.Drawing.Point(398, 549);
+            this.lblShowOwner_Gender.Name = "lblShowOwner_Gender";
+            this.lblShowOwner_Gender.Size = new System.Drawing.Size(107, 37);
+            this.lblShowOwner_Gender.TabIndex = 48;
+            this.lblShowOwner_Gender.Text = "(Show Gender)";
+            this.lblShowOwner_Gender.Visible = false;
+            // 
+            // lblShowOwner_ICNumber
+            // 
+            this.lblShowOwner_ICNumber.AutoSize = true;
+            this.lblShowOwner_ICNumber.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowOwner_ICNumber.Location = new System.Drawing.Point(398, 453);
+            this.lblShowOwner_ICNumber.Name = "lblShowOwner_ICNumber";
+            this.lblShowOwner_ICNumber.Size = new System.Drawing.Size(130, 37);
+            this.lblShowOwner_ICNumber.TabIndex = 46;
+            this.lblShowOwner_ICNumber.Text = "(Show IC Number)";
+            this.lblShowOwner_ICNumber.Visible = false;
+            // 
+            // lblShowOwner_Address
+            // 
+            this.lblShowOwner_Address.AutoSize = true;
+            this.lblShowOwner_Address.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowOwner_Address.Location = new System.Drawing.Point(398, 645);
+            this.lblShowOwner_Address.Name = "lblShowOwner_Address";
+            this.lblShowOwner_Address.Size = new System.Drawing.Size(112, 37);
+            this.lblShowOwner_Address.TabIndex = 50;
+            this.lblShowOwner_Address.Text = "(Show Address)";
+            this.lblShowOwner_Address.Visible = false;
+            // 
+            // lblShowOwner_Name
+            // 
+            this.lblShowOwner_Name.AutoSize = true;
+            this.lblShowOwner_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowOwner_Name.Location = new System.Drawing.Point(398, 501);
+            this.lblShowOwner_Name.Name = "lblShowOwner_Name";
+            this.lblShowOwner_Name.Size = new System.Drawing.Size(98, 37);
+            this.lblShowOwner_Name.TabIndex = 47;
+            this.lblShowOwner_Name.Text = "(Show Name)";
+            this.lblShowOwner_Name.Visible = false;
             // 
             // Purrchase_New_Policy
             // 
@@ -293,23 +415,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblShowOwner_Name);
+            this.Controls.Add(this.cbCustomerID);
+            this.Controls.Add(this.lblShowOwner_Address);
+            this.Controls.Add(this.lblCust_ID);
+            this.Controls.Add(this.lblShowOwner_ICNumber);
+            this.Controls.Add(this.lblShowOwner_Gender);
+            this.Controls.Add(this.rbOthers);
+            this.Controls.Add(this.lblShowOwner_Phone);
+            this.Controls.Add(this.lblOwner_Name);
+            this.Controls.Add(this.txtOwner_ICNumber);
+            this.Controls.Add(this.rbSame);
+            this.Controls.Add(this.txtOwner_Address);
             this.Controls.Add(this.btnProceed);
+            this.Controls.Add(this.txtOwner_Name);
+            this.Controls.Add(this.lblOwner_Address);
+            this.Controls.Add(this.cbOwner_Gender);
             this.Controls.Add(this.btnMainPage);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtOwner_Phone);
+            this.Controls.Add(this.txtVehicle_Brand);
+            this.Controls.Add(this.txtVehicle_Model);
+            this.Controls.Add(this.lblOwner_ICNumber);
+            this.Controls.Add(this.txtVehicle_YOM);
             this.Controls.Add(this.lblOwner_Gender);
-            this.Controls.Add(this.lblOwner_IDNumber);
-            this.Controls.Add(this.lblOwner_DOB);
+            this.Controls.Add(this.txtVehicle_Price);
+            this.Controls.Add(this.lblOwner_Phone);
+            this.Controls.Add(this.txtVehicle_NO);
             this.Controls.Add(this.lblOwner_Details);
             this.Controls.Add(this.lblVehicle_YOM);
             this.Controls.Add(this.lblVehicle_Price);
@@ -323,6 +454,7 @@
             this.Name = "Purrchase_New_Policy";
             this.Text = "Purrchase_New_Policy";
             this.Load += new System.EventHandler(this.Purrchase_New_Policy_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,21 +470,31 @@
         private System.Windows.Forms.Label lblVehicle_NO;
         private System.Windows.Forms.Label lblOwner_Details;
         private System.Windows.Forms.Label lblOwner_Gender;
-        private System.Windows.Forms.Label lblOwner_IDNumber;
-        private System.Windows.Forms.Label lblOwner_DOB;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label lblOwner_ICNumber;
+        private System.Windows.Forms.Label lblOwner_Name;
+        private System.Windows.Forms.TextBox txtVehicle_NO;
+        private System.Windows.Forms.TextBox txtVehicle_Price;
+        private System.Windows.Forms.TextBox txtVehicle_YOM;
+        private System.Windows.Forms.TextBox txtVehicle_Model;
+        private System.Windows.Forms.TextBox txtVehicle_Brand;
+        private System.Windows.Forms.RadioButton rbSame;
+        private System.Windows.Forms.RadioButton rbOthers;
         private System.Windows.Forms.Button btnProceed;
         private System.Windows.Forms.Button btnMainPage;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCust_ID;
+        private System.Windows.Forms.Label lblOwner_Phone;
+        private System.Windows.Forms.Label lblOwner_Address;
+        private System.Windows.Forms.ComboBox cbCustomerID;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label lblShowOwner_Name;
+        private System.Windows.Forms.Label lblShowOwner_Address;
+        private System.Windows.Forms.Label lblShowOwner_ICNumber;
+        private System.Windows.Forms.Label lblShowOwner_Gender;
+        private System.Windows.Forms.Label lblShowOwner_Phone;
+        private System.Windows.Forms.TextBox txtOwner_ICNumber;
+        private System.Windows.Forms.TextBox txtOwner_Address;
+        private System.Windows.Forms.TextBox txtOwner_Name;
+        private System.Windows.Forms.ComboBox cbOwner_Gender;
+        private System.Windows.Forms.TextBox txtOwner_Phone;
     }
 }

@@ -41,5 +41,50 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             this.Hide();
             select_type_of_insurance.Show();
         }
+
+        private void txtVehicle_NO_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtVehicle_NO.Text))
+            {
+                e.Cancel = true;
+                txtVehicle_NO.Focus();
+                errorProvider1.SetError(txtVehicle_NO, "Textbox should not be left blank!");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider1.SetError(txtVehicle_NO, "");
+            }
+        }
+
+
+        private void rbSame_CheckedChanged(object sender, EventArgs e)
+        {
+            txtOwner_ICNumber.Visible = false;
+            txtOwner_Name.Visible = false;
+            cbOwner_Gender.Visible = false;
+            txtOwner_Phone.Visible = false;
+            txtOwner_Address.Visible = false;
+            lblShowOwner_ICNumber.Visible = true;
+            lblShowOwner_Name.Visible = true;
+            lblShowOwner_Gender.Visible = true;
+            lblShowOwner_Phone.Visible = true;
+            lblShowOwner_Address.Visible = true;
+        }
+
+        private void rbOthers_CheckedChanged(object sender, EventArgs e)
+        {
+            lblShowOwner_ICNumber.Visible = false;
+            lblShowOwner_Name.Visible = false;
+            lblShowOwner_Gender.Visible = false;
+            lblShowOwner_Phone.Visible = false;
+            lblShowOwner_Address.Visible = false;
+            txtOwner_ICNumber.Visible = true;
+            txtOwner_Name.Visible = true;
+            cbOwner_Gender.Visible = true;
+            txtOwner_Phone.Visible = true;
+            txtOwner_Address.Visible = true;
+
+        }
     }
 }
