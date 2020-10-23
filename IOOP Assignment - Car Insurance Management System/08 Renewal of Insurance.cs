@@ -40,8 +40,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 DateTime localDate = DateTime.Now;
                 lblShowIns_StartDate.Text = ":  " + localDate.ToString();
                 lblShowIns_NewEndDate.Text = ":  " + localDate.AddYears(1).ToString();
-                lblShowIns_GrossTotal.Text = ":  RM " + Save.GrossTotal;
-
             }
             else
             {

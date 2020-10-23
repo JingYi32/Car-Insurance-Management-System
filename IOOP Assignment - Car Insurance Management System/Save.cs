@@ -14,5 +14,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static string GrossTotal;
         public static DateTime purchasedate;
         public static DateTime lastrenewaldate;
+        public static DateTime RenewalDate;
+        public static DateTime RenewalEndDate;
     }
 }

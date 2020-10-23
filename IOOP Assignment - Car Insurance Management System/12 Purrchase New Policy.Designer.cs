@@ -65,7 +65,6 @@
             this.lblPur_Ins.TabIndex = 25;
             this.lblPur_Ins.Text = "Register New Insurance";
             this.lblPur_Ins.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPur_Ins.Click += new System.EventHandler(this.lblProfile_Click);
             // 
             // lblVehicle_YOM
             // 
@@ -323,6 +322,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.Name = "Purrchase_New_Policy";
             this.Text = "Purrchase_New_Policy";
+            this.Load += new System.EventHandler(this.Purrchase_New_Policy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
