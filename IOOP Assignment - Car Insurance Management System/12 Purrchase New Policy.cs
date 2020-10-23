@@ -41,7 +41,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnProceed_Click(object sender, EventArgs e)
         {
-            if (rbOthers.Checked = true)
+            if (rbOthers.Checked == true)
             {
                 if ((string.IsNullOrWhiteSpace(txtVehicle_NO.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Model.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Price.Text)) || (cbCustomerID.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_ICNumber.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Name.Text)) || (cbOwner_Gender.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_Phone.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Address.Text)))
                 {
@@ -54,7 +54,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     selectpage.Show();
                 }
             }
-            else if (rbSame.Checked = true)
+            else
             {
                 if ((string.IsNullOrWhiteSpace(txtVehicle_NO.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Model.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Price.Text)) || (cbCustomerID.SelectedIndex == -1))
                 {
@@ -66,10 +66,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     this.Hide();
                     selectpage.Show();
                 }
-            }
-            else
-            {
-                MessageBox.Show("Please fill up all field.");
             }
         }
 
@@ -396,6 +392,23 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 errorProvider11.SetError(txtOwner_Address, "");
                 Save.Owner_Address = lblOwner_Address.Text;
             }
+        }
+
+        private void displaycustomerdetails()
+        {
+            cmd.CommandText = "SELECT * FROM Customer WHERE ID = '" + Save.customerid + "'";
+            cmd.Connection = con;
+            OleDbDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                lblShowOwner_ICNumber.Text = dr[3].ToString();
+                lblShowOwner_Name.Text = dr[1].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Record not found.");
+            }
+            dr.Close();
         }
     }
 }

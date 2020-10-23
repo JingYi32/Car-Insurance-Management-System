@@ -34,10 +34,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowVehicle_YOM.Text = ":  " + dr[16].ToString();
                 lblShowVehicle_Price.Text = ":  " + dr[17].ToString();
                 lblShowOwner_ICNumber.Text = ":  " + dr[18].ToString();
-                lblShowOwner_Name.Text = ":  " + dr[19].ToString() + dr[20].ToString();
-                lblShowOwner_Gender.Text = ":  " + dr[21].ToString();
-                lblShowOwner_Phone.Text = ":  " + dr[22].ToString();
-                lblShowOwner_Address.Text = ":  " + dr[23].ToString();
+                lblShowOwner_Name.Text = ":  " + dr[19].ToString();
+                lblShowOwner_Gender.Text = ":  " + dr[20].ToString();
+                lblShowOwner_Phone.Text = ":  " + dr[21].ToString();
+                lblShowOwner_Address.Text = ":  " + dr[22].ToString();
                 lblShowIns_Status.Text = ":  " + dr[2].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();

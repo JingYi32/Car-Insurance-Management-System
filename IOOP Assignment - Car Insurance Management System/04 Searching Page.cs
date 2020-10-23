@@ -42,7 +42,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (cbSelect.SelectedItem == "Customer ID")
+            if (cbSelect.SelectedItem.ToString() == "Customer ID")
             {
                 cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID WHERE Customer.ID = '" + txtSearch.Text + "'";
                 cmd.Connection = con;
@@ -53,16 +53,22 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 dgvSearchResult.AutoResizeColumns();
                 dgvSearchResult.AutoResizeRows();
             }
-            else if (cbSelect.SelectedItem == "Insurance ID")
+            else if (cbSelect.SelectedItem.ToString() == "Insurance ID")
             {
                 cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.LastName AS [Last Name], Customer.FirstName AS [First Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.CustomerID WHERE Insurance.ID = " + txtSearch.Text + "";
                 cmd.Connection = con;
-
-                DataTable dt = new DataTable();
-                dt.Load(cmd.ExecuteReader());
-                dgvSearchResult.DataSource = dt;
-                dgvSearchResult.AutoResizeColumns();
-                dgvSearchResult.AutoResizeRows();
+                try
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(cmd.ExecuteReader());
+                    dgvSearchResult.DataSource = dt;
+                    dgvSearchResult.AutoResizeColumns();
+                    dgvSearchResult.AutoResizeRows();
+                }
+                catch(OleDbException)
+                {
+                    MessageBox.Show("Database table is opened, please close it before you continue.");
+                }
             }
         }
 
