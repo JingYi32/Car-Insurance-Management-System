@@ -38,7 +38,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
 
-            cmd.CommandText = "select * from staff where username = 'admin'";
+            cmd.CommandText = "select * from staff where staffid = '"+Save.staffid+"'"; // staffid in db
             cmd.Connection = con;
             OleDbDataReader dr = cmd.ExecuteReader();
 

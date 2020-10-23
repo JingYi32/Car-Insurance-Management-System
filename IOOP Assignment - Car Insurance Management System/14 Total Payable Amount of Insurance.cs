@@ -76,10 +76,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void CalculateNCD(ref double NCD)
         {
-            cmdTA.CommandText = "select count (*) as 'year' from insurance where id = 2";
-            double year = double.Parse(cmdTA.CommandText);
+            cmdTA.CommandText = "select count (*) as 'year' from insurance where id = '"+Save.insuranceid+"'";
+            double year = double.Parse(cmdTA.CommandText); //how???
             cmdTA.Connection = conTA;
-            cmdTA.ExecuteReader();
+            OleDbDataReader dr = cmdTA.ExecuteReader();
+            if (dr.Read())
+            {
+                
+            }
+
             
             if (year == 1)
                 NCD = 0.25;
