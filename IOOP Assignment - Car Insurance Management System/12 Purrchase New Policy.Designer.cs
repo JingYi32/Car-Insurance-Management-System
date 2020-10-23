@@ -52,7 +52,6 @@
             this.lblOwner_Phone = new System.Windows.Forms.Label();
             this.lblOwner_Address = new System.Windows.Forms.Label();
             this.cbCustomerID = new System.Windows.Forms.ComboBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtOwner_Phone = new System.Windows.Forms.TextBox();
             this.cbOwner_Gender = new System.Windows.Forms.ComboBox();
             this.txtOwner_Name = new System.Windows.Forms.TextBox();
@@ -63,6 +62,7 @@
             this.lblShowOwner_ICNumber = new System.Windows.Forms.Label();
             this.lblShowOwner_Address = new System.Windows.Forms.Label();
             this.lblShowOwner_Name = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,7 +176,6 @@
             this.txtVehicle_NO.Name = "txtVehicle_NO";
             this.txtVehicle_NO.Size = new System.Drawing.Size(615, 45);
             this.txtVehicle_NO.TabIndex = 0;
-            this.txtVehicle_NO.Validating += new System.ComponentModel.CancelEventHandler(this.txtVehicle_NO_Validating);
             // 
             // txtVehicle_Price
             // 
@@ -301,10 +300,6 @@
             this.cbCustomerID.Size = new System.Drawing.Size(615, 48);
             this.cbCustomerID.TabIndex = 44;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // txtOwner_Phone
             // 
             this.txtOwner_Phone.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -409,6 +404,10 @@
             this.lblShowOwner_Name.Text = "(Show Name)";
             this.lblShowOwner_Name.Visible = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Purrchase_New_Policy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
@@ -485,7 +484,6 @@
         private System.Windows.Forms.Label lblOwner_Phone;
         private System.Windows.Forms.Label lblOwner_Address;
         private System.Windows.Forms.ComboBox cbCustomerID;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label lblShowOwner_Name;
         private System.Windows.Forms.Label lblShowOwner_Address;
         private System.Windows.Forms.Label lblShowOwner_ICNumber;
@@ -496,5 +494,6 @@
         private System.Windows.Forms.TextBox txtOwner_Name;
         private System.Windows.Forms.ComboBox cbOwner_Gender;
         private System.Windows.Forms.TextBox txtOwner_Phone;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -37,26 +37,25 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnProceed_Click(object sender, EventArgs e)
         {
-            Select_Type_of_Insurance select_type_of_insurance = new Select_Type_of_Insurance();
-            this.Hide();
-            select_type_of_insurance.Show();
-        }
-
-        private void txtVehicle_NO_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtVehicle_NO.Text))
+            var controls = new[] { txtVehicle_NO, txtVehicle_Brand, txtVehicle_Model, txtVehicle_YOM, txtVehicle_Price};
+            foreach (var box in controls)
             {
-                e.Cancel = true;
-                txtVehicle_NO.Focus();
-                errorProvider1.SetError(txtVehicle_NO, "Textbox should not be left blank!");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider1.SetError(txtVehicle_NO, "");
+                if (string.IsNullOrWhiteSpace(box.Text))
+                {
+                    errorProvider1.SetError(box, "Please fill the required field");
+                }
+                else
+                {
+                    Select_Type_of_Insurance select_type_of_insurance = new Select_Type_of_Insurance();
+                    this.Hide();
+                    select_type_of_insurance.Show();
+                }
             }
         }
 
+        //
+        //OwnerDetails
+        //
 
         private void rbSame_CheckedChanged(object sender, EventArgs e)
         {
@@ -85,6 +84,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             txtOwner_Phone.Visible = true;
             txtOwner_Address.Visible = true;
 
-        }
+        }          
     }
 }
