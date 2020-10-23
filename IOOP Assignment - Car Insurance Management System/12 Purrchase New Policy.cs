@@ -41,15 +41,35 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnProceed_Click(object sender, EventArgs e)
         {
-            if ((string.IsNullOrWhiteSpace(txtVehicle_NO.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Model.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Price.Text)) || (cbCustomerID.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_ICNumber.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Name.Text)) || (cbOwner_Gender.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_Phone.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Address.Text)))
+            if (rbOthers.Checked = true)
             {
-                MessageBox.Show("Please fill in all field.");
+                if ((string.IsNullOrWhiteSpace(txtVehicle_NO.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Model.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Price.Text)) || (cbCustomerID.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_ICNumber.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Name.Text)) || (cbOwner_Gender.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtOwner_Phone.Text)) || (string.IsNullOrWhiteSpace(txtOwner_Address.Text)))
+                {
+                    MessageBox.Show("Please fill in all field.");
+                }
+                else
+                {
+                    Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
+                    this.Hide();
+                    selectpage.Show();
+                }
+            }
+            else if (rbSame.Checked = true)
+            {
+                if ((string.IsNullOrWhiteSpace(txtVehicle_NO.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Model.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text)) || (string.IsNullOrWhiteSpace(txtVehicle_Price.Text)) || (cbCustomerID.SelectedIndex == -1))
+                {
+                    MessageBox.Show("Please fill in all field.");
+                }
+                else
+                {
+                    Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
+                    this.Hide();
+                    selectpage.Show();
+                }
             }
             else
             {
-                Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
-                this.Hide();
-                selectpage.Show();
+                MessageBox.Show("Please fill up all field.");
             }
         }
 
@@ -235,9 +255,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
                 else
                 {
-                    e.Cancel = false;
-                    errorProvider7.SetError(txtOwner_ICNumber, "");
-                    Save.Owner_IC = int.Parse(txtOwner_ICNumber.Text);
+                    try
+                    {
+                        e.Cancel = false;
+                        errorProvider7.SetError(txtOwner_ICNumber, "");
+                        Save.Owner_IC = int.Parse(txtOwner_ICNumber.Text);
+                    }
+                    catch
+                    {
+                        e.Cancel = true;
+                        txtOwner_ICNumber.Focus();
+                        errorProvider7.SetError(txtOwner_ICNumber, "Please Enter A Valid Value.");
+                    }
                 }
             }
             else

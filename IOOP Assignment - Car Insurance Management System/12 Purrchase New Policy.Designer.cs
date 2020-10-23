@@ -321,6 +321,8 @@
             // 
             this.cbCustomerID.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCustomerID.FormattingEnabled = true;
+            this.cbCustomerID.Items.AddRange(new object[] {
+            "G00001"});
             this.cbCustomerID.Location = new System.Drawing.Point(405, 351);
             this.cbCustomerID.Name = "cbCustomerID";
             this.cbCustomerID.Size = new System.Drawing.Size(615, 48);
