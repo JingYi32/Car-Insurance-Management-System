@@ -31,10 +31,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowIns_ID.Text = ":  " + dr[0].ToString();
                 lblShowVehicle_NO.Text = ":  " + dr[13].ToString();
                 lblShowCust_ID.Text = ":  " + dr[1].ToString();
-                lblShowCust_Name.Text = ":  " + dr[25].ToString() + dr[26].ToString();
-                lblShowOwner_Name.Text = ":  " + dr[19].ToString() + dr[20].ToString();
+                lblShowCust_Name.Text = ":  " + dr[24].ToString();
+                lblShowOwner_Name.Text = ":  " + dr[19].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
+                Save.RenewalDate = Convert.ToDateTime(lblShowIns_Last_Renewal.Text);
                 lblShowIns_EndDate.Text = ":  " + dr[5].ToString();
                 lblShowIns_Type.Text = ":  " + dr[6].ToString();
                 DateTime localDate = DateTime.Now;

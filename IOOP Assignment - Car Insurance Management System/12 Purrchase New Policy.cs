@@ -255,7 +255,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     {
                         e.Cancel = false;
                         errorProvider7.SetError(txtOwner_ICNumber, "");
-                        Save.Owner_IC = int.Parse(txtOwner_ICNumber.Text);
+                        Save.Owner_IC = int.Parse(txtOwner_ICNumber.Text).ToString();
                     }
                     catch
                     {
@@ -269,7 +269,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 e.Cancel = false;
                 errorProvider7.SetError(txtOwner_ICNumber, "");
-                Save.Owner_IC = int.Parse(lblOwner_ICNumber.Text);
+                Save.Owner_IC = lblOwner_ICNumber.Text;
             }
         }
 
