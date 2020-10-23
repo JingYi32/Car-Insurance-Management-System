@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -40,12 +41,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void Total_Payable_Amount_of_Insurance_Load(object sender, EventArgs e)
         {
+            conTA.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
+            conTA.Open();
+
+            Calculate();//call statement
 
         }
 
         private void btnSave_TA_Click(object sender, EventArgs e)
         {
-
+            cmdTA.CommandText = "insert into insurance VALUES('ID', 'Customer ID', 'Status', 'Purchase Date', 'Last renewal date', 'End Date', 'ins type', 'gross total', 'sst', '10', 'total', 'own_ic', 'vehicleregitrationno')";
+            cmdTA.Connection = conTA;
+            cmdTA.ExecuteNonQuery();
         }
 
         private void Calculate()
@@ -69,8 +76,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void CalculateNCD(ref double NCD)
         {
-            double year = 1; //Should from database
-           
+            cmdTA.CommandText = "select count (*) as 'year' from insurance where id = 2";
+            double year = double.Parse(cmdTA.CommandText);
+            cmdTA.Connection = conTA;
+            cmdTA.ExecuteReader();
+            
             if (year == 1)
                 NCD = 0.25;
             else if (year == 2)
