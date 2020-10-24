@@ -78,8 +78,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             cmdTA.CommandText = "select count (*) as 'year' from insurance where id = '"+Save.insuranceid+"'";
             cmdTA.Connection = conTA;
-            
-            double year = (double)cmdTA.ExecuteScalar();
+
+            double year = double.Parse(cmdTA.CommandText);
 
             
             if (year == 1)
