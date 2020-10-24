@@ -52,7 +52,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnSave_TA_Click(object sender, EventArgs e)
         {
-            cmdTA.CommandText = "insert into insurance VALUES('ID', 'Customer ID', 'Status', 'Purchase Date', 'Last renewal date', 'End Date', 'ins type', 'gross total', 'sst', '10', 'total', 'own_ic', 'vehicleregitrationno')";
+            cmdTA.CommandText = "insert into insurance VALUES('"+Save.insuranceid+"', '"+Save.customerid+"', 'Processing', '"+Save.purchasedate+"', '"+Save.RenewalDate+"', '"+Save.RenewalEndDate+"', '"+Save.InsType+"', '"+Save.GrossTotal+"', '"+Save.SST+"', '10', '"+Save.Total+"', '"+Save.Owner_IC+"', '"+Save.Vehicle_NO+"')";
             cmdTA.Connection = conTA;
             cmdTA.ExecuteNonQuery();
         }
@@ -67,6 +67,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             CalculateNCD(ref value);
             double NCD_TP = premT_TP * value;
             double Total_TP = premT_TP + sst_TP + 10 - NCD_TP;
+
+            Save.SST = sst_TP;
+            Save.Total = Total_TP;
 
             lblRMInsuranceTotal.Text = "RM" + premT_TP;
             lblSSTCount.Text = "RM" + sst_TP;
@@ -87,7 +90,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 double year = double.Parse(dr[0].ToString());
 
-                if (year == 1)
+                if (year == 0)
+                    NCD = 0;
+                else if (year == 1)
                     NCD = 0.25;
                 else if (year == 2)
                     NCD = 0.30;

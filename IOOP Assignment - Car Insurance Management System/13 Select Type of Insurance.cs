@@ -97,11 +97,23 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             try
             {
                 if (rbThirdParty.Checked)
+                {   
                     value = 0.0266;
+                    Save.InsType = "Third Party";
+                }
+
                 else if (rbFireTheft.Checked)
+                {
                     value = 0.0275;
+                    Save.InsType = "Third Party, fire and theft";
+                }
+                    
                 else if (rbComprehensive.Checked)
+                {
                     value = 0.0284;
+                    Save.InsType = "Comprehensive Cover";
+                }
+                    
             }
             catch
             {
