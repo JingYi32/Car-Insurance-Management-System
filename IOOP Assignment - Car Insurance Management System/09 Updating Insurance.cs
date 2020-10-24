@@ -34,7 +34,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void btnSubmit_UI_Click(object sender, EventArgs e)
         {
             
-            cmd.CommandText = "insert into update VALUES('"+showCUSID.Text+"', '"+showINSID.Text+"', '"+dtApply.Text+"', '"+dtApprove.Text+"', '"+CBAccount.Text+"', '"+textReasons_UI.Text+"', '"+textTotalAmount_UI.Text+"')";
+            cmd.CommandText = "insert into update VALUES('"+Save.customerid+"', '"+Save.insuranceid+"', '"+dtApply.Text+"', '"+dtApprove.Text+"', '"+CBAccount.Text+"', '"+textReasons_UI.Text+"', '"+textTotalAmount_UI.Text+"')";
             cmd.Connection = con;
             cmd.ExecuteNonQuery();
         }
