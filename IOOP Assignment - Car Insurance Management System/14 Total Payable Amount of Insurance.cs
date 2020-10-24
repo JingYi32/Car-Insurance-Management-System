@@ -87,7 +87,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 double year = double.Parse(dr[0].ToString());
 
-                if (year == 1)
+                if (year == 0)
+                    NCD = 0;
+                else if (year == 1)
                     NCD = 0.25;
                 else if (year == 2)
                     NCD = 0.30;
