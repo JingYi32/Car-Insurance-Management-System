@@ -82,7 +82,7 @@
             this.lblCustomerName_TA.Name = "lblCustomerName_TA";
             this.lblCustomerName_TA.Size = new System.Drawing.Size(350, 51);
             this.lblCustomerName_TA.TabIndex = 2;
-            this.lblCustomerName_TA.Text = "Customer Name:";
+            this.lblCustomerName_TA.Text = "Insurance ID:";
             // 
             // btnBack_TA
             // 

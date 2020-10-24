@@ -26,13 +26,25 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
+            Save.customerid = showCUSID.Text;
+            Save.insuranceid = showINSID.Text;
+            
         }
 
         private void btnSubmit_UI_Click(object sender, EventArgs e)
         {
-            cmd.CommandText = "insert into update VALUES('customer id', 'insurance id', 'date to apply', 'date to approve', 'bank account', 'reasons', 'amount gained')";
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
+            if (dtApply.Text!="" && dtApprove.Text!="" && CBAccount.Text!="" && textReasons_UI.Text!="" && textTotalAmount_UI.Text!="")
+            {
+                cmd.CommandText = "insert into update VALUES('" + Save.customerid + "', '" + Save.insuranceid + "', '" + dtApply.Text + "', '" + dtApprove.Text + "', '" + CBAccount.Text + "', '" + textReasons_UI.Text + "', '" + textTotalAmount_UI.Text + "')";
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Insert Successfully");
+            }
+            else
+            {
+                MessageBox.Show("Please fill in the textbox.");
+            }
+            
         }
 
         private void lblUpdateInsurance_Click(object sender, EventArgs e)
@@ -45,6 +57,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             Insurance_Details ins_details = new Insurance_Details();
             ins_details.Show();
             this.Close();
+        }
+
+        private void CBAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CBAccount.Items.Add("CIMB Bank");
+            CBAccount.Items.Add("Public Bank");
+            CBAccount.Items.Add("MayBank");
+            CBAccount.Items.Add("Hong Leong Bank");
+            CBAccount.Items.Add("HSBC Bank");
+            CBAccount.Items.Add("OCBC Bank");
         }
     }
 }

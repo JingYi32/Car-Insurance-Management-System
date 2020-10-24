@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile_of_Staff));
             this.lblMyProfile = new System.Windows.Forms.Label();
             this.lblStaffID_MP = new System.Windows.Forms.Label();
             this.lblStaffName_MP = new System.Windows.Forms.Label();
@@ -125,10 +126,13 @@
             // 
             // picProfilePicture_MP
             // 
-            this.picProfilePicture_MP.Location = new System.Drawing.Point(795, 110);
+            this.picProfilePicture_MP.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picProfilePicture_MP.Image = ((System.Drawing.Image)(resources.GetObject("picProfilePicture_MP.Image")));
+            this.picProfilePicture_MP.Location = new System.Drawing.Point(718, 135);
             this.picProfilePicture_MP.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.picProfilePicture_MP.Name = "picProfilePicture_MP";
-            this.picProfilePicture_MP.Size = new System.Drawing.Size(225, 261);
+            this.picProfilePicture_MP.Size = new System.Drawing.Size(321, 214);
+            this.picProfilePicture_MP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picProfilePicture_MP.TabIndex = 7;
             this.picProfilePicture_MP.TabStop = false;
             // 

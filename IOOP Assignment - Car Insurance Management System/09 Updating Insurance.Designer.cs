@@ -40,11 +40,11 @@
             this.btnSubmit_UI = new System.Windows.Forms.Button();
             this.textReasons_UI = new System.Windows.Forms.TextBox();
             this.textTotalAmount_UI = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.dtApply = new System.Windows.Forms.DateTimePicker();
+            this.dtApprove = new System.Windows.Forms.DateTimePicker();
+            this.CBAccount = new System.Windows.Forms.ComboBox();
+            this.showCUSID = new System.Windows.Forms.Label();
+            this.showINSID = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblUpdateInsurance
@@ -186,53 +186,54 @@
             this.textTotalAmount_UI.Size = new System.Drawing.Size(650, 53);
             this.textTotalAmount_UI.TabIndex = 16;
             // 
-            // dateTimePicker1
+            // dtApply
             // 
-            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(370, 260);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(650, 53);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dtApply.CalendarForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dtApply.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtApply.Location = new System.Drawing.Point(370, 260);
+            this.dtApply.Name = "dtApply";
+            this.dtApply.Size = new System.Drawing.Size(650, 53);
+            this.dtApply.TabIndex = 17;
             // 
-            // dateTimePicker2
+            // dtApprove
             // 
-            this.dateTimePicker2.CalendarForeColor = System.Drawing.Color.DarkSlateGray;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(370, 322);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(650, 53);
-            this.dateTimePicker2.TabIndex = 18;
+            this.dtApprove.CalendarForeColor = System.Drawing.Color.DarkSlateGray;
+            this.dtApprove.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtApprove.Location = new System.Drawing.Point(370, 322);
+            this.dtApprove.Name = "dtApprove";
+            this.dtApprove.Size = new System.Drawing.Size(650, 53);
+            this.dtApprove.TabIndex = 18;
             // 
-            // comboBox1
+            // CBAccount
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(370, 384);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(650, 58);
-            this.comboBox1.TabIndex = 19;
+            this.CBAccount.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBAccount.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.CBAccount.FormattingEnabled = true;
+            this.CBAccount.Location = new System.Drawing.Point(370, 384);
+            this.CBAccount.Name = "CBAccount";
+            this.CBAccount.Size = new System.Drawing.Size(650, 58);
+            this.CBAccount.TabIndex = 19;
+            this.CBAccount.SelectedIndexChanged += new System.EventHandler(this.CBAccount_SelectedIndexChanged);
             // 
-            // label1
+            // showCUSID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(370, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 51);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "(Show Customer ID)";
+            this.showCUSID.AutoSize = true;
+            this.showCUSID.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showCUSID.Location = new System.Drawing.Point(370, 142);
+            this.showCUSID.Name = "showCUSID";
+            this.showCUSID.Size = new System.Drawing.Size(198, 51);
+            this.showCUSID.TabIndex = 20;
+            this.showCUSID.Text = "(Show Customer ID)";
             // 
-            // label2
+            // showINSID
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(370, 204);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 51);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "(Insurance ID)";
+            this.showINSID.AutoSize = true;
+            this.showINSID.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showINSID.Location = new System.Drawing.Point(370, 204);
+            this.showINSID.Name = "showINSID";
+            this.showINSID.Size = new System.Drawing.Size(148, 51);
+            this.showINSID.TabIndex = 21;
+            this.showINSID.Text = "(Insurance ID)";
             // 
             // Updating_Insurance
             // 
@@ -240,10 +241,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.showINSID);
+            this.Controls.Add(this.showCUSID);
+            this.Controls.Add(this.CBAccount);
+            this.Controls.Add(this.dtApprove);
             this.Controls.Add(this.textTotalAmount_UI);
             this.Controls.Add(this.textReasons_UI);
             this.Controls.Add(this.btnSubmit_UI);
@@ -256,7 +257,7 @@
             this.Controls.Add(this.lblInsuranceID_UI);
             this.Controls.Add(this.lblCustomerID_UI);
             this.Controls.Add(this.lblUpdateInsurance);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtApply);
             this.Font = new System.Drawing.Font("Gabriola", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
@@ -282,10 +283,10 @@
         private System.Windows.Forms.Button btnSubmit_UI;
         private System.Windows.Forms.TextBox textReasons_UI;
         private System.Windows.Forms.TextBox textTotalAmount_UI;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtApply;
+        private System.Windows.Forms.DateTimePicker dtApprove;
+        private System.Windows.Forms.ComboBox CBAccount;
+        private System.Windows.Forms.Label showCUSID;
+        private System.Windows.Forms.Label showINSID;
     }
 }

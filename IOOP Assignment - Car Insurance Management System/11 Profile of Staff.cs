@@ -38,7 +38,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
 
-            cmd.CommandText = "select * from staff where username = 'admin'";
+            string staffID = Save.staffid;
+            cmd.CommandText = "select * from staff where staff_id = "+staffID+""; // staffid in db
             cmd.Connection = con;
             OleDbDataReader dr = cmd.ExecuteReader();
 
@@ -46,11 +47,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 showStaID.Text = dr[0].ToString();
                 showStaName.Text = dr[3].ToString();
-                showStaLastN.Text = dr[4].ToString();
-                showStaGender.Text = dr[5].ToString();
-                showStaPosition.Text = dr[6].ToString();
-                showStaGender.Text = dr[7].ToString();
-                showStaAddress.Text = dr[8].ToString();
+                
+                showStaGender.Text = dr[4].ToString();
+                showStaPosition.Text = dr[5].ToString();
+                showStaGender.Text = dr[6].ToString();
+                showStaAddress.Text = dr[7].ToString();
 
             }
             else
@@ -59,15 +60,28 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             dr.Close();
 
+            DT();
+        }
+
+        private void DT()
+        {
+            cmd.CommandText = "select id as [insurance id], customerid as [customer id], Ins_PurchasedDate as [Purchase Date], Ins_LastRenewalDate as [Last Renewal Date], Ins_EndDate as [End Date] from insurance where Ins_Status = 'processing'";
+            cmd.Connection = con;
+            
             DataTable dt_MP = new DataTable();
-
-            dt_MP.Columns.Add("Current Incharge Customer ID");
-            dt_MP.Columns.Add("Insurance ID");
-            dt_MP.Columns.Add("Type");
-            dt_MP.Columns.Add("Start Date");
-            dt_MP.Columns.Add("End Date");
-
+            dt_MP.Load(cmd.ExecuteReader());
             dgvMP.DataSource = dt_MP;
+            dgvMP.AutoResizeColumns();
+            dgvMP.AutoResizeRows();
+
+
+            //dt_MP.Columns.Add("Current Incharge Customer ID");
+            //dt_MP.Columns.Add("Insurance ID");
+            //dt_MP.Columns.Add("Type");
+            //dt_MP.Columns.Add("Start Date");
+            //dt_MP.Columns.Add("End Date");
+
+            //dgvMP.DataSource = dt_MP;
         }
     }
 }

@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +14,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 {
     public partial class Total_Payable_Amount_of_Insurance : Form
     {
+        OleDbConnection conTA = new OleDbConnection();
+        OleDbCommand cmdTA = new OleDbCommand();
+
         public Total_Payable_Amount_of_Insurance()
         {
             InitializeComponent();
@@ -36,49 +41,73 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void Total_Payable_Amount_of_Insurance_Load(object sender, EventArgs e)
         {
+            conTA.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
+            conTA.Open();
 
+            lblCustomerID_TA.Text = "Customer ID: " + Save.customerid;
+            lblCustomerName_TA.Text = "Insurance ID: " + Save.insuranceid;
+
+            Calculate();
         }
 
         private void btnSave_TA_Click(object sender, EventArgs e)
         {
-
+            cmdTA.CommandText = "insert into insurance VALUES('ID', 'Customer ID', 'Status', 'Purchase Date', 'Last renewal date', 'End Date', 'ins type', 'gross total', 'sst', '10', 'total', 'own_ic', 'vehicleregitrationno')";
+            cmdTA.Connection = conTA;
+            cmdTA.ExecuteNonQuery();
         }
 
         private void Calculate()
         {
-            double premT_TP = Select_Type_of_Insurance.premiumTotal;
-            lblRMInsuranceTotal.Text = premT_TP.ToString();
 
+            double premT_TP = Save.GrossTotal;
             double sst_TP = premT_TP * 0.06;
-            lblSSTCount.Text = sst_TP.ToString();
 
             double value = 0;
             CalculateNCD(ref value);
             double NCD_TP = premT_TP * value;
-            lblRM_NCD.Text = NCD_TP.ToString();
+            double Total_TP = premT_TP + sst_TP + 10 - NCD_TP;
 
-            double Total_TP = premT_TP + sst_TP + 10 + NCD_TP;
-            lblRMtotal.Text = Total_TP.ToString();
+            lblRMInsuranceTotal.Text = "RM" + premT_TP;
+            lblSSTCount.Text = "RM" + sst_TP;
+            lblRM_NCD.Text = "RM" + NCD_TP;
+            lblRMtotal.Text = "RM" + Total_TP;
 
-            //Havent save into database
+
         }
 
         private void CalculateNCD(ref double NCD)
         {
-            double year = 1; //Should from database
-           
-            if (year == 1)
-                NCD = 0.25;
-            else if (year == 2)
-                NCD = 0.30;
-            else if (year == 3)
-                NCD = 0.3833;
-            else if (year == 4)
-                NCD = 0.45;
-            else if (year >= 5)
-                NCD = 0.55;
+            string insID = Save.insuranceid;
+            cmdTA.CommandText = "select count (*) from insurance where 'id = "+insID+"' ";
+            cmdTA.Connection = conTA;
+            OleDbDataReader dr = cmdTA.ExecuteReader();
+
+            if (dr.Read())
+            {
+                double year = double.Parse(dr[0].ToString());
+
+                if (year == 1)
+                    NCD = 0.25;
+                else if (year == 2)
+                    NCD = 0.30;
+                else if (year == 3)
+                    NCD = 0.3833;
+                else if (year == 4)
+                    NCD = 0.45;
+                else if (year >= 5)
+                    NCD = 0.55;
+                else
+                    NCD = 0;
+            }
             else
-                NCD = 0;
+            {
+                MessageBox.Show("Errors Exist");
+            }
+            dr.Close();
+
+            
+            
 
         }
 
