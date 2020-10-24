@@ -323,6 +323,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 9, 3, 9);
             this.Name = "Customer_Profile";
             this.Text = "Customer_Profile";
+            this.Load += new System.EventHandler(this.Customer_Profile_Load);
             this.tlpHistory.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).EndInit();
             this.ResumeLayout(false);

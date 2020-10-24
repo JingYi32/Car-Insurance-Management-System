@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,14 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 {
     public partial class Customer_Profile : Form
     {
+        OleDbConnection con = new OleDbConnection();
+        OleDbCommand cmd = new OleDbCommand();
+
+        private void Customer_Profile_Load(object sender, EventArgs e)
+        {
+
+        }
+
         public Customer_Profile()
         {
             InitializeComponent();
