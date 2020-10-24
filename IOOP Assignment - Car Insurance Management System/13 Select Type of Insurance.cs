@@ -75,7 +75,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             this.Close();
         }
 
-        public static double premiumTotal=0; //To Total Payable Amount of Insurance
+        
         private void btnContinue_IT_Click(object sender, EventArgs e)
         {
             Total_Payable_Amount_of_Insurance totalAmount = new Total_Payable_Amount_of_Insurance();
@@ -87,6 +87,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
             InsType(ref insuranceType);
             double premiumTotal = insuranceType * marketPrice; 
+            Save.GrossTotal = premiumTotal;
+
+            MessageBox.Show("RM" + premiumTotal);
         }
 
         private void InsType(ref double value)

@@ -44,8 +44,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             conTA.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             conTA.Open();
 
-            Calculate();//call statement
+            lblCustomerID_TA.Text = "Customer ID: " + Save.customerid;
+            lblCustomerName_TA.Text = "Insurance ID: " + Save.insuranceid;
 
+            Calculate();
         }
 
         private void btnSave_TA_Click(object sender, EventArgs e)
@@ -57,43 +59,55 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void Calculate()
         {
-            double premT_TP = Select_Type_of_Insurance.premiumTotal;
-            lblRMInsuranceTotal.Text = "RM" + premT_TP;
 
+            double premT_TP = Save.GrossTotal;
             double sst_TP = premT_TP * 0.06;
-            lblSSTCount.Text = "RM" + sst_TP;
 
             double value = 0;
             CalculateNCD(ref value);
             double NCD_TP = premT_TP * value;
-            lblRM_NCD.Text = "RM" + NCD_TP;
+            double Total_TP = premT_TP + sst_TP + 10 - NCD_TP;
 
-            double Total_TP = premT_TP + sst_TP + 10 + NCD_TP;
+            lblRMInsuranceTotal.Text = "RM" + premT_TP;
+            lblSSTCount.Text = "RM" + sst_TP;
+            lblRM_NCD.Text = "RM" + NCD_TP;
             lblRMtotal.Text = "RM" + Total_TP;
 
-            //Havent save into database
+
         }
 
         private void CalculateNCD(ref double NCD)
         {
-            cmdTA.CommandText = "select count (*) as 'year' from insurance where id = '"+Save.insuranceid+"'";
+            string insID = Save.insuranceid;
+            cmdTA.CommandText = "select count (*) from insurance where 'id = "+insID+"' ";
             cmdTA.Connection = conTA;
+            OleDbDataReader dr = cmdTA.ExecuteReader();
 
-            double year = double.Parse(cmdTA.CommandText);
+            if (dr.Read())
+            {
+                double year = double.Parse(dr[0].ToString());
+
+                if (year == 1)
+                    NCD = 0.25;
+                else if (year == 2)
+                    NCD = 0.30;
+                else if (year == 3)
+                    NCD = 0.3833;
+                else if (year == 4)
+                    NCD = 0.45;
+                else if (year >= 5)
+                    NCD = 0.55;
+                else
+                    NCD = 0;
+            }
+            else
+            {
+                MessageBox.Show("Errors Exist");
+            }
+            dr.Close();
 
             
-            if (year == 1)
-                NCD = 0.25;
-            else if (year == 2)
-                NCD = 0.30;
-            else if (year == 3)
-                NCD = 0.3833;
-            else if (year == 4)
-                NCD = 0.45;
-            else if (year >= 5)
-                NCD = 0.55;
-            else
-                NCD = 0;
+            
 
         }
 
