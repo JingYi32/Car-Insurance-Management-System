@@ -33,10 +33,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnSubmit_UI_Click(object sender, EventArgs e)
         {
+            if (dtApply.Text!="" && dtApprove.Text!="" && CBAccount.Text!="" && textReasons_UI.Text!="" && textTotalAmount_UI.Text!="")
+            {
+                cmd.CommandText = "insert into update VALUES('" + Save.customerid + "', '" + Save.insuranceid + "', '" + dtApply.Text + "', '" + dtApprove.Text + "', '" + CBAccount.Text + "', '" + textReasons_UI.Text + "', '" + textTotalAmount_UI.Text + "')";
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Insert Successfully");
+            }
+            else
+            {
+                MessageBox.Show("Please fill in the textbox.");
+            }
             
-            cmd.CommandText = "insert into update VALUES('"+Save.customerid+"', '"+Save.insuranceid+"', '"+dtApply.Text+"', '"+dtApprove.Text+"', '"+CBAccount.Text+"', '"+textReasons_UI.Text+"', '"+textTotalAmount_UI.Text+"')";
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
         }
 
         private void lblUpdateInsurance_Click(object sender, EventArgs e)
