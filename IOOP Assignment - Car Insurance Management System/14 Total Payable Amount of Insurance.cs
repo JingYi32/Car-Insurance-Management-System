@@ -52,9 +52,20 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnSave_TA_Click(object sender, EventArgs e)
         {
-            cmdTA.CommandText = "insert into insurance VALUES('"+Save.insuranceid+"', '"+Save.customerid+"', 'Processing', '"+Save.purchasedate+"', '"+Save.RenewalDate+"', '"+Save.RenewalEndDate+"', '"+Save.InsType+"', '"+Save.GrossTotal+"', '"+Save.SST+"', '10', '"+Save.Total+"', '"+Save.Owner_IC+"', '"+Save.Vehicle_NO+"')";
-            cmdTA.Connection = conTA;
-            cmdTA.ExecuteNonQuery();
+            string insID = Save.insuranceid;
+            if (insID == "")
+            {
+                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
+                cmdTA.Connection = conTA;
+                cmdTA.ExecuteNonQuery();
+            }
+            else 
+            {
+                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
+                cmdTA.Connection = conTA;
+                cmdTA.ExecuteNonQuery();
+            }
+            
         }
 
         private void Calculate()
@@ -82,34 +93,41 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void CalculateNCD(ref double NCD)
         {
             string insID = Save.insuranceid;
-            cmdTA.CommandText = "select count (*) from insurance where 'id = "+insID+"' ";
-            cmdTA.Connection = conTA;
-            OleDbDataReader dr = cmdTA.ExecuteReader();
-
-            if (dr.Read())
-            {
-                double year = double.Parse(dr[0].ToString());
-
-                if (year == 0)
-                    NCD = 0;
-                else if (year == 1)
-                    NCD = 0.25;
-                else if (year == 2)
-                    NCD = 0.30;
-                else if (year == 3)
-                    NCD = 0.3833;
-                else if (year == 4)
-                    NCD = 0.45;
-                else if (year >= 5)
-                    NCD = 0.55;
-                else
-                    NCD = 0;
-            }
+            if (insID == "")
+                NCD = 0;
             else
             {
-                MessageBox.Show("Errors Exist");
+                cmdTA.CommandText = "select count (*) from insurance where 'id = " + insID + "' ";
+                cmdTA.Connection = conTA;
+                OleDbDataReader dr = cmdTA.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    double year = double.Parse(dr[0].ToString());
+
+                    if (year == 0)
+                        NCD = 0;
+                    else if (year == 1)
+                        NCD = 0.25;
+                    else if (year == 2)
+                        NCD = 0.30;
+                    else if (year == 3)
+                        NCD = 0.3833;
+                    else if (year == 4)
+                        NCD = 0.45;
+                    else if (year >= 5)
+                        NCD = 0.55;
+                    else
+                        NCD = 0;
+                }
+                else
+                {
+                    MessageBox.Show("Errors Exist");
+                }
+                dr.Close();
             }
-            dr.Close();
+            
+            
 
             
             

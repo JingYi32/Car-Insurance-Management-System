@@ -11,7 +11,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //ID
         public static string staffid;
         public static string customerid;
-        public static string insuranceid;
+        public static string insuranceid = "";
 
         //INS
         public static string InsStatus;
@@ -24,7 +24,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static DateTime RenewalEndDate;
 
         //Amount
-        public static double GrossTotal;
+        public static double GrossTotal = 0;
         public static double SST;
         public static double Total;
 

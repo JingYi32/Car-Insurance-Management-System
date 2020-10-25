@@ -83,5 +83,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
             //dgvMP.DataSource = dt_MP;
         }
+
+        private void lblGender_MP_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
