@@ -66,10 +66,12 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 cmdTA.ExecuteNonQuery();
             }
             
+            //Back to main page and show save successfully
         }
 
         private void Calculate()
         {
+
 
             double premT_TP = Save.GrossTotal;
             double sst_TP = premT_TP * 0.06;

@@ -13,6 +13,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 {
     public partial class Select_Type_of_Insurance : Form
     {
+        
         public Select_Type_of_Insurance()
         {
             InitializeComponent();
@@ -78,9 +79,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         
         private void btnContinue_IT_Click(object sender, EventArgs e)
         {
-            Total_Payable_Amount_of_Insurance totalAmount = new Total_Payable_Amount_of_Insurance();
-            totalAmount.Show();
-            this.Hide();
+            
 
             double insuranceType = 0;
             double marketPrice = Save.Vehicle_Price;
@@ -89,7 +88,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             double premiumTotal = insuranceType * marketPrice; 
             Save.GrossTotal = premiumTotal;
 
-            MessageBox.Show("RM" + premiumTotal);
+            Total_Payable_Amount_of_Insurance totalAmount = new Total_Payable_Amount_of_Insurance();
+            totalAmount.Show();
+            this.Hide();
+
         }
 
         private void InsType(ref double value)

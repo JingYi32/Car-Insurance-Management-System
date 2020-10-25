@@ -25,8 +25,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         //Amount
         public static double GrossTotal = 0;
-        public static double SST;
-        public static double Total;
+        public static double SST = 0;
+        public static double Total = 0;
 
         //Vehicle
         public static string Vehicle_NO;
