@@ -67,6 +67,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             
             //Back to main page and show save successfully
+            //owner, vehicle, insurance
         }
 
         private void Calculate()
