@@ -63,7 +63,6 @@
             this.lblProfile.TabIndex = 1;
             this.lblProfile.Text = "Mr./Mrs.____\'s Profile";
             this.lblProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblProfile.Click += new System.EventHandler(this.lblProfile_Click);
             // 
             // lblCUST_ID
             // 
@@ -218,7 +217,6 @@
             this.lblStatus.TabIndex = 2;
             this.lblStatus.Text = "Status";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
             // 
             // lblInsuranceID
             // 
@@ -297,6 +295,7 @@
             this.dgvHistory.RowTemplate.Height = 24;
             this.dgvHistory.Size = new System.Drawing.Size(924, 211);
             this.dgvHistory.TabIndex = 14;
+            this.dgvHistory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHistory_CellContentClick);
             // 
             // Customer_Profile
             // 

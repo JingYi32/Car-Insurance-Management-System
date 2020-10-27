@@ -19,7 +19,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void Customer_Profile_Load(object sender, EventArgs e)
         {
-
+            con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
+            con.Open();
+            cmd.CommandText = "SELECT * FROM Customer WHERE ID = " + Save.customerid + "";
+            cmd.Connection = con;
         }
 
         public Customer_Profile()
@@ -53,12 +56,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             purrchase_New_Policy.Show();
         }
 
-        private void lblStatus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblProfile_Click(object sender, EventArgs e)
+        private void dgvHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
