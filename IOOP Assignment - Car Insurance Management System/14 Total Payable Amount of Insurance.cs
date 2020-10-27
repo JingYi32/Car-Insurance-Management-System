@@ -53,15 +53,34 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void btnSave_TA_Click(object sender, EventArgs e)
         {
             string insID = Save.insuranceid;
+
+            //new insurance
             if (insID == "")
             {
-                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "'); insert into owner VALUES ('"+Save.Owner_IC+"’, '"+Save.Owner_Name+"', '"+Save.Owner_Gender+"', '"+Save.Owner_Phone+"', '"+Save.Owner_Address+"'); insert into vehicle VALUES ('"+Save.Vehicle_NO+"', '"+Save.Vehicle_Brand+"', '"+Save.Vehicle_Model+"', '"+Save.Vehicle_YOM+"', '"+Save.Vehicle_Price+"')";
-                cmdTA.Connection = conTA;
-                cmdTA.ExecuteNonQuery();
+                //owner details has been saved before
+                string ownName = Save.Owner_Name;
+                if (ownName == "")
+                {
+                    cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "'); insert into vehicle VALUES ('" + Save.Vehicle_NO + "', '" + Save.Vehicle_Brand + "', '" + Save.Vehicle_Model + "', '" + Save.Vehicle_YOM + "', '" + Save.Vehicle_Price + "')";
+                    cmdTA.Connection = conTA;
+                    cmdTA.ExecuteNonQuery();
+                }
+
+                //including owner details
+                else
+                {
+                    cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "'); insert into owner VALUES ('" + Save.Owner_IC + "’, '" + Save.Owner_Name + "', '" + Save.Owner_Gender + "', '" + Save.Owner_Phone + "', '" + Save.Owner_Address + "'); insert into vehicle VALUES ('" + Save.Vehicle_NO + "', '" + Save.Vehicle_Brand + "', '" + Save.Vehicle_Model + "', '" + Save.Vehicle_YOM + "', '" + Save.Vehicle_Price + "')";
+                    cmdTA.Connection = conTA;
+                    cmdTA.ExecuteNonQuery();
+                }
+                    
             }
+
+            //old insurance
+            //does not need to include vehicle n owner
             else 
             {
-                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "'); insert into owner VALUES (‘"+Save.Owner_IC+"’, '"+Save.Owner_Name+"', '"+Save.Owner_Gender+"', '"+Save.Owner_Phone+"', '"+Save.Owner_Address+"'); insert into vehicle VALUES ('"+Save.Vehicle_NO+"', '"+Save.Vehicle_Brand+"', '"+Save.Vehicle_Model+"', '"+Save.Vehicle_YOM+"', '"+Save.Vehicle_Price+"')";
+                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
             }
@@ -99,11 +118,13 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void CalculateNCD(ref double NCD)
         {
             string insID = Save.insuranceid;
+
+            //new insurance
             if (insID == "")
                 NCD = 0;
 
             
-                //found in update
+            //found in update
             else if (insID != "")
             {
                 cmdTA.CommandText = "select * from update where 'id = "+insID+"'"; //Not sure //if??
@@ -115,6 +136,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     NCD = 0;
                 }
 
+                //not found in update
                 else
                 {
                     cmdTA.CommandText = "select count (*) from insurance where 'id = " + insID + "' ";

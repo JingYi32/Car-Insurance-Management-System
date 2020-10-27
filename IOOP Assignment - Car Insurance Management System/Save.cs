@@ -37,7 +37,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         //Owner
         public static string Owner_IC;
-        public static string Owner_Name;
+        public static string Owner_Name = "";
         public static string Owner_Gender;
         public static string Owner_Phone;
         public static string Owner_Address;
