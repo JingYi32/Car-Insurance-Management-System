@@ -107,7 +107,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 else if (rbFireTheft.Checked)
                 {
                     value = 0.0275;
-                    Save.InsType = "Third Party, fire and theft";
+                    Save.InsType = "Third Party, Fire and Theft";
                 }
                     
                 else if (rbComprehensive.Checked)

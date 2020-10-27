@@ -74,14 +74,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             dgvMP.AutoResizeColumns();
             dgvMP.AutoResizeRows();
 
-
-            //dt_MP.Columns.Add("Current Incharge Customer ID");
-            //dt_MP.Columns.Add("Insurance ID");
-            //dt_MP.Columns.Add("Type");
-            //dt_MP.Columns.Add("Start Date");
-            //dt_MP.Columns.Add("End Date");
-
-            //dgvMP.DataSource = dt_MP;
         }
 
         private void lblGender_MP_Click(object sender, EventArgs e)
