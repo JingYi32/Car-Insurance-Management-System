@@ -65,7 +65,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void DT()
         {
-            cmd.CommandText = "select id as [insurance id], customerid as [customer id], Ins_PurchasedDate as [Purchase Date], Ins_LastRenewalDate as [Last Renewal Date], Ins_EndDate as [End Date] from insurance where Ins_Status = 'processing'";
+            cmd.CommandText = "select ID as [insurance id], Cust_id as [customer id], Ins_PurchasedDate as [Purchase Date], Ins_LastRenewalDate as [Last Renewal Date], Ins_EndDate as [End Date] from insurance where Ins_Status = 'processing'";
             cmd.Connection = con;
             
             DataTable dt_MP = new DataTable();
