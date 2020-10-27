@@ -21,7 +21,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
-            cmd.CommandText = "SELECT Insurance.*, Vehicle.*, Owner.* FROM (Insurance INNER JOIN Vehicle ON Insurance.Vehicle_RegistrationNo = Vehicle.Vehicle_RegistrationNo) INNER JOIN Owner ON Insurance.Owner_IC = Owner.Owner_IC WHERE Insurance.ID = " + Save.insuranceid + "";
+            cmd.CommandText = "SELECT Insurance.*, Vehicle.*, Owner.* FROM (Insurance INNER JOIN Vehicle ON Insurance.Vehicle_RegistrationNo = Vehicle.Vehicle_RegistrationNo) INNER JOIN Owner ON Insurance.Owner_IC = Owner.Owner_IC WHERE Insurance.ID = '" + Save.insuranceid + "'";
             cmd.Connection = con;
 
             OleDbDataReader dr = cmd.ExecuteReader();
@@ -46,7 +46,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowOwner_Gender.Text = ":  " + dr[20].ToString();
                 Save.Owner_Gender = dr[20].ToString();
                 lblShowOwner_Phone.Text = ":  " + dr[21].ToString();
-                Save.Owner_Phone = int.Parse(dr[21].ToString());
+                Save.Owner_Phone = dr[21].ToString();
                 lblShowOwner_Address.Text = ":  " + dr[22].ToString();
                 Save.Owner_Address = dr[22].ToString();
                 lblShowIns_Status.Text = ":  " + dr[2].ToString();

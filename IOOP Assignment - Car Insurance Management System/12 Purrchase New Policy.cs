@@ -350,7 +350,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                         {
                             e.Cancel = false;
                             errorProvider10.SetError(txtOwner_Phone, "");
-                            Save.Owner_Phone = int.Parse(txtOwner_Phone.Text);
+                            Save.Owner_Phone = txtOwner_Phone.Text;
                         }
                     }
                     catch
@@ -365,7 +365,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 e.Cancel = false;
                 errorProvider10.SetError(txtOwner_Phone, "");
-                Save.Owner_Phone = int.Parse(lblOwner_Phone.Text);
+                Save.Owner_Phone = lblOwner_Phone.Text;
             }
         }
 
