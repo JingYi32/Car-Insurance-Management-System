@@ -68,6 +68,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             
             //Back to main page and show save successfully
             //owner, vehicle, insurance
+            //same owner, then find the owner name, only can save without owner
+            //update NCD, if found then NCD = 0
+            //insurance type should be same?
         }
 
         private void Calculate()
@@ -98,42 +101,52 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             string insID = Save.insuranceid;
             if (insID == "")
                 NCD = 0;
-            else
+
+            
+                //found in update
+            else if (insID != "")
             {
-                cmdTA.CommandText = "select count (*) from insurance where 'id = " + insID + "' ";
+                cmdTA.CommandText = "select * from update where 'id = "+insID+"'"; //Not sure //if??
                 cmdTA.Connection = conTA;
-                OleDbDataReader dr = cmdTA.ExecuteReader();
+                OleDbDataReader drTA = cmdTA.ExecuteReader();
 
-                if (dr.Read())
+                if (drTA.Read())
                 {
-                    double year = double.Parse(dr[0].ToString());
-
-                    if (year == 0)
-                        NCD = 0;
-                    else if (year == 1)
-                        NCD = 0.25;
-                    else if (year == 2)
-                        NCD = 0.30;
-                    else if (year == 3)
-                        NCD = 0.3833;
-                    else if (year == 4)
-                        NCD = 0.45;
-                    else if (year >= 5)
-                        NCD = 0.55;
-                    else
-                        NCD = 0;
+                    //if ins id ==insid then NCD=0
                 }
+
                 else
                 {
-                    MessageBox.Show("Errors Exist");
-                }
-                dr.Close();
-            }
-            
-            
+                    cmdTA.CommandText = "select count (*) from insurance where 'id = " + insID + "' ";
+                    cmdTA.Connection = conTA;
+                    OleDbDataReader dr = cmdTA.ExecuteReader();
 
-            
-            
+                    if (dr.Read())
+                    {
+                        double year = double.Parse(dr[0].ToString());
+
+                        if (year == 0)
+                            NCD = 0;
+                        else if (year == 1)
+                            NCD = 0.25;
+                        else if (year == 2)
+                            NCD = 0.30;
+                        else if (year == 3)
+                            NCD = 0.3833;
+                        else if (year == 4)
+                            NCD = 0.45;
+                        else if (year >= 5)
+                            NCD = 0.55;
+                        else
+                            NCD = 0;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Errors Exist");
+                    }
+                    dr.Close();
+                }
+            }
 
         }
 
