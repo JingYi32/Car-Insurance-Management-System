@@ -44,24 +44,39 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             if (cbSelect.SelectedItem.ToString() == "Customer ID")
             {
-                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Customer.ID = '" + txtSearch.Text + "'";
-                cmd.Connection = con;
-                DataTable dt = new DataTable();
-                dt.Load(cmd.ExecuteReader());
-                dgvSearchResult.DataSource = dt;
-                dgvSearchResult.AutoResizeColumns();
-                dgvSearchResult.AutoResizeRows();
+                try
+                {
+                    cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Customer.ID = '" + txtSearch.Text + "'";
+                    cmd.Connection = con;
+                    DataTable dt = new DataTable();
+                    dt.Load(cmd.ExecuteReader());
+                    dgvSearchResult.DataSource = dt;
+                    dgvSearchResult.AutoResizeColumns();
+                    dgvSearchResult.AutoResizeRows();
+                }
+                catch (OleDbException)
+                {
+                    MessageBox.Show("Databases table is opening.");
+                }
 
             }
             else if (cbSelect.SelectedItem.ToString() == "Insurance ID")
             {
-                cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Insurance.ID = '" + txtSearch.Text + "'";
-                cmd.Connection = con;
-                DataTable dt = new DataTable();
-                dt.Load(cmd.ExecuteReader());
-                dgvSearchResult.DataSource = dt;
-                dgvSearchResult.AutoResizeColumns();
-                dgvSearchResult.AutoResizeRows();
+                try
+                {
+                    cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Insurance.ID = '" + txtSearch.Text + "'";
+                    cmd.Connection = con;
+                    DataTable dt = new DataTable();
+                    dt.Load(cmd.ExecuteReader());
+                    dgvSearchResult.DataSource = dt;
+                    dgvSearchResult.AutoResizeColumns();
+                    dgvSearchResult.AutoResizeRows();
+                }
+                catch (OleDbException)
+                {
+                    MessageBox.Show("Databases table is opening.");
+                }
+
             }
         }
 

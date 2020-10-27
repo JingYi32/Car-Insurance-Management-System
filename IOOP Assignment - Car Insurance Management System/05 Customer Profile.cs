@@ -21,8 +21,25 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
-            cmd.CommandText = "SELECT * FROM Customer WHERE ID = " + Save.customerid + "";
+            cmd.CommandText = "SELECT Customer.*, Insurance.* FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Customer.ID = '" + Save.customerid + "'";
             cmd.Connection = con;
+
+            OleDbDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                lblShowCUST_ID.Text = dr[0].ToString();
+                lblCUST_Name.Text = dr[].ToString();
+                lblCUST_IC.Text = dr[].ToString();
+                lblCUST_Address.Text = dr[].ToString();
+                lblCUST_Gender.Text = dr[].ToString();
+                lblCUST_Phone.Text = dr[].ToString();
+                lblCUST_Email.Text = dr[].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Record not found.");
+            }
+            dr.Close();
         }
 
         public Customer_Profile()
@@ -58,7 +75,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void dgvHistory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvHistory.Rows[e.RowIndex];
+                Save.customerid = row.Cells["Customer ID"].Value.ToString();
+                Save.insuranceid = row.Cells["Insurance ID"].Value.ToString();
+                //Go To Insurance Page
+                Insurance_Details insurance_Details = new Insurance_Details();
+                this.Hide();
+                insurance_Details.Show();
+            }
         }
     }
 }
