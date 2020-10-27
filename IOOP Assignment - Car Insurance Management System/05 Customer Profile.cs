@@ -27,13 +27,13 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             OleDbDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                lblShowCUST_ID.Text = dr[0].ToString();
-                lblCUST_Name.Text = dr[].ToString();
-                lblCUST_IC.Text = dr[].ToString();
-                lblCUST_Address.Text = dr[].ToString();
-                lblCUST_Gender.Text = dr[].ToString();
-                lblCUST_Phone.Text = dr[].ToString();
-                lblCUST_Email.Text = dr[].ToString();
+                lblCUST_ID.Text = dr[0].ToString();
+                lblCUST_Name.Text = dr[1].ToString();
+                lblCUST_IC.Text = dr[2].ToString();
+                lblCUST_Address.Text = dr[3].ToString();
+                lblCUST_Gender.Text = dr[4].ToString();
+                lblCUST_Phone.Text = dr[5].ToString();
+                lblCUST_Email.Text = dr[6].ToString();
             }
             else
             {
