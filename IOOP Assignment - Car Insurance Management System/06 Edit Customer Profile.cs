@@ -45,11 +45,30 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnDoneEdit_Click(object sender, EventArgs e)
         {
-            cmd.CommandText = "";
-            cmd.Connection = con;
-            Customer_Profile customer_Profile = new Customer_Profile();
-            this.Hide();
-            customer_Profile.Show();
+            if ((string.IsNullOrWhiteSpace(txtAddress.Text)) || (string.IsNullOrWhiteSpace(txtEmail.Text)) || (string.IsNullOrWhiteSpace(txtphone.Text)) || (cbGender.SelectedIndex == -1) )
+            {
+                MessageBox.Show("Please fill in all field.");
+            }
+            else
+            {
+                string message = "Confirm Edited Customer Details is Correct?";
+                string title = "Confirmation of Edition of Customer Details";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show(message, title, buttons);
+                if (result == DialogResult.Yes)
+                {
+                    MessageBox.Show(Save.CustGender + Save.CustAddress + Save.CustEmail + Save.CustPhone + Save.customerid);
+                    cmd.CommandText = "UPDATE Customer SET Gender = '" + Save.CustGender + "', Address = '" + Save.CustAddress + "', Phone = '" + Save.CustPhone + "', Email = '" + Save.CustEmail + "' WHERE ID = '" + Save.customerid + "'";
+                    cmd.Connection = con;
+                    Customer_Profile customer_Profile = new Customer_Profile();
+                    this.Hide();
+                    customer_Profile.Show();
+                }
+                else
+                {
+                    // Do something  
+                }
+            }
         }
 
         //
