@@ -46,7 +46,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 MessageBox.Show("Please fill in the textbox.");
             }
 
-            cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE id = '"+Save.insuranceid+"'";
+            cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE (select MAX(ins_enddate) AS [Insurance End Date] FROM Insurance WHERE id = '"+Save.insuranceid+"')";
             
         }
 
