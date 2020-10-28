@@ -21,6 +21,13 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
+
+            //Generate Insurance ID
+            cmd.CommandText = "SELECT COUNT(*) AS [Insurance_ID] FROM Insurance";
+            cmd.Connection = con;
+            OleDbDataReader dr = cmd.ExecuteReader();
+            Save.insuranceid = dr[0].ToString();
+
         }
 
         public Purrchase_New_Policy()
