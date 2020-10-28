@@ -133,6 +133,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
                 if (drTA.Read())
                 {
+                    //update information store in save
+                    //retrieve that 
+                    //if got then compare the time
+                    //if the time > than 15 months then = 0
                     NCD = 0;
                 }
 
