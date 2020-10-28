@@ -66,7 +66,6 @@
             this.lblEditProfile.TabIndex = 2;
             this.lblEditProfile.Text = "Edit Mr./Mrs.____\'s Profile";
             this.lblEditProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblEditProfile.Click += new System.EventHandler(this.lblEditProfile_Click);
             // 
             // lblCustomerPhone
             // 

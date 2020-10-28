@@ -23,6 +23,14 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static DateTime RenewalStartDate;
         public static DateTime RenewalEndDate;
 
+        //Customer
+        public static string CustName;
+        public static string CustIC;
+        public static string CustGender;
+        public static string CustAddress;
+        public static string CustPhone;
+        public static string CustEmail;
+
         //Amount
         public static double GrossTotal = 0;
         public static double SST = 0;
