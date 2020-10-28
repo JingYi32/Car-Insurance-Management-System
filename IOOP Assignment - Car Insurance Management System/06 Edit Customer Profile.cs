@@ -57,10 +57,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 DialogResult result = MessageBox.Show(message, title, buttons);
                 if (result == DialogResult.Yes)
                 {
-                    MessageBox.Show(Save.CustGender + Save.CustAddress + Save.CustEmail + Save.CustPhone + Save.customerid);
-                    cmd.CommandText = "UPDATE Customer SET Gender = '" + Save.CustGender + "', Address = '" + Save.CustAddress + "', Phone = '" + Save.CustPhone + "', Email = '" + Save.CustEmail + "' WHERE ID = '" + Save.customerid + "'";
+                    cmd.CommandText = "UPDATE Customer SET Gender = '" + Save.CustGender + "', Address = '" + Save.CustAddress + "', Phone = '" + Save.CustPhone + "', Email = '" + Save.CustEmail + "' WHERE ID = '" + Save.customerid + "';";
                     cmd.Connection = con;
-                    Customer_Profile customer_Profile = new Customer_Profile();
+                    cmd.ExecuteNonQuery();
+
+                    Main_Page customer_Profile = new Main_Page();
                     this.Hide();
                     customer_Profile.Show();
                 }
@@ -133,7 +134,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     {
                         e.Cancel = false;
                         errorProviderPhone.SetError(txtphone, "");
-                        Save.Owner_Phone = "060-" + txtphone.Text;
+                        Save.CustPhone = "060-" + txtphone.Text;
                     }
                 }
                 catch
@@ -145,6 +146,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
         }
 
+        //Email Address
         private void txtEmail_Validating(object sender, CancelEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtEmail.Text))
@@ -157,11 +159,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 e.Cancel = false;
                 errorProviderEmail.SetError(txtEmail, "");
-                Save.CustAddress = txtEmail.Text;
+                Save.CustEmail = txtEmail.Text;
             }
         }
-
-
-        //Email Address
     }
 }
