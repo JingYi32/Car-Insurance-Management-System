@@ -35,15 +35,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             if (dtApply.Text!="" && dtApprove.Text!="" && CBAccount.Text!="" && textReasons_UI.Text!="" && textTotalAmount_UI.Text!="")
             {
-                cmd.CommandText = "insert into update VALUES('" + Save.customerid + "', '" + Save.insuranceid + "', '" + dtApply.Text + "', '" + dtApprove.Text + "', '" + CBAccount.Text + "', '" + textReasons_UI.Text + "', '" + textTotalAmount_UI.Text + "')";
+                cmd.CommandText = "insert into claim VALUES('" + Save.customerid + "', '" + Save.insuranceid + "', '" + dtApply.Text + "', '" + dtApprove.Text + "', '" + CBAccount.Text + "', '" + textReasons_UI.Text + "', '" + textTotalAmount_UI.Text + "')";
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Insert Successfully");
+                
             }
             else
             {
                 MessageBox.Show("Please fill in the textbox.");
             }
+
+            cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE id = '"+Save.insuranceid+"'";
             
         }
 

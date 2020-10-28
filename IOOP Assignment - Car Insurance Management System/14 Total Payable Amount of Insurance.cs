@@ -52,14 +52,12 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnSave_TA_Click(object sender, EventArgs e)
         {
-            string insID = Save.insuranceid;
-
             //new insurance
-            if (insID == "")
+            if (Save.CountTotalINS==0)
             {
                 //owner details has been saved before
-                string ownName = Save.Owner_Name;
-                if (ownName == "")
+                
+                if (Save.CountOwn!=0)
                 {
                     cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "'); insert into vehicle VALUES ('" + Save.Vehicle_NO + "', '" + Save.Vehicle_Brand + "', '" + Save.Vehicle_Model + "', '" + Save.Vehicle_YOM + "', '" + Save.Vehicle_Price + "')";
                     cmdTA.Connection = conTA;
@@ -67,7 +65,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
 
                 //including owner details
-                else
+                else if (Save.CountOwn==0)
                 {
                     cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "'); insert into owner VALUES ('" + Save.Owner_IC + "’, '" + Save.Owner_Name + "', '" + Save.Owner_Gender + "', '" + Save.Owner_Phone + "', '" + Save.Owner_Address + "'); insert into vehicle VALUES ('" + Save.Vehicle_NO + "', '" + Save.Vehicle_Brand + "', '" + Save.Vehicle_Model + "', '" + Save.Vehicle_YOM + "', '" + Save.Vehicle_Price + "')";
                     cmdTA.Connection = conTA;
@@ -78,7 +76,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
             //old insurance
             //does not need to include vehicle n owner
-            else 
+            else if (Save.CountTotalINS!=0)
             {
                 cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
                 cmdTA.Connection = conTA;
@@ -100,6 +98,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             double sst_TP = premT_TP * 0.06;
 
             double value = 0;
+            countInDB();
             CalculateNCD(ref value);
             double NCD_TP = premT_TP * value;
             double Total_TP = premT_TP + sst_TP + 10 - NCD_TP;
@@ -111,69 +110,113 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             lblSSTCount.Text = "RM" + sst_TP;
             lblRM_NCD.Text = "RM" + NCD_TP;
             lblRMtotal.Text = "RM" + Total_TP;
-
-
         }
 
-        private void CalculateNCD(ref double NCD)
+        private void countInDB()
         {
-            string insID = Save.insuranceid;
-
-            //new insurance
-            if (insID == "")
-                NCD = 0;
-
-            
-            //found in update
-            else if (insID != "")
+            //New/Old Insurance
+            cmdTA.CommandText = "select count(*) from insurance where id = '"+Save.insuranceid+"'";
+            cmdTA.Connection = conTA;
+            OleDbDataReader drNewOrOld = cmdTA.ExecuteReader();
+            if (drNewOrOld.Read())
             {
-                cmdTA.CommandText = "select * from update where 'id = "+insID+"'"; //Not sure //if??
-                cmdTA.Connection = conTA;
-                OleDbDataReader drTA = cmdTA.ExecuteReader();
+                Save.CountTotalINS = int.Parse(drNewOrOld[0].ToString());
+            }
+            else
+            {
+                MessageBox.Show("Having problems in finding old and new insurance");
+            }
+            drNewOrOld.Close();
 
-                if (drTA.Read())
+            //Claim before or not
+            cmdTA.CommandText = "select count(*) from claim where InsuranceID = '"+Save.insuranceid+"'";
+            cmdTA.Connection = conTA;
+            OleDbDataReader drTA = cmdTA.ExecuteReader();
+            if (drTA.Read())
+            {
+                Save.CountTotalClaim = int.Parse(drTA[0].ToString());
+            }
+            else
+            {
+                MessageBox.Show("Error Exist in drTA");
+            }
+            drTA.Close();
+
+            //ensure that the owner is already exist
+            cmdTA.CommandText = "select count(*) from owner where Owner_IC = '"+Save.Owner_IC+"'";
+            cmdTA.Connection = conTA;
+            OleDbDataReader drOwn = cmdTA.ExecuteReader();
+            if(drOwn.Read())
+            {
+                Save.CountOwn = int.Parse(drOwn[0].ToString());
+                MessageBox.Show(Save.CountOwn.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Error Exist in drOwn");
+            }
+            drOwn.Close();
+        }
+
+
+        private void CalculateNCD(ref double NCDFinal)
+        {
+            
+            //new insurance
+            if (Save.CountTotalINS == 0)
                 {
-                    //update information store in save
-                    //retrieve that 
-                    //if got then compare the time
-                    //if the time > than 15 months then = 0
-                    NCD = 0;
+                    NCDFinal = 0;
                 }
-
-                //not found in update
-                else
+            //old insurance
+            else if (Save.CountTotalINS != 0)
+            {
+                //not found claim insurance
+                if (Save.CountTotalClaim == 0)
                 {
-                    cmdTA.CommandText = "select count (*) from insurance where 'id = " + insID + "' ";
+                    cmdTA.CommandText = "select count (*) from insurance where id = '"+Save.insuranceid+"' ";
                     cmdTA.Connection = conTA;
                     OleDbDataReader dr = cmdTA.ExecuteReader();
 
                     if (dr.Read())
                     {
                         double year = double.Parse(dr[0].ToString());
-
-                        if (year == 0)
-                            NCD = 0;
-                        else if (year == 1)
-                            NCD = 0.25;
-                        else if (year == 2)
-                            NCD = 0.30;
-                        else if (year == 3)
-                            NCD = 0.3833;
-                        else if (year == 4)
-                            NCD = 0.45;
-                        else if (year >= 5)
-                            NCD = 0.55;
-                        else
-                            NCD = 0;
+                        MessageBox.Show(year.ToString());
+                        NCD ncd = new NCD();
+                        ncd.YEAR = year;
+                        NCDFinal = 0;
+                        ncd.YearlyNCD(ref NCDFinal);
+                        
                     }
                     else
                     {
-                        MessageBox.Show("Errors Exist");
+                        MessageBox.Show("Errors Exist in dr");
                     }
                     dr.Close();
                 }
-            }
+                else if (Save.CountTotalClaim != 0)
+                {
+                    cmdTA.CommandText = "select MAX(ins_enddate) AS [Insurance End Date] FROM Insurance Where Ins_Status = 'Claimed' AND ID = '"+Save.insuranceid+"'";
+                    cmdTA.Connection = conTA;
+                    OleDbDataReader drClaim = cmdTA.ExecuteReader();
 
+                    if (drClaim.Read())
+                    {
+
+                        Save.enddate = Convert.ToDateTime(drClaim[0]);
+                        NCD ncd = new NCD();
+                        
+                        NCDFinal = 0;
+                        ncd.NCDAfterClaim(ref NCDFinal);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error occured in drClaim");
+                    }
+                    drClaim.Close();
+                }
+                    
+            }
+            
         }
 
     }
