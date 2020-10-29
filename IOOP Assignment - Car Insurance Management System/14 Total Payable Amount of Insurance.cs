@@ -79,7 +79,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 Save.RenewalStartDate = Save.enddate;
                 Save.RenewalEndDate =Save.RenewalStartDate.AddYears(1);
                 MessageBox.Show(Save.RenewalEndDate.ToString());
-                cmdTA.CommandText = "update into insurance SET Ins_LastRenewalDate = '"+Save.Today+"' ，Ins_EndDate = '' WHERE id = '"+Save.insuranceid+"'";
+                cmdTA.CommandText = "update into insurance SET Ins_LastRenewalDate = '"+Save.Today+"' ，Ins_EndDate = '"+Save.RenewalEndDate+"' WHERE id = '"+Save.insuranceid+"'";
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
             }
