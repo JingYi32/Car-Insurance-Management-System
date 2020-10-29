@@ -52,6 +52,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         public void NCDAfterClaim(ref double NCDFinal)
         {
+            //convert DateTime to long 
             long D1 = Save.enddate.Ticks;
             long D2 = Save.Today.Ticks;
             DateTime date1 = new DateTime(D1);
@@ -59,6 +60,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             int compMonth = (date2.Month + date2.Year * 12) - (date1.Month + date1.Year * 12);//calculate difference of year
             double daysInEndMonth = (date2 - date2.AddMonths(1)).Days;//calculate date
             double months = compMonth + (date1.Day - date2.Day) / daysInEndMonth;
+            //convert string to int
             int year = Convert.ToInt32(months / 12);
 
             if (year == 0)
