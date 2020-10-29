@@ -207,7 +207,6 @@
             this.lblSSTCount.TabIndex = 10;
             this.lblSSTCount.Text = "RM 00.00";
             this.lblSSTCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSSTCount.Click += new System.EventHandler(this.label8_Click);
             // 
             // lblRMtotal
             // 
@@ -252,7 +251,6 @@
             this.lblRM_NCD.TabIndex = 10;
             this.lblRM_NCD.Text = "RM 00.00";
             this.lblRM_NCD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblRM_NCD.Click += new System.EventHandler(this.label8_Click);
             // 
             // Total_Payable_Amount_of_Insurance
             // 

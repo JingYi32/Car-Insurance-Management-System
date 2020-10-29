@@ -26,8 +26,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
-            Save.customerid = showCUSID.Text;
-            Save.insuranceid = showINSID.Text;
+            showCUSID.Text = Save.customerid;
+            showINSID.Text = Save.insuranceid;
             
         }
 
@@ -35,16 +35,27 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             if (dtApply.Text!="" && dtApprove.Text!="" && CBAccount.Text!="" && textReasons_UI.Text!="" && textTotalAmount_UI.Text!="")
             {
-                cmd.CommandText = "insert into update VALUES('" + Save.customerid + "', '" + Save.insuranceid + "', '" + dtApply.Text + "', '" + dtApprove.Text + "', '" + CBAccount.Text + "', '" + textReasons_UI.Text + "', '" + textTotalAmount_UI.Text + "')";
+                Save.update_Apply = Convert.ToDateTime(dtApply.Text);
+                Save.update_Approve = Convert.ToDateTime(dtApprove.Text);
+                cmd.CommandText = "insert into claim VALUES('"+Save.customerid+"', '"+Save.insuranceid+"', '"+Save.update_Apply+"', '"+Save.update_Approve+"', '"+CBAccount.Text+"', '"+textReasons_UI.Text+"', '"+textTotalAmount_UI.Text+"')";
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Insert Successfully");
+
+                Main_Page mp = new Main_Page();
+                mp.Show();
+                this.Close();
+                
             }
             else
             {
                 MessageBox.Show("Please fill in the textbox.");
             }
-            
+
+
+            cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE id='"+Save.insuranceid+"'";
+            cmd.Connection = con;
+            cmd.ExecuteNonQuery();
         }
 
         private void lblUpdateInsurance_Click(object sender, EventArgs e)
@@ -60,6 +71,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         }
 
         private void CBAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             CBAccount.Items.Add("CIMB Bank");
             CBAccount.Items.Add("Public Bank");

@@ -21,6 +21,23 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
+
+            //Generate Insurance ID
+            cmd.CommandText = "SELECT COUNT(*) AS [Insurance_ID] FROM Insurance";
+            cmd.Connection = con;
+            OleDbDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                int id_numbering = int.Parse(dr[0].ToString()) + 1;
+                string id_number = id_numbering.ToString("00000");
+                Save.insuranceid = "INS" + id_number;
+            }
+            else
+            {
+                MessageBox.Show("Record not found.");
+            }
+            dr.Close();
+
         }
 
         public Purrchase_New_Policy()
@@ -340,6 +357,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 {
                     try
                     {
+                        int numericcheck = int.Parse(txtOwner_Phone.Text);
                         if ((txtOwner_Phone.Text.Length > 9) || (txtOwner_Phone.Text.Length < 9))
                         {
                             e.Cancel = true;
@@ -350,7 +368,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                         {
                             e.Cancel = false;
                             errorProvider10.SetError(txtOwner_Phone, "");
-                            Save.Owner_Phone = txtOwner_Phone.Text;
+                            Save.Owner_Phone = "060-" + txtOwner_Phone.Text;
                         }
                     }
                     catch
@@ -369,6 +387,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
         }
 
+        //Owner Address
         private void txtOwner_Address_Validating(object sender, CancelEventArgs e)
         {
             if (rbOthers.Checked)

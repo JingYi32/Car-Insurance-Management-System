@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblEditProfile = new System.Windows.Forms.Label();
             this.lblCustomerPhone = new System.Windows.Forms.Label();
             this.lblCustomerAddress = new System.Windows.Forms.Label();
@@ -52,6 +53,15 @@
             this.lblShowCUST_ID = new System.Windows.Forms.Label();
             this.lblShowCUST_Name = new System.Windows.Forms.Label();
             this.lblShowCUST_IC = new System.Windows.Forms.Label();
+            this.errorProviderGender = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderAddress = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderPhone = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProviderEmail = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderGender)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAddress)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPhone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderEmail)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEditProfile
@@ -66,7 +76,6 @@
             this.lblEditProfile.TabIndex = 2;
             this.lblEditProfile.Text = "Edit Mr./Mrs.____\'s Profile";
             this.lblEditProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblEditProfile.Click += new System.EventHandler(this.lblEditProfile_Click);
             // 
             // lblCustomerPhone
             // 
@@ -148,6 +157,7 @@
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(646, 58);
             this.cbGender.TabIndex = 17;
+            this.cbGender.Validating += new System.ComponentModel.CancelEventHandler(this.cbGender_Validating);
             // 
             // txtAddress
             // 
@@ -155,13 +165,15 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(646, 53);
             this.txtAddress.TabIndex = 18;
+            this.txtAddress.Validating += new System.ComponentModel.CancelEventHandler(this.txtAddress_Validating);
             // 
             // txtphone
             // 
-            this.txtphone.Location = new System.Drawing.Point(374, 489);
+            this.txtphone.Location = new System.Drawing.Point(451, 489);
             this.txtphone.Name = "txtphone";
-            this.txtphone.Size = new System.Drawing.Size(646, 53);
+            this.txtphone.Size = new System.Drawing.Size(569, 53);
             this.txtphone.TabIndex = 19;
+            this.txtphone.Validating += new System.ComponentModel.CancelEventHandler(this.txtphone_Validating);
             // 
             // txtEmail
             // 
@@ -169,6 +181,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(646, 53);
             this.txtEmail.TabIndex = 20;
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // btnDoneEdit
             // 
@@ -290,12 +303,37 @@
             this.lblShowCUST_IC.TabIndex = 25;
             this.lblShowCUST_IC.Text = "(Show IC Number)";
             // 
+            // errorProviderGender
+            // 
+            this.errorProviderGender.ContainerControl = this;
+            // 
+            // errorProviderAddress
+            // 
+            this.errorProviderAddress.ContainerControl = this;
+            // 
+            // errorProviderPhone
+            // 
+            this.errorProviderPhone.ContainerControl = this;
+            // 
+            // errorProviderEmail
+            // 
+            this.errorProviderEmail.ContainerControl = this;
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(374, 489);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 51);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "060 -";
+            // 
             // Edit_Customer_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 50F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblShowCUST_IC);
             this.Controls.Add(this.lblShowCUST_Name);
             this.Controls.Add(this.lblShowCUST_ID);
@@ -326,6 +364,10 @@
             this.Name = "Edit_Customer_Profile";
             this.Text = "Edit_Customer_Profile";
             this.Load += new System.EventHandler(this.Edit_Customer_Profile_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderGender)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderAddress)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderPhone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProviderEmail)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -357,5 +399,10 @@
         private System.Windows.Forms.Label lblShowCUST_ID;
         private System.Windows.Forms.Label lblShowCUST_Name;
         private System.Windows.Forms.Label lblShowCUST_IC;
+        private System.Windows.Forms.ErrorProvider errorProviderGender;
+        private System.Windows.Forms.ErrorProvider errorProviderAddress;
+        private System.Windows.Forms.ErrorProvider errorProviderPhone;
+        private System.Windows.Forms.ErrorProvider errorProviderEmail;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -22,7 +22,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
 
-            cmd.CommandText = "SELECT Insurance.*, Vehicle.*, Owner.*, Customer.* FROM ((Insurance INNER JOIN Vehicle ON Insurance.Vehicle_RegistrationNo = Vehicle.Vehicle_RegistrationNo) INNER JOIN Owner ON Insurance.Owner_IC = Owner.Owner_IC) INNER JOIN Customer ON Customer.ID = Insurance.CustomerID WHERE Insurance.ID = " + Save.insuranceid + "";
+            cmd.CommandText = "SELECT Insurance.*, Vehicle.*, Owner.*, Customer.* FROM ((Insurance INNER JOIN Vehicle ON Insurance.Vehicle_RegistrationNo = Vehicle.Vehicle_RegistrationNo) INNER JOIN Owner ON Insurance.Owner_IC = Owner.Owner_IC) INNER JOIN Customer ON Customer.ID = Insurance.Cust_ID WHERE Insurance.ID = '" + Save.insuranceid + "'";
             cmd.Connection = con;
 
             OleDbDataReader dr = cmd.ExecuteReader();
@@ -35,7 +35,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowOwner_Name.Text = ":  " + dr[19].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
-                Save.RenewalDate = Convert.ToDateTime(lblShowIns_Last_Renewal.Text);
+                Save.RenewalDate = Convert.ToDateTime(dr[4].ToString());
                 lblShowIns_EndDate.Text = ":  " + dr[5].ToString();
                 lblShowIns_Type.Text = ":  " + dr[6].ToString();
                 DateTime localDate = DateTime.Now;

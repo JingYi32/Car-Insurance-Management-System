@@ -27,6 +27,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             OleDbDataReader dr = cmd.ExecuteReader();
             if (dr.Read())
             {
+                //Show Content
                 lblShowCUST_ID.Text = ":  " + dr[0].ToString();
                 lblShowCUST_Name.Text = ":  " + dr[1].ToString();
                 lblShowCUST_IC.Text = ":  " + dr[2].ToString();
@@ -34,6 +35,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowCUST_Gender.Text = ":  " + dr[4].ToString();
                 lblShowCUST_Phone.Text = ":  " + dr[5].ToString();
                 lblShowCUST_Email.Text = ":  " + dr[6].ToString();
+
+                //Save Content
+                Save.customerid = dr[0].ToString();
+                Save.CustName = dr[1].ToString();
+                Save.CustIC = dr[2].ToString();
+                Save.CustAddress = dr[3].ToString();
+                Save.CustGender = dr[4].ToString();
+                Save.CustPhone = dr[5].ToString();
+                Save.CustEmail = dr[6].ToString();
             }
             else
             {

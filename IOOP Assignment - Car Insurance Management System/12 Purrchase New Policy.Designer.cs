@@ -74,6 +74,7 @@
             this.errorProvider10 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider11 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -493,12 +494,22 @@
             this.label1.Text = "060-";
             this.label1.Visible = false;
             // 
+            // id
+            // 
+            this.id.AutoSize = true;
+            this.id.Location = new System.Drawing.Point(839, 53);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(64, 45);
+            this.id.TabIndex = 52;
+            this.id.Text = "label2";
+            // 
             // Purrchase_New_Policy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
+            this.Controls.Add(this.id);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbCustomerID);
             this.Controls.Add(this.lblCust_ID);
@@ -602,5 +613,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider10;
         private System.Windows.Forms.ErrorProvider errorProvider11;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label id;
     }
 }
