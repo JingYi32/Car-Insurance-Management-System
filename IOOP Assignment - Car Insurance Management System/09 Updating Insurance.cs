@@ -53,7 +53,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
 
             cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE (select MAX(ins_enddate) AS [Insurance End Date] FROM Insurance WHERE id = '"+Save.insuranceid+"')";
-            
+            cmd.Connection = con;
+            cmd.ExecuteNonQuery();
         }
 
         private void lblUpdateInsurance_Click(object sender, EventArgs e)
