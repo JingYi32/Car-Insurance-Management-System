@@ -50,6 +50,13 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static string Owner_Phone;
         public static string Owner_Address;
 
+        //Update
+        public static DateTime update_Apply;
+        public static DateTime update_Approve;
+        public static string update_BAccount;
+        public static string update_Reasons;
+        public static double update_Total;
+
         //Count from Database
         public static int CountTotalINS = 0;
         public static int CountTotalClaim = 0;

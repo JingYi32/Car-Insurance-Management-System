@@ -45,6 +45,7 @@
             this.CBAccount = new System.Windows.Forms.ComboBox();
             this.showCUSID = new System.Windows.Forms.Label();
             this.showINSID = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUpdateInsurance
@@ -235,12 +236,23 @@
             this.showINSID.TabIndex = 21;
             this.showINSID.Text = "(Insurance ID)";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(479, 619);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(129, 79);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Updating_Insurance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(5F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.showINSID);
             this.Controls.Add(this.showCUSID);
             this.Controls.Add(this.CBAccount);
@@ -288,5 +300,6 @@
         private System.Windows.Forms.ComboBox CBAccount;
         private System.Windows.Forms.Label showCUSID;
         private System.Windows.Forms.Label showINSID;
+        private System.Windows.Forms.Button button1;
     }
 }

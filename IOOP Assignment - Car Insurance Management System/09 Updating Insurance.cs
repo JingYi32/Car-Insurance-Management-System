@@ -35,7 +35,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             if (dtApply.Text!="" && dtApprove.Text!="" && CBAccount.Text!="" && textReasons_UI.Text!="" && textTotalAmount_UI.Text!="")
             {
-                cmd.CommandText = "insert into claim VALUES('" + Save.customerid + "', '" + Save.insuranceid + "', '" + dtApply.Text + "', '" + dtApprove.Text + "', '" + CBAccount.Text + "', '" + textReasons_UI.Text + "', '" + textTotalAmount_UI.Text + "')";
+                Save.update_Apply = Convert.ToDateTime(dtApply.Text);
+                Save.update_Approve = Convert.ToDateTime(dtApprove.Text);
+                cmd.CommandText = "insert into claim VALUES('"+Save.customerid+"', '"+Save.insuranceid+"', '"+Save.update_Apply+"', '"+Save.update_Approve+"', '"+CBAccount.Text+"', '"+textReasons_UI.Text+"', '"+textTotalAmount_UI.Text+"')";
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Insert Successfully");
@@ -63,6 +65,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         }
 
         private void CBAccount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             CBAccount.Items.Add("CIMB Bank");
             CBAccount.Items.Add("Public Bank");
