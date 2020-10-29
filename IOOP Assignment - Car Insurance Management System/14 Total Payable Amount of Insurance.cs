@@ -29,16 +29,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             this.Hide();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Total_Payable_Amount_of_Insurance_Load(object sender, EventArgs e)
         {
             conTA.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
@@ -86,8 +76,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void Calculate()
         {
-
-
             double premT_TP = Save.GrossTotal;
             double sst_TP = premT_TP * 0.06;
 
