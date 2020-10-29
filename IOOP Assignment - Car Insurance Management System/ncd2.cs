@@ -37,7 +37,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             DateTime zeroTime = new DateTime(1, 1, 1);
             TimeSpan span = Save.enddate.Date - Save.purchasedate.Date;
             year = (zeroTime + span).Year - 1;
-            MessageBox.Show(year.ToString());
+            
             if (year == 1)
                 return ncd = 0.25;
             else if (year == 2)

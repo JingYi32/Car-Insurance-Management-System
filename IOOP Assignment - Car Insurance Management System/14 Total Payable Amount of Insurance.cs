@@ -45,9 +45,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             //new insurance
             if (Save.CountTotalINS==0)
             {
+                //owner and vehicle exist
+                if (Save.CountOwn != 0 && Save.CountVehicle != 0)
+                {
+                    cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
+                    cmdTA.Connection = conTA;
+                    cmdTA.ExecuteNonQuery();
+                }
+
                 //owner details has been saved before
-                
-                if (Save.CountOwn!=0)
+                else if (Save.CountOwn!=0)
                 {
                     cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "'); insert into vehicle VALUES ('" + Save.Vehicle_NO + "', '" + Save.Vehicle_Brand + "', '" + Save.Vehicle_Model + "', '" + Save.Vehicle_YOM + "', '" + Save.Vehicle_Price + "')";
                     cmdTA.Connection = conTA;
@@ -62,20 +69,17 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     cmdTA.ExecuteNonQuery();
                 }
                     
-                //owner and vehicle exist
-                else if (Save.CountOwn!=0 && Save.CountVehicle!=0)
-                {
-                    cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
-                    cmdTA.Connection = conTA;
-                    cmdTA.ExecuteNonQuery();
-                }
+                
             }
 
             //old insurance
             //does not need to include vehicle n owner
             else if (Save.CountTotalINS!=0)
             {
-                cmdTA.CommandText = "update into insurance SET Ins_LastRenewalDate = '' ，Ins_EndDate = '' WHERE id = '"+Save.insuranceid+"'";
+                Save.RenewalStartDate = Save.enddate;
+                Save.RenewalEndDate =Save.RenewalStartDate.AddYears(1);
+                MessageBox.Show(Save.RenewalEndDate.ToString());
+                cmdTA.CommandText = "update into insurance SET Ins_LastRenewalDate = '"+Save.Today+"' ，Ins_EndDate = '' WHERE id = '"+Save.insuranceid+"'";
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
             }
@@ -157,6 +161,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 MessageBox.Show("Error Exist in drVehicle");
             }
+            drVehicle.Close();
         }
 
 
