@@ -41,6 +41,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Insert Successfully");
+
+                Main_Page mp = new Main_Page();
+                mp.Show();
+                this.Close();
                 
             }
             else
