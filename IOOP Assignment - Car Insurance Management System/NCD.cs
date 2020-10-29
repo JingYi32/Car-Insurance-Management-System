@@ -53,16 +53,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public void NCDAfterClaim(ref double NCDFinal)
         {
             long D1 = Save.enddate.Ticks;
-            long D2 = Save.RenewalStartDate.Ticks;
+            long D2 = Save.Today.Ticks;
             DateTime date1 = new DateTime(D1);
             DateTime date2 = new DateTime(D2);
-            int compMonth = (date2.Month + date2.Year * 12) - (date1.Month + date1.Year * 12);
-            double daysInEndMonth = (date2 - date2.AddMonths(1)).Days;
+            int compMonth = (date2.Month + date2.Year * 12) - (date1.Month + date1.Year * 12);//calculate difference of year
+            double daysInEndMonth = (date2 - date2.AddMonths(1)).Days;//calculate date
             double months = compMonth + (date1.Day - date2.Day) / daysInEndMonth;
             int year = Convert.ToInt32(months / 12);
 
-            if (year == 1)
-                NCDFinal = 0.25;
+            if (year == 0)
+                NCDFinal = 0;
+            else if (year == 1)
+                NCDFINAL = 1;
             else if (year == 2)
                 NCDFinal = 0.30;
             else if (year == 3)

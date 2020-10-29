@@ -78,16 +78,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             //does not need to include vehicle n owner
             else if (Save.CountTotalINS!=0)
             {
-                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
-                cmdTA.Connection = conTA;
+                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.Today + "', '" + Save.Today + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
+                cmdTA.Connection = conTA;//renewal end date need to +12 month?
                 cmdTA.ExecuteNonQuery();
             }
-            
-            //Back to main page and show save successfully
-            //owner, vehicle, insurance
-            //same owner, then find the owner name, only can save without owner
-            //update NCD, if found then NCD = 0
-            //insurance type should be same?
         }
 
         private void Calculate()
@@ -149,7 +143,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             if(drOwn.Read())
             {
                 Save.CountOwn = int.Parse(drOwn[0].ToString());
-                MessageBox.Show(Save.CountOwn.ToString());
+                
             }
             else
             {
