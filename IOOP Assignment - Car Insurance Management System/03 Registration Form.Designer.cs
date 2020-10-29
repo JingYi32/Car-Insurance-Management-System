@@ -28,168 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.lblRegisterForm = new System.Windows.Forms.Label();
+            this.lblRE_CustomerID = new System.Windows.Forms.Label();
+            this.lblRE_Name = new System.Windows.Forms.Label();
+            this.lblRE_IDNo = new System.Windows.Forms.Label();
+            this.lblRE_Gender = new System.Windows.Forms.Label();
+            this.lblRE_Address = new System.Windows.Forms.Label();
+            this.lblRE_Contact = new System.Windows.Forms.Label();
+            this.lblRE_Email = new System.Windows.Forms.Label();
+            this.txtRE_Name = new System.Windows.Forms.TextBox();
+            this.txtRE_IDNo = new System.Windows.Forms.TextBox();
+            this.txtRE_Address = new System.Windows.Forms.TextBox();
+            this.txtRE_Contact = new System.Windows.Forms.TextBox();
+            this.txtRE_Email = new System.Windows.Forms.TextBox();
             this.btnMenu = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbbRE_Gender = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lblRegisterForm
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.label1.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(362, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 76);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Registration Form";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblRegisterForm.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblRegisterForm.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegisterForm.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRegisterForm.Location = new System.Drawing.Point(362, 28);
+            this.lblRegisterForm.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRegisterForm.Name = "lblRegisterForm";
+            this.lblRegisterForm.Size = new System.Drawing.Size(398, 76);
+            this.lblRegisterForm.TabIndex = 0;
+            this.lblRegisterForm.Text = "Registration Form";
+            this.lblRegisterForm.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // lblRE_CustomerID
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(90, 134);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 51);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Customer ID            :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblRE_CustomerID.AutoSize = true;
+            this.lblRE_CustomerID.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_CustomerID.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_CustomerID.Location = new System.Drawing.Point(90, 134);
+            this.lblRE_CustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_CustomerID.Name = "lblRE_CustomerID";
+            this.lblRE_CustomerID.Size = new System.Drawing.Size(222, 51);
+            this.lblRE_CustomerID.TabIndex = 1;
+            this.lblRE_CustomerID.Text = "Customer ID            :";
+            this.lblRE_CustomerID.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lblRE_Name
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(90, 204);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 51);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Name                        :";
+            this.lblRE_Name.AutoSize = true;
+            this.lblRE_Name.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_Name.Location = new System.Drawing.Point(90, 204);
+            this.lblRE_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_Name.Name = "lblRE_Name";
+            this.lblRE_Name.Size = new System.Drawing.Size(227, 51);
+            this.lblRE_Name.TabIndex = 2;
+            this.lblRE_Name.Text = "Name                        :";
             // 
-            // label5
+            // lblRE_IDNo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(90, 274);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(218, 51);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "IC Number              :";
+            this.lblRE_IDNo.AutoSize = true;
+            this.lblRE_IDNo.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_IDNo.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_IDNo.Location = new System.Drawing.Point(90, 274);
+            this.lblRE_IDNo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_IDNo.Name = "lblRE_IDNo";
+            this.lblRE_IDNo.Size = new System.Drawing.Size(218, 51);
+            this.lblRE_IDNo.TabIndex = 4;
+            this.lblRE_IDNo.Text = "IC Number              :";
             // 
-            // label6
+            // lblRE_Gender
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label6.Location = new System.Drawing.Point(90, 344);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(218, 51);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Gender                    :";
+            this.lblRE_Gender.AutoSize = true;
+            this.lblRE_Gender.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_Gender.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_Gender.Location = new System.Drawing.Point(90, 344);
+            this.lblRE_Gender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_Gender.Name = "lblRE_Gender";
+            this.lblRE_Gender.Size = new System.Drawing.Size(218, 51);
+            this.lblRE_Gender.TabIndex = 5;
+            this.lblRE_Gender.Text = "Gender                    :";
             // 
-            // label7
+            // lblRE_Address
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label7.Location = new System.Drawing.Point(90, 414);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(220, 51);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Address                   :";
+            this.lblRE_Address.AutoSize = true;
+            this.lblRE_Address.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_Address.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_Address.Location = new System.Drawing.Point(90, 414);
+            this.lblRE_Address.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_Address.Name = "lblRE_Address";
+            this.lblRE_Address.Size = new System.Drawing.Size(220, 51);
+            this.lblRE_Address.TabIndex = 6;
+            this.lblRE_Address.Text = "Address                   :";
             // 
-            // label8
+            // lblRE_Contact
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label8.Location = new System.Drawing.Point(90, 484);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(212, 51);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Contact Number    :";
+            this.lblRE_Contact.AutoSize = true;
+            this.lblRE_Contact.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_Contact.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_Contact.Location = new System.Drawing.Point(90, 484);
+            this.lblRE_Contact.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_Contact.Name = "lblRE_Contact";
+            this.lblRE_Contact.Size = new System.Drawing.Size(212, 51);
+            this.lblRE_Contact.TabIndex = 7;
+            this.lblRE_Contact.Text = "Contact Number    :";
             // 
-            // label9
+            // lblRE_Email
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label9.Location = new System.Drawing.Point(90, 554);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(214, 51);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Email Address        :";
+            this.lblRE_Email.AutoSize = true;
+            this.lblRE_Email.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_Email.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_Email.Location = new System.Drawing.Point(90, 554);
+            this.lblRE_Email.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_Email.Name = "lblRE_Email";
+            this.lblRE_Email.Size = new System.Drawing.Size(214, 51);
+            this.lblRE_Email.TabIndex = 8;
+            this.lblRE_Email.Text = "Email Address        :";
             // 
-            // textBox2
+            // txtRE_Name
             // 
-            this.textBox2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(364, 201);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(656, 53);
-            this.textBox2.TabIndex = 1;
+            this.txtRE_Name.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRE_Name.Location = new System.Drawing.Point(364, 201);
+            this.txtRE_Name.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtRE_Name.Name = "txtRE_Name";
+            this.txtRE_Name.Size = new System.Drawing.Size(656, 53);
+            this.txtRE_Name.TabIndex = 1;
             // 
-            // textBox3
+            // txtRE_IDNo
             // 
-            this.textBox3.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(364, 271);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(656, 53);
-            this.textBox3.TabIndex = 3;
+            this.txtRE_IDNo.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRE_IDNo.Location = new System.Drawing.Point(364, 271);
+            this.txtRE_IDNo.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtRE_IDNo.Name = "txtRE_IDNo";
+            this.txtRE_IDNo.Size = new System.Drawing.Size(656, 53);
+            this.txtRE_IDNo.TabIndex = 3;
             // 
-            // textBox4
+            // txtRE_Address
             // 
-            this.textBox4.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(364, 411);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(656, 53);
-            this.textBox4.TabIndex = 5;
+            this.txtRE_Address.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRE_Address.Location = new System.Drawing.Point(364, 411);
+            this.txtRE_Address.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtRE_Address.Name = "txtRE_Address";
+            this.txtRE_Address.Size = new System.Drawing.Size(656, 53);
+            this.txtRE_Address.TabIndex = 5;
             // 
-            // textBox5
+            // txtRE_Contact
             // 
-            this.textBox5.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(364, 481);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(656, 53);
-            this.textBox5.TabIndex = 6;
+            this.txtRE_Contact.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRE_Contact.Location = new System.Drawing.Point(364, 481);
+            this.txtRE_Contact.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtRE_Contact.Name = "txtRE_Contact";
+            this.txtRE_Contact.Size = new System.Drawing.Size(656, 53);
+            this.txtRE_Contact.TabIndex = 6;
             // 
-            // textBox6
+            // txtRE_Email
             // 
-            this.textBox6.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(364, 555);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(656, 53);
-            this.textBox6.TabIndex = 7;
+            this.txtRE_Email.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRE_Email.Location = new System.Drawing.Point(364, 555);
+            this.txtRE_Email.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.txtRE_Email.Name = "txtRE_Email";
+            this.txtRE_Email.Size = new System.Drawing.Size(656, 53);
+            this.txtRE_Email.TabIndex = 7;
             // 
             // btnMenu
             // 
@@ -204,7 +204,7 @@
             this.btnMenu.Text = "Back to Menu";
             this.btnMenu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.Click += new System.EventHandler(this.button1_Click);
+            this.btnMenu.Click += new System.EventHandler(this.btnRE_Menu);
             // 
             // btnSubmit
             // 
@@ -218,7 +218,7 @@
             this.btnSubmit.TabIndex = 9;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.button2_Click);
+            this.btnSubmit.Click += new System.EventHandler(this.btnRE_Submit);
             // 
             // label10
             // 
@@ -231,15 +231,15 @@
             this.label10.TabIndex = 17;
             this.label10.Text = "Customer already have an account ? Search or head to Insurance Purchase";
             // 
-            // comboBox2
+            // cbbRE_Gender
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(364, 341);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(656, 58);
-            this.comboBox2.TabIndex = 4;
+            this.cbbRE_Gender.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbRE_Gender.FormattingEnabled = true;
+            this.cbbRE_Gender.Location = new System.Drawing.Point(364, 341);
+            this.cbbRE_Gender.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.cbbRE_Gender.Name = "cbbRE_Gender";
+            this.cbbRE_Gender.Size = new System.Drawing.Size(656, 58);
+            this.cbbRE_Gender.TabIndex = 4;
             // 
             // label4
             // 
@@ -260,23 +260,23 @@
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbbRE_Gender);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnMenu);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtRE_Email);
+            this.Controls.Add(this.txtRE_Contact);
+            this.Controls.Add(this.txtRE_Address);
+            this.Controls.Add(this.txtRE_IDNo);
+            this.Controls.Add(this.txtRE_Name);
+            this.Controls.Add(this.lblRE_Email);
+            this.Controls.Add(this.lblRE_Contact);
+            this.Controls.Add(this.lblRE_Address);
+            this.Controls.Add(this.lblRE_Gender);
+            this.Controls.Add(this.lblRE_IDNo);
+            this.Controls.Add(this.lblRE_Name);
+            this.Controls.Add(this.lblRE_CustomerID);
+            this.Controls.Add(this.lblRegisterForm);
             this.Font = new System.Drawing.Font("Gabriola", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "Registration_Form";
@@ -289,23 +289,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label lblRegisterForm;
+        private System.Windows.Forms.Label lblRE_CustomerID;
+        private System.Windows.Forms.Label lblRE_Name;
+        private System.Windows.Forms.Label lblRE_IDNo;
+        private System.Windows.Forms.Label lblRE_Gender;
+        private System.Windows.Forms.Label lblRE_Address;
+        private System.Windows.Forms.Label lblRE_Contact;
+        private System.Windows.Forms.Label lblRE_Email;
+        private System.Windows.Forms.TextBox txtRE_Name;
+        private System.Windows.Forms.TextBox txtRE_IDNo;
+        private System.Windows.Forms.TextBox txtRE_Address;
+        private System.Windows.Forms.TextBox txtRE_Contact;
+        private System.Windows.Forms.TextBox txtRE_Email;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbbRE_Gender;
         private System.Windows.Forms.Label label4;
     }
 }

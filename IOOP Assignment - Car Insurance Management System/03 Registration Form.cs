@@ -26,14 +26,14 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRE_Menu(object sender, EventArgs e)
         {
             Main_Page mainMenu = new Main_Page();
             this.Hide();
             mainMenu.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRE_Submit(object sender, EventArgs e)
         {
 
         }

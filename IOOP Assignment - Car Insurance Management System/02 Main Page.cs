@@ -46,7 +46,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnLogOut(object sender, EventArgs e)
         {
-            string message = "Do you want to log out your account? Once you log out, you need to log in again.";
+            string message = "Do you want to log out from your account? Once you log out, you need to log in again.";
             string title = "Log out";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show(message, title, buttons);
