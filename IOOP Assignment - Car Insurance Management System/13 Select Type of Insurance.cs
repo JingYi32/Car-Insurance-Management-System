@@ -21,7 +21,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void Select_Type_of_Insurance_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
