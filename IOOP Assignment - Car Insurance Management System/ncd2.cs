@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
 {
@@ -31,11 +32,12 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             set { year = value; }
         }
 
-        public double calculateNCD()
+        public double calculateNCD(ref double ncd)
         {
             DateTime zeroTime = new DateTime(1, 1, 1);
             TimeSpan span = Save.enddate.Date - Save.purchasedate.Date;
             year = (zeroTime + span).Year - 1;
+            MessageBox.Show(year.ToString());
             if (year == 1)
                 return ncd = 0.25;
             else if (year == 2)

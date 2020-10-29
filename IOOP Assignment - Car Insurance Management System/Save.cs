@@ -59,5 +59,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static int CountTotalINS = 0;
         public static int CountTotalClaim = 0;
         public static int CountOwn = 0;
+        public static int CountVehicle = 0;
     }
 }

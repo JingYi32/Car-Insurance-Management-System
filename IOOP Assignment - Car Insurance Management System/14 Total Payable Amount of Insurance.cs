@@ -62,14 +62,21 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     cmdTA.ExecuteNonQuery();
                 }
                     
+                //owner and vehicle exist
+                else if (Save.CountOwn!=0 && Save.CountVehicle!=0)
+                {
+                    cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
+                    cmdTA.Connection = conTA;
+                    cmdTA.ExecuteNonQuery();
+                }
             }
 
             //old insurance
             //does not need to include vehicle n owner
             else if (Save.CountTotalINS!=0)
             {
-                cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.Today + "', '" + Save.Today + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')";
-                cmdTA.Connection = conTA;//renewal end date need to +12 month?
+                cmdTA.CommandText = "update into insurance SET Ins_LastRenewalDate = '' ，Ins_EndDate = '' WHERE id = '"+Save.insuranceid+"'";
+                cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
             }
         }
@@ -137,6 +144,19 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 MessageBox.Show("Error Exist in drOwn");
             }
             drOwn.Close();
+
+            //ensure that the vehicle is already exist
+            cmdTA.CommandText = "select count(*) from vehicle where vehicle_RegistrationNo = '"+Save.Vehicle_NO+"'";
+            cmdTA.Connection = conTA;
+            OleDbDataReader drVehicle = cmdTA.ExecuteReader();
+            if(drVehicle.Read())
+            {
+                Save.CountVehicle = int.Parse(drVehicle[0].ToString());
+            }
+            else
+            {
+                MessageBox.Show("Error Exist in drVehicle");
+            }
         }
 
 
@@ -154,46 +174,13 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 //not found claim insurance
                 if (Save.CountTotalClaim == 0)
                 {
-                    cmdTA.CommandText = "select count (*) from insurance where id = '"+Save.insuranceid+"' ";
-                    cmdTA.Connection = conTA;
-                    OleDbDataReader dr = cmdTA.ExecuteReader();
-
-                    if (dr.Read())
-                    {
-                        double year = double.Parse(dr[0].ToString());
-                        MessageBox.Show(year.ToString());
-                        NCD ncd = new NCD();
-                        ncd.YEAR = year;
-                        NCDFinal = 0;
-                        ncd.YearlyNCD(ref NCDFinal);
-                        
-                    }
-                    else
-                    {
-                        MessageBox.Show("Errors Exist in dr");
-                    }
-                    dr.Close();
+                    ncd2 ncd = new ncd2();
+                    ncd.calculateNCD(ref NCDFinal);
+                    
                 }
                 else if (Save.CountTotalClaim != 0)
                 {
-                    cmdTA.CommandText = "select MAX(ins_enddate) AS [Insurance End Date] FROM Insurance Where Ins_Status = 'Claimed' AND ID = '"+Save.insuranceid+"'";
-                    cmdTA.Connection = conTA;
-                    OleDbDataReader drClaim = cmdTA.ExecuteReader();
-
-                    if (drClaim.Read())
-                    {
-
-                        Save.enddate = Convert.ToDateTime(drClaim[0]);
-                        NCD ncd = new NCD();
-                        
-                        NCDFinal = 0;
-                        ncd.NCDAfterClaim(ref NCDFinal);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error occured in drClaim");
-                    }
-                    drClaim.Close();
+                    MessageBox.Show("This ID has been claimed the Insurance. Please Purchase New Policy.");
                 }
                     
             }
