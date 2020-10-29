@@ -26,7 +26,17 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             cmd.CommandText = "SELECT COUNT(*) AS [Insurance_ID] FROM Insurance";
             cmd.Connection = con;
             OleDbDataReader dr = cmd.ExecuteReader();
-            Save.insuranceid = dr[0].ToString();
+            if (dr.Read())
+            {
+                int id_numbering = int.Parse(dr[0].ToString()) + 1;
+                string id_number = id_numbering.ToString("00000");
+                Save.insuranceid = "INS" + id_number;
+            }
+            else
+            {
+                MessageBox.Show("Record not found.");
+            }
+            dr.Close();
 
         }
 
