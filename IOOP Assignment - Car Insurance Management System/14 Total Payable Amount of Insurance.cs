@@ -186,6 +186,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 else if (Save.CountTotalClaim != 0)
                 {
                     MessageBox.Show("This ID has been claimed the Insurance. Please Purchase New Policy.");
+                    Main_Page mp = new Main_Page();
+                    mp.Show();
+                    this.Close();
                 }
                     
             }
