@@ -143,7 +143,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             if(drOwn.Read())
             {
                 Save.CountOwn = int.Parse(drOwn[0].ToString());
-                
             }
             else
             {
