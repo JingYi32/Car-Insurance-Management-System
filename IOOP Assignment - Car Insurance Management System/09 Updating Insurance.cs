@@ -26,8 +26,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
-            Save.customerid = showCUSID.Text;
-            Save.insuranceid = showINSID.Text;
+            showCUSID.Text = Save.customerid;
+            showINSID.Text = Save.insuranceid;
             
         }
 
