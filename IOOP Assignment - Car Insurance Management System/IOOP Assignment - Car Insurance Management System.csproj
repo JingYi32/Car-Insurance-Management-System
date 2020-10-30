@@ -128,11 +128,11 @@
     <Compile Include="14 Total Payable Amount of Insurance.Designer.cs">
       <DependentUpon>14 Total Payable Amount of Insurance.cs</DependentUpon>
     </Compile>
-    <Compile Include="09 Updating Insurance.cs">
+    <Compile Include="09 Updating Claimed Insurance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="09 Updating Insurance.Designer.cs">
-      <DependentUpon>09 Updating Insurance.cs</DependentUpon>
+    <Compile Include="09 Updating Claimed Insurance.Designer.cs">
+      <DependentUpon>09 Updating Claimed Insurance.cs</DependentUpon>
     </Compile>
     <Compile Include="Save.cs" />
     <EmbeddedResource Include="01 Login Page.resx">
@@ -159,8 +159,8 @@
     <EmbeddedResource Include="08 Renewal of Insurance.resx">
       <DependentUpon>08 Renewal of Insurance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="09 Updating Insurance.resx">
-      <DependentUpon>09 Updating Insurance.cs</DependentUpon>
+    <EmbeddedResource Include="09 Updating Claimed Insurance.resx">
+      <DependentUpon>09 Updating Claimed Insurance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10 Cancellation of Insurance.resx">
       <DependentUpon>10 Cancellation of Insurance.cs</DependentUpon>

@@ -59,7 +59,6 @@
             this.lblUpdateInsurance.TabIndex = 0;
             this.lblUpdateInsurance.Text = "Update Insurance";
             this.lblUpdateInsurance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblUpdateInsurance.Click += new System.EventHandler(this.lblUpdateInsurance_Click);
             // 
             // lblCustomerID_UI
             // 
@@ -213,7 +212,6 @@
             this.CBAccount.Name = "CBAccount";
             this.CBAccount.Size = new System.Drawing.Size(650, 58);
             this.CBAccount.TabIndex = 19;
-            this.CBAccount.SelectedIndexChanged += new System.EventHandler(this.CBAccount_SelectedIndexChanged);
             // 
             // showCUSID
             // 
