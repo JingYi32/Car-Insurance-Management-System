@@ -219,9 +219,9 @@
             this.lblIns_Duration.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_Duration.Location = new System.Drawing.Point(28, 69);
             this.lblIns_Duration.Name = "lblIns_Duration";
-            this.lblIns_Duration.Size = new System.Drawing.Size(210, 45);
+            this.lblIns_Duration.Size = new System.Drawing.Size(205, 45);
             this.lblIns_Duration.TabIndex = 3;
-            this.lblIns_Duration.Text = "Duration of Insurance:";
+            this.lblIns_Duration.Text = "Duration of Insurance";
             // 
             // lblCancel_RefundPer
             // 
@@ -229,9 +229,9 @@
             this.lblCancel_RefundPer.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCancel_RefundPer.Location = new System.Drawing.Point(28, 109);
             this.lblCancel_RefundPer.Name = "lblCancel_RefundPer";
-            this.lblCancel_RefundPer.Size = new System.Drawing.Size(210, 45);
+            this.lblCancel_RefundPer.Size = new System.Drawing.Size(205, 45);
             this.lblCancel_RefundPer.TabIndex = 2;
-            this.lblCancel_RefundPer.Text = "Refund Percentage(%):";
+            this.lblCancel_RefundPer.Text = "Refund Percentage(%)";
             // 
             // lblCancel_RefundAmount
             // 
@@ -239,9 +239,9 @@
             this.lblCancel_RefundAmount.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCancel_RefundAmount.Location = new System.Drawing.Point(28, 149);
             this.lblCancel_RefundAmount.Name = "lblCancel_RefundAmount";
-            this.lblCancel_RefundAmount.Size = new System.Drawing.Size(188, 45);
+            this.lblCancel_RefundAmount.Size = new System.Drawing.Size(183, 45);
             this.lblCancel_RefundAmount.TabIndex = 1;
-            this.lblCancel_RefundAmount.Text = "Refund of Premium:";
+            this.lblCancel_RefundAmount.Text = "Refund of Premium";
             // 
             // lblIns_CancelDate
             // 
@@ -249,9 +249,9 @@
             this.lblIns_CancelDate.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_CancelDate.Location = new System.Drawing.Point(28, 29);
             this.lblIns_CancelDate.Name = "lblIns_CancelDate";
-            this.lblIns_CancelDate.Size = new System.Drawing.Size(125, 45);
+            this.lblIns_CancelDate.Size = new System.Drawing.Size(120, 45);
             this.lblIns_CancelDate.TabIndex = 0;
-            this.lblIns_CancelDate.Text = "Cancel Date:";
+            this.lblIns_CancelDate.Text = "Cancel Date";
             // 
             // btnConfirmCancel
             // 

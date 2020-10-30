@@ -29,16 +29,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 //Show Details
                 lblInsuranceDetails.Text = dr[0].ToString() + " 's Details";
-                lblShowVehicle_NO.Text = ":  " + dr[13].ToString();
-                lblShowVehicle_Brand.Text = ":  " + dr[14].ToString();
-                lblShowVehicle_Model.Text = ":  " + dr[15].ToString();
-                lblShowVehicle_YOM.Text = ":  " + dr[16].ToString();
-                lblShowVehicle_Price.Text = ":  " + dr[17].ToString();
-                lblShowOwner_ICNumber.Text = ":  " + dr[18].ToString();
-                lblShowOwner_Name.Text = ":  " + dr[19].ToString();
-                lblShowOwner_Gender.Text = ":  " + dr[20].ToString();
-                lblShowOwner_Phone.Text = ":  " + dr[21].ToString();
-                lblShowOwner_Address.Text = ":  " + dr[22].ToString();
+                lblShowVehicle_NO.Text = ":  " + dr[15].ToString();
+                lblShowVehicle_Brand.Text = ":  " + dr[16].ToString();
+                lblShowVehicle_Model.Text = ":  " + dr[17].ToString();
+                lblShowVehicle_YOM.Text = ":  " + dr[18].ToString();
+                lblShowVehicle_Price.Text = ":  " + dr[19].ToString();
+                lblShowOwner_ICNumber.Text = ":  " + dr[20].ToString();
+                lblShowOwner_Name.Text = ":  " + dr[21].ToString();
+                lblShowOwner_Gender.Text = ":  " + dr[22].ToString();
+                lblShowOwner_Phone.Text = ":  " + dr[23].ToString();
+                lblShowOwner_Address.Text = ":  " + dr[24].ToString();
                 lblShowIns_Status.Text = ":  " + dr[2].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
@@ -51,16 +51,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
                 //Save into class
                 Save.insuranceid = dr[0].ToString();
-                Save.Vehicle_NO = dr[13].ToString();
-                Save.Vehicle_Brand = dr[14].ToString();
-                Save.Vehicle_Model = dr[15].ToString();
-                Save.Vehicle_YOM = int.Parse(dr[16].ToString());
-                Save.Vehicle_Price = int.Parse(dr[17].ToString());
-                Save.Owner_IC = dr[18].ToString();
-                Save.Owner_Name = dr[19].ToString();
-                Save.Owner_Gender = dr[20].ToString();
-                Save.Owner_Phone = dr[21].ToString();
-                Save.Owner_Address = dr[22].ToString();
+                Save.Vehicle_NO = dr[15].ToString();
+                Save.Vehicle_Brand = dr[16].ToString();
+                Save.Vehicle_Model = dr[17].ToString();
+                Save.Vehicle_YOM = int.Parse(dr[18].ToString());
+                Save.Vehicle_Price = int.Parse(dr[19].ToString());
+                Save.Owner_IC = dr[20].ToString();
+                Save.Owner_Name = dr[21].ToString();
+                Save.Owner_Gender = dr[22].ToString();
+                Save.Owner_Phone = dr[23].ToString();
+                Save.Owner_Address = dr[24].ToString();
                 Save.InsStatus = dr[2].ToString();
                 Save.purchasedate = Convert.ToDateTime(dr[3].ToString());
                 Save.lastrenewaldate = Convert.ToDateTime(dr[4].ToString());
@@ -110,7 +110,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else if (Save.InsStatus == "Processing")
             {
-                TimeSpan span = DateTime.Today - Save.lastrenewaldate;
+                TimeSpan span = Save.enddate - DateTime.Now;
                 int date = span.Days;
                 if (date < 60)
                 {
