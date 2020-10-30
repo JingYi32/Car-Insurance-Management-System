@@ -45,8 +45,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             //new insurance
             if (Save.CountTotalINS==0)
             {
-                Save.RenewalStartDate = Save.enddate;
-                Save.RenewalEndDate = Save.RenewalStartDate.AddYears(1);
+                Save.RenewalEndDate = Save.Today.AddYears(1);
                 //owner and vehicle exist
                 if (Save.CountOwn != 0 && Save.CountVehicle != 0)
                 {
@@ -90,7 +89,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 Save.RenewalStartDate = Save.enddate;
                 Save.RenewalEndDate =Save.RenewalStartDate.AddYears(1);
                 
-                cmdTA.CommandText = "update into insurance SET Ins_LastRenewalDate = '"+Save.Today+"' ，Ins_EndDate = '"+Save.RenewalEndDate+"' WHERE id = '"+Save.insuranceid+"'";
+                cmdTA.CommandText = "update insurance SET Ins_LastRenewalDate = '"+Save.Today+"' ，Ins_EndDate = '"+Save.RenewalEndDate+"', Ins_Total ='"+Save.Total+"' WHERE id = '"+Save.insuranceid+"'";
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
             }
