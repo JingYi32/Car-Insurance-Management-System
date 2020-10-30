@@ -149,16 +149,23 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnRE_Submit(object sender, EventArgs e)
         {
-            Save.customerid = lblRE_CustomerID2.Text;
 
-            cmd.CommandText = "INSERT into Customer values ('" + Save.customerid + "', '" + Save.CustName + "', '" + Save.CustIC + "', '" + Save.CustAddress + "', '" + Save.CustGender + "', '" + Save.CustPhone + "', '" + Save.CustEmail + "')";
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Customer Successfully Registered.");
+            if ((string.IsNullOrWhiteSpace(txtRE_Name.Text)) || (string.IsNullOrWhiteSpace(txtRE_IDNo.Text)) || (cbbRE_Gender.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtRE_Contact.Text)) || (string.IsNullOrWhiteSpace(txtRE_Address.Text)))
+            {
+                MessageBox.Show("Please fill in all fields.");
+            }
+            else 
+            {
+                cmd.CommandText = "INSERT into Customer values ('" + Save.customerid + "', '" + Save.CustName + "', '" + Save.CustIC + "', '" + Save.CustAddress + "', '" + Save.CustGender + "', '" + Save.CustPhone + "', '" + Save.CustEmail + "')";
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Customer Successfully Registered.");
 
-            Main_Page main_page = new Main_Page();
-            this.Hide();
-            main_page.Show();
+                Main_Page main_page = new Main_Page();
+                this.Hide();
+                main_page.Show();
+            }
+            
 
         }
 
