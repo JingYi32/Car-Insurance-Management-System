@@ -49,9 +49,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Insert Successfully");
 
-                Main_Page mp = new Main_Page();
-                mp.Show();
-                this.Close();
                 
             }
             else
@@ -59,9 +56,28 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 MessageBox.Show("Please fill in the textbox.");
             }
 
-            cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE id='"+Save.insuranceid+"'";
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
+
+            string btn1 = " Do you sure that you want to claim the insurance?";
+            string btn2 = "Confirmation";
+            MessageBoxButtons btn = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(btn1, btn2, btn);
+            if (result == DialogResult.Yes)
+            {
+                cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE id='" + Save.insuranceid + "'";
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+
+                Main_Page mp = new Main_Page();
+                mp.Show();
+                this.Close();
+            }
+            else
+            {
+                Main_Page mp = new Main_Page();
+                mp.Show();
+                this.Close();
+            }
+            
         }
 
         private void btnBack_UI_Click(object sender, EventArgs e)
