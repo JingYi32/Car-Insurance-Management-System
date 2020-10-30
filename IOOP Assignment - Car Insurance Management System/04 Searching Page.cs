@@ -42,41 +42,47 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (cbSelect.SelectedItem.ToString() == "Customer ID")
+            if (cbSelect.SelectedIndex == -1)
             {
-                try
-                {
-                    cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Customer.ID = '" + txtSearch.Text + "'";
-                    cmd.Connection = con;
-                    DataTable dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    dgvSearchResult.DataSource = dt;
-                    dgvSearchResult.AutoResizeColumns();
-                    dgvSearchResult.AutoResizeRows();
-                }
-                catch (OleDbException)
-                {
-                    MessageBox.Show("Databases table is opening.");
-                }
-
+                MessageBox.Show("Please select one type of data to search.");
             }
-            else if (cbSelect.SelectedItem.ToString() == "Insurance ID")
+            else
             {
-                try
+                if (cbSelect.SelectedItem.ToString() == "Customer ID")
                 {
-                    cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Insurance.ID = '" + txtSearch.Text + "'";
-                    cmd.Connection = con;
-                    DataTable dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    dgvSearchResult.DataSource = dt;
-                    dgvSearchResult.AutoResizeColumns();
-                    dgvSearchResult.AutoResizeRows();
-                }
-                catch (OleDbException)
-                {
-                    MessageBox.Show("Databases table is opening.");
-                }
+                    try
+                    {
+                        cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Customer.ID = '" + txtSearch.Text + "'";
+                        cmd.Connection = con;
+                        DataTable dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        dgvSearchResult.DataSource = dt;
+                        dgvSearchResult.AutoResizeColumns();
+                        dgvSearchResult.AutoResizeRows();
+                    }
+                    catch (OleDbException)
+                    {
+                        MessageBox.Show("Databases table is opening.");
+                    }
 
+                }
+                else if (cbSelect.SelectedItem.ToString() == "Insurance ID")
+                {
+                    try
+                    {
+                        cmd.CommandText = "SELECT Insurance.ID AS [Insurance ID], Insurance.Ins_Status AS [Status], Customer.ID AS [Customer ID], Customer.CustName AS [Name], Insurance.Ins_PurchasedDate AS [Purchased Date] FROM Customer INNER JOIN Insurance ON Customer.ID = Insurance.Cust_ID WHERE Insurance.ID = '" + txtSearch.Text + "'";
+                        cmd.Connection = con;
+                        DataTable dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        dgvSearchResult.DataSource = dt;
+                        dgvSearchResult.AutoResizeColumns();
+                        dgvSearchResult.AutoResizeRows();
+                    }
+                    catch (OleDbException)
+                    {
+                        MessageBox.Show("Databases table is opening.");
+                    }
+                }
             }
         }
 

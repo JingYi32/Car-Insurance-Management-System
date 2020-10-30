@@ -29,10 +29,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             if (dr.Read())
             {
                 lblShowIns_ID.Text = ":  " + dr[0].ToString();
-                lblShowVehicle_NO.Text = ":  " + dr[13].ToString();
+                lblShowVehicle_NO.Text = ":  " + dr[15].ToString();
                 lblShowCust_ID.Text = ":  " + dr[1].ToString();
-                lblShowCust_Name.Text = ":  " + dr[24].ToString();
-                lblShowOwner_Name.Text = ":  " + dr[19].ToString();
+                lblShowCust_Name.Text = ":  " + dr[26].ToString();
+                lblShowOwner_Name.Text = ":  " + dr[21].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
                 Save.RenewalDate = Convert.ToDateTime(dr[4].ToString());
