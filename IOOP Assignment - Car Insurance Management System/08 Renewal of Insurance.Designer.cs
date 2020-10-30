@@ -75,7 +75,7 @@
             this.lblOwner_Name.AutoSize = true;
             this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOwner_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblOwner_Name.Location = new System.Drawing.Point(175, 306);
+            this.lblOwner_Name.Location = new System.Drawing.Point(99, 289);
             this.lblOwner_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOwner_Name.Name = "lblOwner_Name";
             this.lblOwner_Name.Size = new System.Drawing.Size(127, 45);
@@ -87,7 +87,7 @@
             this.lblVehicle_NO.AutoSize = true;
             this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVehicle_NO.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblVehicle_NO.Location = new System.Drawing.Point(174, 171);
+            this.lblVehicle_NO.Location = new System.Drawing.Point(98, 154);
             this.lblVehicle_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVehicle_NO.Name = "lblVehicle_NO";
             this.lblVehicle_NO.Size = new System.Drawing.Size(259, 45);
@@ -99,7 +99,7 @@
             this.lblIns_ID.AutoSize = true;
             this.lblIns_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_ID.Location = new System.Drawing.Point(174, 126);
+            this.lblIns_ID.Location = new System.Drawing.Point(98, 109);
             this.lblIns_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_ID.Name = "lblIns_ID";
             this.lblIns_ID.Size = new System.Drawing.Size(196, 45);
@@ -111,7 +111,7 @@
             this.lblIns_End.AutoSize = true;
             this.lblIns_End.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_End.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_End.Location = new System.Drawing.Point(175, 486);
+            this.lblIns_End.Location = new System.Drawing.Point(99, 469);
             this.lblIns_End.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_End.Name = "lblIns_End";
             this.lblIns_End.Size = new System.Drawing.Size(97, 45);
@@ -123,7 +123,7 @@
             this.lblCUST_Name.AutoSize = true;
             this.lblCUST_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCUST_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblCUST_Name.Location = new System.Drawing.Point(175, 261);
+            this.lblCUST_Name.Location = new System.Drawing.Point(99, 244);
             this.lblCUST_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCUST_Name.Name = "lblCUST_Name";
             this.lblCUST_Name.Size = new System.Drawing.Size(166, 45);
@@ -135,7 +135,7 @@
             this.lblIns_Late_Renewal.AutoSize = true;
             this.lblIns_Late_Renewal.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_Late_Renewal.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_Late_Renewal.Location = new System.Drawing.Point(174, 441);
+            this.lblIns_Late_Renewal.Location = new System.Drawing.Point(98, 424);
             this.lblIns_Late_Renewal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_Late_Renewal.Name = "lblIns_Late_Renewal";
             this.lblIns_Late_Renewal.Size = new System.Drawing.Size(173, 45);
@@ -147,7 +147,7 @@
             this.lblIns_Type.AutoSize = true;
             this.lblIns_Type.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_Type.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_Type.Location = new System.Drawing.Point(175, 351);
+            this.lblIns_Type.Location = new System.Drawing.Point(99, 334);
             this.lblIns_Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_Type.Name = "lblIns_Type";
             this.lblIns_Type.Size = new System.Drawing.Size(143, 45);
@@ -159,7 +159,7 @@
             this.lblCUST_ID.AutoSize = true;
             this.lblCUST_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCUST_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblCUST_ID.Location = new System.Drawing.Point(174, 216);
+            this.lblCUST_ID.Location = new System.Drawing.Point(98, 199);
             this.lblCUST_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCUST_ID.Name = "lblCUST_ID";
             this.lblCUST_ID.Size = new System.Drawing.Size(126, 45);
@@ -173,9 +173,9 @@
             this.gbAfter_Renewed.Controls.Add(this.lblIns_AR_End);
             this.gbAfter_Renewed.Controls.Add(this.lblIns_AR_Start);
             this.gbAfter_Renewed.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gbAfter_Renewed.Location = new System.Drawing.Point(165, 526);
+            this.gbAfter_Renewed.Location = new System.Drawing.Point(98, 509);
             this.gbAfter_Renewed.Name = "gbAfter_Renewed";
-            this.gbAfter_Renewed.Size = new System.Drawing.Size(790, 150);
+            this.gbAfter_Renewed.Size = new System.Drawing.Size(922, 132);
             this.gbAfter_Renewed.TabIndex = 22;
             this.gbAfter_Renewed.TabStop = false;
             this.gbAfter_Renewed.Text = "After Renewed";
@@ -225,7 +225,7 @@
             this.lblIns_Pur.AutoSize = true;
             this.lblIns_Pur.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_Pur.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_Pur.Location = new System.Drawing.Point(174, 396);
+            this.lblIns_Pur.Location = new System.Drawing.Point(98, 379);
             this.lblIns_Pur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_Pur.Name = "lblIns_Pur";
             this.lblIns_Pur.Size = new System.Drawing.Size(150, 45);
@@ -237,7 +237,7 @@
             this.btnPaid.BackColor = System.Drawing.Color.CadetBlue;
             this.btnPaid.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPaid.ForeColor = System.Drawing.Color.White;
-            this.btnPaid.Location = new System.Drawing.Point(817, 692);
+            this.btnPaid.Location = new System.Drawing.Point(817, 649);
             this.btnPaid.Margin = new System.Windows.Forms.Padding(2);
             this.btnPaid.Name = "btnPaid";
             this.btnPaid.Size = new System.Drawing.Size(203, 49);
@@ -251,7 +251,7 @@
             this.btnIns_Details.BackColor = System.Drawing.Color.CadetBlue;
             this.btnIns_Details.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIns_Details.ForeColor = System.Drawing.Color.White;
-            this.btnIns_Details.Location = new System.Drawing.Point(583, 692);
+            this.btnIns_Details.Location = new System.Drawing.Point(98, 649);
             this.btnIns_Details.Margin = new System.Windows.Forms.Padding(2);
             this.btnIns_Details.Name = "btnIns_Details";
             this.btnIns_Details.Size = new System.Drawing.Size(203, 49);
@@ -264,7 +264,7 @@
             // 
             this.lblShowIns_ID.AutoSize = true;
             this.lblShowIns_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowIns_ID.Location = new System.Drawing.Point(428, 126);
+            this.lblShowIns_ID.Location = new System.Drawing.Point(390, 109);
             this.lblShowIns_ID.Name = "lblShowIns_ID";
             this.lblShowIns_ID.Size = new System.Drawing.Size(234, 45);
             this.lblShowIns_ID.TabIndex = 26;
@@ -274,7 +274,7 @@
             // 
             this.lblShowVehicle_NO.AutoSize = true;
             this.lblShowVehicle_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowVehicle_NO.Location = new System.Drawing.Point(428, 171);
+            this.lblShowVehicle_NO.Location = new System.Drawing.Point(390, 154);
             this.lblShowVehicle_NO.Name = "lblShowVehicle_NO";
             this.lblShowVehicle_NO.Size = new System.Drawing.Size(287, 45);
             this.lblShowVehicle_NO.TabIndex = 27;
@@ -284,7 +284,7 @@
             // 
             this.lblShowCust_ID.AutoSize = true;
             this.lblShowCust_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowCust_ID.Location = new System.Drawing.Point(428, 216);
+            this.lblShowCust_ID.Location = new System.Drawing.Point(390, 199);
             this.lblShowCust_ID.Name = "lblShowCust_ID";
             this.lblShowCust_ID.Size = new System.Drawing.Size(170, 45);
             this.lblShowCust_ID.TabIndex = 28;
@@ -294,7 +294,7 @@
             // 
             this.lblShowCust_Name.AutoSize = true;
             this.lblShowCust_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowCust_Name.Location = new System.Drawing.Point(428, 261);
+            this.lblShowCust_Name.Location = new System.Drawing.Point(390, 244);
             this.lblShowCust_Name.Name = "lblShowCust_Name";
             this.lblShowCust_Name.Size = new System.Drawing.Size(206, 45);
             this.lblShowCust_Name.TabIndex = 29;
@@ -304,7 +304,7 @@
             // 
             this.lblShowOwner_Name.AutoSize = true;
             this.lblShowOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowOwner_Name.Location = new System.Drawing.Point(428, 306);
+            this.lblShowOwner_Name.Location = new System.Drawing.Point(390, 289);
             this.lblShowOwner_Name.Name = "lblShowOwner_Name";
             this.lblShowOwner_Name.Size = new System.Drawing.Size(172, 45);
             this.lblShowOwner_Name.TabIndex = 30;
@@ -314,7 +314,7 @@
             // 
             this.lblShowIns_Type.AutoSize = true;
             this.lblShowIns_Type.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowIns_Type.Location = new System.Drawing.Point(428, 351);
+            this.lblShowIns_Type.Location = new System.Drawing.Point(390, 334);
             this.lblShowIns_Type.Name = "lblShowIns_Type";
             this.lblShowIns_Type.Size = new System.Drawing.Size(184, 45);
             this.lblShowIns_Type.TabIndex = 31;
@@ -324,7 +324,7 @@
             // 
             this.lblShowIns_PurcDate.AutoSize = true;
             this.lblShowIns_PurcDate.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowIns_PurcDate.Location = new System.Drawing.Point(428, 396);
+            this.lblShowIns_PurcDate.Location = new System.Drawing.Point(390, 379);
             this.lblShowIns_PurcDate.Name = "lblShowIns_PurcDate";
             this.lblShowIns_PurcDate.Size = new System.Drawing.Size(191, 45);
             this.lblShowIns_PurcDate.TabIndex = 32;
@@ -334,7 +334,7 @@
             // 
             this.lblShowIns_Last_Renewal.AutoSize = true;
             this.lblShowIns_Last_Renewal.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowIns_Last_Renewal.Location = new System.Drawing.Point(428, 441);
+            this.lblShowIns_Last_Renewal.Location = new System.Drawing.Point(390, 424);
             this.lblShowIns_Last_Renewal.Name = "lblShowIns_Last_Renewal";
             this.lblShowIns_Last_Renewal.Size = new System.Drawing.Size(211, 45);
             this.lblShowIns_Last_Renewal.TabIndex = 33;
@@ -344,7 +344,7 @@
             // 
             this.lblShowIns_EndDate.AutoSize = true;
             this.lblShowIns_EndDate.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowIns_EndDate.Location = new System.Drawing.Point(428, 486);
+            this.lblShowIns_EndDate.Location = new System.Drawing.Point(390, 469);
             this.lblShowIns_EndDate.Name = "lblShowIns_EndDate";
             this.lblShowIns_EndDate.Size = new System.Drawing.Size(144, 45);
             this.lblShowIns_EndDate.TabIndex = 34;

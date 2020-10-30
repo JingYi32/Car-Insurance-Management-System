@@ -96,23 +96,69 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnRenew_Ins_Click(object sender, EventArgs e)
         {
-            Renewal_of_Insurance renewal_Of_Insurance = new Renewal_of_Insurance();
-            this.Hide();
-            renewal_Of_Insurance.Show();
+            if (Save.InsStatus == "Claimed")
+            {
+                MessageBox.Show("Claimed Insurance is not allow to renew.");
+            }
+            else if (Save.InsStatus == "Expired")
+            {
+                MessageBox.Show("Expired Insurance is not allow to renew.");
+            }
+            else if (Save.InsStatus == "Processing")
+            {
+                TimeSpan span = DateTime.Today - Save.lastrenewaldate;
+                int date = span.Days;
+                if (date < 60)
+                {
+                    Renewal_of_Insurance renewal_Of_Insurance = new Renewal_of_Insurance();
+                    this.Hide();
+                    renewal_Of_Insurance.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Car insurance can only be renewed up to 60 days in advance.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("There is error in the database table.");
+            }
         }
 
         private void btnCancel_Ins_Click(object sender, EventArgs e)
         {
-            Cancellation_of_Insurance cancellation_Of_Insurance = new Cancellation_of_Insurance();
-            this.Hide();
-            cancellation_Of_Insurance.Show();
+            if ( Save.InsStatus == "Claimed" )
+            {
+                MessageBox.Show("Claimed Insurance is not allow to renew.");
+            }
+            else if ( Save.InsStatus == "Expired")
+            {
+                MessageBox.Show("Expired Insurance is not allow to renew.");
+            }
+            else if ( Save.InsStatus == "Processing")
+            {
+                Cancellation_of_Insurance cancellation_Of_Insurance = new Cancellation_of_Insurance();
+                this.Hide();
+                cancellation_Of_Insurance.Show();
+            }
+            else
+            {
+                MessageBox.Show("There is error in the database table.");
+            }
         }
 
         private void btnUpdate_Ins_Click(object sender, EventArgs e)
         {
-            Updating_Insurance updating_Insurance = new Updating_Insurance();
-            this.Hide();
-            updating_Insurance.Show();
+            if (Save.InsStatus == "Claimed")
+            {
+                Updating_Insurance updating_Insurance = new Updating_Insurance();
+                this.Hide();
+                updating_Insurance.Show();
+            }
+            else
+            {
+                MessageBox.Show("This insurance has not be claimed.");
+            }
         }
 
     }

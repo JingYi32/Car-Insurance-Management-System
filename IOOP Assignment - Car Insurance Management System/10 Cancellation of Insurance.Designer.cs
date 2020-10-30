@@ -30,130 +30,118 @@
         {
             this.lblIns_Pur = new System.Windows.Forms.Label();
             this.lblCUST_ID = new System.Windows.Forms.Label();
-            this.lblIns_Type = new System.Windows.Forms.Label();
             this.lblCUST_Name = new System.Windows.Forms.Label();
-            this.lblIns_End = new System.Windows.Forms.Label();
+            this.lblIns_Last_Renewal = new System.Windows.Forms.Label();
             this.lblOwner_Name = new System.Windows.Forms.Label();
             this.lblVehicle_NO = new System.Windows.Forms.Label();
             this.lblIns_ID = new System.Windows.Forms.Label();
             this.lblCancel_Ins = new System.Windows.Forms.Label();
             this.gbCancellation_Details = new System.Windows.Forms.GroupBox();
+            this.lblShowIns_CancDate = new System.Windows.Forms.Label();
+            this.lblShowIns_Duration = new System.Windows.Forms.Label();
+            this.lblShowRefund_Percent = new System.Windows.Forms.Label();
+            this.lblShowRefund_Premium = new System.Windows.Forms.Label();
             this.lblIns_Duration = new System.Windows.Forms.Label();
             this.lblCancel_RefundPer = new System.Windows.Forms.Label();
             this.lblCancel_RefundAmount = new System.Windows.Forms.Label();
             this.lblIns_CancelDate = new System.Windows.Forms.Label();
             this.btnConfirmCancel = new System.Windows.Forms.Button();
             this.btnIns_Details = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblShowIns_Last_Renewal = new System.Windows.Forms.Label();
+            this.lblShowIns_PurcDate = new System.Windows.Forms.Label();
+            this.lblShowOwner_Name = new System.Windows.Forms.Label();
+            this.lblShowCust_Name = new System.Windows.Forms.Label();
+            this.lblShowCust_ID = new System.Windows.Forms.Label();
+            this.lblShowVehicle_NO = new System.Windows.Forms.Label();
             this.lblShowIns_ID = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblShowIns_EndDate = new System.Windows.Forms.Label();
+            this.lblIns_EndDate = new System.Windows.Forms.Label();
             this.gbCancellation_Details.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblIns_Pur
             // 
             this.lblIns_Pur.AutoSize = true;
-            this.lblIns_Pur.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Pur.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_Pur.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_Pur.Location = new System.Drawing.Point(97, 339);
+            this.lblIns_Pur.Location = new System.Drawing.Point(97, 302);
             this.lblIns_Pur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_Pur.Name = "lblIns_Pur";
-            this.lblIns_Pur.Size = new System.Drawing.Size(155, 45);
+            this.lblIns_Pur.Size = new System.Drawing.Size(130, 37);
             this.lblIns_Pur.TabIndex = 33;
             this.lblIns_Pur.Text = "Purchased Date:";
             // 
             // lblCUST_ID
             // 
             this.lblCUST_ID.AutoSize = true;
-            this.lblCUST_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_ID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCUST_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblCUST_ID.Location = new System.Drawing.Point(98, 191);
             this.lblCUST_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCUST_ID.Name = "lblCUST_ID";
-            this.lblCUST_ID.Size = new System.Drawing.Size(131, 45);
+            this.lblCUST_ID.Size = new System.Drawing.Size(106, 37);
             this.lblCUST_ID.TabIndex = 32;
-            this.lblCUST_ID.Text = "Customer ID:";
-            // 
-            // lblIns_Type
-            // 
-            this.lblIns_Type.AutoSize = true;
-            this.lblIns_Type.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIns_Type.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_Type.Location = new System.Drawing.Point(98, 302);
-            this.lblIns_Type.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblIns_Type.Name = "lblIns_Type";
-            this.lblIns_Type.Size = new System.Drawing.Size(148, 45);
-            this.lblIns_Type.TabIndex = 31;
-            this.lblIns_Type.Text = "Insurance Type:";
+            this.lblCUST_ID.Text = "Customer ID";
             // 
             // lblCUST_Name
             // 
             this.lblCUST_Name.AutoSize = true;
-            this.lblCUST_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCUST_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCUST_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblCUST_Name.Location = new System.Drawing.Point(98, 228);
             this.lblCUST_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCUST_Name.Name = "lblCUST_Name";
-            this.lblCUST_Name.Size = new System.Drawing.Size(171, 45);
+            this.lblCUST_Name.Size = new System.Drawing.Size(139, 37);
             this.lblCUST_Name.TabIndex = 29;
-            this.lblCUST_Name.Text = "Customer\'s Name\t:";
+            this.lblCUST_Name.Text = "Customer\'s Name";
             // 
-            // lblIns_End
+            // lblIns_Last_Renewal
             // 
-            this.lblIns_End.AutoSize = true;
-            this.lblIns_End.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIns_End.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblIns_End.Location = new System.Drawing.Point(97, 376);
-            this.lblIns_End.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblIns_End.Name = "lblIns_End";
-            this.lblIns_End.Size = new System.Drawing.Size(102, 45);
-            this.lblIns_End.TabIndex = 28;
-            this.lblIns_End.Text = "End Date:";
+            this.lblIns_Last_Renewal.AutoSize = true;
+            this.lblIns_Last_Renewal.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_Last_Renewal.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIns_Last_Renewal.Location = new System.Drawing.Point(97, 339);
+            this.lblIns_Last_Renewal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIns_Last_Renewal.Name = "lblIns_Last_Renewal";
+            this.lblIns_Last_Renewal.Size = new System.Drawing.Size(146, 37);
+            this.lblIns_Last_Renewal.TabIndex = 28;
+            this.lblIns_Last_Renewal.Text = "Last Renewal Date";
             // 
             // lblOwner_Name
             // 
             this.lblOwner_Name.AutoSize = true;
-            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOwner_Name.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblOwner_Name.Location = new System.Drawing.Point(98, 265);
             this.lblOwner_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOwner_Name.Name = "lblOwner_Name";
-            this.lblOwner_Name.Size = new System.Drawing.Size(132, 45);
+            this.lblOwner_Name.Size = new System.Drawing.Size(108, 37);
             this.lblOwner_Name.TabIndex = 27;
-            this.lblOwner_Name.Text = "Owner Name:";
+            this.lblOwner_Name.Text = "Owner Name";
             // 
             // lblVehicle_NO
             // 
             this.lblVehicle_NO.AutoSize = true;
-            this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVehicle_NO.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVehicle_NO.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblVehicle_NO.Location = new System.Drawing.Point(98, 154);
             this.lblVehicle_NO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVehicle_NO.Name = "lblVehicle_NO";
-            this.lblVehicle_NO.Size = new System.Drawing.Size(264, 45);
+            this.lblVehicle_NO.Size = new System.Drawing.Size(219, 37);
             this.lblVehicle_NO.TabIndex = 26;
-            this.lblVehicle_NO.Text = "Vehicle Registration Number:";
+            this.lblVehicle_NO.Text = "Vehicle Registration Number";
             // 
             // lblIns_ID
             // 
             this.lblIns_ID.AutoSize = true;
-            this.lblIns_ID.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_ID.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIns_ID.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.lblIns_ID.Location = new System.Drawing.Point(98, 117);
             this.lblIns_ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIns_ID.Name = "lblIns_ID";
-            this.lblIns_ID.Size = new System.Drawing.Size(201, 45);
+            this.lblIns_ID.Size = new System.Drawing.Size(168, 37);
             this.lblIns_ID.TabIndex = 25;
-            this.lblIns_ID.Text = "Selected Insurance ID:";
+            this.lblIns_ID.Text = "Selected Insurance ID";
             // 
             // lblCancel_Ins
             // 
@@ -166,31 +154,70 @@
             this.lblCancel_Ins.TabIndex = 24;
             this.lblCancel_Ins.Text = "Cancellation of Policy";
             this.lblCancel_Ins.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCancel_Ins.Click += new System.EventHandler(this.lblCancel_Ins_Click);
             // 
             // gbCancellation_Details
             // 
-            this.gbCancellation_Details.Controls.Add(this.label1);
-            this.gbCancellation_Details.Controls.Add(this.label8);
-            this.gbCancellation_Details.Controls.Add(this.label10);
-            this.gbCancellation_Details.Controls.Add(this.label11);
+            this.gbCancellation_Details.Controls.Add(this.lblShowIns_CancDate);
+            this.gbCancellation_Details.Controls.Add(this.lblShowIns_Duration);
+            this.gbCancellation_Details.Controls.Add(this.lblShowRefund_Percent);
+            this.gbCancellation_Details.Controls.Add(this.lblShowRefund_Premium);
             this.gbCancellation_Details.Controls.Add(this.lblIns_Duration);
             this.gbCancellation_Details.Controls.Add(this.lblCancel_RefundPer);
             this.gbCancellation_Details.Controls.Add(this.lblCancel_RefundAmount);
             this.gbCancellation_Details.Controls.Add(this.lblIns_CancelDate);
             this.gbCancellation_Details.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.gbCancellation_Details.Location = new System.Drawing.Point(98, 420);
+            this.gbCancellation_Details.Location = new System.Drawing.Point(98, 414);
             this.gbCancellation_Details.Name = "gbCancellation_Details";
-            this.gbCancellation_Details.Size = new System.Drawing.Size(922, 219);
+            this.gbCancellation_Details.Size = new System.Drawing.Size(922, 208);
             this.gbCancellation_Details.TabIndex = 34;
             this.gbCancellation_Details.TabStop = false;
             this.gbCancellation_Details.Text = "Cancellation Details";
+            // 
+            // lblShowIns_CancDate
+            // 
+            this.lblShowIns_CancDate.AutoSize = true;
+            this.lblShowIns_CancDate.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowIns_CancDate.Location = new System.Drawing.Point(274, 29);
+            this.lblShowIns_CancDate.Name = "lblShowIns_CancDate";
+            this.lblShowIns_CancDate.Size = new System.Drawing.Size(164, 45);
+            this.lblShowIns_CancDate.TabIndex = 46;
+            this.lblShowIns_CancDate.Text = "(Show Cancel Date)";
+            // 
+            // lblShowIns_Duration
+            // 
+            this.lblShowIns_Duration.AutoSize = true;
+            this.lblShowIns_Duration.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowIns_Duration.Location = new System.Drawing.Point(274, 69);
+            this.lblShowIns_Duration.Name = "lblShowIns_Duration";
+            this.lblShowIns_Duration.Size = new System.Drawing.Size(239, 45);
+            this.lblShowIns_Duration.TabIndex = 47;
+            this.lblShowIns_Duration.Text = "(Show Duration of Insurance)";
+            // 
+            // lblShowRefund_Percent
+            // 
+            this.lblShowRefund_Percent.AutoSize = true;
+            this.lblShowRefund_Percent.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowRefund_Percent.Location = new System.Drawing.Point(274, 109);
+            this.lblShowRefund_Percent.Name = "lblShowRefund_Percent";
+            this.lblShowRefund_Percent.Size = new System.Drawing.Size(211, 45);
+            this.lblShowRefund_Percent.TabIndex = 48;
+            this.lblShowRefund_Percent.Text = "(Show Refund Percentage)";
+            // 
+            // lblShowRefund_Premium
+            // 
+            this.lblShowRefund_Premium.AutoSize = true;
+            this.lblShowRefund_Premium.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowRefund_Premium.Location = new System.Drawing.Point(274, 149);
+            this.lblShowRefund_Premium.Name = "lblShowRefund_Premium";
+            this.lblShowRefund_Premium.Size = new System.Drawing.Size(221, 45);
+            this.lblShowRefund_Premium.TabIndex = 49;
+            this.lblShowRefund_Premium.Text = "(Show Refund of Premium)";
             // 
             // lblIns_Duration
             // 
             this.lblIns_Duration.AutoSize = true;
             this.lblIns_Duration.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIns_Duration.Location = new System.Drawing.Point(28, 77);
+            this.lblIns_Duration.Location = new System.Drawing.Point(28, 69);
             this.lblIns_Duration.Name = "lblIns_Duration";
             this.lblIns_Duration.Size = new System.Drawing.Size(210, 45);
             this.lblIns_Duration.TabIndex = 3;
@@ -200,7 +227,7 @@
             // 
             this.lblCancel_RefundPer.AutoSize = true;
             this.lblCancel_RefundPer.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancel_RefundPer.Location = new System.Drawing.Point(28, 122);
+            this.lblCancel_RefundPer.Location = new System.Drawing.Point(28, 109);
             this.lblCancel_RefundPer.Name = "lblCancel_RefundPer";
             this.lblCancel_RefundPer.Size = new System.Drawing.Size(210, 45);
             this.lblCancel_RefundPer.TabIndex = 2;
@@ -210,7 +237,7 @@
             // 
             this.lblCancel_RefundAmount.AutoSize = true;
             this.lblCancel_RefundAmount.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCancel_RefundAmount.Location = new System.Drawing.Point(28, 167);
+            this.lblCancel_RefundAmount.Location = new System.Drawing.Point(28, 149);
             this.lblCancel_RefundAmount.Name = "lblCancel_RefundAmount";
             this.lblCancel_RefundAmount.Size = new System.Drawing.Size(188, 45);
             this.lblCancel_RefundAmount.TabIndex = 1;
@@ -220,7 +247,7 @@
             // 
             this.lblIns_CancelDate.AutoSize = true;
             this.lblIns_CancelDate.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIns_CancelDate.Location = new System.Drawing.Point(28, 32);
+            this.lblIns_CancelDate.Location = new System.Drawing.Point(28, 29);
             this.lblIns_CancelDate.Name = "lblIns_CancelDate";
             this.lblIns_CancelDate.Size = new System.Drawing.Size(125, 45);
             this.lblIns_CancelDate.TabIndex = 0;
@@ -254,113 +281,89 @@
             this.btnIns_Details.UseVisualStyleBackColor = false;
             this.btnIns_Details.Click += new System.EventHandler(this.btnIns_Details_Click);
             // 
-            // label9
+            // lblShowIns_Last_Renewal
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(204, 376);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(144, 45);
-            this.label9.TabIndex = 45;
-            this.label9.Text = "(Show End Date)";
+            this.lblShowIns_Last_Renewal.AutoSize = true;
+            this.lblShowIns_Last_Renewal.Location = new System.Drawing.Point(373, 339);
+            this.lblShowIns_Last_Renewal.Name = "lblShowIns_Last_Renewal";
+            this.lblShowIns_Last_Renewal.Size = new System.Drawing.Size(211, 45);
+            this.lblShowIns_Last_Renewal.TabIndex = 45;
+            this.lblShowIns_Last_Renewal.Text = "(Show Last Renewal Date)";
             // 
-            // label7
+            // lblShowIns_PurcDate
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(262, 339);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(191, 45);
-            this.label7.TabIndex = 43;
-            this.label7.Text = "(Show Purchased Date)";
+            this.lblShowIns_PurcDate.AutoSize = true;
+            this.lblShowIns_PurcDate.Location = new System.Drawing.Point(373, 302);
+            this.lblShowIns_PurcDate.Name = "lblShowIns_PurcDate";
+            this.lblShowIns_PurcDate.Size = new System.Drawing.Size(191, 45);
+            this.lblShowIns_PurcDate.TabIndex = 43;
+            this.lblShowIns_PurcDate.Text = "(Show Purchased Date)";
             // 
-            // label6
+            // lblShowOwner_Name
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(260, 302);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(184, 45);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "(Show Insurance Type)";
+            this.lblShowOwner_Name.AutoSize = true;
+            this.lblShowOwner_Name.Location = new System.Drawing.Point(373, 265);
+            this.lblShowOwner_Name.Name = "lblShowOwner_Name";
+            this.lblShowOwner_Name.Size = new System.Drawing.Size(172, 45);
+            this.lblShowOwner_Name.TabIndex = 41;
+            this.lblShowOwner_Name.Text = "(Show Owner Name)";
             // 
-            // label5
+            // lblShowCust_Name
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(245, 265);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 45);
-            this.label5.TabIndex = 41;
-            this.label5.Text = "(Show Owner Name)";
+            this.lblShowCust_Name.AutoSize = true;
+            this.lblShowCust_Name.Location = new System.Drawing.Point(373, 228);
+            this.lblShowCust_Name.Name = "lblShowCust_Name";
+            this.lblShowCust_Name.Size = new System.Drawing.Size(206, 45);
+            this.lblShowCust_Name.TabIndex = 40;
+            this.lblShowCust_Name.Text = "(Show Customer\'s Name)";
             // 
-            // label4
+            // lblShowCust_ID
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(276, 228);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(206, 45);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "(Show Customer\'s Name)";
+            this.lblShowCust_ID.AutoSize = true;
+            this.lblShowCust_ID.Location = new System.Drawing.Point(373, 190);
+            this.lblShowCust_ID.Name = "lblShowCust_ID";
+            this.lblShowCust_ID.Size = new System.Drawing.Size(170, 45);
+            this.lblShowCust_ID.TabIndex = 39;
+            this.lblShowCust_ID.Text = "(Show Customer ID)";
             // 
-            // label3
+            // lblShowVehicle_NO
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(242, 190);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 45);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "(Show Customer ID)";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(355, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(287, 45);
-            this.label2.TabIndex = 38;
-            this.label2.Text = "(Show Vehicle Registration Number)";
+            this.lblShowVehicle_NO.AutoSize = true;
+            this.lblShowVehicle_NO.Location = new System.Drawing.Point(373, 154);
+            this.lblShowVehicle_NO.Name = "lblShowVehicle_NO";
+            this.lblShowVehicle_NO.Size = new System.Drawing.Size(287, 45);
+            this.lblShowVehicle_NO.TabIndex = 38;
+            this.lblShowVehicle_NO.Text = "(Show Vehicle Registration Number)";
             // 
             // lblShowIns_ID
             // 
             this.lblShowIns_ID.AutoSize = true;
-            this.lblShowIns_ID.Location = new System.Drawing.Point(304, 117);
+            this.lblShowIns_ID.Location = new System.Drawing.Point(373, 117);
             this.lblShowIns_ID.Name = "lblShowIns_ID";
             this.lblShowIns_ID.Size = new System.Drawing.Size(234, 45);
             this.lblShowIns_ID.TabIndex = 37;
             this.lblShowIns_ID.Text = "( Show Selected Insurance ID)";
             // 
-            // label1
+            // lblShowIns_EndDate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(159, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 45);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "(Show Cancel Date)";
+            this.lblShowIns_EndDate.AutoSize = true;
+            this.lblShowIns_EndDate.Location = new System.Drawing.Point(374, 375);
+            this.lblShowIns_EndDate.Name = "lblShowIns_EndDate";
+            this.lblShowIns_EndDate.Size = new System.Drawing.Size(144, 45);
+            this.lblShowIns_EndDate.TabIndex = 47;
+            this.lblShowIns_EndDate.Text = "(Show End Date)";
             // 
-            // label8
+            // lblIns_EndDate
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(244, 77);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(239, 45);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "(Show Duration of Insurance)";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(244, 122);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(211, 45);
-            this.label10.TabIndex = 48;
-            this.label10.Text = "(Show Refund Percentage)";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(222, 167);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(221, 45);
-            this.label11.TabIndex = 49;
-            this.label11.Text = "(Show Refund of Premium)";
+            this.lblIns_EndDate.AutoSize = true;
+            this.lblIns_EndDate.Font = new System.Drawing.Font("Gabriola", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIns_EndDate.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIns_EndDate.Location = new System.Drawing.Point(98, 376);
+            this.lblIns_EndDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblIns_EndDate.Name = "lblIns_EndDate";
+            this.lblIns_EndDate.Size = new System.Drawing.Size(86, 37);
+            this.lblIns_EndDate.TabIndex = 46;
+            this.lblIns_EndDate.Text = "End Date:";
             // 
             // Cancellation_of_Insurance
             // 
@@ -368,22 +371,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblShowIns_EndDate);
+            this.Controls.Add(this.lblIns_EndDate);
+            this.Controls.Add(this.lblShowIns_Last_Renewal);
+            this.Controls.Add(this.lblShowIns_PurcDate);
+            this.Controls.Add(this.lblShowOwner_Name);
+            this.Controls.Add(this.lblShowCust_Name);
+            this.Controls.Add(this.lblShowCust_ID);
+            this.Controls.Add(this.lblShowVehicle_NO);
             this.Controls.Add(this.lblShowIns_ID);
             this.Controls.Add(this.btnConfirmCancel);
             this.Controls.Add(this.btnIns_Details);
             this.Controls.Add(this.gbCancellation_Details);
             this.Controls.Add(this.lblIns_Pur);
             this.Controls.Add(this.lblCUST_ID);
-            this.Controls.Add(this.lblIns_Type);
             this.Controls.Add(this.lblCUST_Name);
-            this.Controls.Add(this.lblIns_End);
+            this.Controls.Add(this.lblIns_Last_Renewal);
             this.Controls.Add(this.lblOwner_Name);
             this.Controls.Add(this.lblVehicle_NO);
             this.Controls.Add(this.lblIns_ID);
@@ -393,6 +396,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
             this.Name = "Cancellation_of_Insurance";
             this.Text = "Cancellation_of_Insurance";
+            this.Load += new System.EventHandler(this.Cancellation_of_Insurance_Load);
             this.gbCancellation_Details.ResumeLayout(false);
             this.gbCancellation_Details.PerformLayout();
             this.ResumeLayout(false);
@@ -404,9 +408,8 @@
 
         private System.Windows.Forms.Label lblIns_Pur;
         private System.Windows.Forms.Label lblCUST_ID;
-        private System.Windows.Forms.Label lblIns_Type;
         private System.Windows.Forms.Label lblCUST_Name;
-        private System.Windows.Forms.Label lblIns_End;
+        private System.Windows.Forms.Label lblIns_Last_Renewal;
         private System.Windows.Forms.Label lblOwner_Name;
         private System.Windows.Forms.Label lblVehicle_NO;
         private System.Windows.Forms.Label lblIns_ID;
@@ -418,17 +421,18 @@
         private System.Windows.Forms.Label lblIns_CancelDate;
         private System.Windows.Forms.Button btnConfirmCancel;
         private System.Windows.Forms.Button btnIns_Details;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblShowIns_Last_Renewal;
+        private System.Windows.Forms.Label lblShowIns_PurcDate;
+        private System.Windows.Forms.Label lblShowOwner_Name;
+        private System.Windows.Forms.Label lblShowCust_Name;
+        private System.Windows.Forms.Label lblShowCust_ID;
+        private System.Windows.Forms.Label lblShowVehicle_NO;
         private System.Windows.Forms.Label lblShowIns_ID;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblShowIns_CancDate;
+        private System.Windows.Forms.Label lblShowIns_Duration;
+        private System.Windows.Forms.Label lblShowRefund_Percent;
+        private System.Windows.Forms.Label lblShowRefund_Premium;
+        private System.Windows.Forms.Label lblShowIns_EndDate;
+        private System.Windows.Forms.Label lblIns_EndDate;
     }
 }
