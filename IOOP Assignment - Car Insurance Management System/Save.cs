@@ -37,7 +37,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         public static double GrossTotal = 0;
         public static double SST = 0;
         public static double Total = 0;
-        public static DateTime Today = DateTime.Today;
+        public static DateTime Today = DateTime.Now;
 
         //Vehicle
         public static string Vehicle_NO;
