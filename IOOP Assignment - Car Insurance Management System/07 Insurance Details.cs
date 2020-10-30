@@ -96,20 +96,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void btnRenew_Ins_Click(object sender, EventArgs e)
         {
-            DateTime zeroTime = new DateTime(1, 1, 1);
-            DateTime today = DateTime.Now; 
-            TimeSpan span = Save.enddate.Date - today.Date;
-            int duration = (zeroTime + span).Day - 1;
-            if (duration <= 60)
-            {
-                Renewal_of_Insurance renewal_Of_Insurance = new Renewal_of_Insurance();
-                this.Hide();
-                renewal_Of_Insurance.Show();
-            }
-            else
-            {
-                MessageBox.Show("Car insurance can only be renewed up to 60 days in advance");
-            }
+            Renewal_of_Insurance renewal_Of_Insurance = new Renewal_of_Insurance();
+            this.Hide();
+            renewal_Of_Insurance.Show();
         }
 
         private void btnCancel_Ins_Click(object sender, EventArgs e)

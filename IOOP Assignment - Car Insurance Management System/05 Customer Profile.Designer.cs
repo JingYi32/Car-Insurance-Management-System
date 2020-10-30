@@ -68,7 +68,7 @@
             this.lblProfile.Name = "lblProfile";
             this.lblProfile.Size = new System.Drawing.Size(398, 76);
             this.lblProfile.TabIndex = 1;
-            this.lblProfile.Text = "Mr./Mrs.____\'s Profile";
+            this.lblProfile.Text = "Customer\'s Profile";
             this.lblProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCUST_ID
