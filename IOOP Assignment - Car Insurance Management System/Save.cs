@@ -16,12 +16,14 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //INS
         public static string InsStatus;
         public static string InsType;
+        public static string RefundAmount;
         public static DateTime purchasedate;
         public static DateTime lastrenewaldate;
         public static DateTime enddate;
         public static DateTime RenewalDate;
         public static DateTime RenewalStartDate;
         public static DateTime RenewalEndDate;
+        public static DateTime CancelDate;
 
         //Customer
         public static string CustName;

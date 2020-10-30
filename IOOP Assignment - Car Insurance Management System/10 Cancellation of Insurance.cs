@@ -44,9 +44,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowIns_CancDate.Text = ":  " + DateTime.Now.ToString();
                 lblShowIns_Duration.Text = ":  " + calcutaleDuration().ToString();
                 lblShowRefund_Percent.Text = ":  " + int.Parse(calcutaleRefund().ToString()) * 100 + "%";
-                lblShowRefund_Premium.Text = ":  RM " + (Save.Total - calcutaleRefund()).ToString();
+                string refundamount = (Save.Total - calcutaleRefund()).ToString();
+                lblShowRefund_Premium.Text = ":  RM " + refundamount;
                 //Save
-                Save.RenewalDate = Convert.ToDateTime(dr[4].ToString());
+                Save.CancelDate = DateTime.Now;
+                Save.RefundAmount = refundamount;
 
             }
             else
@@ -114,6 +116,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             DialogResult result = MessageBox.Show(message, title, buttons);
             if (result == DialogResult.Yes)
             {
+                cmd.CommandText = "UPDATE Insurance SET Refund_Amount = '" + Save.RefundAmount + "', Ins_CancelDate = '" + Save.CancelDate + "', Ins_Status = 'Cancelled' WHERE ID = '" + Save.insuranceid + "';";
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+
                 Insurance_Details insurance_details = new Insurance_Details();
                 this.Hide();
                 insurance_details.Show();
