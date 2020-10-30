@@ -58,38 +58,36 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private double calcutaleRefund()
         {
-            DateTime zeroTime = new DateTime(1, 1, 1);
             TimeSpan span = DateTime.Now.Date - Save.lastrenewaldate.Date;
-            int month = (zeroTime + span).Month - 1;
-            double duration = 0;
+            int dayss = span.Days;
 
-            if (month < 1)
+            if (dayss < 30)
             {
-                return duration = 0.75;
+                return 0.75;
             }
-            else if (month < 2)
+            else if (dayss < 60)
             {
-                return duration = 0.625;
+                return 0.625;
             }
-            else if (month < 3)
+            else if (dayss < 90)
             {
-                return duration = 0.5;
+                return 0.5;
             }
-            else if (month < 4)
+            else if (dayss < 120)
             {
-                return duration = 0.375;
+                return 0.375;
             }
-            else if (month < 5)
+            else if (dayss < 150)
             {
-                return duration = 0.25;
+                return 0.25;
             }
-            else if (month < 6)
+            else if (dayss < 180)
             {
-                return duration = 0.125;
+                return 0.125;
             }
             else
             {
-                return duration = 0;
+                return 0;
             }
         }
 
@@ -97,7 +95,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             DateTime zeroTime = new DateTime(1, 1, 1);
             TimeSpan span = DateTime.Now.Date - Save.purchasedate.Date;
-            double year = (zeroTime + span).Year - 1;
+            double year = (zeroTime + span).Year;
             return year;
         }
 
