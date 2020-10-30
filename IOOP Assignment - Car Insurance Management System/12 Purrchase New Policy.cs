@@ -66,6 +66,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
                 else
                 {
+                    Save.purchasedate = DateTime.Now;
+                    Save.enddate = Save.purchasedate.AddYears(1);
+                    Save.lastrenewaldate = DateTime.Now;
+                    MessageBox.Show(Save.enddate.ToString());
                     Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
                     this.Hide();
                     selectpage.Show();
@@ -82,6 +86,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
                     this.Hide();
                     selectpage.Show();
+
                 }
             }
         }
@@ -298,7 +303,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     {
                         e.Cancel = false;
                         errorProvider7.SetError(txtOwner_ICNumber, "");
-                        Save.Owner_IC = int.Parse(txtOwner_ICNumber.Text).ToString();
+                        Save.Owner_IC = txtOwner_ICNumber.Text;
                     }
                     catch
                     {
@@ -314,6 +319,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 errorProvider7.SetError(txtOwner_ICNumber, "");
                 Save.Owner_IC = lblOwner_ICNumber.Text;
             }
+        }
+
+        private void Purrchase_New_Policy_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
         //Owner Name
@@ -437,23 +447,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 errorProvider11.SetError(txtOwner_Address, "");
                 Save.Owner_Address = lblOwner_Address.Text;
             }
-        }
-
-        private void displaycustomerdetails()
-        {
-            cmd.CommandText = "SELECT * FROM Customer WHERE ID = '" + Save.customerid + "'";
-            cmd.Connection = con;
-            OleDbDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
-            {
-                lblShowOwner_ICNumber.Text = dr[3].ToString();
-                lblShowOwner_Name.Text = dr[1].ToString();
-            }
-            else
-            {
-                MessageBox.Show("Record not found.");
-            }
-            dr.Close();
         }
     }
 }

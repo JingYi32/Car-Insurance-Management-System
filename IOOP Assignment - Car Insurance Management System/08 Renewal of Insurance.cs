@@ -35,12 +35,13 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 lblShowOwner_Name.Text = ":  " + dr[21].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
-                Save.RenewalDate = Convert.ToDateTime(dr[4].ToString());
                 lblShowIns_EndDate.Text = ":  " + dr[5].ToString();
                 lblShowIns_Type.Text = ":  " + dr[6].ToString();
-                DateTime localDate = DateTime.Now;
-                lblShowIns_StartDate.Text = ":  " + localDate.ToString();
-                lblShowIns_NewEndDate.Text = ":  " + localDate.AddYears(1).ToString();
+                Save.RenewalDate = DateTime.Now;
+                lblShowIns_StartDate.Text = ":  " + dr[5].ToString();
+                Save.RenewalStartDate = Convert.ToDateTime(dr[5].ToString());
+                Save.RenewalEndDate = Save.RenewalStartDate.AddYears(1);
+                lblShowIns_NewEndDate.Text = ":  " + Save.RenewalEndDate.ToString();
             }
             else
             {

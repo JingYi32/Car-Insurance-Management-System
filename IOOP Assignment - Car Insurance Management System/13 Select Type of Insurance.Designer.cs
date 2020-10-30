@@ -200,7 +200,6 @@
             this.lblDesFireTheft_IT.Text = "Everything above, plus coverage to your own vehicle if your car grt caught in fir" +
     "e, or get stolen.";
             this.lblDesFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblDesFireTheft_IT.Click += new System.EventHandler(this.label8_Click);
             // 
             // lblDesCover_IT
             // 
@@ -223,7 +222,6 @@
             this.lblType_IT.TabIndex = 8;
             this.lblType_IT.Text = "Insurance Type";
             this.lblType_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblType_IT.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblCover_IT
             // 
@@ -235,7 +233,6 @@
             this.lblCover_IT.TabIndex = 9;
             this.lblCover_IT.Text = "Comprehensive Cover";
             this.lblCover_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblCover_IT.Click += new System.EventHandler(this.label10_Click);
             // 
             // lblFireTheft_IT
             // 
@@ -247,7 +244,6 @@
             this.lblFireTheft_IT.TabIndex = 14;
             this.lblFireTheft_IT.Text = "Third Party, Fire and Theft";
             this.lblFireTheft_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblFireTheft_IT.Click += new System.EventHandler(this.label7_Click);
             // 
             // lblRateFireTheft_IT
             // 
@@ -270,7 +266,6 @@
             this.lblDescription_IT.TabIndex = 9;
             this.lblDescription_IT.Text = "Description";
             this.lblDescription_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblDescription_IT.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblRateThird_IT
             // 
@@ -282,7 +277,6 @@
             this.lblRateThird_IT.TabIndex = 13;
             this.lblRateThird_IT.Text = "2.66";
             this.lblRateThird_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblRateThird_IT.Click += new System.EventHandler(this.label6_Click);
             // 
             // lblRate_IT
             // 
@@ -294,7 +288,6 @@
             this.lblRate_IT.TabIndex = 10;
             this.lblRate_IT.Text = "Rate (%)";
             this.lblRate_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblRate_IT.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblThirdParty_IT
             // 
@@ -306,7 +299,6 @@
             this.lblThirdParty_IT.TabIndex = 11;
             this.lblThirdParty_IT.Text = "Third Party";
             this.lblThirdParty_IT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblThirdParty_IT.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblDesThird_IT
             // 
@@ -318,7 +310,6 @@
             this.lblDesThird_IT.TabIndex = 12;
             this.lblDesThird_IT.Text = resources.GetString("lblDesThird_IT.Text");
             this.lblDesThird_IT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblDesThird_IT.Click += new System.EventHandler(this.label5_Click);
             // 
             // Select_Type_of_Insurance
             // 
@@ -338,7 +329,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.Name = "Select_Type_of_Insurance";
             this.Text = "Select_Type_of_Insurance";
-            this.Load += new System.EventHandler(this.Select_Type_of_Insurance_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

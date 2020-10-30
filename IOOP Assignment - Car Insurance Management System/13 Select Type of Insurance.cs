@@ -19,56 +19,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             InitializeComponent();
         }
 
-        private void Select_Type_of_Insurance_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBack_IT_Click(object sender, EventArgs e)
         {
             Purrchase_New_Policy purchase = new Purrchase_New_Policy();
@@ -78,9 +28,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         
         private void btnContinue_IT_Click(object sender, EventArgs e)
-        {
-            
-
+        {            
             double insuranceType = 0;
             double marketPrice = Save.Vehicle_Price;
 
@@ -91,7 +39,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             Total_Payable_Amount_of_Insurance totalAmount = new Total_Payable_Amount_of_Insurance();
             totalAmount.Show();
             this.Hide();
-
         }
 
         private void InsType(ref double value)

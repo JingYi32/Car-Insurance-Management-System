@@ -22,13 +22,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             InitializeComponent();
         }
 
-        private void btnBack_TA_Click(object sender, EventArgs e)
-        {
-            Main_Page main_page = new Main_Page();
-            main_page.Show();
-            this.Hide();
-        }
-
         private void Total_Payable_Amount_of_Insurance_Load(object sender, EventArgs e)
         {
             conTA.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
@@ -40,12 +33,23 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             Calculate();
         }
 
+
+        //
+        //buttons
+        //
+
+        private void btnBack_TA_Click(object sender, EventArgs e)
+        {
+            Main_Page main_page = new Main_Page();
+            main_page.Show();
+            this.Hide();
+        }
+
         private void btnSave_TA_Click(object sender, EventArgs e)
         {
-            //new insurance
+            //Purchase new insurance
             if (Save.CountTotalINS==0)
             {
-                Save.RenewalEndDate = Save.Today.AddYears(1);
                 //owner and vehicle exist
                 if (Save.CountOwn != 0 && Save.CountVehicle != 0)
                 {
@@ -68,12 +72,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 //including owner details
                 else if (Save.CountOwn==0)
                 {
-                    cmdTA.CommandText = "insert into insurance (ID, Cust_ID, Ins_status, Ins_PurchasedDate, Ins_LastRenewalDate, Ins_EndDate, Ins_Type, Ins_GrossTotal, Ins_SST, Ins_StampDuty, Ins_Total, Owner_IC, Vehicle_RegistrationNo) VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.Today + "', '" + Save.Today + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')"; 
+                    //Insurance Table
+                    cmdTA.CommandText = "insert into insurance (ID, Cust_ID, Ins_status, Ins_PurchasedDate, Ins_LastRenewalDate, Ins_EndDate, Ins_Type, Ins_GrossTotal, Ins_SST, Ins_StampDuty, Ins_Total, Owner_IC, Vehicle_RegistrationNo) VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.lastrenewaldate + "', '" + Save.enddate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')"; 
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
-                    cmdTA.CommandText = "insert into owner VALUES ('" + Save.Owner_IC + "’, '" + Save.Owner_Name + "', '" + Save.Owner_Gender + "', '" + Save.Owner_Phone + "', '" + Save.Owner_Address + "')"; 
+                    //Owner Table
+                    cmdTA.CommandText = "insert into owner (Owner_IC, Owner_Name, Owner_Gender, Owner_Phone, Owner_Address) VALUES ('" + Save.Owner_IC + "’, '" + Save.Owner_Name + "', '" + Save.Owner_Gender + "', '" + Save.Owner_Phone + "', '" + Save.Owner_Address + "')"; 
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
+                    //Vehicle Table
                     cmdTA.CommandText= "insert into vehicle VALUES ('" + Save.Vehicle_NO + "', '" + Save.Vehicle_Brand + "', '" + Save.Vehicle_Model + "', '" + Save.Vehicle_YOM + "', '" + Save.Vehicle_Price + "')";
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
@@ -82,14 +89,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 
             }
 
-            //old insurance
+            //Renew insurance
             //does not need to include vehicle n owner
             else if (Save.CountTotalINS!=0)
-            {
-                Save.RenewalStartDate = Save.enddate;
-                Save.RenewalEndDate =Save.RenewalStartDate.AddYears(1);
-                
-                cmdTA.CommandText = "update insurance SET Ins_LastRenewalDate = '"+Save.Today+"' ，Ins_EndDate = '"+Save.RenewalEndDate+"', Ins_Total ='"+Save.Total+"' WHERE id = '"+Save.insuranceid+"'";
+            {             
+                cmdTA.CommandText = "update insurance SET Ins_LastRenewalDate = '"+Save.RenewalDate+"' ，Ins_EndDate = '"+Save.RenewalEndDate+"', Ins_Total ='"+Save.Total+"' WHERE id = '"+Save.insuranceid+"'";
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
             }
@@ -98,6 +102,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             mp.Show();
             this.Close();
         }
+
+        //
+        //Methods
+        //
 
         private void Calculate()
         {

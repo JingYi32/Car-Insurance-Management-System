@@ -34,17 +34,16 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 //Show
                 lblShowIns_ID.Text = ":  " + dr[0].ToString();
-                lblShowVehicle_NO.Text = ":  " + dr[13].ToString();
+                lblShowVehicle_NO.Text = ":  " + dr[15].ToString();
                 lblShowCust_ID.Text = ":  " + dr[1].ToString();
-                lblShowCust_Name.Text = ":  " + dr[24].ToString();
-                lblShowOwner_Name.Text = ":  " + dr[19].ToString();
+                lblShowCust_Name.Text = ":  " + dr[26].ToString();
+                lblShowOwner_Name.Text = ":  " + dr[21].ToString();
                 lblShowIns_PurcDate.Text = ":  " + dr[3].ToString();
                 lblShowIns_Last_Renewal.Text = ":  " + dr[4].ToString();
                 lblShowIns_EndDate.Text = ":  " + dr[5].ToString();
                 lblShowIns_CancDate.Text = ":  " + DateTime.Now.ToString();
                 lblShowRefund_Percent.Text = ":  " + calcutaleRefund() * 100 + "%";
                 lblShowIns_Duration.Text = ":  " + calcutaleDuration().ToString();
-                MessageBox.Show(calcutaleRefund().ToString());
                 string refundamount = (Save.Total - calcutaleRefund()).ToString();
                 lblShowRefund_Premium.Text = ":  RM " + refundamount;
                 //Save

@@ -327,11 +327,7 @@
             "G00003",
             "G00004",
             "G00005",
-            "G00006",
-            "G00007",
-            "G00008",
-            "G00009",
-            "G00010"});
+            "G00006"});
             this.cbCustomerID.Location = new System.Drawing.Point(405, 351);
             this.cbCustomerID.Name = "cbCustomerID";
             this.cbCustomerID.Size = new System.Drawing.Size(615, 48);
@@ -548,6 +544,7 @@
             this.Name = "Purrchase_New_Policy";
             this.Text = "Purrchase_New_Policy";
             this.Load += new System.EventHandler(this.Purrchase_New_Policy_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Purrchase_New_Policy_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();

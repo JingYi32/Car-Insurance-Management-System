@@ -10,38 +10,42 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 {
     class Status
     {
+        private string status;
+        private string id;
         OleDbConnection con = new OleDbConnection();
         OleDbCommand cmd = new OleDbCommand();
 
         public Status()
         {
-            con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
+            con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0; Data Source=IOOPAssignment.mdb;";
             con.Open();
             try
             {
-                cmd.CommandText = "SELECT * FROM Insurance WHERE ID = 'INS00009'";
+                cmd.CommandText = "SELECT * FROM Insurance";
                 cmd.Connection = con;
                 OleDbDataReader dr = cmd.ExecuteReader();
-                dr.Read();
-                string status = dr[2].ToString();
-                string id = dr[0].ToString();
-                dr.Close();
-                if (status == "Processing")
+                while (dr.Read())
                 {
-                    DateTime zeroTime = new DateTime(1, 1, 1);
-                    TimeSpan span = DateTime.Now - Save.lastrenewaldate;
-                    int month = (zeroTime + span).Month;
-                    if (month != 1)
+                    status = dr[2].ToString();
+                    id = dr[0].ToString();
+                    if (checkStatus(status))
                     {
-                        cmd.CommandText = "UPDATE Insurance SET Ins_Status = 'Expired' WHERE ID = '" + id + "';";
-                        cmd.Connection = con;
-                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Before:" + status);
+                        DateTime zeroTime = new DateTime(1, 1, 1);
+                        TimeSpan span = DateTime.Now - Save.lastrenewaldate;
+                        int month = (zeroTime + span).Month;
+                        if (month != 1)
+                        {
+                            updatestatus();
+                            MessageBox.Show("After:" + status);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("NOT Thing");
                     }
                 }
-                else
-                {
-
-                }
+                dr.Close();
 
             }
             catch(OleDbException)
@@ -49,6 +53,26 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 MessageBox.Show("Database table is opened.");
             }
 
+        }
+        private bool checkStatus(string status)
+        {
+            bool StatusProcessing;
+            if (status == "Processing")
+            {
+                StatusProcessing = true;
+            }
+            else
+            {
+                StatusProcessing = false;
+            }
+            return StatusProcessing;
+        }
+
+        private void updatestatus()
+        {
+            cmd.CommandText = "UPDATE Insurance SET Ins_Status = 'Expired' WHERE ID = '" + id + "';";
+            cmd.Connection = con;
+            cmd.ExecuteNonQuery();
         }
     }
 }
