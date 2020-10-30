@@ -83,6 +83,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
             }
+            MessageBox.Show("Save Successfully.");
+            Main_Page mp = new Main_Page();
+            mp.Show();
+            this.Close();
         }
 
         private void Calculate()
