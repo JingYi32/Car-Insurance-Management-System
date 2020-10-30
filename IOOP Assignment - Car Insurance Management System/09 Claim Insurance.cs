@@ -73,9 +73,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else
             {
-                Main_Page mp = new Main_Page();
-                mp.Show();
-                this.Close();
+                //doing noting
             }
             
         }
