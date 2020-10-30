@@ -25,7 +25,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 dr.Read();
                 string status = dr[2].ToString();
                 string id = dr[0].ToString();
-                MessageBox.Show(status);
                 dr.Close();
                 if (status == "Processing")
                 {
@@ -34,7 +33,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     int month = (zeroTime + span).Month;
                     if (month != 1)
                     {
-                        MessageBox.Show(id + "\n" + status);
                         cmd.CommandText = "UPDATE Insurance SET Ins_Status = 'Expired' WHERE ID = '" + id + "';";
                         cmd.Connection = con;
                         cmd.ExecuteNonQuery();
@@ -42,7 +40,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
                 else
                 {
-                    MessageBox.Show("Error");
+
                 }
 
             }

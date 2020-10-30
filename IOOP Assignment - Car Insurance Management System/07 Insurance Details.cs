@@ -98,11 +98,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             if (Save.InsStatus == "Claimed")
             {
-                MessageBox.Show("Claimed Insurance is not allow to renew.");
+                MessageBox.Show("This insurance has been claimed.");
             }
             else if (Save.InsStatus == "Expired")
             {
-                MessageBox.Show("Expired Insurance is not allow to renew.");
+                MessageBox.Show("This insurance has been expired.");
+            }
+            else if (Save.InsStatus == "Cancelled")
+            {
+                MessageBox.Show("This insurance has been cancelled.");
             }
             else if (Save.InsStatus == "Processing")
             {
@@ -134,6 +138,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             else if ( Save.InsStatus == "Expired")
             {
                 MessageBox.Show("Expired Insurance is not allow to renew.");
+            }
+            else if (Save.InsStatus == "Cancelled")
+            {
+                MessageBox.Show("This insurance has been cancelled.");
             }
             else if ( Save.InsStatus == "Processing")
             {

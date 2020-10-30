@@ -54,11 +54,10 @@
             this.txtSearch.BackColor = System.Drawing.Color.CadetBlue;
             this.txtSearch.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.SystemColors.Control;
-            this.txtSearch.Location = new System.Drawing.Point(98, 111);
+            this.txtSearch.Location = new System.Drawing.Point(98, 161);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(924, 58);
             this.txtSearch.TabIndex = 1;
-            this.txtSearch.Text = "Enter  to Search:";
             // 
             // dgvSearchResult
             // 
@@ -102,11 +101,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 176);
+            this.label1.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(101, 105);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(352, 45);
+            this.label1.Size = new System.Drawing.Size(169, 55);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Click to view the details of selected Insurance.";
+            this.label1.Text = "Enter to Search:";
             // 
             // Searching_Page
             // 
