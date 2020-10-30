@@ -57,7 +57,7 @@
             this.lblUpdateInsurance.Name = "lblUpdateInsurance";
             this.lblUpdateInsurance.Size = new System.Drawing.Size(398, 76);
             this.lblUpdateInsurance.TabIndex = 0;
-            this.lblUpdateInsurance.Text = "Update Claimed Insurance";
+            this.lblUpdateInsurance.Text = "Claim Insurance";
             this.lblUpdateInsurance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCustomerID_UI

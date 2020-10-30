@@ -70,7 +70,5 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             ins_details.Show();
             this.Close();
         }
-
-
     }
 }

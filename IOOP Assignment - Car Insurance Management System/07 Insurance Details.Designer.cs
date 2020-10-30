@@ -55,11 +55,13 @@
             this.lblShowOwner_Address = new System.Windows.Forms.Label();
             this.lblOwner_Address = new System.Windows.Forms.Label();
             this.lblShowOwner_ICNumber = new System.Windows.Forms.Label();
+            this.lblShowOwner_Name = new System.Windows.Forms.Label();
             this.lblShowOwner_Gender = new System.Windows.Forms.Label();
             this.lblShowOwner_Phone = new System.Windows.Forms.Label();
             this.lblOwner_Gender = new System.Windows.Forms.Label();
             this.lblOwner_Phone = new System.Windows.Forms.Label();
             this.lblOwner_IDNumber = new System.Windows.Forms.Label();
+            this.lblOwner_Name = new System.Windows.Forms.Label();
             this.gbAmount = new System.Windows.Forms.GroupBox();
             this.lblShowIns_GrossTotal = new System.Windows.Forms.Label();
             this.lblShowIns_SST = new System.Windows.Forms.Label();
@@ -69,12 +71,10 @@
             this.lblIns_StampDuty = new System.Windows.Forms.Label();
             this.lblIns_SST = new System.Windows.Forms.Label();
             this.lblIns_GrossTotal = new System.Windows.Forms.Label();
-            this.btnUpdate_Ins = new System.Windows.Forms.Button();
+            this.btnClaim_Ins = new System.Windows.Forms.Button();
             this.btnCancel_Ins = new System.Windows.Forms.Button();
             this.btnBack_Cust_Profile = new System.Windows.Forms.Button();
             this.btnRenew_Ins = new System.Windows.Forms.Button();
-            this.lblShowOwner_Name = new System.Windows.Forms.Label();
-            this.lblOwner_Name = new System.Windows.Forms.Label();
             this.gbVehicle.SuspendLayout();
             this.gbIns.SuspendLayout();
             this.gbOwner.SuspendLayout();
@@ -106,9 +106,9 @@
             this.gbVehicle.Controls.Add(this.lblVehicle_Brand);
             this.gbVehicle.Controls.Add(this.lblVehicle_NO);
             this.gbVehicle.Location = new System.Drawing.Point(38, 113);
-            this.gbVehicle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbVehicle.Margin = new System.Windows.Forms.Padding(2);
             this.gbVehicle.Name = "gbVehicle";
-            this.gbVehicle.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbVehicle.Padding = new System.Windows.Forms.Padding(2);
             this.gbVehicle.Size = new System.Drawing.Size(592, 232);
             this.gbVehicle.TabIndex = 5;
             this.gbVehicle.TabStop = false;
@@ -228,9 +228,9 @@
             this.gbIns.Controls.Add(this.lblIns_EndDate);
             this.gbIns.Controls.Add(this.lblIns_PurcDate);
             this.gbIns.Location = new System.Drawing.Point(657, 144);
-            this.gbIns.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbIns.Margin = new System.Windows.Forms.Padding(2);
             this.gbIns.Name = "gbIns";
-            this.gbIns.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbIns.Padding = new System.Windows.Forms.Padding(2);
             this.gbIns.Size = new System.Drawing.Size(396, 214);
             this.gbIns.TabIndex = 6;
             this.gbIns.TabStop = false;
@@ -349,9 +349,9 @@
             this.gbOwner.Controls.Add(this.lblOwner_IDNumber);
             this.gbOwner.Controls.Add(this.lblOwner_Name);
             this.gbOwner.Location = new System.Drawing.Point(59, 347);
-            this.gbOwner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbOwner.Margin = new System.Windows.Forms.Padding(2);
             this.gbOwner.Name = "gbOwner";
-            this.gbOwner.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbOwner.Padding = new System.Windows.Forms.Padding(2);
             this.gbOwner.Size = new System.Drawing.Size(414, 299);
             this.gbOwner.TabIndex = 7;
             this.gbOwner.TabStop = false;
@@ -385,6 +385,16 @@
             this.lblShowOwner_ICNumber.Size = new System.Drawing.Size(158, 45);
             this.lblShowOwner_ICNumber.TabIndex = 19;
             this.lblShowOwner_ICNumber.Text = "(Show IC Number)";
+            // 
+            // lblShowOwner_Name
+            // 
+            this.lblShowOwner_Name.AutoSize = true;
+            this.lblShowOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShowOwner_Name.Location = new System.Drawing.Point(132, 68);
+            this.lblShowOwner_Name.Name = "lblShowOwner_Name";
+            this.lblShowOwner_Name.Size = new System.Drawing.Size(119, 45);
+            this.lblShowOwner_Name.TabIndex = 20;
+            this.lblShowOwner_Name.Text = "(Show Name)";
             // 
             // lblShowOwner_Gender
             // 
@@ -436,6 +446,16 @@
             this.lblOwner_IDNumber.TabIndex = 6;
             this.lblOwner_IDNumber.Text = "IC Number";
             // 
+            // lblOwner_Name
+            // 
+            this.lblOwner_Name.AutoSize = true;
+            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOwner_Name.Location = new System.Drawing.Point(20, 68);
+            this.lblOwner_Name.Name = "lblOwner_Name";
+            this.lblOwner_Name.Size = new System.Drawing.Size(68, 45);
+            this.lblOwner_Name.TabIndex = 7;
+            this.lblOwner_Name.Text = "Name";
+            // 
             // gbAmount
             // 
             this.gbAmount.Controls.Add(this.lblShowIns_GrossTotal);
@@ -448,9 +468,9 @@
             this.gbAmount.Controls.Add(this.lblIns_GrossTotal);
             this.gbAmount.Font = new System.Drawing.Font("Gabriola", 10.8F);
             this.gbAmount.Location = new System.Drawing.Point(507, 392);
-            this.gbAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbAmount.Margin = new System.Windows.Forms.Padding(2);
             this.gbAmount.Name = "gbAmount";
-            this.gbAmount.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbAmount.Padding = new System.Windows.Forms.Padding(2);
             this.gbAmount.Size = new System.Drawing.Size(531, 229);
             this.gbAmount.TabIndex = 8;
             this.gbAmount.TabStop = false;
@@ -537,19 +557,19 @@
             this.lblIns_GrossTotal.TabIndex = 5;
             this.lblIns_GrossTotal.Text = "Insurance Premium Gross Total";
             // 
-            // btnUpdate_Ins
+            // btnClaim_Ins
             // 
-            this.btnUpdate_Ins.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnUpdate_Ins.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate_Ins.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate_Ins.Location = new System.Drawing.Point(815, 650);
-            this.btnUpdate_Ins.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnUpdate_Ins.Name = "btnUpdate_Ins";
-            this.btnUpdate_Ins.Size = new System.Drawing.Size(203, 49);
-            this.btnUpdate_Ins.TabIndex = 16;
-            this.btnUpdate_Ins.Text = "Update Policy";
-            this.btnUpdate_Ins.UseVisualStyleBackColor = false;
-            this.btnUpdate_Ins.Click += new System.EventHandler(this.btnUpdate_Ins_Click);
+            this.btnClaim_Ins.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnClaim_Ins.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClaim_Ins.ForeColor = System.Drawing.Color.White;
+            this.btnClaim_Ins.Location = new System.Drawing.Point(815, 650);
+            this.btnClaim_Ins.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClaim_Ins.Name = "btnClaim_Ins";
+            this.btnClaim_Ins.Size = new System.Drawing.Size(203, 49);
+            this.btnClaim_Ins.TabIndex = 16;
+            this.btnClaim_Ins.Text = "Claim Policy";
+            this.btnClaim_Ins.UseVisualStyleBackColor = false;
+            this.btnClaim_Ins.Click += new System.EventHandler(this.btnClaim_Ins_Click);
             // 
             // btnCancel_Ins
             // 
@@ -557,7 +577,7 @@
             this.btnCancel_Ins.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel_Ins.ForeColor = System.Drawing.Color.White;
             this.btnCancel_Ins.Location = new System.Drawing.Point(576, 650);
-            this.btnCancel_Ins.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel_Ins.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel_Ins.Name = "btnCancel_Ins";
             this.btnCancel_Ins.Size = new System.Drawing.Size(203, 49);
             this.btnCancel_Ins.TabIndex = 15;
@@ -571,7 +591,7 @@
             this.btnBack_Cust_Profile.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack_Cust_Profile.ForeColor = System.Drawing.Color.White;
             this.btnBack_Cust_Profile.Location = new System.Drawing.Point(98, 650);
-            this.btnBack_Cust_Profile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack_Cust_Profile.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack_Cust_Profile.Name = "btnBack_Cust_Profile";
             this.btnBack_Cust_Profile.Size = new System.Drawing.Size(203, 49);
             this.btnBack_Cust_Profile.TabIndex = 14;
@@ -585,33 +605,13 @@
             this.btnRenew_Ins.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRenew_Ins.ForeColor = System.Drawing.Color.White;
             this.btnRenew_Ins.Location = new System.Drawing.Point(337, 650);
-            this.btnRenew_Ins.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRenew_Ins.Margin = new System.Windows.Forms.Padding(2);
             this.btnRenew_Ins.Name = "btnRenew_Ins";
             this.btnRenew_Ins.Size = new System.Drawing.Size(203, 49);
             this.btnRenew_Ins.TabIndex = 17;
             this.btnRenew_Ins.Text = "Renew Policy";
             this.btnRenew_Ins.UseVisualStyleBackColor = false;
             this.btnRenew_Ins.Click += new System.EventHandler(this.btnRenew_Ins_Click);
-            // 
-            // lblShowOwner_Name
-            // 
-            this.lblShowOwner_Name.AutoSize = true;
-            this.lblShowOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblShowOwner_Name.Location = new System.Drawing.Point(132, 68);
-            this.lblShowOwner_Name.Name = "lblShowOwner_Name";
-            this.lblShowOwner_Name.Size = new System.Drawing.Size(119, 45);
-            this.lblShowOwner_Name.TabIndex = 20;
-            this.lblShowOwner_Name.Text = "(Show Name)";
-            // 
-            // lblOwner_Name
-            // 
-            this.lblOwner_Name.AutoSize = true;
-            this.lblOwner_Name.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOwner_Name.Location = new System.Drawing.Point(20, 68);
-            this.lblOwner_Name.Name = "lblOwner_Name";
-            this.lblOwner_Name.Size = new System.Drawing.Size(68, 45);
-            this.lblOwner_Name.TabIndex = 7;
-            this.lblOwner_Name.Text = "Name";
             // 
             // Insurance_Details
             // 
@@ -620,7 +620,7 @@
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
             this.Controls.Add(this.btnRenew_Ins);
-            this.Controls.Add(this.btnUpdate_Ins);
+            this.Controls.Add(this.btnClaim_Ins);
             this.Controls.Add(this.btnCancel_Ins);
             this.Controls.Add(this.btnBack_Cust_Profile);
             this.Controls.Add(this.gbAmount);
@@ -669,7 +669,7 @@
         private System.Windows.Forms.Label lblIns_StampDuty;
         private System.Windows.Forms.Label lblIns_SST;
         private System.Windows.Forms.Label lblIns_GrossTotal;
-        private System.Windows.Forms.Button btnUpdate_Ins;
+        private System.Windows.Forms.Button btnClaim_Ins;
         private System.Windows.Forms.Button btnCancel_Ins;
         private System.Windows.Forms.Button btnBack_Cust_Profile;
         private System.Windows.Forms.Button btnRenew_Ins;
