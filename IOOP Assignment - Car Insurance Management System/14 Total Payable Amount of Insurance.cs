@@ -45,8 +45,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             //new insurance
             if (Save.CountTotalINS==0)
             {
-                Save.RenewalStartDate = Save.enddate;
-                Save.RenewalEndDate = Save.RenewalStartDate.AddYears(1);
+                Save.RenewalEndDate = Save.Today.AddYears(1);
                 //owner and vehicle exist
                 if (Save.CountOwn != 0 && Save.CountVehicle != 0)
                 {
