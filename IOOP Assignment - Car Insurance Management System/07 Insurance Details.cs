@@ -155,9 +155,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
         }
 
-        private void btnUpdate_Ins_Click(object sender, EventArgs e)
+        private void btnClaim_Ins_Click(object sender, EventArgs e)
         {
-            if (Save.InsStatus == "Claimed")
+            if (Save.InsStatus == "Processing")
             {
                 Updating_Insurance updating_Insurance = new Updating_Insurance();
                 this.Hide();
@@ -165,7 +165,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else
             {
-                MessageBox.Show("This insurance has not be claimed.");
+                MessageBox.Show("This insurance is not able to be claimed.");
             }
         }
 
