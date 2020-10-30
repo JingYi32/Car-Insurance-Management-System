@@ -103,6 +103,32 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             lblShowOwner_Gender.Visible = true;
             lblShowOwner_Phone.Visible = true;
             lblShowOwner_Address.Visible = true;
+
+            //SAVE SAME OWNERS DETAILS
+            cmd.CommandText = "SELECT Customer.* FROM Insurance INNER JOIN Customer ON Insurance.Cust_ID = Customer.ID WHERE Customer.ID = '" + Save.customerid + "'";
+            cmd.Connection = con;
+            OleDbDataReader dr2 = cmd.ExecuteReader();
+            if (dr2.Read())
+            {
+                //Show Details
+                lblShowOwner_ICNumber.Text = ":  " + dr2[2].ToString();
+                lblShowOwner_Name.Text = ":  " + dr2[1].ToString();
+                lblShowOwner_Gender.Text = ":  " + dr2[4].ToString();
+                lblShowOwner_Phone.Text = ":  " + dr2[5].ToString();
+                lblShowOwner_Address.Text = ":  " + dr2[3].ToString();
+
+                //Save
+                Save.Owner_IC = dr2[2].ToString();
+                Save.Owner_Name = dr2[1].ToString();
+                Save.Owner_Gender = dr2[4].ToString();
+                Save.Owner_Phone = dr2[5].ToString();
+                Save.Owner_Address = dr2[3].ToString();
+            }
+            else
+            {
+                MessageBox.Show("Record not found.");
+            }
+            dr2.Close();
         }
 
         private void rbOthers_CheckedChanged(object sender, EventArgs e)

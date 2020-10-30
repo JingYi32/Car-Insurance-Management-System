@@ -74,7 +74,6 @@
             this.errorProvider10 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider11 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -323,7 +322,16 @@
             this.cbCustomerID.Font = new System.Drawing.Font("Gabriola", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCustomerID.FormattingEnabled = true;
             this.cbCustomerID.Items.AddRange(new object[] {
-            "G00001"});
+            "G00001",
+            "G00002",
+            "G00003",
+            "G00004",
+            "G00005",
+            "G00006",
+            "G00007",
+            "G00008",
+            "G00009",
+            "G00010"});
             this.cbCustomerID.Location = new System.Drawing.Point(405, 351);
             this.cbCustomerID.Name = "cbCustomerID";
             this.cbCustomerID.Size = new System.Drawing.Size(615, 48);
@@ -494,36 +502,21 @@
             this.label1.Text = "060-";
             this.label1.Visible = false;
             // 
-            // id
-            // 
-            this.id.AutoSize = true;
-            this.id.Location = new System.Drawing.Point(839, 53);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(64, 45);
-            this.id.TabIndex = 52;
-            this.id.Text = "label2";
-            // 
             // Purrchase_New_Policy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.id);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbCustomerID);
             this.Controls.Add(this.lblCust_ID);
             this.Controls.Add(this.rbOthers);
             this.Controls.Add(this.lblOwner_Name);
-            this.Controls.Add(this.txtOwner_ICNumber);
             this.Controls.Add(this.rbSame);
-            this.Controls.Add(this.txtOwner_Address);
             this.Controls.Add(this.btnProceed);
-            this.Controls.Add(this.txtOwner_Name);
             this.Controls.Add(this.lblOwner_Address);
-            this.Controls.Add(this.cbOwner_Gender);
             this.Controls.Add(this.btnMainPage);
-            this.Controls.Add(this.txtOwner_Phone);
             this.Controls.Add(this.txtVehicle_Brand);
             this.Controls.Add(this.txtVehicle_Model);
             this.Controls.Add(this.lblOwner_ICNumber);
@@ -544,6 +537,11 @@
             this.Controls.Add(this.lblShowOwner_ICNumber);
             this.Controls.Add(this.lblShowOwner_Gender);
             this.Controls.Add(this.lblShowOwner_Phone);
+            this.Controls.Add(this.txtOwner_ICNumber);
+            this.Controls.Add(this.txtOwner_Address);
+            this.Controls.Add(this.txtOwner_Name);
+            this.Controls.Add(this.cbOwner_Gender);
+            this.Controls.Add(this.txtOwner_Phone);
             this.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Margin = new System.Windows.Forms.Padding(3, 8, 3, 8);
@@ -613,6 +611,5 @@
         private System.Windows.Forms.ErrorProvider errorProvider10;
         private System.Windows.Forms.ErrorProvider errorProvider11;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label id;
     }
 }
