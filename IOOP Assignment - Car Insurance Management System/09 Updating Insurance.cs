@@ -28,7 +28,14 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             con.Open();
             showCUSID.Text = Save.customerid;
             showINSID.Text = Save.insuranceid;
-            
+
+            CBAccount.Items.Add("CIMB Bank");
+            CBAccount.Items.Add("Public Bank");
+            CBAccount.Items.Add("MayBank");
+            CBAccount.Items.Add("Hong Leong Bank");
+            CBAccount.Items.Add("HSBC Bank");
+            CBAccount.Items.Add("OCBC Bank");
+
         }
 
         private void btnSubmit_UI_Click(object sender, EventArgs e)
@@ -75,14 +82,5 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            CBAccount.Items.Add("CIMB Bank");
-            CBAccount.Items.Add("Public Bank");
-            CBAccount.Items.Add("MayBank");
-            CBAccount.Items.Add("Hong Leong Bank");
-            CBAccount.Items.Add("HSBC Bank");
-            CBAccount.Items.Add("OCBC Bank");
-        }
     }
 }
