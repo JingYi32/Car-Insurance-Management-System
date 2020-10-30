@@ -45,10 +45,12 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             //new insurance
             if (Save.CountTotalINS==0)
             {
+                Save.RenewalStartDate = Save.enddate;
+                Save.RenewalEndDate = Save.RenewalStartDate.AddYears(1);
                 //owner and vehicle exist
                 if (Save.CountOwn != 0 && Save.CountVehicle != 0)
                 {
-                    cmdTA.CommandText = "insert into insurance VALUES('"+Save.insuranceid+"', '"+Save.customerid+"', 'Processing', '"+Save.purchasedate+"', '"+Save.RenewalDate+"', '"+Save.RenewalEndDate+"', '"+Save.InsType+"', '"+Save.GrossTotal+"', '"+Save.SST+"', '10', '"+Save.Total+"', '"+Save.Owner_IC+"', '"+Save.Vehicle_NO+"')";
+                    cmdTA.CommandText = "insert into insurance VALUES('"+Save.insuranceid+"', '"+Save.customerid+"', 'Processing', '"+Save.Today+"', '"+Save.Today+"', '"+Save.RenewalEndDate+"', '"+Save.InsType+"', '"+Save.GrossTotal+"', '"+Save.SST+"', '10', '"+Save.Total+"', '"+Save.Owner_IC+"', '"+Save.Vehicle_NO+"')";
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
                 }
@@ -56,7 +58,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 //owner details has been saved before
                 else if (Save.CountOwn!=0)
                 {
-                    cmdTA.CommandText = "insert into insurance VALUES('"+Save.insuranceid+"', '"+Save.customerid+"', 'Processing', '"+Save.purchasedate+"', '"+Save.RenewalDate+"', '"+Save.RenewalEndDate+"', '"+Save.InsType+"', '"+Save.GrossTotal+"', '"+Save.SST+"', '10', '"+Save.Total+"', '"+Save.Owner_IC+"', '"+Save.Vehicle_NO+"'); insert into vehicle VALUES ('"+Save.Vehicle_NO+"', '"+Save.Vehicle_Brand+"', '"+Save.Vehicle_Model+"', '"+Save.Vehicle_YOM+"', '"+Save.Vehicle_Price+"')";
+                    cmdTA.CommandText = "insert into insurance VALUES('"+Save.insuranceid+"', '"+Save.customerid+"', 'Processing', '"+Save.Today+"', '"+Save.Today+"', '"+Save.RenewalEndDate+"', '"+Save.InsType+"', '"+Save.GrossTotal+"', '"+Save.SST+"', '10', '"+Save.Total+"', '"+Save.Owner_IC+"', '"+Save.Vehicle_NO+"')"; 
+                    cmdTA.Connection = conTA;
+                    cmdTA.ExecuteNonQuery();
+                    cmdTA.CommandText = "insert into vehicle VALUES ('" + Save.Vehicle_NO + "', '" + Save.Vehicle_Brand + "', '" + Save.Vehicle_Model + "', '" + Save.Vehicle_YOM + "', '" + Save.Vehicle_Price + "')";
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
                 }
@@ -64,7 +69,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 //including owner details
                 else if (Save.CountOwn==0)
                 {
-                    cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.RenewalDate + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')"; 
+                    cmdTA.CommandText = "insert into insurance VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.Today + "', '" + Save.Today + "', '" + Save.RenewalEndDate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')"; 
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
                     cmdTA.CommandText = "insert into owner VALUES ('" + Save.Owner_IC + "’, '" + Save.Owner_Name + "', '" + Save.Owner_Gender + "', '" + Save.Owner_Phone + "', '" + Save.Owner_Address + "')"; 
@@ -84,7 +89,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 Save.RenewalStartDate = Save.enddate;
                 Save.RenewalEndDate =Save.RenewalStartDate.AddYears(1);
-                MessageBox.Show(Save.RenewalEndDate.ToString());
+                
                 cmdTA.CommandText = "update into insurance SET Ins_LastRenewalDate = '"+Save.Today+"' ，Ins_EndDate = '"+Save.RenewalEndDate+"' WHERE id = '"+Save.insuranceid+"'";
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
