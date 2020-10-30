@@ -58,10 +58,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         {
             con.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             con.Open();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
             Status statuss = new Status();
         }
     }
