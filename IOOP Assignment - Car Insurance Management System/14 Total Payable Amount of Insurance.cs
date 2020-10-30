@@ -180,7 +180,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 //not found claim insurance
                 if (Save.CountTotalClaim == 0)
                 {
-                    ncd2 ncd = new ncd2();
+                    NCD ncd = new NCD();
                     ncd.calculateNCD(ref NCDFinal);
                     
                 }

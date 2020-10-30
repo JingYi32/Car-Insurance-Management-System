@@ -90,7 +90,6 @@
     </Compile>
     <Compile Include="Exit.cs" />
     <Compile Include="NCD.cs" />
-    <Compile Include="ncd2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="12 Purrchase New Policy.cs">
