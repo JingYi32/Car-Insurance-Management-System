@@ -38,14 +38,23 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 MessageBox.Show("Record not found.");
             }
             dr.Close();
+            try
+            {
+                if (!cbCustomerID.Items.Contains(Save.customerid))
+                {
+                    cbCustomerID.Items.Add(Save.customerid);
+                }
+            }
+            catch
+            {
 
+            }
         }
 
         public Purrchase_New_Policy()
         {
             InitializeComponent();
         }
-
         //
         //Button
         //
@@ -160,6 +169,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Vehicle Registration Number
         private void txtVehicle_NO_Validating(object sender, CancelEventArgs e)
         {
+            //Ensure there is a input value
             if (string.IsNullOrWhiteSpace(txtVehicle_NO.Text))
             {
                 e.Cancel = true;
@@ -177,6 +187,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Brand of Vehicle
         private void txtVehicle_Brand_Validating(object sender, CancelEventArgs e)
         {
+            //Ensure there is a input value
             if (string.IsNullOrWhiteSpace(txtVehicle_Brand.Text))
             {
                 e.Cancel = true;
@@ -194,6 +205,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Model of Vehicle
         private void txtVehicle_Model_Validating(object sender, CancelEventArgs e)
         {
+            //Ensure there is a input value
             if (string.IsNullOrWhiteSpace(txtVehicle_Model.Text))
             {
                 e.Cancel = true;
@@ -211,6 +223,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Manufacture Year of Vehicle
         private void txtVehicle_YOM_Validating(object sender, CancelEventArgs e)
         {
+            //Ensure there is a input value
             if (string.IsNullOrWhiteSpace(txtVehicle_YOM.Text))
             {
                 e.Cancel = true;
@@ -247,6 +260,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Purchased Price of Vehicle
         private void txtVehicle_Price_Validating(object sender, CancelEventArgs e)
         {
+            //Ensure there is a input value
             if (string.IsNullOrWhiteSpace(txtVehicle_Price.Text))
             {
                 e.Cancel = true;
@@ -255,6 +269,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else
             {
+                //Ensure input value is numeric
                 try
                 {
                     Save.Vehicle_Price = int.Parse(txtVehicle_Price.Text);
@@ -273,6 +288,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Customer ID
         private void cbCustomerID_Validating(object sender, CancelEventArgs e)
         {
+            //Ensure there is a input value
             if (cbCustomerID.SelectedIndex == -1)
             {
                 e.Cancel = true;
@@ -338,8 +354,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Owner Name
         private void txtOwner_Name_Validating(object sender, CancelEventArgs e)
         {
+            //Owner not same as the customer
             if (rbOthers.Checked)
             {
+                //Ensure there is a input value
                 if (string.IsNullOrWhiteSpace(txtOwner_Name.Text))
                 {
                     e.Cancel = true;
@@ -364,8 +382,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Owner Gender
         private void cbOwner_Gender_Validating(object sender, CancelEventArgs e)
         {
+            //Owner not same as the customer
             if (rbOthers.Checked)
             {
+                //Ensure there is a input value
                 if (cbOwner_Gender.SelectedIndex == -1)
                 {
                     e.Cancel = true;
@@ -390,8 +410,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Owner Phone
         private void txtOwner_Phone_Validating(object sender, CancelEventArgs e)
         {
+            //Owner not same as the customer
             if (rbOthers.Checked)
             {
+                //Ensure there is a input value
                 if (string.IsNullOrWhiteSpace(txtOwner_Phone.Text))
                 {
                     e.Cancel = true;
@@ -400,8 +422,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
                 else
                 {
+                    //Ensure input value is numeric
                     if (Regex.IsMatch(txtOwner_Phone.Text, "^[0 - 9] * $"))
                     {
+                        //Ensure input value is in a correct format
                         if ((txtOwner_Phone.Text.Length > 9) || (txtOwner_Phone.Text.Length < 9))
                         {
                             e.Cancel = true;
@@ -434,8 +458,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Owner Address
         private void txtOwner_Address_Validating(object sender, CancelEventArgs e)
         {
+            //Owner not same as the customer
             if (rbOthers.Checked)
             {
+                //Ensure there is a input value
                 if (string.IsNullOrWhiteSpace(txtOwner_Address.Text))
                 {
                     e.Cancel = true;

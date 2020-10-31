@@ -326,8 +326,7 @@
             "G00002",
             "G00003",
             "G00004",
-            "G00005",
-            "G00006"});
+            "G00005"});
             this.cbCustomerID.Location = new System.Drawing.Point(405, 351);
             this.cbCustomerID.Name = "cbCustomerID";
             this.cbCustomerID.Size = new System.Drawing.Size(615, 48);

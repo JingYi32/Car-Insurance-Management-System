@@ -73,11 +73,11 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 else if (Save.CountOwn==0)
                 {
                     //Insurance Table
-                    cmdTA.CommandText = "insert into insurance (ID, Cust_ID, Ins_status, Ins_PurchasedDate, Ins_LastRenewalDate, Ins_EndDate, Ins_Type, Ins_GrossTotal, Ins_SST, Ins_StampDuty, Ins_Total, Owner_IC, Vehicle_RegistrationNo) VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.lastrenewaldate + "', '" + Save.enddate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')"; 
+                    cmdTA.CommandText = "insert into Insurance (ID, Cust_ID, Ins_status, Ins_PurchasedDate, Ins_LastRenewalDate, Ins_EndDate, Ins_Type, Ins_GrossTotal, Ins_SST, Ins_StampDuty, Ins_Total, Owner_IC, Vehicle_RegistrationNo) VALUES('" + Save.insuranceid + "', '" + Save.customerid + "', 'Processing', '" + Save.purchasedate + "', '" + Save.lastrenewaldate + "', '" + Save.enddate + "', '" + Save.InsType + "', '" + Save.GrossTotal + "', '" + Save.SST + "', '10', '" + Save.Total + "', '" + Save.Owner_IC + "', '" + Save.Vehicle_NO + "')"; 
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
                     //Owner Table
-                    cmdTA.CommandText = "insert into owner (Owner_IC, Owner_Name, Owner_Gender, Owner_Phone, Owner_Address) VALUES ('" + Save.Owner_IC + "’, '" + Save.Owner_Name + "', '" + Save.Owner_Gender + "', '" + Save.Owner_Phone + "', '" + Save.Owner_Address + "')"; 
+                    cmdTA.CommandText = "INSERT INTO Owner VALUES ('" + Save.Owner_IC + "', '" + Save.Owner_Name + "', '" + Save.Owner_Gender + "', '" + Save.Owner_Phone + "', '" + Save.Owner_Address + "')";
                     cmdTA.Connection = conTA;
                     cmdTA.ExecuteNonQuery();
                     //Vehicle Table
