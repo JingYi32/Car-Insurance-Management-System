@@ -85,7 +85,6 @@
             this.lblRE_CustomerID.Size = new System.Drawing.Size(222, 51);
             this.lblRE_CustomerID.TabIndex = 1;
             this.lblRE_CustomerID.Text = "Customer ID            :";
-            this.lblRE_CustomerID.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblRE_Name
             // 
