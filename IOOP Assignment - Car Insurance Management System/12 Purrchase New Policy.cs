@@ -40,10 +40,18 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             dr.Close();
             try
             {
-                if (!cbCustomerID.Items.Contains(Save.customerid))
+                cmd.CommandText = "SELECT ID FROM Customer";
+                cmd.Connection = con;
+                OleDbDataReader dr2 = cmd.ExecuteReader();
+                while (dr2.Read())
                 {
-                    cbCustomerID.Items.Add(Save.customerid);
+                    if (!cbCustomerID.Items.Contains(dr2[0].ToString()))
+                    {
+                        cbCustomerID.Items.Add(dr2[0].ToString());
+                    }
                 }
+                dr2.Close();
+
             }
             catch
             {
@@ -77,9 +85,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 else
                 {
                     Save.purchasedate = DateTime.Now;
-                    Save.enddate = Save.purchasedate.AddYears(1);
+                    Save.enddate = (Save.purchasedate).AddYears(1);
                     Save.lastrenewaldate = DateTime.Now;
-                    MessageBox.Show(Save.enddate.ToString());
                     Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
                     this.Hide();
                     selectpage.Show();
@@ -93,6 +100,9 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
                 else
                 {
+                    Save.purchasedate = DateTime.Now;
+                    Save.enddate = (Save.purchasedate).AddYears(1);
+                    Save.lastrenewaldate = DateTime.Now;
                     Select_Type_of_Insurance selectpage = new Select_Type_of_Insurance();
                     this.Hide();
                     selectpage.Show();
