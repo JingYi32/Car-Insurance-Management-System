@@ -135,7 +135,6 @@
       <DependentUpon>09 Claim Insurance.cs</DependentUpon>
     </Compile>
     <Compile Include="Save.cs" />
-    <Compile Include="Status.cs" />
     <EmbeddedResource Include="01 Login Page.resx">
       <DependentUpon>01 Login Page.cs</DependentUpon>
     </EmbeddedResource>
