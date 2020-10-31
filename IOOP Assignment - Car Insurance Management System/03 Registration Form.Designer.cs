@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblRegisterForm = new System.Windows.Forms.Label();
             this.lblRE_CustomerID = new System.Windows.Forms.Label();
             this.lblRE_Name = new System.Windows.Forms.Label();
@@ -45,7 +46,19 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.cbbRE_Gender = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblRE_CustomerID2 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).BeginInit();
             this.SuspendLayout();
             // 
             // lblRegisterForm
@@ -154,6 +167,7 @@
             this.txtRE_Name.Name = "txtRE_Name";
             this.txtRE_Name.Size = new System.Drawing.Size(656, 53);
             this.txtRE_Name.TabIndex = 1;
+            this.txtRE_Name.Validating += new System.ComponentModel.CancelEventHandler(this.txtRE_Name_Validating);
             // 
             // txtRE_IDNo
             // 
@@ -163,6 +177,7 @@
             this.txtRE_IDNo.Name = "txtRE_IDNo";
             this.txtRE_IDNo.Size = new System.Drawing.Size(656, 53);
             this.txtRE_IDNo.TabIndex = 3;
+            this.txtRE_IDNo.Validating += new System.ComponentModel.CancelEventHandler(this.txtRE_IDNo_Validating);
             // 
             // txtRE_Address
             // 
@@ -172,6 +187,7 @@
             this.txtRE_Address.Name = "txtRE_Address";
             this.txtRE_Address.Size = new System.Drawing.Size(656, 53);
             this.txtRE_Address.TabIndex = 5;
+            this.txtRE_Address.Validating += new System.ComponentModel.CancelEventHandler(this.txtRE_Address_Validating);
             // 
             // txtRE_Contact
             // 
@@ -181,6 +197,7 @@
             this.txtRE_Contact.Name = "txtRE_Contact";
             this.txtRE_Contact.Size = new System.Drawing.Size(656, 53);
             this.txtRE_Contact.TabIndex = 6;
+            this.txtRE_Contact.Validating += new System.ComponentModel.CancelEventHandler(this.txtRE_Contact_Validating);
             // 
             // txtRE_Email
             // 
@@ -190,6 +207,7 @@
             this.txtRE_Email.Name = "txtRE_Email";
             this.txtRE_Email.Size = new System.Drawing.Size(656, 53);
             this.txtRE_Email.TabIndex = 7;
+            this.txtRE_Email.Validating += new System.ComponentModel.CancelEventHandler(this.txtRE_Email_Validating);
             // 
             // btnMenu
             // 
@@ -240,18 +258,43 @@
             this.cbbRE_Gender.Name = "cbbRE_Gender";
             this.cbbRE_Gender.Size = new System.Drawing.Size(656, 58);
             this.cbbRE_Gender.TabIndex = 4;
+            this.cbbRE_Gender.Validating += new System.ComponentModel.CancelEventHandler(this.cbbRE_Gender_Validating);
             // 
-            // label4
+            // lblRE_CustomerID2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(366, 134);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(216, 51);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "(Show Customer ID)";
+            this.lblRE_CustomerID2.AutoSize = true;
+            this.lblRE_CustomerID2.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRE_CustomerID2.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblRE_CustomerID2.Location = new System.Drawing.Point(366, 134);
+            this.lblRE_CustomerID2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblRE_CustomerID2.Name = "lblRE_CustomerID2";
+            this.lblRE_CustomerID2.Size = new System.Drawing.Size(216, 51);
+            this.lblRE_CustomerID2.TabIndex = 18;
+            this.lblRE_CustomerID2.Text = "(Show Customer ID)";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
+            // errorProvider4
+            // 
+            this.errorProvider4.ContainerControl = this;
+            // 
+            // errorProvider5
+            // 
+            this.errorProvider5.ContainerControl = this;
+            // 
+            // errorProvider6
+            // 
+            this.errorProvider6.ContainerControl = this;
             // 
             // Registration_Form
             // 
@@ -259,7 +302,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblRE_CustomerID2);
             this.Controls.Add(this.cbbRE_Gender);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnSubmit);
@@ -282,6 +325,12 @@
             this.Name = "Registration_Form";
             this.Text = "Registration_Form";
             this.Load += new System.EventHandler(this.Registration_Form_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,6 +355,12 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cbbRE_Gender;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblRE_CustomerID2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.ErrorProvider errorProvider4;
+        private System.Windows.Forms.ErrorProvider errorProvider5;
+        private System.Windows.Forms.ErrorProvider errorProvider6;
     }
 }
