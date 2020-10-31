@@ -28,8 +28,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 int id_numbering = int.Parse(dr[0].ToString()) + 1;
                 string id_number = id_numbering.ToString("00000");
-                Save.insuranceid = "G" + id_number;
-                lblRE_CustomerID2.Text = Save.insuranceid;
+                Save.customerid = "G" + id_number;
+                lblRE_CustomerID2.Text = Save.customerid;
             }
             dr.Close();
 

@@ -6,6 +6,7 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
@@ -289,8 +290,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         //Owner IC
         private void txtOwner_ICNumber_Validating(object sender, CancelEventArgs e)
         {
+            //Owner not same as the customer
             if (rbOthers.Checked)
             {
+                //Ensure there is a input value
                 if (string.IsNullOrWhiteSpace(txtOwner_ICNumber.Text))
                 {
                     e.Cancel = true;
@@ -299,17 +302,28 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
                 else
                 {
-                    try
+                    //Ensure the input value is numeric
+                    if (Regex.IsMatch(txtOwner_ICNumber.Text, "^[0-9]*$"))
                     {
-                        e.Cancel = false;
-                        errorProvider7.SetError(txtOwner_ICNumber, "");
-                        Save.Owner_IC = txtOwner_ICNumber.Text;
+                        //Ensure the input value is in a correct format
+                        if ((txtOwner_ICNumber.Text.Length > 12) || (txtOwner_ICNumber.Text.Length < 12))
+                        {
+                            e.Cancel = false;
+                            errorProvider7.SetError(txtOwner_ICNumber, "");
+                            Save.Owner_IC = txtOwner_ICNumber.Text;
+                        }
+                        else
+                        {
+                            e.Cancel = true;
+                            txtOwner_ICNumber.Focus();
+                            errorProvider7.SetError(txtOwner_ICNumber, "Please Enter A Valid Value.\n For example: 011213148987");
+                        }
                     }
-                    catch
+                    else
                     {
                         e.Cancel = true;
                         txtOwner_ICNumber.Focus();
-                        errorProvider7.SetError(txtOwner_ICNumber, "Please Enter A Valid Value.");
+                        errorProvider7.SetError(txtOwner_ICNumber, "Please Enter A Numeric Value.\n For example: 011213148987");
                     }
                 }
             }
@@ -319,11 +333,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 errorProvider7.SetError(txtOwner_ICNumber, "");
                 Save.Owner_IC = lblOwner_ICNumber.Text;
             }
-        }
-
-        private void Purrchase_New_Policy_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
         //Owner Name
@@ -391,9 +400,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 }
                 else
                 {
-                    try
+                    if (Regex.IsMatch(txtOwner_Phone.Text, "^[0 - 9] * $"))
                     {
-                        int numericcheck = int.Parse(txtOwner_Phone.Text);
                         if ((txtOwner_Phone.Text.Length > 9) || (txtOwner_Phone.Text.Length < 9))
                         {
                             e.Cancel = true;
@@ -407,7 +415,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                             Save.Owner_Phone = "060-" + txtOwner_Phone.Text;
                         }
                     }
-                    catch
+                    else
                     {
                         e.Cancel = true;
                         txtOwner_Phone.Focus();

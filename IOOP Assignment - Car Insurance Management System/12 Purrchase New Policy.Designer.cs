@@ -544,7 +544,6 @@
             this.Name = "Purrchase_New_Policy";
             this.Text = "Purrchase_New_Policy";
             this.Load += new System.EventHandler(this.Purrchase_New_Policy_Load);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Purrchase_New_Policy_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
