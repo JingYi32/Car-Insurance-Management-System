@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Data.OleDb;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace IOOP_Assignment___Car_Insurance_Management_System
@@ -93,6 +94,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
 
         private void txtRE_IDNo_Validating(object sender, CancelEventArgs e)
         {
+            //Ensure there is a input value
             if (string.IsNullOrWhiteSpace(txtRE_IDNo.Text))
             {
                 e.Cancel = true;
@@ -101,9 +103,29 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else
             {
-                e.Cancel = false;
-                errorProvider2.SetError(txtRE_IDNo, "");
-                Save.CustIC = txtRE_IDNo.Text;
+                //Ensure the input value is numeric
+                if (Regex.IsMatch(txtRE_IDNo.Text, "^[0-9]*$"))
+                {
+                    //Ensure the input value is in a correct format
+                    if ((txtRE_IDNo.Text.Length > 12) || (txtRE_IDNo.Text.Length < 12))
+                    {
+                        e.Cancel = false;
+                        errorProvider2.SetError(txtRE_IDNo, "");
+                        Save.CustIC = txtRE_IDNo.Text;
+                    }
+                    else
+                    {
+                        e.Cancel = true;
+                        txtRE_IDNo.Focus();
+                        errorProvider2.SetError(txtRE_IDNo, "Please Enter A Valid Value.");
+                    }
+                }
+                else
+                {
+                    e.Cancel = true;
+                    txtRE_IDNo.Focus();
+                    errorProvider2.SetError(txtRE_IDNo, "Please Enter A Numeric Value.");
+                }
             }
         }
 
@@ -149,9 +171,21 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
             else
             {
-                e.Cancel = false;
-                errorProvider5.SetError(txtRE_Contact, "");
-                Save.CustPhone = txtRE_Contact.Text;
+                if (Regex.IsMatch(txtRE_Contact.Text, "^[0 - 9] * $"))
+                {
+                    if ((txtRE_Contact.Text.Length > 9) || (txtRE_Contact.Text.Length < 9))
+                    {
+                        e.Cancel = true;
+                        txtRE_Contact.Focus();
+                        errorProvider5.SetError(txtRE_Contact, "Please Enter A Valid Contact Number of Customer.");
+                    }
+                    else
+                    {
+                        e.Cancel = false;
+                        errorProvider5.SetError(txtRE_Contact, "");
+                        Save.CustPhone = "060-" + txtRE_Contact.Text;
+                    }
+                }
             }
 
         }
