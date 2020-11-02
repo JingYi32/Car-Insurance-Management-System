@@ -92,10 +92,12 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             //Renew insurance
             //does not need to include vehicle n owner
             else if (Save.CountTotalINS!=0)
-            {             
-                cmdTA.CommandText = "update insurance SET Ins_LastRenewalDate = '"+Save.RenewalDate+"' ，Ins_EndDate = '"+Save.RenewalEndDate+"', Ins_Total ='"+Save.Total+"' WHERE id = '"+Save.insuranceid+"'";
+            {
+                cmdTA.CommandText = "update insurance set Ins_LastRenewalDate = '"+Save.RenewalDate+"', Ins_EndDate = '"+Save.RenewalEndDate+"', Ins_Total = '"+Save.Total+"' where id = '"+Save.insuranceid+"'";
                 cmdTA.Connection = conTA;
                 cmdTA.ExecuteNonQuery();
+
+               
             }
             MessageBox.Show("Save Successfully.");
             Main_Page mp = new Main_Page();
