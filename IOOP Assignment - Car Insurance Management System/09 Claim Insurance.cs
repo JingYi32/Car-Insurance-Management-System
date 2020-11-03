@@ -49,6 +49,10 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Insert Successfully");
 
+                cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE id='" + Save.insuranceid + "'";
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+
                 Main_Page mp = new Main_Page();
                 mp.Show();
                 this.Close();
@@ -59,9 +63,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 MessageBox.Show("Please fill in the textbox.");
             }
 
-            cmd.CommandText = "UPDATE insurance SET Ins_status ='Claimed' WHERE id='"+Save.insuranceid+"'";
-            cmd.Connection = con;
-            cmd.ExecuteNonQuery();
+            
         }
 
         private void btnBack_UI_Click(object sender, EventArgs e)
