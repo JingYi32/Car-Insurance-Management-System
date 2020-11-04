@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.lblUpdateInsurance = new System.Windows.Forms.Label();
-            this.lblCustomerID_UI = new System.Windows.Forms.Label();
-            this.lblInsuranceID_UI = new System.Windows.Forms.Label();
-            this.lblDateApply_UI = new System.Windows.Forms.Label();
-            this.lblDateApprove_UI = new System.Windows.Forms.Label();
-            this.lblBankAccount_UI = new System.Windows.Forms.Label();
-            this.lblReasons_UI = new System.Windows.Forms.Label();
-            this.lblTotalAmount_UI = new System.Windows.Forms.Label();
+            this.lblCustomerID = new System.Windows.Forms.Label();
+            this.lblInsuranceID = new System.Windows.Forms.Label();
+            this.lblDateApply = new System.Windows.Forms.Label();
+            this.lblDateApprove = new System.Windows.Forms.Label();
+            this.lblBankAccount = new System.Windows.Forms.Label();
+            this.lblReasons = new System.Windows.Forms.Label();
+            this.lblTotalAmount = new System.Windows.Forms.Label();
             this.btnBack_UI = new System.Windows.Forms.Button();
             this.btnSubmit_UI = new System.Windows.Forms.Button();
             this.textReasons_UI = new System.Windows.Forms.TextBox();
@@ -60,82 +60,82 @@
             this.lblUpdateInsurance.Text = "Claim Insurance";
             this.lblUpdateInsurance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblCustomerID_UI
+            // lblCustomerID
             // 
-            this.lblCustomerID_UI.AutoSize = true;
-            this.lblCustomerID_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerID_UI.Location = new System.Drawing.Point(89, 142);
-            this.lblCustomerID_UI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerID_UI.Name = "lblCustomerID_UI";
-            this.lblCustomerID_UI.Size = new System.Drawing.Size(150, 51);
-            this.lblCustomerID_UI.TabIndex = 1;
-            this.lblCustomerID_UI.Text = "Customer ID:";
+            this.lblCustomerID.AutoSize = true;
+            this.lblCustomerID.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerID.Location = new System.Drawing.Point(89, 142);
+            this.lblCustomerID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCustomerID.Name = "lblCustomerID";
+            this.lblCustomerID.Size = new System.Drawing.Size(150, 51);
+            this.lblCustomerID.TabIndex = 1;
+            this.lblCustomerID.Text = "Customer ID:";
             // 
-            // lblInsuranceID_UI
+            // lblInsuranceID
             // 
-            this.lblInsuranceID_UI.AutoSize = true;
-            this.lblInsuranceID_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInsuranceID_UI.Location = new System.Drawing.Point(89, 204);
-            this.lblInsuranceID_UI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblInsuranceID_UI.Name = "lblInsuranceID_UI";
-            this.lblInsuranceID_UI.Size = new System.Drawing.Size(152, 51);
-            this.lblInsuranceID_UI.TabIndex = 2;
-            this.lblInsuranceID_UI.Text = "Insurance ID:";
+            this.lblInsuranceID.AutoSize = true;
+            this.lblInsuranceID.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInsuranceID.Location = new System.Drawing.Point(89, 204);
+            this.lblInsuranceID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInsuranceID.Name = "lblInsuranceID";
+            this.lblInsuranceID.Size = new System.Drawing.Size(152, 51);
+            this.lblInsuranceID.TabIndex = 2;
+            this.lblInsuranceID.Text = "Insurance ID:";
             // 
-            // lblDateApply_UI
+            // lblDateApply
             // 
-            this.lblDateApply_UI.AutoSize = true;
-            this.lblDateApply_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateApply_UI.Location = new System.Drawing.Point(89, 266);
-            this.lblDateApply_UI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDateApply_UI.Name = "lblDateApply_UI";
-            this.lblDateApply_UI.Size = new System.Drawing.Size(161, 51);
-            this.lblDateApply_UI.TabIndex = 3;
-            this.lblDateApply_UI.Text = "Date to Apply:";
+            this.lblDateApply.AutoSize = true;
+            this.lblDateApply.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateApply.Location = new System.Drawing.Point(89, 266);
+            this.lblDateApply.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDateApply.Name = "lblDateApply";
+            this.lblDateApply.Size = new System.Drawing.Size(161, 51);
+            this.lblDateApply.TabIndex = 3;
+            this.lblDateApply.Text = "Date to Apply:";
             // 
-            // lblDateApprove_UI
+            // lblDateApprove
             // 
-            this.lblDateApprove_UI.AutoSize = true;
-            this.lblDateApprove_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDateApprove_UI.Location = new System.Drawing.Point(89, 328);
-            this.lblDateApprove_UI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblDateApprove_UI.Name = "lblDateApprove_UI";
-            this.lblDateApprove_UI.Size = new System.Drawing.Size(185, 51);
-            this.lblDateApprove_UI.TabIndex = 4;
-            this.lblDateApprove_UI.Text = "Date to Approve:";
+            this.lblDateApprove.AutoSize = true;
+            this.lblDateApprove.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDateApprove.Location = new System.Drawing.Point(89, 328);
+            this.lblDateApprove.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDateApprove.Name = "lblDateApprove";
+            this.lblDateApprove.Size = new System.Drawing.Size(185, 51);
+            this.lblDateApprove.TabIndex = 4;
+            this.lblDateApprove.Text = "Date to Approve:";
             // 
-            // lblBankAccount_UI
+            // lblBankAccount
             // 
-            this.lblBankAccount_UI.AutoSize = true;
-            this.lblBankAccount_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBankAccount_UI.Location = new System.Drawing.Point(89, 390);
-            this.lblBankAccount_UI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBankAccount_UI.Name = "lblBankAccount_UI";
-            this.lblBankAccount_UI.Size = new System.Drawing.Size(163, 51);
-            this.lblBankAccount_UI.TabIndex = 5;
-            this.lblBankAccount_UI.Text = "Bank Account:";
+            this.lblBankAccount.AutoSize = true;
+            this.lblBankAccount.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBankAccount.Location = new System.Drawing.Point(89, 390);
+            this.lblBankAccount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBankAccount.Name = "lblBankAccount";
+            this.lblBankAccount.Size = new System.Drawing.Size(163, 51);
+            this.lblBankAccount.TabIndex = 5;
+            this.lblBankAccount.Text = "Bank Account:";
             // 
-            // lblReasons_UI
+            // lblReasons
             // 
-            this.lblReasons_UI.AutoSize = true;
-            this.lblReasons_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReasons_UI.Location = new System.Drawing.Point(89, 452);
-            this.lblReasons_UI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblReasons_UI.Name = "lblReasons_UI";
-            this.lblReasons_UI.Size = new System.Drawing.Size(105, 51);
-            this.lblReasons_UI.TabIndex = 6;
-            this.lblReasons_UI.Text = "Reasons:";
+            this.lblReasons.AutoSize = true;
+            this.lblReasons.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReasons.Location = new System.Drawing.Point(89, 452);
+            this.lblReasons.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblReasons.Name = "lblReasons";
+            this.lblReasons.Size = new System.Drawing.Size(105, 51);
+            this.lblReasons.TabIndex = 6;
+            this.lblReasons.Text = "Reasons:";
             // 
-            // lblTotalAmount_UI
+            // lblTotalAmount
             // 
-            this.lblTotalAmount_UI.AutoSize = true;
-            this.lblTotalAmount_UI.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAmount_UI.Location = new System.Drawing.Point(89, 514);
-            this.lblTotalAmount_UI.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalAmount_UI.Name = "lblTotalAmount_UI";
-            this.lblTotalAmount_UI.Size = new System.Drawing.Size(233, 51);
-            this.lblTotalAmount_UI.TabIndex = 7;
-            this.lblTotalAmount_UI.Text = "Total Amount Gained:";
+            this.lblTotalAmount.AutoSize = true;
+            this.lblTotalAmount.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalAmount.Location = new System.Drawing.Point(89, 514);
+            this.lblTotalAmount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalAmount.Name = "lblTotalAmount";
+            this.lblTotalAmount.Size = new System.Drawing.Size(233, 51);
+            this.lblTotalAmount.TabIndex = 7;
+            this.lblTotalAmount.Text = "Total Amount Gained:";
             // 
             // btnBack_UI
             // 
@@ -247,13 +247,13 @@
             this.Controls.Add(this.textReasons_UI);
             this.Controls.Add(this.btnSubmit_UI);
             this.Controls.Add(this.btnBack_UI);
-            this.Controls.Add(this.lblTotalAmount_UI);
-            this.Controls.Add(this.lblReasons_UI);
-            this.Controls.Add(this.lblBankAccount_UI);
-            this.Controls.Add(this.lblDateApprove_UI);
-            this.Controls.Add(this.lblDateApply_UI);
-            this.Controls.Add(this.lblInsuranceID_UI);
-            this.Controls.Add(this.lblCustomerID_UI);
+            this.Controls.Add(this.lblTotalAmount);
+            this.Controls.Add(this.lblReasons);
+            this.Controls.Add(this.lblBankAccount);
+            this.Controls.Add(this.lblDateApprove);
+            this.Controls.Add(this.lblDateApply);
+            this.Controls.Add(this.lblInsuranceID);
+            this.Controls.Add(this.lblCustomerID);
             this.Controls.Add(this.lblUpdateInsurance);
             this.Controls.Add(this.dtApply);
             this.Font = new System.Drawing.Font("Gabriola", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -270,13 +270,13 @@
         #endregion
 
         private System.Windows.Forms.Label lblUpdateInsurance;
-        private System.Windows.Forms.Label lblCustomerID_UI;
-        private System.Windows.Forms.Label lblInsuranceID_UI;
-        private System.Windows.Forms.Label lblDateApply_UI;
-        private System.Windows.Forms.Label lblDateApprove_UI;
-        private System.Windows.Forms.Label lblBankAccount_UI;
-        private System.Windows.Forms.Label lblReasons_UI;
-        private System.Windows.Forms.Label lblTotalAmount_UI;
+        private System.Windows.Forms.Label lblCustomerID;
+        private System.Windows.Forms.Label lblInsuranceID;
+        private System.Windows.Forms.Label lblDateApply;
+        private System.Windows.Forms.Label lblDateApprove;
+        private System.Windows.Forms.Label lblBankAccount;
+        private System.Windows.Forms.Label lblReasons;
+        private System.Windows.Forms.Label lblTotalAmount;
         private System.Windows.Forms.Button btnBack_UI;
         private System.Windows.Forms.Button btnSubmit_UI;
         private System.Windows.Forms.TextBox textReasons_UI;
