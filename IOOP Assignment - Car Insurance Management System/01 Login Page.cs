@@ -21,7 +21,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSignin_Click(object sender, EventArgs e)
         {
             cmd.CommandText = "select * from staff where username = '" + txtUsername.Text + "'";
             cmd.Connection = con;
@@ -48,7 +48,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             drusername.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             Exit exit = new Exit();
             exit.comfirm();

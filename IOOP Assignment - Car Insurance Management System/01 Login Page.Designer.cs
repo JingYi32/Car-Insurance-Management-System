@@ -116,7 +116,7 @@
             this.btnSignin.TabIndex = 7;
             this.btnSignin.Text = "Sign in";
             this.btnSignin.UseVisualStyleBackColor = false;
-            this.btnSignin.Click += new System.EventHandler(this.button1_Click);
+            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
             // 
             // btnExit
             // 
@@ -129,7 +129,7 @@
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "EXIT";
             this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.button3_Click);
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Login_Page
             // 
