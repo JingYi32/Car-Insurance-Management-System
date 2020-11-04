@@ -334,15 +334,15 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                         //Ensure the input value is in a correct format
                         if ((txtOwner_ICNumber.Text.Length > 12) || (txtOwner_ICNumber.Text.Length < 12))
                         {
-                            e.Cancel = false;
-                            errorProvider7.SetError(txtOwner_ICNumber, "");
-                            Save.Owner_IC = txtOwner_ICNumber.Text;
-                        }
-                        else
-                        {
                             e.Cancel = true;
                             txtOwner_ICNumber.Focus();
                             errorProvider7.SetError(txtOwner_ICNumber, "Please Enter A Valid Value.\n For example: 011213148987");
+                        }
+                        else
+                        {
+                            e.Cancel = false;
+                            errorProvider7.SetError(txtOwner_ICNumber, "");
+                            Save.Owner_IC = txtOwner_ICNumber.Text;
                         }
                     }
                     else
@@ -433,7 +433,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 else
                 {
                     //Ensure input value is numeric
-                    if (Regex.IsMatch(txtOwner_Phone.Text, "^[0 - 9] * $"))
+                    if (Regex.IsMatch(txtOwner_Phone.Text, "^[0-9]*$"))
                     {
                         //Ensure input value is in a correct format
                         if ((txtOwner_Phone.Text.Length > 9) || (txtOwner_Phone.Text.Length < 9))
@@ -453,7 +453,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                     {
                         e.Cancel = true;
                         txtOwner_Phone.Focus();
-                        errorProvider10.SetError(txtOwner_Phone, "Please Enter A Valid Value.");
+                        errorProvider10.SetError(txtOwner_Phone, "Please Enter A Numeric Valid Value.");
                     }
                 }
             }
