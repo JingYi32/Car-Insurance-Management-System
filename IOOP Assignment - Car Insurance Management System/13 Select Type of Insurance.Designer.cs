@@ -34,8 +34,8 @@
             this.rbFireTheft = new System.Windows.Forms.RadioButton();
             this.rbComprehensive = new System.Windows.Forms.RadioButton();
             this.lblSelect = new System.Windows.Forms.Label();
-            this.btnBack_IT = new System.Windows.Forms.Button();
-            this.btnContinue_IT = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblRateCover_IT = new System.Windows.Forms.Label();
             this.lblDesFireTheft_IT = new System.Windows.Forms.Label();
@@ -119,33 +119,33 @@
             this.lblSelect.TabIndex = 4;
             this.lblSelect.Text = "Please select Insurance Type:";
             // 
-            // btnBack_IT
+            // btnBack
             // 
-            this.btnBack_IT.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnBack_IT.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack_IT.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnBack_IT.Location = new System.Drawing.Point(98, 649);
-            this.btnBack_IT.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.btnBack_IT.Name = "btnBack_IT";
-            this.btnBack_IT.Size = new System.Drawing.Size(203, 49);
-            this.btnBack_IT.TabIndex = 5;
-            this.btnBack_IT.Text = "Back";
-            this.btnBack_IT.UseVisualStyleBackColor = false;
-            this.btnBack_IT.Click += new System.EventHandler(this.btnBack_IT_Click);
+            this.btnBack.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnBack.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnBack.Location = new System.Drawing.Point(98, 649);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(203, 49);
+            this.btnBack.TabIndex = 5;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_IT_Click);
             // 
-            // btnContinue_IT
+            // btnContinue
             // 
-            this.btnContinue_IT.BackColor = System.Drawing.Color.CadetBlue;
-            this.btnContinue_IT.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinue_IT.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnContinue_IT.Location = new System.Drawing.Point(817, 649);
-            this.btnContinue_IT.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
-            this.btnContinue_IT.Name = "btnContinue_IT";
-            this.btnContinue_IT.Size = new System.Drawing.Size(203, 49);
-            this.btnContinue_IT.TabIndex = 6;
-            this.btnContinue_IT.Text = "Continue";
-            this.btnContinue_IT.UseVisualStyleBackColor = false;
-            this.btnContinue_IT.Click += new System.EventHandler(this.btnContinue_IT_Click);
+            this.btnContinue.BackColor = System.Drawing.Color.CadetBlue;
+            this.btnContinue.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinue.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnContinue.Location = new System.Drawing.Point(817, 649);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(203, 49);
+            this.btnContinue.TabIndex = 6;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = false;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_IT_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -318,8 +318,8 @@
             this.ClientSize = new System.Drawing.Size(1102, 757);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.btnContinue_IT);
-            this.Controls.Add(this.btnBack_IT);
+            this.Controls.Add(this.btnContinue);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblSelect);
             this.Controls.Add(this.rbComprehensive);
             this.Controls.Add(this.rbFireTheft);
@@ -342,8 +342,8 @@
         private System.Windows.Forms.RadioButton rbFireTheft;
         private System.Windows.Forms.RadioButton rbComprehensive;
         private System.Windows.Forms.Label lblSelect;
-        private System.Windows.Forms.Button btnBack_IT;
-        private System.Windows.Forms.Button btnContinue_IT;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnContinue;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lblType_IT;
         private System.Windows.Forms.Label lblDescription_IT;

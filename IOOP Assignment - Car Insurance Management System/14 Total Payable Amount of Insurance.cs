@@ -27,8 +27,8 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             conTA.ConnectionString = "Provider=Microsoft.JET.OLEDB.4.0;Data Source=IOOPAssignment.mdb;";
             conTA.Open();
 
-            lblCustomerID_TA.Text = "Customer ID: " + Save.customerid;
-            lblCustomerName_TA.Text = "Insurance ID: " + Save.insuranceid;
+            lblCustomerID.Text = "Customer ID: " + Save.customerid;
+            lblCustomerName.Text = "Insurance ID: " + Save.insuranceid;
 
             Calculate();
         }

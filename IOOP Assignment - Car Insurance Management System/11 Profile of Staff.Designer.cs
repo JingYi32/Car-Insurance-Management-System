@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile_of_Staff));
             this.lblMyProfile = new System.Windows.Forms.Label();
-            this.lblStaffID_MP = new System.Windows.Forms.Label();
-            this.lblStaffName_MP = new System.Windows.Forms.Label();
-            this.lblGender_MP = new System.Windows.Forms.Label();
-            this.lblJobPosition_MP = new System.Windows.Forms.Label();
-            this.lblContact_MP = new System.Windows.Forms.Label();
-            this.lblAddress_MP = new System.Windows.Forms.Label();
+            this.lblStaffID = new System.Windows.Forms.Label();
+            this.lblStaffName = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.lblJobPosition = new System.Windows.Forms.Label();
+            this.lblContact = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
             this.picProfilePicture_MP = new System.Windows.Forms.PictureBox();
             this.btnBack_MP = new System.Windows.Forms.Button();
             this.dgvMP = new System.Windows.Forms.DataGridView();
@@ -60,68 +60,68 @@
             this.lblMyProfile.Text = "My Profile";
             this.lblMyProfile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblStaffID_MP
+            // lblStaffID
             // 
-            this.lblStaffID_MP.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.lblStaffID_MP.AutoSize = true;
-            this.lblStaffID_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffID_MP.Location = new System.Drawing.Point(56, 96);
-            this.lblStaffID_MP.Name = "lblStaffID_MP";
-            this.lblStaffID_MP.Size = new System.Drawing.Size(100, 51);
-            this.lblStaffID_MP.TabIndex = 1;
-            this.lblStaffID_MP.Text = "Staff ID:";
+            this.lblStaffID.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.lblStaffID.AutoSize = true;
+            this.lblStaffID.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffID.Location = new System.Drawing.Point(56, 96);
+            this.lblStaffID.Name = "lblStaffID";
+            this.lblStaffID.Size = new System.Drawing.Size(100, 51);
+            this.lblStaffID.TabIndex = 1;
+            this.lblStaffID.Text = "Staff ID:";
             // 
-            // lblStaffName_MP
+            // lblStaffName
             // 
-            this.lblStaffName_MP.AutoSize = true;
-            this.lblStaffName_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStaffName_MP.Location = new System.Drawing.Point(56, 147);
-            this.lblStaffName_MP.Name = "lblStaffName_MP";
-            this.lblStaffName_MP.Size = new System.Drawing.Size(133, 51);
-            this.lblStaffName_MP.TabIndex = 2;
-            this.lblStaffName_MP.Text = "First Name:";
+            this.lblStaffName.AutoSize = true;
+            this.lblStaffName.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffName.Location = new System.Drawing.Point(56, 147);
+            this.lblStaffName.Name = "lblStaffName";
+            this.lblStaffName.Size = new System.Drawing.Size(133, 51);
+            this.lblStaffName.TabIndex = 2;
+            this.lblStaffName.Text = "First Name:";
             // 
-            // lblGender_MP
+            // lblGender
             // 
-            this.lblGender_MP.AutoSize = true;
-            this.lblGender_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGender_MP.Location = new System.Drawing.Point(56, 198);
-            this.lblGender_MP.Name = "lblGender_MP";
-            this.lblGender_MP.Size = new System.Drawing.Size(98, 51);
-            this.lblGender_MP.TabIndex = 3;
-            this.lblGender_MP.Text = "Gender:";
-            this.lblGender_MP.Click += new System.EventHandler(this.lblGender_MP_Click);
+            this.lblGender.AutoSize = true;
+            this.lblGender.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.Location = new System.Drawing.Point(56, 198);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(98, 51);
+            this.lblGender.TabIndex = 3;
+            this.lblGender.Text = "Gender:";
+            this.lblGender.Click += new System.EventHandler(this.lblGender_MP_Click);
             // 
-            // lblJobPosition_MP
+            // lblJobPosition
             // 
-            this.lblJobPosition_MP.AutoSize = true;
-            this.lblJobPosition_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJobPosition_MP.Location = new System.Drawing.Point(56, 247);
-            this.lblJobPosition_MP.Name = "lblJobPosition_MP";
-            this.lblJobPosition_MP.Size = new System.Drawing.Size(139, 51);
-            this.lblJobPosition_MP.TabIndex = 4;
-            this.lblJobPosition_MP.Text = "Job Position:";
-            this.lblJobPosition_MP.Click += new System.EventHandler(this.label4_Click);
+            this.lblJobPosition.AutoSize = true;
+            this.lblJobPosition.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobPosition.Location = new System.Drawing.Point(56, 247);
+            this.lblJobPosition.Name = "lblJobPosition";
+            this.lblJobPosition.Size = new System.Drawing.Size(139, 51);
+            this.lblJobPosition.TabIndex = 4;
+            this.lblJobPosition.Text = "Job Position:";
+            this.lblJobPosition.Click += new System.EventHandler(this.label4_Click);
             // 
-            // lblContact_MP
+            // lblContact
             // 
-            this.lblContact_MP.AutoSize = true;
-            this.lblContact_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact_MP.Location = new System.Drawing.Point(56, 297);
-            this.lblContact_MP.Name = "lblContact_MP";
-            this.lblContact_MP.Size = new System.Drawing.Size(188, 51);
-            this.lblContact_MP.TabIndex = 5;
-            this.lblContact_MP.Text = "Contact Number:";
+            this.lblContact.AutoSize = true;
+            this.lblContact.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContact.Location = new System.Drawing.Point(56, 297);
+            this.lblContact.Name = "lblContact";
+            this.lblContact.Size = new System.Drawing.Size(188, 51);
+            this.lblContact.TabIndex = 5;
+            this.lblContact.Text = "Contact Number:";
             // 
-            // lblAddress_MP
+            // lblAddress
             // 
-            this.lblAddress_MP.AutoSize = true;
-            this.lblAddress_MP.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress_MP.Location = new System.Drawing.Point(56, 348);
-            this.lblAddress_MP.Name = "lblAddress_MP";
-            this.lblAddress_MP.Size = new System.Drawing.Size(106, 51);
-            this.lblAddress_MP.TabIndex = 6;
-            this.lblAddress_MP.Text = "Address:";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Gabriola", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(56, 348);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(106, 51);
+            this.lblAddress.TabIndex = 6;
+            this.lblAddress.Text = "Address:";
             // 
             // picProfilePicture_MP
             // 
@@ -227,12 +227,12 @@
             this.Controls.Add(this.dgvMP);
             this.Controls.Add(this.btnBack_MP);
             this.Controls.Add(this.picProfilePicture_MP);
-            this.Controls.Add(this.lblAddress_MP);
-            this.Controls.Add(this.lblContact_MP);
-            this.Controls.Add(this.lblJobPosition_MP);
-            this.Controls.Add(this.lblGender_MP);
-            this.Controls.Add(this.lblStaffName_MP);
-            this.Controls.Add(this.lblStaffID_MP);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.lblContact);
+            this.Controls.Add(this.lblJobPosition);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.lblStaffName);
+            this.Controls.Add(this.lblStaffID);
             this.Controls.Add(this.lblMyProfile);
             this.Font = new System.Drawing.Font("Gabriola", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
@@ -250,12 +250,12 @@
         #endregion
 
         private System.Windows.Forms.Label lblMyProfile;
-        private System.Windows.Forms.Label lblStaffID_MP;
-        private System.Windows.Forms.Label lblStaffName_MP;
-        private System.Windows.Forms.Label lblGender_MP;
-        private System.Windows.Forms.Label lblJobPosition_MP;
-        private System.Windows.Forms.Label lblContact_MP;
-        private System.Windows.Forms.Label lblAddress_MP;
+        private System.Windows.Forms.Label lblStaffID;
+        private System.Windows.Forms.Label lblStaffName;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.Label lblJobPosition;
+        private System.Windows.Forms.Label lblContact;
+        private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.PictureBox picProfilePicture_MP;
         private System.Windows.Forms.Button btnBack_MP;
         private System.Windows.Forms.DataGridView dgvMP;
