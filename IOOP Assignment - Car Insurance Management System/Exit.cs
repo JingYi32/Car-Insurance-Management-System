@@ -18,7 +18,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             title = "Close Window";            
         }
 
-        public void comfirm()
+        public void confirm()
         {
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show(message, title, buttons);

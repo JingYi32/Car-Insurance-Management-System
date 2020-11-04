@@ -20,7 +20,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void btnMenu(object sender, EventArgs e)
         {
             Exit exit = new Exit();
-            exit.comfirm();
+            exit.confirm();
         }
 
         private void btnRegisterNewAccount(object sender, EventArgs e)

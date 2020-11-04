@@ -51,7 +51,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void btnExit_Click(object sender, EventArgs e)
         {
             Exit exit = new Exit();
-            exit.comfirm();
+            exit.confirm();
         }
 
         private void Login_Page_Load(object sender, EventArgs e)
