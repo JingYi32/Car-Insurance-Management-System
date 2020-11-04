@@ -53,7 +53,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
         private void btnRE_Submit(object sender, EventArgs e)
         {
 
-            if ((string.IsNullOrWhiteSpace(txtRE_Name.Text)) || (string.IsNullOrWhiteSpace(txtRE_IDNo.Text)) || (cbbRE_Gender.SelectedIndex == -1) || (string.IsNullOrWhiteSpace(txtRE_Contact.Text)) || (string.IsNullOrWhiteSpace(txtRE_Address.Text)))
+            if ((string.IsNullOrWhiteSpace(txtRE_Name.Text)) || (string.IsNullOrWhiteSpace(txtRE_IDNo.Text)) || (string.IsNullOrWhiteSpace(txtRE_Address.Text)) || (cbbRE_Gender.SelectedIndex == -1)  || (string.IsNullOrWhiteSpace(txtRE_Contact.Text)) || (string.IsNullOrWhiteSpace(txtRE_Email.Text)))
             {
                 MessageBox.Show("Please fill in all fields.");
             }
@@ -62,7 +62,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
                 cmd.CommandText = "INSERT into Customer values ('" + Save.customerid + "', '" + Save.CustName + "', '" + Save.CustIC + "', '" + Save.CustAddress + "', '" + Save.CustGender + "', '" + Save.CustPhone + "', '" + Save.CustEmail + "')";
                 cmd.Connection = con;
                 cmd.ExecuteNonQuery();
-                MessageBox.Show(Save.CustPhone);
+                MessageBox.Show("Customer Registered.");
 
                 Purrchase_New_Policy purchase = new Purrchase_New_Policy();
                 this.Hide();
@@ -127,6 +127,22 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
         }
 
+        private void txtRE_Address_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtRE_Address.Text))
+            {
+                e.Cancel = true;
+                txtRE_Address.Focus();
+                errorProvider4.SetError(txtRE_Address, "Please Enter Address of Customer.");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider4.SetError(txtRE_Address, "");
+                Save.CustAddress = txtRE_Address.Text;
+            }
+        } 
+        
         private void cbbRE_Gender_Validating(object sender, CancelEventArgs e)
         {
             if (cbbRE_Gender.SelectedIndex == -1)
@@ -143,21 +159,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             }
         }
 
-        private void txtRE_Address_Validating(object sender, CancelEventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtRE_Address.Text))
-            {
-                e.Cancel = true;
-                txtRE_Address.Focus();
-                errorProvider4.SetError(txtRE_Address, "Please Enter Address of Customer.");
-            }
-            else
-            {
-                e.Cancel = false;
-                errorProvider4.SetError(txtRE_Address, "");
-                Save.CustAddress = txtRE_Address.Text;
-            }
-        }
+        
 
         private void txtRE_Contact_Validating(object sender, CancelEventArgs e)
         {
@@ -171,7 +173,7 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             {
                 if (Regex.IsMatch(txtRE_Contact.Text, "^[0-9]*$"))
                 {
-                    if ((txtRE_Contact.Text.Length > 9) || (txtRE_Contact.Text.Length < 9))
+                    if ((txtRE_Contact.Text.Length > 10) || (txtRE_Contact.Text.Length < 9))
                     {
                         e.Cancel = true;
                         txtRE_Contact.Focus();
