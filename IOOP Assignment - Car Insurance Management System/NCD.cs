@@ -19,19 +19,6 @@ namespace IOOP_Assignment___Car_Insurance_Management_System
             year = 0;
         }
 
-        //Property
-        public double Ncd
-        {
-            get { return ncd; }
-            set { ncd = value; }
-        }
-
-        public int YEAR
-        {
-            get { return year; }
-            set { year = value; }
-        }
-
         public double calculateNCD(ref double ncd)
         {
             DateTime zeroTime = new DateTime(1, 1, 1);
